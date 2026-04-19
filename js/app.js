@@ -76,7 +76,17 @@ async function loadHdbCarparks() {
 }
 
 function loadPrivateCarparks() {
-  return (window.PRIVATE_CARPARKS || []).map(cp => ({ ...cp, kind: "private" }));
+  const curated = (window.PRIVATE_CARPARKS || []).map(cp => ({ ...cp, kind: "private" }));
+  const csv = (window.CSV_CARPARKS || []).map(cp => ({ ...cp, kind: "private" }));
+  // Dedupe by name (curated wins over CSV for hand-tuned entries like MBS).
+  const seen = new Set(curated.map(cp => cp.name.toLowerCase()));
+  const merged = [...curated];
+  for (const cp of csv) {
+    if (seen.has(cp.name.toLowerCase())) continue;
+    seen.add(cp.name.toLowerCase());
+    merged.push(cp);
+  }
+  return merged;
 }
 
 // ---------- Geometry ----------
@@ -103,7 +113,7 @@ const changesLabel = $("#changesLabel");
 const hoursInput = $("#hours");
 const radiusInput = $("#radius");
 const arrivalInput = $("#arrival");
-const weekendInput = $("#weekend");
+const dayTypeInput = $("#dayType");
 
 (function initArrival() {
   const d = new Date();
@@ -177,7 +187,7 @@ async function runSearch() {
   const radius = parseFloat(radiusInput.value);
   const changes = parseInt(changesInput.value, 10);
   const arrival = arrivalInput.value;
-  const isWeekend = weekendInput && weekendInput.checked;
+  const dayType = (dayTypeInput && dayTypeInput.value) || "weekday";
 
   if (!arrival || !isFinite(hours) || hours <= 0) {
     setStatus("Please enter a valid arrival time and hours.", true);
@@ -232,7 +242,7 @@ async function runSearch() {
       nearby.push({
         ...cp,
         distance: d,
-        _use_weekend_rate: isWeekend
+        _day_type: dayType
       });
     }
   }

@@ -38,85 +38,149 @@ function minutesInDailyWindow(startMin, endMin, windowStart, windowEnd) {
   return total;
 }
 
-function qualifiesForHdbNight(startMin, endMin) {
-  const nightStart = HDB_DAY_END_MIN;            // 22:30
-  const nightEndNext = 24 * 60 + HDB_DAY_START_MIN; // +1 day 07:00 => 1860
-  return startMin >= nightStart && endMin <= nightEndNext;
-}
-
 // ---------- HDB cost ----------
+// Algorithm: split the stay into day-periods [07:00-22:30] and night-periods
+// [22:30-07:00]. Charge each period at $0.60/30min (rounded up), then cap each
+// night-period at $5. Sum everything.
 function hdbStayCost(carpark, startMin, endMin) {
-  const durationMin = endMin - startMin;
-  if (durationMin <= 0) return { cost: 0, breakdown: "Free (no time)" };
+  if (endMin <= startMin) return { cost: 0, breakdown: "Free (no time)" };
 
   const isCentral = CENTRAL_CARPARKS.has(carpark.car_park_no);
-  const halfHourRate = isCentral ? HDB_HALF_HOUR_CENTRAL : HDB_HALF_HOUR_NORMAL;
+  // HDB Free Parking Scheme: most non-central carparks are free on Sun/PH.
+  // Central-area carparks still charge.
+  if (carpark._day_type === "sunday_ph" && !isCentral) {
+    return { cost: 0, breakdown: "Free on Sun/PH (Free Parking Scheme)" };
+  }
+  const rate = isCentral ? HDB_HALF_HOUR_CENTRAL : HDB_HALF_HOUR_NORMAL;
 
-  if (qualifiesForHdbNight(startMin, endMin) && carpark.night_parking_available) {
-    return {
-      cost: HDB_NIGHT_FLAT_FEE,
-      breakdown: `HDB night flat $${HDB_NIGHT_FLAT_FEE.toFixed(2)}`
-    };
+  let total = 0;
+  const parts = [];
+  const startDay = Math.floor(startMin / 1440);
+  const endDay   = Math.floor((endMin - 1) / 1440);
+
+  // Iterate from startDay-1 so the previous day's 22:30-07:00 night window
+  // is considered for stays that begin in the early morning (e.g. 03:00).
+  for (let d = startDay - 1; d <= endDay; d++) {
+    const base = d * 1440;
+
+    // Day period: 07:00 - 22:30
+    const dS = Math.max(startMin, base + HDB_DAY_START_MIN);
+    const dE = Math.min(endMin,   base + HDB_DAY_END_MIN);
+    if (dE > dS) {
+      const blocks = Math.ceil((dE - dS) / 30);
+      const cost = blocks * rate;
+      total += cost;
+      parts.push(`Day ${blocks}x30min = $${cost.toFixed(2)}`);
+    }
+
+    // Night period: 22:30 - 07:00 next day
+    const nS = Math.max(startMin, base + HDB_DAY_END_MIN);
+    const nE = Math.min(endMin,   base + 1440 + HDB_DAY_START_MIN);
+    if (nE > nS) {
+      const blocks = Math.ceil((nE - nS) / 30);
+      let cost = blocks * rate;
+      let note = `Night ${blocks}x30min = $${cost.toFixed(2)}`;
+      if (cost > HDB_NIGHT_FLAT_FEE) {
+        cost = HDB_NIGHT_FLAT_FEE;
+        note = `Night capped at $${HDB_NIGHT_FLAT_FEE.toFixed(2)}`;
+      }
+      total += cost;
+      parts.push(note);
+    }
   }
 
-  const chargeMin = minutesInDailyWindow(
-    startMin, endMin, HDB_DAY_START_MIN, HDB_DAY_END_MIN
-  );
-  if (chargeMin === 0) {
-    return { cost: 0, breakdown: "Free (outside chargeable hours)" };
-  }
-
-  const blocks = Math.ceil(chargeMin / 30);
-  const cost = blocks * halfHourRate;
-  return {
-    cost,
-    breakdown: `${blocks} x 30min @ $${halfHourRate.toFixed(2)}` +
-               (isCentral ? " (central)" : "")
-  };
+  if (total === 0) return { cost: 0, breakdown: "Free (outside chargeable hours)" };
+  return { cost: total, breakdown: parts.join(" + ") + (isCentral ? " (central)" : "") };
 }
 
 // ---------- Private / mall cost ----------
+// Hourly portion: applies first_hour_rate (if set) for the first 60 min,
+// then subsequent_rate_per_30min (if set) else rate_per_30min.
+function hourlyCost(chargeMin, t, useWeekend) {
+  const baseRate = (useWeekend && t.weekend_rate_per_30min) ? t.weekend_rate_per_30min : t.rate_per_30min;
+  const subRate  = t.subsequent_rate_per_30min != null ? t.subsequent_rate_per_30min : baseRate;
+
+  if (t.first_hour_rate != null) {
+    if (chargeMin <= 60) {
+      return { cost: t.first_hour_rate, note: `1st hr flat $${t.first_hour_rate.toFixed(2)}` };
+    }
+    const after = chargeMin - 60;
+    const blocks = Math.ceil(after / 30);
+    const cost = t.first_hour_rate + blocks * subRate;
+    return {
+      cost,
+      note: `1st hr $${t.first_hour_rate.toFixed(2)} + ${blocks} x 30min @ $${subRate.toFixed(2)}`
+    };
+  }
+  const blocks = Math.ceil(chargeMin / 30);
+  return { cost: blocks * baseRate, note: `${blocks} x 30min @ $${baseRate.toFixed(2)}` };
+}
+
 function privateStayCost(carpark, startMin, endMin) {
   const t = carpark.tariff;
   const durationMin = endMin - startMin;
   if (durationMin <= 0) return { cost: 0, breakdown: "Free (no time)" };
 
   // Grace period (e.g. first 15 min free)
-  const chargeableDur = Math.max(0, durationMin - (t.first_free_minutes || 0));
+  const graceMin = t.first_free_minutes || 0;
+  const chargeableDur = Math.max(0, durationMin - graceMin);
   if (chargeableDur === 0) {
     return { cost: 0, breakdown: "Within grace period" };
   }
 
-  // Chargeable window intersection (most malls are 24/7)
+  const effectiveStart = startMin + graceMin;
+  const isWeekendDay = carpark._day_type === "saturday" || carpark._day_type === "sunday_ph";
+  const useWeekend = isWeekendDay && t.weekend_rate_per_30min;
+
+  // Split into evening-flat-entry window vs rest.
+  const ev = t.evening_per_entry;
+  let totalCost = 0;
+  const notes = [];
+
   const cStart = t.chargeable_start ?? 0;
-  const cEnd = t.chargeable_end ?? 1440;
-  let chargeMin;
-  if (cStart === 0 && cEnd === 1440) {
-    chargeMin = chargeableDur;
-  } else {
-    // Apply grace only at the start; reconstruct a shifted window.
-    const effectiveStart = startMin + (t.first_free_minutes || 0);
-    chargeMin = minutesInDailyWindow(effectiveStart, endMin, cStart, cEnd);
+  const cEnd   = t.chargeable_end ?? 1440;
+
+  // Minutes inside the evening-flat window (per day), and outside it.
+  let eveningMin = 0;
+  if (ev) {
+    eveningMin = minutesInDailyWindow(effectiveStart, endMin, ev.start_min, ev.end_min);
   }
-  if (chargeMin === 0) {
+  // Hourly-chargeable minutes: inside chargeable window but outside evening window.
+  let hourlyMin;
+  if (ev) {
+    // We need intersection of [chargeable window] and [NOT evening window].
+    const inChargeable = minutesInDailyWindow(effectiveStart, endMin, cStart, cEnd);
+    const evInChargeable = minutesInDailyWindow(effectiveStart, endMin,
+      Math.max(cStart, ev.start_min),
+      Math.min(cEnd,   ev.end_min));
+    hourlyMin = Math.max(0, inChargeable - evInChargeable);
+  } else {
+    hourlyMin = (cStart === 0 && cEnd === 1440)
+      ? chargeableDur
+      : minutesInDailyWindow(effectiveStart, endMin, cStart, cEnd);
+  }
+
+  if (hourlyMin > 0) {
+    const h = hourlyCost(hourlyMin, t, useWeekend);
+    totalCost += h.cost;
+    notes.push(h.note);
+  }
+  if (eveningMin > 0) {
+    totalCost += ev.price;
+    notes.push(`Evening flat $${ev.price.toFixed(2)}`);
+  }
+
+  if (totalCost === 0 && !notes.length) {
     return { cost: 0, breakdown: "Free (outside chargeable hours)" };
   }
 
-  // Pick weekday vs weekend rate. We don't know the actual weekday, so the UI
-  // exposes a weekend flag; default = weekday.
-  const useWeekend = !!carpark._use_weekend_rate && t.weekend_rate_per_30min;
-  const rate = useWeekend ? t.weekend_rate_per_30min : t.rate_per_30min;
-
-  const blocks = Math.ceil(chargeMin / 30);
-  let cost = blocks * rate;
-  let note = `${blocks} x 30min @ $${rate.toFixed(2)}`;
-
-  if (t.per_entry_cap != null && cost > t.per_entry_cap) {
-    cost = t.per_entry_cap;
-    note = `Capped at $${t.per_entry_cap.toFixed(2)}/entry`;
+  if (t.per_entry_cap != null && totalCost > t.per_entry_cap) {
+    totalCost = t.per_entry_cap;
+    notes.length = 0;
+    notes.push(`Capped at $${t.per_entry_cap.toFixed(2)}/entry`);
   }
 
-  return { cost, breakdown: note };
+  return { cost: totalCost, breakdown: notes.join(" + ") };
 }
 
 // ---------- dispatcher ----------

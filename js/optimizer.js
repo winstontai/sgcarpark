@@ -11,13 +11,31 @@
 
 const DAY = 1440;
 
-// Natural HDB rate boundaries - 7am (420) and 10:30pm (1350) each day.
-// These are where rate changes happen, so switching carparks at other times
-// can't beat switching here.
-function boundariesBetween(startMin, endMin) {
+// Rate-change boundaries: switching carparks at any other minute can't beat
+// switching at one of these. HDB has 7am (420) and 10:30pm (1350). Each
+// private carpark contributes its own chargeable-window edges and any
+// evening-flat window edges, so the DP can find switch points to/from
+// evening-flat carparks.
+function collectCarparkMarks(carparks) {
+  const minutes = new Set();
+  for (const cp of carparks) {
+    const t = cp.tariff;
+    if (!t) continue;
+    if (t.chargeable_start != null && t.chargeable_start !== 0) minutes.add(t.chargeable_start);
+    if (t.chargeable_end != null && t.chargeable_end !== DAY) minutes.add(t.chargeable_end);
+    if (t.evening_per_entry) {
+      minutes.add(t.evening_per_entry.start_min);
+      minutes.add(t.evening_per_entry.end_min);
+    }
+  }
+  return minutes;
+}
+
+function boundariesBetween(startMin, endMin, extraDailyMarks) {
   const marks = new Set([startMin, endMin]);
+  const dailyMarks = new Set([420, 1350, ...(extraDailyMarks || [])]);
   for (let d = Math.floor(startMin / DAY); d <= Math.floor(endMin / DAY); d++) {
-    [420, 1350].forEach(m => {
+    dailyMarks.forEach(m => {
       const t = d * DAY + m;
       if (t > startMin && t < endMin) marks.add(t);
     });
@@ -25,8 +43,8 @@ function boundariesBetween(startMin, endMin) {
   return [...marks].sort((a, b) => a - b);
 }
 
-function segmentsFrom(startMin, endMin) {
-  const marks = boundariesBetween(startMin, endMin);
+function segmentsFrom(startMin, endMin, extraDailyMarks) {
+  const marks = boundariesBetween(startMin, endMin, extraDailyMarks);
   const segs = [];
   for (let i = 0; i < marks.length - 1; i++) {
     segs.push({ startMin: marks[i], endMin: marks[i + 1] });
@@ -40,7 +58,7 @@ function segmentsFrom(startMin, endMin) {
 function optimise(carparks, startMin, endMin, maxChanges) {
   if (!carparks.length || endMin <= startMin) return null;
 
-  const segs = segmentsFrom(startMin, endMin);
+  const segs = segmentsFrom(startMin, endMin, collectCarparkMarks(carparks));
   const M = segs.length;
   if (M === 0) return null;
 

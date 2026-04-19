@@ -1,0 +1,4 @@
+node_modules/
+scripts/.geocode-cache.json
+.DS_Store
+*.log
