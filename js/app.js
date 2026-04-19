@@ -219,16 +219,18 @@ async function runSearch() {
   if (destMarker) destMarker.remove();
   destMarker = L.marker([dest.lat, dest.lng], { title: "Destination" })
     .addTo(map)
-    .bindPopup(`<b>Destination</b><br/>${dest.label}`);
+    .bindPopup(`<b>Destination</b><br/>${escapeHtml(dest.label)}`);
 
   setStatus("Loading carparks...", false, true);
   searchBtn.disabled = true;
+  showPlansSkeleton();
 
   let hdb;
   try {
     hdb = await loadHdbCarparks();
   } catch (e) {
     setStatus("Could not load HDB data: " + e.message, true);
+    plansEl.innerHTML = "";
     searchBtn.disabled = false;
     return;
   }
@@ -249,6 +251,7 @@ async function runSearch() {
 
   if (nearby.length === 0) {
     setStatus(`No carparks within ${radius}m. Try widening the radius.`, true);
+    plansEl.innerHTML = "";
     searchBtn.disabled = false;
     return;
   }
@@ -259,7 +262,7 @@ async function runSearch() {
       radius: 7, color: "#fff", fillColor: colour, weight: 2, fillOpacity: 1
     })
       .bindPopup(
-        `<b>${cp.name || cp.car_park_no}</b><br/>${cp.address}<br/>` +
+        `<b>${escapeHtml(cp.name || cp.car_park_no)}</b><br/>${escapeHtml(cp.address || "")}<br/>` +
         `<small>${cp.kind === "private" ? "Private / Mall" : "HDB"}</small>`
       )
       .addTo(carparkLayer);
@@ -293,8 +296,73 @@ async function runSearch() {
 const ICON = {
   clock:  `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>`,
   walk:   `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="13" cy="4" r="2"/><path d="m15 22-3-5 1-6-3 2-1 4m5 0-3-6-5-1m3 6H6"/></svg>`,
-  timer:  `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="14" r="8"/><path d="M12 10v4l2 2M9 2h6"/></svg>`
+  timer:  `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="14" r="8"/><path d="M12 10v4l2 2M9 2h6"/></svg>`,
+  ext:    `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>`
 };
+
+function escapeHtml(s) {
+  return String(s ?? "").replace(/[&<>"']/g, c =>
+    ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" })[c]
+  );
+}
+
+// Classify a breakdown fragment into a chip style based on keywords.
+function chipClass(frag) {
+  const s = frag.toLowerCase();
+  if (s.includes("free")) return "chip chip-free";
+  if (s.includes("grace")) return "chip chip-grace";
+  if (s.includes("cap")) return "chip chip-cap";
+  if (s.includes("evening")) return "chip chip-evening";
+  if (s.includes("night")) return "chip chip-night";
+  return "chip";
+}
+
+function renderBreakdownChips(breakdown) {
+  if (!breakdown) return "";
+  // Split on " + " boundaries the rate calculator uses.
+  const parts = breakdown.split(/\s+\+\s+/);
+  return parts.map(p => `<span class="${chipClass(p)}">${escapeHtml(p)}</span>`).join("");
+}
+
+function showPlansSkeleton() {
+  plansEl.innerHTML = `
+    <div class="skeleton-card">
+      <div class="skeleton-row">
+        <div style="flex:1">
+          <div class="skeleton-line w20"></div>
+          <div class="skeleton-line h-title w60"></div>
+          <div class="skeleton-line w40"></div>
+        </div>
+        <div class="skeleton-line h-cost"></div>
+      </div>
+      <div class="skeleton-step"><div class="skeleton-line w80"></div><div class="skeleton-line w60"></div></div>
+      <div class="skeleton-step"><div class="skeleton-line w80"></div><div class="skeleton-line w40"></div></div>
+    </div>
+    <div class="skeleton-card">
+      <div class="skeleton-row">
+        <div style="flex:1">
+          <div class="skeleton-line w20"></div>
+          <div class="skeleton-line h-title w60"></div>
+        </div>
+        <div class="skeleton-line h-cost"></div>
+      </div>
+      <div class="skeleton-step"><div class="skeleton-line w80"></div><div class="skeleton-line w40"></div></div>
+    </div>`;
+}
+
+function addPlanMarkers(plan) {
+  plan.forEach((stay, i) => {
+    const icon = L.divIcon({
+      className: "plan-marker-wrap",
+      html: `<div class="plan-marker">${i + 1}</div>`,
+      iconSize: [30, 30],
+      iconAnchor: [15, 15]
+    });
+    L.marker([stay.carpark.lat, stay.carpark.lng], { icon, zIndexOffset: 1000 })
+      .bindPopup(`<b>Step ${i + 1}: ${escapeHtml(stay.carpark.name || stay.carpark.car_park_no)}</b>`)
+      .addTo(carparkLayer);
+  });
+}
 
 function renderPlans(plans) {
   plansEl.innerHTML = "";
@@ -351,29 +419,38 @@ function renderPlans(plans) {
       const kindTag = stay.carpark.kind === "private"
         ? '<span class="tag private">Private</span>'
         : '<span class="tag hdb">HDB</span>';
-      const displayName = stay.carpark.name || stay.carpark.car_park_no;
+      const displayName = escapeHtml(stay.carpark.name || stay.carpark.car_park_no);
+      const address = escapeHtml(stay.carpark.address || "");
 
       li.innerHTML = `
         <span class="step-num">${i + 1}</span>
         <div class="step-info">
           <div class="step-name">${displayName}${kindTag}</div>
-          <div class="step-address">${stay.carpark.address}</div>
+          <div class="step-address">${address}</div>
           <div class="step-meta">
             <span class="step-meta-item">${ICON.clock}${from} -> ${to}</span>
             <span class="step-meta-item">${ICON.timer}${durHours.toFixed(1)}h</span>
             <span class="step-meta-item">${ICON.walk}${Math.round(stay.carpark.distance)}m | ~${walkMin} min walk</span>
           </div>
-          <div class="step-breakdown">${stay.breakdown}</div>
+          <div class="step-breakdown">${renderBreakdownChips(stay.breakdown)}</div>
+          <div class="step-directions">${ICON.ext}Open in Google Maps</div>
         </div>
         <div class="step-cost">$${stay.cost.toFixed(2)}</div>
       `;
+      li.title = "Open in Google Maps";
       li.addEventListener("click", () => {
-        map.setView([stay.carpark.lat, stay.carpark.lng], 18);
+        const { lat, lng } = stay.carpark;
+        const url = `https://www.google.com/maps/dir/?api=1&destination=${lat},${lng}&travelmode=driving`;
+        window.open(url, "_blank", "noopener");
       });
       list.appendChild(li);
     });
     plansEl.appendChild(card);
   }
+
+  // Overlay numbered markers for the cheapest plan's stops on the map.
+  const cheapest = byChanges.find(p => Math.abs(p.total - cheapestTotal) < 1e-9);
+  if (cheapest) addPlanMarkers(cheapest.plan);
 }
 
 function formatTime(minutes) {

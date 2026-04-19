@@ -141,9 +141,16 @@ function privateStayCost(carpark, startMin, endMin) {
   const cEnd   = t.chargeable_end ?? 1440;
 
   // Minutes inside the evening-flat window (per day), and outside it.
+  // If the evening window ends at midnight AND there's an overnight gap before
+  // the next morning's chargeable_start, treat that gap as part of the evening
+  // entry - a "$X per entry after Ypm" tariff covers overnight stays until the
+  // next morning, not just until midnight.
   let eveningMin = 0;
   if (ev) {
     eveningMin = minutesInDailyWindow(effectiveStart, endMin, ev.start_min, ev.end_min);
+    if (ev.end_min === 1440 && cStart > 0) {
+      eveningMin += minutesInDailyWindow(effectiveStart, endMin, 0, cStart);
+    }
   }
   // Hourly-chargeable minutes: inside chargeable window but outside evening window.
   let hourlyMin;
