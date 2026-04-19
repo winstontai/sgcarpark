@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ParkSmart SG - Find the cheapest parking in Singapore</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="hero">
+    <div class="hero-inner">
+      <div class="brand">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M14 16H9m10 0h3v-3.15a1 1 0 0 0-.84-.99L16 11l-2.7-3.6a1 1 0 0 0-.8-.4H5.24a2 2 0 0 0-1.8 1.1l-.8 1.63A6 6 0 0 0 2 12.42V16h2"/>
+          <circle cx="6.5" cy="16.5" r="2.5"/>
+          <circle cx="16.5" cy="16.5" r="2.5"/>
+        </svg>
+        <span>ParkSmart SG</span>
+      </div>
+      <h1>Park smart. Save more.</h1>
+      <p>Find the cheapest carpark for your exact trip - HDB and malls, compared in one click.</p>
+    </div>
+  </header>
+
+  <main>
+    <aside class="search-card">
+      <h2>Plan your parking</h2>
+
+      <div class="field">
+        <label class="field-label" for="location">Destination</label>
+        <div class="icon-field">
+          <svg class="field-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0z"/>
+            <circle cx="12" cy="10" r="3"/>
+          </svg>
+          <input type="text" id="location" placeholder="Postal code or address" autocomplete="off" />
+        </div>
+        <ul id="suggestions" class="suggestions hidden"></ul>
+      </div>
+
+      <div class="field-grid">
+        <div class="field">
+          <label class="field-label" for="arrival">Arrival</label>
+          <div class="icon-field">
+            <svg class="field-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="10"/>
+              <polyline points="12 6 12 12 16 14"/>
+            </svg>
+            <input type="time" id="arrival" />
+          </div>
+        </div>
+        <div class="field">
+          <label class="field-label" for="hours">Duration</label>
+          <div class="icon-field">
+            <svg class="field-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="14" r="8"/>
+              <path d="M12 10v4l2 2M9 2h6M12 6V4"/>
+            </svg>
+            <input type="number" id="hours" min="0.5" max="48" step="0.5" value="3" />
+            <span class="field-unit">hrs</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="field">
+        <label class="field-label" for="radius">Walking radius</label>
+        <div class="icon-field">
+          <svg class="field-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="13" cy="4" r="2"/>
+            <path d="m15 22-3-5 1-6-3 2-1 4m5 0-3-6-5-1m3 6H6"/>
+          </svg>
+          <input type="number" id="radius" min="100" max="2000" step="100" value="500" />
+          <span class="field-unit">m</span>
+        </div>
+      </div>
+
+      <div class="field">
+        <div class="slider-header">
+          <label for="changes">Willing to move the car?</label>
+          <span class="slider-value" id="changesLabel">Park once</span>
+        </div>
+        <input type="range" id="changes" min="0" max="3" step="1" value="0" />
+        <div class="slider-ticks">
+          <span>0</span><span>1</span><span>2</span><span>3</span>
+        </div>
+        <p class="hint">Allowing moves can unlock cheaper caps and night rates.</p>
+      </div>
+
+      <div class="field">
+        <label class="toggle">
+          <input type="checkbox" id="weekend" />
+          <span class="toggle-slider"></span>
+          <span class="toggle-text">Weekend / public holiday rates</span>
+        </label>
+      </div>
+
+      <button id="searchBtn" class="primary">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="11" cy="11" r="7"/>
+          <line x1="21" y1="21" x2="16.65" y2="16.65"/>
+        </svg>
+        <span>Find cheapest parking</span>
+      </button>
+
+      <div id="status" class="status" role="status" aria-live="polite"></div>
+    </aside>
+
+    <section class="results">
+      <div class="map-wrap">
+        <div id="map"></div>
+        <div class="map-legend">
+          <div class="legend-item"><span class="dot dest"></span>Destination</div>
+          <div class="legend-item"><span class="dot hdb"></span>HDB</div>
+          <div class="legend-item"><span class="dot private"></span>Mall / Private</div>
+        </div>
+      </div>
+
+      <div id="plans" class="plans">
+        <div class="empty-state">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0z"/>
+            <circle cx="12" cy="10" r="3"/>
+          </svg>
+          <h3>Ready when you are</h3>
+          <p>Enter a destination and duration, then we'll compare every carpark nearby to find your cheapest plan.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <span>HDB locations via <a href="https://data.gov.sg" target="_blank" rel="noopener">data.gov.sg</a></span>
+    <span class="sep">|</span>
+    <span>Geocoding by <a href="https://www.onemap.gov.sg" target="_blank" rel="noopener">OneMap</a></span>
+    <span class="sep">|</span>
+    <span>Private rates are estimates - verify before parking</span>
+  </footer>
+
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script src="js/svy21.js"></script>
+  <script src="js/privateCarparks.js"></script>
+  <script src="js/rates.js"></script>
+  <script src="js/optimizer.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
