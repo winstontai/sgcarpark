@@ -1,0 +1,358 @@
+carpark_id,name,category,has_coupon_parking
+25_TOA_PAYOH_LORONG_8,25 Toa Payoh Lorong 8,"Central, North & North East",FALSE
+45_BURGHLEY_DRIVE,45 Burghley Drive,"Central, North & North East",FALSE
+ANG_MO_KIO_HUB,Ang Mo Kio Hub,"Central, North & North East",FALSE
+BALESTIER_PLAZA,Balestier Plaza,"Central, North & North East",FALSE
+BALESTIER_POINT,Balestier Point,"Central, North & North East",FALSE
+BRAS_BASAH_COMPLEX,Bras Basah Complex,"Central, North & North East",FALSE
+CAUSEWAY_POINT,Causeway Point,"Central, North & North East",FALSE
+CENTRAL_PLACE,Central Place,"Central, North & North East",FALSE
+CITY_SQUARE_MALL,City Square Mall,"Central, North & North East",FALSE
+COMPASS_POINT,Compass Point,"Central, North & North East",FALSE
+GOLDHILL_PLAZA,Goldhill Plaza,"Central, North & North East",FALSE
+HEARTLAND_MALL,Heartland Mall,"Central, North & North East",FALSE
+HINDOO_ROAD_OFF_STREET,Hindoo Road Off-Street,"Central, North & North East",FALSE
+HOUGANG_GREEN_SHOPPING_MALL,Hougang Green Shopping Mall,"Central, North & North East",FALSE
+HOUGANG_MALL,Hougang Mall,"Central, North & North East",FALSE
+HOUGANG_PLAZA,Hougang Plaza,"Central, North & North East",FALSE
+JUNCTION_8_SHOPPING_CENTRE,Junction 8 Shopping Centre,"Central, North & North East",FALSE
+KAMPONG_BUGIS_OFF_STREET,Kampong Bugis Off-Street,"Central, North & North East",FALSE
+KAMPONG_KAPOR_ROAD_OFF_STREET,Kampong Kapor Road Off-Street,"Central, North & North East",FALSE
+MUSTAFA_CENTRE,Mustafa Centre,"Central, North & North East",FALSE
+NEX_MALL,Nex Mall,"Central, North & North East",FALSE
+NORTHPOINT_SHOPPING_CENTRE,Northpoint Shopping Centre,"Central, North & North East",FALSE
+PARLIAMENT_HOUSE,Parliament House,"Central, North & North East",FALSE
+RAMADA_HOTEL,Ramada Hotel,"Central, North & North East",FALSE
+RIVERVALE_MALL,Rivervale Mall,"Central, North & North East",FALSE
+SEMBAWANG_SHOPPING_CENTRE,Sembawang Shopping Centre,"Central, North & North East",FALSE
+SHAW_PLAZA,Shaw Plaza,"Central, North & North East",FALSE
+SHREWSBURY_ROAD_OFF_STREET,Shrewsbury Road Off-Street,"Central, North & North East",FALSE
+SQUARE_2,Square 2,"Central, North & North East",FALSE
+SUN_PLAZA,Sun Plaza,"Central, North & North East",FALSE
+THE_VERGE,The Verge,"Central, North & North East",FALSE
+THOMSON_PLAZA,Thomson Plaza,"Central, North & North East",FALSE
+TOA_PAYOH_HDB_HUB,Toa Payoh HDB Hub,"Central, North & North East",FALSE
+UNITED_SQUARE_SHOPPING_MALL,United Square Shopping Mall,"Central, North & North East",FALSE
+VELOCITY_NOVENA_SQUARE,Velocity @ Novena Square,"Central, North & North East",FALSE
+YISHUN_YS_ONE,Yishun YS-ONE,"Central, North & North East",FALSE
+112_KATONG,112 Katong,East,FALSE
+BEDOK_MALL,Bedok Mall,East,FALSE
+BEDOK_POINT,Bedok Point,East,FALSE
+CENTURY_SQUARE,Century Square,East,FALSE
+CHANGI_AIRPORT_SOUTH_CAR_PARK_BETWEEN_T2_AND_JETQU,Changi Airport - South Car Park (between T2 and JetQuay),East,FALSE
+CHANGI_AIRPORT_T1_T2_T3,"Changi Airport - T1, T2, T3",East,FALSE
+CHANGI_CITY_POINT,Changi City Point,East,FALSE
+CHANGI_VILLAGE_HOTEL,Changi Village Hotel,East,FALSE
+CITY_PLAZA,City Plaza,East,FALSE
+D_RESORT,D'Resort,East,FALSE
+DOWNTOWN_EAST,Downtown East,East,FALSE
+EAST_COAST_PARK_E1_E2_E3_OFF_STREET,East Coast Park E1/E2/E3 Off-Street,East,FALSE
+EASTPOINT_MALL,Eastpoint Mall,East,FALSE
+GRAND_MECURE_ROXY_HOTEL,Grand Mecure Roxy Hotel,East,FALSE
+IKEA_TAMPINES,IKEA (Tampines),East,FALSE
+KATONG_SHOPPING_CENTRE,Katong Shopping Centre,East,FALSE
+KATONG_VILLAGE,Katong Village,East,FALSE
+LIFELONG_LEARNING_INSTITUTE,Lifelong Learning Institute,East,FALSE
+PARAMOUNT_HOTEL,Paramount Hotel,East,FALSE
+PARKWAY_PARADE,Parkway Parade,East,FALSE
+ROXY_SQUARE,Roxy Square,East,FALSE
+SINGAPORE_EXPO,Singapore Expo,East,FALSE
+SINGAPORE_POST_CENTRE,Singapore Post Centre,East,FALSE
+TAMPINES_1,Tampines 1,East,FALSE
+TAMPINES_JUNCTION,Tampines Junction,East,FALSE
+TAMPINES_MALL,Tampines Mall,East,FALSE
+TAMPINES_PLAZA_COMPAQ_CENTRE,Tampines Plaza (Compaq Centre),East,FALSE
+TELEPARK,Telepark,East,FALSE
+WHITE_SANDS_SHOPPING_CENTRE,White Sands Shopping Centre,East,FALSE
+AMARA_HOTEL,Amara Hotel,Hotels,FALSE
+BERJAYA_HOTEL,Berjaya Hotel,Hotels,FALSE
+CARLTON_HOTEL,Carlton Hotel,Hotels,FALSE
+CHANGI_VILLAGE_HOTEL_2,Changi Village Hotel,Hotels,FALSE
+CONCORDE_HOTEL,Concorde Hotel,Hotels,FALSE
+CONRAD_CENTENNIAL_HOTEL,Conrad Centennial Hotel,Hotels,FALSE
+COPTHORNE_KING_S_HOTEL,Copthorne King's Hotel,Hotels,FALSE
+COPTHORNE_ORCHID_HOTEL,Copthorne Orchid Hotel,Hotels,FALSE
+ELIZABETH_HOTEL,Elizabeth Hotel,Hotels,FALSE
+FOUR_SEASONS_HOTEL,Four Seasons Hotel,Hotels,FALSE
+FURAMA_CITY_CENTRE_SINGAPORE,Furama City Centre Singapore,Hotels,FALSE
+FURAMA_RIVERFRONT_SINGAPORE,Furama Riverfront Singapore,Hotels,FALSE
+THE_RITZ_CARLTON_MILLENIA_SINGAPORE,"The Ritz Carlton, Millenia Singapore",Hotels,FALSE
+GALLERY_HOTEL,Gallery Hotel,Hotels,FALSE
+GOODWOOD_PARK_HOTEL,Goodwood Park Hotel,Hotels,FALSE
+GRAND_COPTHORNE_WATERFRONT_HOTEL,Grand Copthorne Waterfront Hotel,Hotels,FALSE
+GRAND_HYATT_HOTEL,Grand Hyatt Hotel,Hotels,FALSE
+GRAND_MERCURE_ROXY_HOTEL,Grand Mercure Roxy Hotel,Hotels,FALSE
+GRAND_PACIFIC_HOTEL_FORMERLY_ALLSON_HOTEL,Grand Pacific Hotel (Formerly Allson Hotel),Hotels,FALSE
+GRAND_PARK_CITY_HALL_HOTEL,Grand Park City Hall Hotel,Hotels,FALSE
+GRAND_PARK_ORCHARD,Grand Park Orchard,Hotels,FALSE
+HILTON_HOTEL,Hilton Hotel,Hotels,FALSE
+HOLIDAY_INN_ATRIUM,Holiday Inn Atrium,Hotels,FALSE
+HOLIDAY_INN_EXPRESS_SINGAPORE,Holiday Inn Express Singapore,Hotels,FALSE
+HOLIDAY_INN_SINGAPORE_ORCHARD_CITY_CENTRE,Holiday Inn Singapore Orchard City Centre,Hotels,FALSE
+INTER_CONTINENTAL_HOTEL,Inter-continental Hotel,Hotels,FALSE
+KLAPSONS_THE_BOUTIQUE_HOTEL,"klapsons, The Boutique Hotel",Hotels,FALSE
+LANDMARK_VILLAGE_HOTEL_FORMALLY_GOLDEN_LANDMARK_HO,Landmark Village Hotel (Formally Golden Landmark Hotel),Hotels,FALSE
+M_HOTEL,M Hotel,Hotels,FALSE
+MANDARIN_ORCHARD_SINGAPORE,Mandarin Orchard Singapore,Hotels,FALSE
+MANDARIN_ORIENTAL_HOTEL,Mandarin Oriental Hotel,Hotels,FALSE
+MARINA_BAY_SANDS,Marina Bay Sands,Hotels,FALSE
+MARINA_MANDARIN_HOTEL,Marina Mandarin Hotel,Hotels,FALSE
+NOVOTEL_CLARKE_QUAY,Novotel Clarke Quay,Hotels,FALSE
+ONE_FULLERTON,One Fullerton,Hotels,FALSE
+ORCHARD_GRAND_COURT_HOTEL,Orchard Grand Court Hotel,Hotels,FALSE
+ORCHARD_HOTEL_SHOPPING_ARCADE,Orchard Hotel Shopping Arcade,Hotels,FALSE
+ORCHARD_PARADE_HOTEL,Orchard Parade Hotel,Hotels,FALSE
+PAN_PACIFIC_HOTEL,Pan Pacific Hotel,Hotels,FALSE
+PAN_PACIFIC_ORCHARD,Pan Pacific Orchard,Hotels,FALSE
+PARAMOUNT_HOTEL_2,Paramount Hotel,Hotels,FALSE
+PARKROYAL_ON_BEACH_ROAD,PARKROYAL on Beach Road,Hotels,FALSE
+PENINSULA_EXCELSIOR_HOTEL,Peninsula Excelsior Hotel,Hotels,FALSE
+RAFFLES_HOTEL,Raffles Hotel,Hotels,FALSE
+RAMADA_HOTEL_2,Ramada Hotel,Hotels,FALSE
+REGENT_HOTEL,Regent Hotel,Hotels,FALSE
+RENDEZVOUS_HOTEL,Rendezvous Hotel,Hotels,FALSE
+ROYAL_PLAZA_ON_SCOTTS,Royal Plaza On Scotts,Hotels,FALSE
+SHANGRI_LA_HOTEL,Shangri-la Hotel,Hotels,FALSE
+SHERATON_TOWERS_HOTEL,Sheraton Towers Hotel,Hotels,FALSE
+SINGAPORE_MARRIOTT_HOTEL,Singapore Marriott Hotel,Hotels,FALSE
+SWISSOTEL_MERCHANT_COURT_HOTEL,Swissotel Merchant Court Hotel,Hotels,FALSE
+SWISSOTEL_STAMFORD_HOTEL,Swissotel Stamford Hotel,Hotels,FALSE
+SUNSHINE_PLACE,Sunshine Place,West,TRUE
+TRADERS_HOTEL,Traders Hotel,Hotels,FALSE
+YORK_HOTEL,York Hotel,Hotels,FALSE
+313_SOMERSET,313@Somerset,Orchard Area,FALSE
+ANGULLIA_PARK_OFF_STREET,Angullia Park Off-Street,Orchard Area,FALSE
+ATRIUM_ORCHARD,Atrium @ Orchard,Orchard Area,FALSE
+CATHAY_CINELEISURE_ORCHARD,Cathay Cineleisure Orchard,Orchard Area,FALSE
+COMCENTRE_EXETER_RD,ComCentre (Exeter Rd),Orchard Area,FALSE
+CONCORDE_HOTEL_2,Concorde Hotel,Orchard Area,FALSE
+DELFI_ORCHARD,Delfi Orchard,Orchard Area,FALSE
+ELIZABETH_HOTEL_2,Elizabeth Hotel,Orchard Area,FALSE
+FAR_EAST_PLAZA,Far East Plaza,Orchard Area,FALSE
+FAR_EAST_SHOPPING_CENTRE,Far East Shopping Centre,Orchard Area,FALSE
+FORUM_THE_SHOPPING_MALL,Forum The Shopping Mall,Orchard Area,FALSE
+FOUR_SEASONS_HOTEL_2,Four Seasons Hotel,Orchard Area,FALSE
+GOODWOOD_PARK_HOTEL_2,Goodwood Park Hotel,Orchard Area,FALSE
+GRAND_HYATT_SINGAPORE,Grand Hyatt Singapore,Orchard Area,FALSE
+GRAND_PARK_ORCHARD_2,Grand Park Orchard,Orchard Area,FALSE
+GRANGE_ROAD_OFF_STREET,Grange Road Off-Street,Orchard Area,FALSE
+HILTON_HOTEL_2,Hilton Hotel,Orchard Area,FALSE
+HOLIDAY_INN_EXPRESS_SINGAPORE_2,Holiday Inn Express Singapore,Orchard Area,FALSE
+HOLIDAY_INN_SINGAPORE_ORCHARD_CITY_CENTRE_2,Holiday Inn Singapore Orchard City Centre,Orchard Area,FALSE
+INTERNATIONAL_BUILDING,International Building,Orchard Area,FALSE
+ION_ORCHARD,ION Orchard,Orchard Area,FALSE
+LIAT_TOWERS,Liat Towers,Orchard Area,FALSE
+LUCKY_PLAZA,Lucky Plaza,Orchard Area,FALSE
+MANDARIN_GALLERY,Mandarin Gallery,Orchard Area,FALSE
+MERITUS_MANDARIN_SINGAPORE,Meritus Mandarin Singapore,Orchard Area,FALSE
+NGEE_ANN_CITY,Ngee Ann City,Orchard Area,FALSE
+OG_ORCHARD_POINT,OG Orchard Point,Orchard Area,FALSE
+ORCHARD_BUILDING,Orchard Building,Orchard Area,FALSE
+ORCHARD_CENTRAL,Orchard Central,Orchard Area,FALSE
+ORCHARD_HOTEL_SHOPPING_ARCADE_2,Orchard Hotel Shopping Arcade,Orchard Area,FALSE
+ORCHARD_PARADE_HOTEL_2,Orchard Parade Hotel,Orchard Area,FALSE
+ORCHARD_PLAZA,Orchard Plaza,Orchard Area,FALSE
+ORCHARD_TOWERS,Orchard Towers,Orchard Area,FALSE
+ORCHARDGATEWAY,orchardgateway,Orchard Area,FALSE
+PACIFIC_PLAZA,Pacific Plaza,Orchard Area,FALSE
+PALAIS_RENAISSANCE,Palais Renaissance,Orchard Area,FALSE
+PAN_PACIFIC_ORCHARD_2,Pan Pacific Orchard,Orchard Area,FALSE
+PARAGON_SHOPPING_CENTRE,Paragon Shopping Centre,Orchard Area,FALSE
+PENANG_ROAD_OFF_STREET,Penang Road Off-Street,Orchard Area,FALSE
+PLAZA_SINGAPURA,Plaza Singapura,Orchard Area,FALSE
+REGENT_HOTEL_2,Regent Hotel,Orchard Area,FALSE
+ROYAL_PLAZA_ON_SCOTTS_2,Royal Plaza On Scotts,Orchard Area,FALSE
+SCAPE,Scape,Orchard Area,FALSE
+SHANGRI_LA_HOTEL_2,Shangri-la Hotel,Orchard Area,FALSE
+SHAW_CENTRE,Shaw Centre,Orchard Area,FALSE
+SHAW_HOUSE,Shaw House,Orchard Area,FALSE
+SHERATON_TOWERS_SINGAPORE,Sheraton Towers Singapore,Orchard Area,FALSE
+SINGAPORE_MARRIOTT_HOTEL_2,Singapore Marriott Hotel,Orchard Area,FALSE
+SINGAPORE_SHOPPING_CENTRE,Singapore Shopping Centre,Orchard Area,FALSE
+STARHUB_CENTRE,Starhub Centre,Orchard Area,FALSE
+TANGLIN_MALL,Tanglin Mall,Orchard Area,FALSE
+TANGLIN_SHOPPING_CENTRE,Tanglin Shopping Centre,Orchard Area,FALSE
+TANGS,Tangs,Orchard Area,FALSE
+THE_CATHAY,The Cathay,Orchard Area,FALSE
+THE_CENTREPOINT,The Centrepoint,Orchard Area,FALSE
+THE_HEEREN,The Heeren,Orchard Area,FALSE
+TRADERS_HOTEL_2,Traders Hotel,Orchard Area,FALSE
+TRIPLEONE_SOMERSET,TripleOne Somerset,Orchard Area,FALSE
+WHEELOCK_PLACE,Wheelock Place,Orchard Area,FALSE
+WINSLAND_HOUSE,Winsland House,Orchard Area,FALSE
+WISMA_ATRIA,Wisma Atria,Orchard Area,FALSE
+YORK_HOTEL_2,York Hotel,Orchard Area,FALSE
+CHANGI_CHAPEL_AND_MUSEUM_THE_CHANGI_MUSEUM,Changi Chapel and Museum (The Changi Museum),Singapore Attractions,FALSE
+CHINATOWN_HERITAGE_CENTRE,Chinatown Heritage Centre,Singapore Attractions,FALSE
+CHINESE_GARDEN,Chinese Garden,Singapore Attractions,FALSE
+HAW_PAR_VILLA,Haw Par Villa,Singapore Attractions,FALSE
+HAY_DAIRIES_GOAT_FARM,Hay Dairies Goat Farm,Singapore Attractions,FALSE
+JURONG_BIRD_PARK,Jurong Bird Park,Singapore Attractions,FALSE
+LABRADOR_SECRET_TUNNEL_LABRADOR_PARK,Labrador Secret Tunnel ( Labrador Park ),Singapore Attractions,FALSE
+MANDAI_ORCHID_GARDEN,Mandai Orchid Garden,Singapore Attractions,FALSE
+MEMORIES_AT_OLD_FORD_FACTORY,Memories at Old Ford Factory,Singapore Attractions,FALSE
+MOUNT_FABER_JEWEL_BOX,Mount Faber (Jewel Box),Singapore Attractions,FALSE
+NATIONAL_MUSEUM_OF_SINGAPORE,National Museum of Singapore,Singapore Attractions,FALSE
+REFLECTIONS_AT_BUKIT_CHANDU,Reflections at Bukit Chandu,Singapore Attractions,FALSE
+RESORTS_WORLD_SENTOSA_UNIVERSAL_STUDIOS_SINGAPORE_,Resorts World Sentosa - Universal Studios Singapore (RWS B1 car park),Singapore Attractions,FALSE
+ROYAL_SELANGOR_PEWTER_MUSEUM_PARK_AT_CLARKE_QUAY,Royal Selangor Pewter Museum ( Park at Clarke Quay),Singapore Attractions,FALSE
+SENTOSA_BEACH_AND_IMBIAH_CAR_PARK,Sentosa (Beach and Imbiah car park),Singapore Attractions,FALSE
+SENTOSA_TANJONG_PALAWAN_CAR_PARK,Sentosa (Tanjong & Palawan car park),Singapore Attractions,FALSE
+SINGAPORE_ART_MUSEUM,Singapore Art Museum,Singapore Attractions,FALSE
+SINGAPORE_BOTANIC_GARDENS,Singapore Botanic Gardens,Singapore Attractions,FALSE
+SINGAPORE_CITY_GALLERY_URA_CENTRE,Singapore City Gallery (URA centre),Singapore Attractions,FALSE
+SINGAPORE_FLYER,Singapore Flyer,Singapore Attractions,FALSE
+SINGAPORE_MINT_COIN_GALLERY,Singapore Mint Coin Gallery,Singapore Attractions,FALSE
+SINGAPORE_PHILATELIC_MUSEUM,Singapore Philatelic Museum,Singapore Attractions,TRUE
+SINGAPORE_SCIENCE_CENTRE_SINGAPORE_DISCOVERY_CENTR,Singapore Science centre/Singapore Discovery Centre / Snow City,Singapore Attractions,FALSE
+SINGAPORE_TURF_CLUB_STC,Singapore Turf Club (STC),Singapore Attractions,FALSE
+SINGAPORE_ZOOLOGICAL_GARDENS_NIGHT_SAFARI,Singapore Zoological gardens/Night Safari,Singapore Attractions,FALSE
+SUNGEI_BULOH_WETLAND_RESERVE,Sungei Buloh Wetland Reserve,Singapore Attractions,FALSE
+THE_ARTS_HOUSE_PARK_AT_NEW_PARLIAMENT_HOUSE,The Arts House (Park at New Parliament House),Singapore Attractions,FALSE
+THE_BATTLE_BOX_PARK_AT_FORT_CANNING,The Battle Box ( Park at Fort Canning,Singapore Attractions,TRUE
+UNDERWATER_WORLD_SINGAPORE,Underwater World Singapore,Singapore Attractions,FALSE
+10_RAEBURN_PARK,10 Raeburn Park,South & CBD,FALSE
+1557_KEPPEL_ROAD,1557 Keppel Road,South & CBD,FALSE
+34_BOON_LEAT_TERRACE,34 Boon Leat Terrace,South & CBD,FALSE
+798_UPPER_BUKIT_TIMAH_ROAD,798 Upper Bukit Timah Road,South & CBD,FALSE
+8_SHENTON_WAY,8 Shenton Way,South & CBD,FALSE
+AMARA_HOTEL_2,Amara Hotel,South & CBD,FALSE
+ASIA_SQUARE,Asia Square,South & CBD,FALSE
+BANGKOK_BANK_BUILDING,Bangkok Bank Building,South & CBD,FALSE
+BAYFRONT_AVENUE,Bayfront Avenue,South & CBD,FALSE
+BERJAYA_HOTEL_2,Berjaya Hotel,South & CBD,FALSE
+BUGIS_JUNCTION,Bugis Junction,South & CBD,FALSE
+BURLINGTON_SQUARE,Burlington Square,South & CBD,FALSE
+CAPITACOMMERCIAL_TRUST_CCT,CapitaCommercial Trust (CCT),South & CBD,FALSE
+CAPITAL_SQUARE,Capital Square,South & CBD,FALSE
+CAPITAL_TOWER,Capital Tower,South & CBD,FALSE
+CARLTON_HOTEL_2,Carlton Hotel,South & CBD,FALSE
+CENTRAL_MALL,Central Mall,South & CBD,FALSE
+CENTRAL,Central ©,South & CBD,FALSE
+CHIJMES,Chijmes,South & CBD,FALSE
+CHINA_SQUARE_CENTRAL,China Square Central,South & CBD,FALSE
+CHINATOWN_POINT,Chinatown Point,South & CBD,FALSE
+CLARKE_QUAY,Clarke Quay,South & CBD,FALSE
+CLIFFORD_CENTRE,Clifford Centre,South & CBD,FALSE
+CONRAD_CENTENNIAL_SINGAPORE,Conrad Centennial Singapore,South & CBD,FALSE
+COPTHORNE_KING_S_HOTEL_2,Copthorne King's Hotel,South & CBD,FALSE
+COPTHORNE_ORCHID_HOTEL_2,Copthorne Orchid Hotel,South & CBD,FALSE
+CPF_BUILDING_ROBINSON_ROAD,CPF Building Robinson Road,South & CBD,FALSE
+DBS_BUILDING,DBS Building,South & CBD,FALSE
+FAR_EAST_SQUARE,Far East Square,South & CBD,FALSE
+FAR_EASTERN_BANK_BUILDING,Far Eastern Bank Building,South & CBD,FALSE
+FORTUNE_CENTRE,Fortune Centre,South & CBD,FALSE
+FU_LU_SHOU_COMPLEX,Fu Lu Shou Complex,South & CBD,FALSE
+FULLERTON_HOTEL,Fullerton Hotel,South & CBD,FALSE
+FUNAN_DIGITALIFE_MALL,Funan DigitaLife Mall,South & CBD,FALSE
+FURAMA_CITY_CENTRE_SINGAPORE_2,Furama City Centre Singapore,South & CBD,FALSE
+FURAMA_RIVERFRONT_SINGAPORE_2,Furama Riverfront Singapore,South & CBD,FALSE
+GALLERY_HOTEL_2,Gallery Hotel,South & CBD,FALSE
+GILLMAN_BARRACKS,Gillman Barracks,South & CBD,FALSE
+GOLDEN_MILE_COMPLEX,Golden Mile Complex,South & CBD,FALSE
+GOLDEN_SHOE_COMPLEX,Golden Shoe Complex,South & CBD,FALSE
+GRAND_COPTHORNE_WATERFRONT_HOTEL_2,Grand Copthorne Waterfront Hotel,South & CBD,FALSE
+GRAND_PACIFIC_HOTEL_FORMERLY_ALLSON_HOTEL_2,Grand Pacific Hotel (Formerly Allson Hotel),South & CBD,FALSE
+GRAND_PARK_CITY_HALL,Grand Park City Hall,South & CBD,FALSE
+GREAT_EASTERN_CENTRE,Great Eastern Centre,South & CBD,FALSE
+GREAT_WORLD_CITY,Great World City,South & CBD,FALSE
+HARBOURFRONT_CENTRE,Harbourfront Centre,South & CBD,FALSE
+HOLIDAY_INN_ATRIUM_SINGAPORE,Holiday Inn Atrium Singapore,South & CBD,FALSE
+HONG_LEONG_BUILDING,Hong Leong Building,South & CBD,FALSE
+HUB_SYNERGY_POINT_FORMERLY_APEX_TOWER,Hub Synergy Point (Formerly Apex tower),South & CBD,FALSE
+ICON_VILLAGE,Icon Village,South & CBD,FALSE
+ILUMA,Iluma,South & CBD,FALSE
+INCOME_AT_RAFFLES_FORMER_HITACHI_TOWER,Income At Raffles ( former Hitachi tower),South & CBD,FALSE
+INTER_CONTINENTAL_SINGAPORE_HOTEL,Inter-continental Singapore Hotel,South & CBD,FALSE
+INTERNATIONAL_PLAZA,International Plaza,South & CBD,FALSE
+KECK_SENG_TOWER,Keck Seng Tower,South & CBD,FALSE
+KEPPEL_BAY_TOWER_HARBOURFRONT_TOWER_ONE,Keppel Bay Tower / Harbourfront Tower One,South & CBD,FALSE
+KEYPOINT,Keypoint,South & CBD,FALSE
+KLAPSONS_THE_BOUTIQUE_HOTEL_2,"klapsons, The Boutique Hotel",South & CBD,FALSE
+LANDMARK_VILLAGE_HOTEL,Landmark Village Hotel,South & CBD,FALSE
+LIANG_COURT,Liang Court,South & CBD,FALSE
+M_HOTEL_2,M Hotel,South & CBD,FALSE
+MANDARIN_ORIENTAL_HOTEL_2,Mandarin Oriental Hotel,South & CBD,FALSE
+MARINA_BAY_FINANCIAL_CENTRE_TOWER_1_2_3_MARINA_BAY,"Marina Bay Financial Centre Tower 1, 2 ,3 & Marina Bay Link Mall",South & CBD,FALSE
+MARINA_BAY_SANDS_2,Marina Bay Sands,South & CBD,FALSE
+MARINA_MANDARIN_HOTEL_2,Marina Mandarin Hotel,South & CBD,FALSE
+MARINA_SQUARE,Marina Square,South & CBD,FALSE
+MERCHANT_SQUARE,Merchant Square,South & CBD,FALSE
+MILLENIA_SINGAPORE,Millenia Singapore,South & CBD,FALSE
+MILLENIA_WALK_BASEMENT_CAR_PARK,Millenia Walk (Basement Car Park),South & CBD,FALSE
+MILLENIA_WALK_SURFACE_PARKING_L1,Millenia Walk (Surface parking @ L1),South & CBD,FALSE
+NEIL_ROAD_OFF_STREET,Neil Road Off-Street,South & CBD,FALSE
+NORTH_BRIDGE_CENTRE,North Bridge Centre,South & CBD,FALSE
+NOVOTEL_CLARKE_QUAY_2,Novotel Clarke Quay,South & CBD,FALSE
+OCBC_CENTRE,OCBC centre,South & CBD,FALSE
+ONE_FULLERTON_2,One Fullerton,South & CBD,FALSE
+ONE_RAFFLES_QUAY,One Raffles Quay,South & CBD,FALSE
+OUB_CENTRE,OUB Centre,South & CBD,FALSE
+OUE_BAYFRONT_FORMERLY_OVERSEAS_UNION_HOUSE,OUE Bayfront (Formerly Overseas Union House),South & CBD,FALSE
+PAN_PACIFIC_HOTEL_2,Pan Pacific Hotel,South & CBD,FALSE
+PARKLANE_SHOPPING_MALL,Parklane Shopping Mall,South & CBD,FALSE
+PARKROYAL_ON_BEACH_ROAD_2,PARKROYAL on Beach Road,South & CBD,FALSE
+PEARL_S_CENTRE,Pearl's Centre,South & CBD,FALSE
+PENINSULA_EXCELSIOR_HOTEL_2,Peninsula Excelsior Hotel,South & CBD,FALSE
+PENINSULAR_PLAZA,Peninsular Plaza,South & CBD,FALSE
+PEOPLE_S_PARK_CENTRE,People's Park Centre,South & CBD,FALSE
+POMO_FOMERLY_PARADIZ_CENTRE,PoMo (Fomerly Paradiz Centre),South & CBD,FALSE
+PWC_BUILDING,PWC Building,South & CBD,FALSE
+RAFFLES_CITY,Raffles City,South & CBD,FALSE
+RAFFLES_HOTEL_2,Raffles Hotel,South & CBD,FALSE
+REPUBLIC_PLAZA,Republic Plaza,South & CBD,FALSE
+RESORTS_WORLD_SENTOSA,Resorts World Sentosa,South & CBD,FALSE
+ROBERTSON_WALK,Robertson Walk,South & CBD,FALSE
+ROBINSON_77_FORMERLY_SIA_BUILDING,Robinson 77 (Formerly SIA Building),South & CBD,FALSE
+ROBINSON_CENTRE,Robinson Centre,South & CBD,FALSE
+THE_CLEMENTI_MALL,The Clementi Mall,West,FALSE
+SCHOOL_OF_THE_ARTS_SINGAPORE_SOTA,"School of the Arts, Singapore (SOTA)",South & CBD,FALSE
+SGX_CENTRE,SGX Centre,South & CBD,FALSE
+SHENTON_HOUSE,Shenton House,South & CBD,FALSE
+SIM_LIM_SQUARE,Sim Lim Square,South & CBD,FALSE
+SIM_LIM_TOWER,Sim Lim Tower,South & CBD,FALSE
+SINGAPORE_GENERAL_HOSPITAL_CARPARK_C_E_G_I,"Singapore General Hospital (Carpark C, E, G & I)",South & CBD,FALSE
+SINGAPORE_GENERAL_HOSPITAL_MULTI_STOREY_CARPARK_H,Singapore General Hospital (Multi-Storey Carpark H),South & CBD,FALSE
+SINGAPORE_LAND_TOWER,Singapore Land Tower,South & CBD,FALSE
+SIX_BATTERY_ROAD,Six Battery Road,South & CBD,FALSE
+SUNSHINE_PLAZA,Sunshine Plaza,South & CBD,FALSE
+SUNTEC_CITY,Suntec City,South & CBD,FALSE
+SWISSOTEL_MERCHANT_COURT_HOTEL_2,Swissotel Merchant Court Hotel,South & CBD,FALSE
+SWISSOTEL_THE_STAMFORD_HOTEL,Swissotel The Stamford Hotel,South & CBD,FALSE
+TANJONG_KATONG_COMPLEX,Tanjong Katong Complex,South & CBD,TRUE
+THE_ADELPHI,The Adelphi,South & CBD,FALSE
+THE_CONCOURSE,The Concourse,South & CBD,FALSE
+THE_CORPORATE_OFFICE,The Corporate Office,South & CBD,FALSE
+THE_ESPLANADE,The Esplanade,South & CBD,FALSE
+UE_SQUARE,UE Square,South & CBD,FALSE
+UOB_PLAZA,UOB Plaza,South & CBD,FALSE
+VIVOCITY,Vivocity,South & CBD,FALSE
+27_WEST_COAST_HIGHWAY,27 West Coast Highway,West,FALSE
+798_UPPER_BUKIT_TIMAH_ROAD_2,798 Upper Bukit Timah Road,West,FALSE
+ALEXANDRA_RETAIL_CENTRE,Alexandra Retail Centre,West,FALSE
+ANCHORPOINT_SHOPPING_CENTRE,Anchorpoint Shopping Centre,West,FALSE
+BUKIT_PANJANG_PLAZA,Bukit Panjang Plaza,West,FALSE
+BUKIT_TIMAH_PLAZA_MULTI_STOREY_CAR_PARK,Bukit Timah Plaza (Multi-Storey Car Park),West,FALSE
+BUKIT_TIMAH_SHOPPING_CENTRE,Bukit Timah Shopping Centre,West,FALSE
+CORONATION_SHOPPING_PLAZA,Coronation Shopping Plaza,West,FALSE
+HOLLAND_ROAD_SHOPPING_CENTRE,Holland Road Shopping Centre,West,FALSE
+IKEA_ALEXANDRA,IKEA (Alexandra),West,FALSE
+IMM_BUILDING,IMM Building,West,FALSE
+JCUBE,JCube,West,FALSE
+JUNCTION_10,Junction 10,West,FALSE
+JURONG_POINT_SHOPPING_CENTRE,Jurong Point Shopping Centre,West,FALSE
+JURONG_THEATRE,Jurong Theatre,West,FALSE
+LOT_1_SHOPPING_CENTRE,Lot 1 Shopping Centre,West,FALSE
+NUH,NUH,West,FALSE
+QUEENSWAY_SHOPPING_CENTRE,Queensway Shopping Centre,West,FALSE
+SAVOY_THEATRE,Savoy Theatre,West,FALSE
+SERENE_CENTRE,Serene Centre,West,FALSE
+THE_METROPOLIS,The Metropolis,West,FALSE
+THE_STAR_VISTA,The Star Vista,West,FALSE
+TIONG_BAHRU_PLAZA,Tiong Bahru Plaza,West,FALSE
+TURF_CITY,Turf City,West,FALSE
+VALLEY_POINT,Valley Point,West,FALSE
+WEST_COAST_PLAZA_GINZA_PLAZA,West Coast Plaza (Ginza Plaza),West,FALSE
+WEST_MALL,West Mall,West,FALSE
+WESTGATE,Westgate,West,FALSE
+YEW_TEE_POINT,Yew Tee Point,West,FALSE

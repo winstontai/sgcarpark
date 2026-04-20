@@ -1,0 +1,1729 @@
+carpark_id,facility,day_group,window_start,window_end,rate_type,first_hour,first_Nhr,first_Nhr_covers_mins,rate_30min,rate_per_min,per_entry,raw
+25_TOA_PAYOH_LORONG_8,main,weekday,00:00,24:00,hourly,,,,1.3,,,$1.30 / 30 Mins
+25_TOA_PAYOH_LORONG_8,main,sat,00:00,24:00,hourly,,,,1.3,,,$1.30 / 30 Mins
+25_TOA_PAYOH_LORONG_8,main,sun_ph,00:00,24:00,hourly,,,,1.3,,,$1.30 / 30 Mins
+45_BURGHLEY_DRIVE,main,weekday,00:00,24:00,per_min,,,,,0.018,,$0.018 /min
+45_BURGHLEY_DRIVE,main,sat,00:00,24:00,per_min,,,,,0.018,,$0.018 /min
+45_BURGHLEY_DRIVE,main,sun_ph,00:00,24:00,per_min,,,,,0.018,,$0.018 /min
+ANG_MO_KIO_HUB,main,weekday,00:00,24:00,tiered,1.2,,,0.6,,,$1.20 for 1st hr; $0.60 for sub. 0.5 hr or part thereof.
+ANG_MO_KIO_HUB,main,sat,00:00,24:00,tiered,1.3,,,0.65,,,$1.30 for 1st hr; $0.65 for sub. 0.5 hr or part thereof.
+ANG_MO_KIO_HUB,main,sun_ph,00:00,24:00,tiered,1.3,,,0.65,,,$1.30 for 1st hr; $0.65 for sub. 0.5 hr or part thereof.
+BALESTIER_PLAZA,main,weekday,00:00,24:00,hourly,,,,0.56,,,$1.12 per hr
+BALESTIER_PLAZA,main,sat,00:00,24:00,hourly,,,,0.56,,,$1.12 per hr
+BALESTIER_PLAZA,main,sun_ph,00:00,24:00,hourly,,,,0.56,,,$1.12 per hr
+BALESTIER_POINT,main,weekday,08:00,22:00,hourly,,,,0.6,,,$1.20 per hr
+BALESTIER_POINT,main,weekday,22:00,24:00,per_entry,,,,,,2,$2 per entry
+BALESTIER_POINT,main,sat,08:00,22:00,hourly,,,,0.6,,,$1.20 per hr
+BALESTIER_POINT,main,sat,22:00,24:00,per_entry,,,,,,2,$2 per entry
+BALESTIER_POINT,main,sun_ph,00:00,24:00,per_entry,,,,,,2,$2 per entry
+BRAS_BASAH_COMPLEX,main,weekday,07:00,17:00,hourly,,,,1,,,$1 for 0.5 hr
+BRAS_BASAH_COMPLEX,main,weekday,17:00,01:00 +1d,hourly,,,,0.5,,,$0.50 for 0.5 hr
+BRAS_BASAH_COMPLEX,main,sat,07:00,17:00,hourly,,,,1,,,$1 for 0.5 hr
+BRAS_BASAH_COMPLEX,main,sat,17:00,01:00 +1d,hourly,,,,0.5,,,$0.50 for 0.5 hr
+BRAS_BASAH_COMPLEX,main,sun_ph,07:00,01:00 +1d,hourly,,,,0.5,,,$0.50 for 0.5 hr
+CAUSEWAY_POINT,main,weekday,07:00,22:30,tiered,1.2,,,0.6,,,$1.20 for 1st hr or part thereof; $0.60 for sub.0.5 hr or part thereof
+CAUSEWAY_POINT,main,sat,07:00,24:00,tiered,1.2,,,0.6,,,$1.20 for 1st hr or part thereof; $0.60 for sub. 0.5 hr or part thereof
+CAUSEWAY_POINT,main,sun_ph,07:00,24:00,tiered,1.2,,,0.6,,,$1.20 for 1st hr or part thereof; $0.60 for sub. 0.5 hr or part thereof
+CENTRAL_PLACE,main,weekday,00:00,24:00,tiered,1.8,,,0.85,,,$1.80 for 1st hr; $0.85 for 0.5 hr
+CENTRAL_PLACE,main,sat,00:00,24:00,tiered,1.8,,,0.85,,,$1.80 for 1st hr; $0.85 for 0.5 hr
+CENTRAL_PLACE,main,sun_ph,00:00,24:00,per_entry,,,,,,2.5,$2.50 per entry
+CITY_SQUARE_MALL,main,weekday,07:00,18:00,tiered,1.2,,,0.6,,,$1.20 for 1st hr; $0.60 for sub. 30 mins or part thereof
+CITY_SQUARE_MALL,main,weekday,18:00,03:30 +1d,per_entry,,,,,,3,$3 per entry
+CITY_SQUARE_MALL,main,sat,07:00,18:00,tiered,1.4,,,0.7,,,$1.40 for 1st hr; $0.70 for sub. 30 mins
+CITY_SQUARE_MALL,main,sat,18:00,03:30 +1d,per_entry,,,,,,3.5,$3.50 per entry
+CITY_SQUARE_MALL,main,sun_ph,07:00,18:00,tiered,1.4,,,0.7,,,$1.40 for 1st hr; $0.70 for sub. 30 mins
+CITY_SQUARE_MALL,main,sun_ph,18:00,03:30 +1d,per_entry,,,,,,3.5,$3.50 per entry
+COMPASS_POINT,main,weekday,00:00,24:00,tiered,1.2,,,0.6,,,Daily(7am-11pm): $1.20 for 1st hr or part thereof; $0.60 for sub. 0.5 hr or part thereof.
+COMPASS_POINT,main,sat,00:00,24:00,tiered,1.2,,,0.6,,,Daily(7am-11pm): $1.20 for 1st hr or part thereof; $0.60 for sub. 0.5 hr or part thereof.
+COMPASS_POINT,main,sun_ph,00:00,24:00,tiered,1.2,,,0.6,,,Daily(7am-11pm): $1.20 for 1st hr or part thereof; $0.60 for sub. 0.5 hr or part thereof.
+GOLDHILL_PLAZA,main,weekday,07:00,17:30,tiered,1.6,,,1,,,$1.60 for 1st hr; $1 for sub. 0.5 hr
+GOLDHILL_PLAZA,main,weekday,17:30,24:00,per_entry,,,,,,2,$2 per entry
+GOLDHILL_PLAZA,main,sat,07:00,17:30,hourly,,,,0.5,,,$1 per hr
+GOLDHILL_PLAZA,main,sat,17:30,24:00,per_entry,,,,,,2,$2 per entry
+GOLDHILL_PLAZA,main,sun_ph,07:00,17:30,hourly,,,,0.5,,,$1 per hr
+GOLDHILL_PLAZA,main,sun_ph,17:30,24:00,per_entry,,,,,,2,$2 per entry
+HEARTLAND_MALL,main,weekday,07:00,22:30,hourly,,,,0.5,,,$1 per hr
+HEARTLAND_MALL,main,weekday,22:30,24:00,hourly,,,,1,,,$2 per hr
+HEARTLAND_MALL,main,sat,07:00,22:30,hourly,,,,0.5,,,$1 per hr
+HEARTLAND_MALL,main,sat,22:30,24:00,hourly,,,,1,,,$2 per hr
+HEARTLAND_MALL,main,sun_ph,07:00,22:30,hourly,,,,0.5,,,$1 per hr
+HEARTLAND_MALL,main,sun_ph,22:30,24:00,hourly,,,,1,,,$2 per hr
+HINDOO_ROAD_OFF_STREET,main,weekday,07:00,07:00 +1d,hourly,,,,0.5,,,$0.50 / 30 mins (Per Minute Charging)
+HINDOO_ROAD_OFF_STREET,main,sat,07:00,07:00 +1d,hourly,,,,0.5,,,$0.50 / 30 mins (Per Minute Charging)
+HINDOO_ROAD_OFF_STREET,main,sun_ph,07:00,07:00 +1d,hourly,,,,0.5,,,$0.50 / 30 mins (Per Minute Charging)
+HOUGANG_GREEN_SHOPPING_MALL,main,weekday,07:00,17:00,tiered,1.07,,,0.55,,,$1.07 for 1st hr; $0.55 for sub. 0.5 hr
+HOUGANG_GREEN_SHOPPING_MALL,main,weekday,17:00,24:00,per_entry,,,,,,1.2,$1.20 per entry
+HOUGANG_GREEN_SHOPPING_MALL,main,sat,07:00,17:00,tiered,1.07,,,0.55,,,$1.07 for 1st hr; $0.55 for sub. 0.5 hr
+HOUGANG_GREEN_SHOPPING_MALL,main,sat,17:00,24:00,per_entry,,,,,,1.2,$1.20 per entry
+HOUGANG_GREEN_SHOPPING_MALL,main,sun_ph,07:00,24:00,per_entry,,,,,,2.15,$2.15 per entry
+HOUGANG_GREEN_SHOPPING_MALL,main,sun_ph,00:00,24:00,per_entry,,,,,,1.2,$1.20 per entry
+HOUGANG_MALL,main,weekday,00:00,24:00,tiered,1.2,,,0.7,,,1st hr: $1.20; 2nd hr: $0.70 per 0.5 hr; 3rd hr onwards: $1 per 0.5 hr
+HOUGANG_MALL,main,sat,00:00,24:00,tiered,1.3,,,0.7,,,1st hr: $1.30; 2nd hr: $0.70 per 0.5 hr; 3rd hr onwards: $1 per 0.5 hr
+HOUGANG_MALL,main,sun_ph,00:00,24:00,tiered,1.3,,,0.7,,,1st hr: $1.30; 2nd hr: $0.70 per 0.5 hr; 3rd hr onwards: $1 per 0.5 hr
+HOUGANG_PLAZA,main,weekday,05:00,17:00,hourly,,,,0.4,,,$0.40 for 0.5 hr
+HOUGANG_PLAZA,main,weekday,17:00,24:00,per_entry,,,,,,1.5,$1.50 per entry
+HOUGANG_PLAZA,main,sat,05:00,17:00,hourly,,,,0.4,,,$0.40 for 0.5 hr
+HOUGANG_PLAZA,main,sat,17:00,24:00,per_entry,,,,,,1.5,$1.50 per entry
+HOUGANG_PLAZA,main,sun_ph,00:00,24:00,per_entry,,,,,,1.5,$1.50 per entry
+JUNCTION_8_SHOPPING_CENTRE,main,weekday,00:00,24:00,tiered,1.07,,,0.64,,,12am-5.59pm - $1.07 for 1st hr; $0.32 for sub. 15 mins
+JUNCTION_8_SHOPPING_CENTRE,main,mon-thu,18:00,23:59,per_entry,,,,,,2.14,$2.14 per entry; Fri/Eve of PH:
+JUNCTION_8_SHOPPING_CENTRE,main,mon-thu,18:00,02:59 +1d,per_entry,,,,,,2.14,$2.14 per entry
+JUNCTION_8_SHOPPING_CENTRE,main,sat,03:00,17:59,tiered,,2.14,120,0.64,,,$2.14 for 1st 2hrs; $0.32 for sub. 15 mins
+JUNCTION_8_SHOPPING_CENTRE,main,sat,18:00,02:59 +1d,per_entry,,,,,,2.14,$2.14 per entry
+JUNCTION_8_SHOPPING_CENTRE,main,sun_ph,03:00,17:59,tiered,,2.14,120,0.64,,,$2.14 for 1st 2hrs; $0.32 for sub. 15 mins
+JUNCTION_8_SHOPPING_CENTRE,main,sun_ph,18:00,23:59,per_entry,,,,,,2.14,$2.14 per entry
+KAMPONG_BUGIS_OFF_STREET,main,weekday,07:00,07:00 +1d,hourly,,,,0.5,,,$0.50 /30 mins (Per Minute Charging)
+KAMPONG_BUGIS_OFF_STREET,main,sat,07:00,07:00 +1d,hourly,,,,0.5,,,$0.50 /30 mins (Per Minute Charging)
+KAMPONG_BUGIS_OFF_STREET,main,sun_ph,07:00,07:00 +1d,hourly,,,,0.5,,,$0.50 /30 mins (Per Minute Charging)
+KAMPONG_KAPOR_ROAD_OFF_STREET,main,weekday,07:00,07:00 +1d,hourly,,,,0.5,,,$0.50 /30 mins (Per Minute Charging)
+KAMPONG_KAPOR_ROAD_OFF_STREET,main,sat,07:00,07:00 +1d,hourly,,,,0.5,,,$0.50 /30 mins (Per Minute Charging)
+KAMPONG_KAPOR_ROAD_OFF_STREET,main,sun_ph,07:00,07:00 +1d,hourly,,,,0.5,,,$0.50 /30 mins (Per Minute Charging)
+MUSTAFA_CENTRE,main,weekday,00:00,24:00,tiered,0,,,1,,,1st hr: Free; $2 for sub. hr
+MUSTAFA_CENTRE,main,sat,00:00,24:00,tiered,0,,,1,,,1st hr: Free; $2 for sub. hr
+MUSTAFA_CENTRE,main,sun_ph,00:00,24:00,tiered,0,,,1,,,1st hr: Free; $2 for sub. hr
+NEX_MALL,main,weekday,00:00,24:00,tiered,1.3,,,0.65,,,$1.30 for 1st hr; $0.65 for sub. 0.5 hr
+NEX_MALL,main,sat,00:00,24:00,tiered,1.4,,,0.7,,,$1.40 for 1st hr; $0.70 for sub. 0.5 hr
+NEX_MALL,main,sun_ph,00:00,24:00,tiered,1.4,,,0.7,,,$1.40 for 1st hr; $0.70 for sub. 0.5 hr
+NORTHPOINT_SHOPPING_CENTRE,main,weekday,00:00,24:00,tiered,1.2,,,0.8,,,$1.20 for 1st hr or part thereof; $0.80 for sub. 0.5 hr or part thereof.
+NORTHPOINT_SHOPPING_CENTRE,main,sat,00:00,24:00,tiered,1.2,,,0.8,,,$1.20 for 1st hr or part thereof; $0.80 for sub. 0.5 hr or part thereof.
+NORTHPOINT_SHOPPING_CENTRE,main,sun_ph,00:00,24:00,tiered,1.2,,,0.8,,,$1.20 for 1st hr or part thereof; $0.80 for sub. 0.5 hr or part thereof.
+PARLIAMENT_HOUSE,main,weekday,08:01,18:00,hourly,,,,1.13,,,$1.13 per 0.5 hr (per min basis)
+PARLIAMENT_HOUSE,main,weekday,18:01,08:00 +1d,per_entry,,,,,,2.06,$2.06 per entry
+PARLIAMENT_HOUSE,main,sat,08:01,18:00,hourly,,,,1.13,,,$1.13 per 0.5 hr (per min basis)
+PARLIAMENT_HOUSE,main,sat,18:01,08:00 +1d,per_entry,,,,,,2.06,$2.06 per entry
+PARLIAMENT_HOUSE,main,sun_ph,00:00,24:00,per_entry,,,,,,2.06,$2.06 per entry
+RAMADA_HOTEL,main,weekday,06:00,18:00,hourly,,,,0.8,,,$1.60 per hr
+RAMADA_HOTEL,main,weekday,18:00,24:00,per_entry,,,,,,2.2,$2.20 per entry
+RAMADA_HOTEL,main,sat,06:00,18:00,hourly,,,,0.8,,,$1.60 per hr
+RAMADA_HOTEL,main,sat,18:00,24:00,per_entry,,,,,,2.2,$2.20 per entry
+RAMADA_HOTEL,main,sun_ph,06:00,18:00,hourly,,,,0.8,,,$1.60 per hr
+RAMADA_HOTEL,main,sun_ph,18:00,24:00,per_entry,,,,,,2.2,$2.20 per entry
+RIVERVALE_MALL,main,weekday,00:00,24:00,tiered,1.28,,,0.64,,,"$1.28 for 1st hr, $0.64 for sub. 30 mins or part thereof."
+RIVERVALE_MALL,main,sat,00:00,24:00,tiered,1.28,,,0.64,,,"$1.28 for 1st hr, $0.64 for sub. 30 mins or part thereof."
+RIVERVALE_MALL,main,sun_ph,00:00,24:00,tiered,1.28,,,0.64,,,"$1.28 for 1st hr, $0.64 for sub. 30 mins or part thereof."
+SEMBAWANG_SHOPPING_CENTRE,main,weekday,00:00,23:59,tiered,1.2,,,0.64,,,$1.20 for 1st hr; $0.32 for sub. 15 mins; $1.20 for 1st hr; $0.30 for sub. 15 mins
+SEMBAWANG_SHOPPING_CENTRE,main,sat,00:00,23:59,tiered,1.2,,,0.64,,,$1.20 for 1st hr; $0.32 for sub. 15 mins; $1.20 for 1st hr; $0.30 for sub. 15 mins
+SEMBAWANG_SHOPPING_CENTRE,main,sun_ph,00:00,23:59,tiered,1.2,,,0.64,,,$1.20 for 1st hr; $0.32 for sub. 15 mins; $1.20 for 1st hr; $0.30 for sub. 15 mins
+SHAW_PLAZA,main,weekday,08:00,17:00,tiered,1.04,,,0.53,,,$1.04 for 1st hr; $0.53 for sub. 0.5 hr
+SHAW_PLAZA,main,weekday,17:00,24:00,per_entry,,,,,,1.55,$1.55 per entry
+SHAW_PLAZA,main,sat,08:00,17:00,tiered,1.04,,,0.53,,,$1.04 for 1st hr; $0.53 for sub. 0.5 hr
+SHAW_PLAZA,main,sat,17:00,24:00,per_entry,,,,,,1.55,$1.55 per entry
+SHAW_PLAZA,main,sun_ph,08:00,17:00,tiered,1.04,,,0.53,,,$1.04 for 1st hr; $0.53 for sub. 0.5 hr
+SHAW_PLAZA,main,sun_ph,17:00,24:00,per_entry,,,,,,1.55,$1.55 per entry
+SHREWSBURY_ROAD_OFF_STREET,main,weekday,07:00,07:00 +1d,hourly,,,,0.5,,,$0.50 /30 mins (Per Minute Charging)
+SHREWSBURY_ROAD_OFF_STREET,main,sat,07:00,07:00 +1d,hourly,,,,0.5,,,$0.50 /30 mins (Per Minute Charging)
+SHREWSBURY_ROAD_OFF_STREET,main,sun_ph,07:00,07:00 +1d,hourly,,,,0.5,,,$0.50 /30 mins (Per Minute Charging)
+SQUARE_2,main,weekday,07:00,18:00,tiered,1.6,,,0.8,,,$1.60 for 1st hr; $0.80 for sub. 0.5 hr
+SQUARE_2,main,weekday,18:00,24:00,per_entry,,,,,,2.2,$2.20 per entry
+SQUARE_2,main,sat,07:00,18:00,tiered,1.6,,,0.8,,,$1.60 for 1st hr; $0.80 for sub. 0.5 hr
+SQUARE_2,main,sat,18:00,24:00,per_entry,,,,,,2.2,$2.20 per entry
+SQUARE_2,main,sun_ph,00:00,24:00,tiered,,2.2,240,1.1,,,$2.20 for 1st 4hrs; $1.10 for sub. 0.5 hr
+SQUARE_2,main,sun_ph,18:00,24:00,per_entry,,,,,,2.2,$2.20 per entry
+SUN_PLAZA,main,weekday,07:00,17:00,tiered,1.2,,,0.65,,,$1.20 for 1st hr; $0.65 for sub. 0.5 hr
+SUN_PLAZA,main,weekday,17:00,23:00,per_entry,,,,,,2.2,$2.20 per entry
+SUN_PLAZA,main,weekday,23:00,24:00,per_entry,,,,,,3.3,$3.30 per entry
+SUN_PLAZA,main,sat,07:00,17:00,tiered,1.2,,,0.65,,,$1.20 for 1st hr; $0.65 for sub. 0.5 hr
+SUN_PLAZA,main,sat,17:00,23:00,per_entry,,,,,,2.2,$2.20 per entry
+SUN_PLAZA,main,sat,23:00,24:00,per_entry,,,,,,3.3,$3.30 per entry
+SUN_PLAZA,main,sun_ph,07:00,17:00,tiered,1.2,,,0.65,,,$1.20 for 1st hr; $0.65 for sub. 0.5 hr
+SUN_PLAZA,main,sun_ph,17:00,23:00,per_entry,,,,,,2.2,$2.20 per entry
+SUN_PLAZA,main,sun_ph,23:00,24:00,per_entry,,,,,,3.3,$3.30 per entry
+THE_VERGE,main,weekday,07:00,17:00,hourly,,,,0.8,,,$1.60 per hr
+THE_VERGE,main,weekday,17:00,24:00,per_entry,,,,,,2.5,$2.50 per entry
+THE_VERGE,main,weekday,00:00,24:00,hourly,,,,0.65,,,$1.30 per hr
+THE_VERGE,main,sat,07:00,17:00,hourly,,,,0.8,,,$1.60 per hr
+THE_VERGE,main,sat,17:00,24:00,per_entry,,,,,,2.5,$2.50 per entry
+THE_VERGE,main,sat,00:00,24:00,hourly,,,,0.65,,,$1.30 per hr
+THE_VERGE,main,sun_ph,07:00,24:00,per_entry,,,,,,2.5,$2.50 per entry
+THE_VERGE,main,sun_ph,00:00,24:00,hourly,,,,1,,,$2 per hr
+THOMSON_PLAZA,main,weekday,07:00,24:00,tiered,1,,,0.6,,,$1 for 1st hr; $0.60 for sub. 0.5 hr
+THOMSON_PLAZA,main,sat,16:00,24:00,tiered,1.2,,,0.7,,,$1.20 for 1st hr; $0.70 for sub. 0.5 hr
+THOMSON_PLAZA,main,sat,11:00,16:00,tiered,1.2,,,1,,,$1.20 for 1st hr; $1 for sub. 0.5 hr
+THOMSON_PLAZA,main,sun_ph,16:00,24:00,tiered,1.2,,,0.7,,,$1.20 for 1st hr; $0.70 for sub. 0.5 hr
+THOMSON_PLAZA,main,sun_ph,11:00,16:00,tiered,1.2,,,1,,,$1.20 for 1st hr; $1 for sub. 0.5 hr
+TOA_PAYOH_HDB_HUB,main,weekday,07:00,18:00,hourly,,,,0.5,,,$0.50 per 0.5 hr
+TOA_PAYOH_HDB_HUB,main,weekday,18:00,01:00 +1d,per_entry,,,,,,1,$1 per entry
+TOA_PAYOH_HDB_HUB,main,weekday,22:30,24:00,per_entry,,,,,,2,$2 per entry
+TOA_PAYOH_HDB_HUB,main,sat,07:00,18:00,hourly,,,,0.5,,,$0.50 per 0.5 hr
+TOA_PAYOH_HDB_HUB,main,sat,18:00,01:00 +1d,per_entry,,,,,,1,$1 per entry
+TOA_PAYOH_HDB_HUB,main,sat,22:30,24:00,per_entry,,,,,,2,$2 per entry
+TOA_PAYOH_HDB_HUB,main,sun_ph,07:00,01:00 +1d,per_entry,,,,,,1,$1 per entry
+TOA_PAYOH_HDB_HUB,main,sun_ph,22:30,24:00,per_entry,,,,,,2,$2 per entry
+UNITED_SQUARE_SHOPPING_MALL,main,weekday,19:00,18:00 +1d,tiered,2.2,,,0.55,,,$2.20 for 1st hr; $1.10 for sub. hr
+UNITED_SQUARE_SHOPPING_MALL,main,weekday,18:00,24:00,per_entry,,,,,,2,$2 per entry
+UNITED_SQUARE_SHOPPING_MALL,main,sat,07:00,18:00,tiered,,2.2,120,0.55,,,$2.20 for 1st 2hrs; $1.10 for sub. hr
+UNITED_SQUARE_SHOPPING_MALL,main,sat,18:00,24:00,per_entry,,,,,,2,$2 per entry
+UNITED_SQUARE_SHOPPING_MALL,main,sun_ph,07:00,18:00,tiered,,2.2,120,0.55,,,$2.20 for 1st 2hrs; $1.10 for sub. hr
+UNITED_SQUARE_SHOPPING_MALL,main,sun_ph,18:00,24:00,per_entry,,,,,,2,$2 per entry
+VELOCITY_NOVENA_SQUARE,main,weekday,06:00,18:00,tiered,1.6,,,0.8,,,$1.60 for 1st hr; $0.80 for sub. 0.5 hr
+VELOCITY_NOVENA_SQUARE,main,weekday,18:00,24:00,per_entry,,,,,,2.2,$2.20 per entry
+VELOCITY_NOVENA_SQUARE,main,sat,06:00,18:00,tiered,1.6,,,0.8,,,$1.60 for 1st hr; $0.80 for sub. 0.5 hr
+VELOCITY_NOVENA_SQUARE,main,sat,18:00,24:00,per_entry,,,,,,2.2,$2.20 per entry
+VELOCITY_NOVENA_SQUARE,main,sun_ph,06:00,18:00,tiered,1.6,,,0.8,,,$1.60 for 1st hr; $0.80 for sub. 0.5 hr
+VELOCITY_NOVENA_SQUARE,main,sun_ph,18:00,24:00,per_entry,,,,,,2.2,$2.20 per entry
+YISHUN_YS_ONE,main,weekday,07:00,22:30,per_min,,,,,0.0167,,$0.0167 /min
+YISHUN_YS_ONE,main,weekday,22:30,07:00 +1d,per_min,,,,,0.0167,,$0.0167 /min ;(Capped at $4.00)
+YISHUN_YS_ONE,main,sat,07:00,22:30,per_min,,,,,0.0167,,$0.0167 /min
+YISHUN_YS_ONE,main,sat,22:30,07:00 +1d,per_min,,,,,0.0167,,$0.0167 /min ;(Capped at $4.00)
+YISHUN_YS_ONE,main,sun_ph,22:30,07:00 +1d,per_min,,,,,0.0167,,$0.0167/min (Capped at $4.00)
+112_KATONG,main,weekday,06:00,09:59,tiered,0.54,,,0.32,,,$0.54 for 1st hr; $0.16 for sub. 15mins
+112_KATONG,main,weekday,10:00,17:59,tiered,1.07,,,0.54,,,$1.07 for 1st hr; $0.27 for sub. 15mins
+112_KATONG,main,weekday,18:00,20:59,tiered,,1.28,30,1.3,,,$1.28 for 1st 30mins; $0.65 for sub. 15mins
+112_KATONG,main,weekday,21:00,05:59 +1d,tiered,0.54,,,0.32,,,$0.54 for 1st hr; $0.16 for sub. 15mins
+112_KATONG,main,sat,06:00,09:59,tiered,0.54,,,0.32,,,$0.54 for 1st hr; $0.16 for sub. 15mins
+112_KATONG,main,sat,10:00,20:59,tiered,,1.28,30,1.3,,,$1.28 for 1st 30mins; $0.65 for sub. 15mins
+112_KATONG,main,sat,21:00,05:59 +1d,tiered,0.54,,,0.32,,,$0.54 for 1st hr; $0.16 for sub. 15mins
+112_KATONG,main,sun_ph,06:00,09:59,tiered,0.54,,,0.32,,,$0.54 for 1st hr; $0.16 for sub. 15mins
+112_KATONG,main,sun_ph,10:00,20:59,tiered,,1.28,30,1.3,,,$1.28 for 1st 30mins; $0.65 for sub. 15mins
+112_KATONG,main,sun_ph,21:00,05:59 +1d,tiered,0.54,,,0.32,,,$0.54 for 1st hr; $0.16 for sub. 15mins
+BEDOK_MALL,main,weekday,00:00,24:00,tiered,1.5,,,0.8,,,"12-11.59pm: $1.50 for 1st hr, $0.40 for sub. 15 mins"
+BEDOK_MALL,main,sat,00:00,24:00,tiered,1.5,,,0.8,,,"12-11.59pm: $1.50 for 1st hr, $0.40 for sub. 15 mins"
+BEDOK_MALL,main,sun_ph,00:00,24:00,tiered,1.5,,,0.8,,,"12-11.59pm: $1.50 for 1st hr, $0.40 for sub. 15 mins"
+BEDOK_POINT,main,weekday,00:00,24:00,tiered,1.2,,,0.7,,,$1.20 for 1st hr or part thereof; $0.70 for sub 0.5 hr or part thereof.
+BEDOK_POINT,main,sat,00:00,24:00,tiered,1.2,,,0.7,,,$1.20 for 1st hr or part thereof; $0.70 for sub 0.5 hr or part thereof.
+BEDOK_POINT,main,sun_ph,00:00,24:00,tiered,1.2,,,0.7,,,$1.20 for 1st hr or part thereof; $0.70 for sub 0.5 hr or part thereof.
+CENTURY_SQUARE,main,weekday,03:01,18:00,tiered,1.07,,,0.64,,,$1.07 for 1st hr and $0.32 every 15 mins or part thereof
+CENTURY_SQUARE,main,weekday,06:01,03:00 +1d,per_entry,,,,,,2.14,$2.14 per entry
+CENTURY_SQUARE,main,sat,06:01,03:00 +1d,per_entry,,,,,,2.14,$2.14 per entry
+CENTURY_SQUARE,main,sun_ph,06:01,03:00 +1d,per_entry,,,,,,2.14,$2.14 per entry
+CHANGI_AIRPORT_SOUTH_CAR_PARK_BETWEEN_T2_AND_JETQU,main,weekday,00:00,24:00,per_min,,,,,0.035,,"$0.035 per min. Capped at $35 per 24hrs. (Limited parking spaces and on a first-come, first-served basis); $0.035 per min. Capped at $35 per 24hrs."
+CHANGI_AIRPORT_SOUTH_CAR_PARK_BETWEEN_T2_AND_JETQU,main,sat,00:00,24:00,per_min,,,,,0.035,,$0.035 per min. Capped at $35 per 24hrs.
+CHANGI_AIRPORT_SOUTH_CAR_PARK_BETWEEN_T2_AND_JETQU,main,sun_ph,00:00,24:00,per_min,,,,,0.035,,$0.035 per min. Capped at $35 per 24hrs.
+CHANGI_AIRPORT_T1_T2_T3,main,weekday,00:00,24:00,per_min,,,,,0.04,,"$0.04 per min *Based on the per-minute rate of $0.04, 24 hours of parking will be $57.60.; $0.04 per min"
+CHANGI_AIRPORT_T1_T2_T3,main,sat,00:00,24:00,per_min,,,,,0.04,,$0.04 per min
+CHANGI_AIRPORT_T1_T2_T3,main,sun_ph,00:00,24:00,per_min,,,,,0.04,,$0.04 per min
+CHANGI_CITY_POINT,main,weekday,07:01,18:00,hourly,,,,0.7,,,$0.70 per 0.5 hr or part thereof
+CHANGI_CITY_POINT,main,weekday,18:01,07:00 +1d,per_entry,,,,,,2.5,$2.50 per entry
+CHANGI_CITY_POINT,main,sat,07:01,17:00,tiered,,2.5,120,1.2,,,$2.50 for 1st 2hrs or part thereof; $1.20 for sub. 0.5 hr or part thereof
+CHANGI_CITY_POINT,main,sat,17:01,07:00 +1d,per_entry,,,,,,2.5,$2.50 per entry
+CHANGI_CITY_POINT,main,sun_ph,07:01,17:00,tiered,,2.5,120,1.2,,,$2.50 for 1st 2hrs or part thereof; $1.20 for sub. 0.5 hr or part thereof
+CHANGI_CITY_POINT,main,sun_ph,17:01,07:00 +1d,per_entry,,,,,,2.5,$2.50 per entry
+CHANGI_VILLAGE_HOTEL,main,weekday,08:00,18:00,tiered,2,,,0.75,,,$2 for 1st hr; $1.50 for sub. hr
+CHANGI_VILLAGE_HOTEL,main,weekday,18:00,24:00,per_entry,,,,,,5.35,$5.35 per entry
+CHANGI_VILLAGE_HOTEL,main,sat,08:00,18:00,tiered,2,,,0.75,,,$2 for 1st hr; $1.50 for sub. hr
+CHANGI_VILLAGE_HOTEL,main,sat,18:00,24:00,per_entry,,,,,,5.35,$5.35 per entry
+CHANGI_VILLAGE_HOTEL,main,sun_ph,08:00,18:00,tiered,2,,,0.75,,,$2 for 1st hr; $1.50 for sub. hr
+CHANGI_VILLAGE_HOTEL,main,sun_ph,18:00,24:00,per_entry,,,,,,5.35,$5.35 per entry
+CITY_PLAZA,main,weekday,08:00,17:00,tiered,1.1,,,0.7,,,$1.10 for 1st hr; $0.70 for sub. 0.5 hr
+CITY_PLAZA,main,weekday,17:00,24:00,per_entry,,,,,,1.2,$1.20 per entry
+CITY_PLAZA,main,weekday,00:00,24:00,per_entry,,,,,,2.4,$2.40 per entry
+CITY_PLAZA,main,sat,08:00,17:00,tiered,1.1,,,0.7,,,$1.10 for 1st hr; $0.70 for sub. 0.5 hr
+CITY_PLAZA,main,sat,17:00,24:00,per_entry,,,,,,1.2,$1.20 per entry
+CITY_PLAZA,main,sat,00:00,24:00,per_entry,,,,,,2.4,$2.40 per entry
+CITY_PLAZA,main,sun_ph,07:00,24:00,per_entry,,,,,,1.2,$1.20 per entry
+CITY_PLAZA,main,sun_ph,00:00,24:00,per_entry,,,,,,2.4,$2.40 per entry
+D_RESORT,main,weekday,00:00,24:00,per_min,,,,,0.024,,"Mon-Thu (excluding PH, Eve of PH & School Holiday) $0.024 per min; Max/day: $15 (Valid up to 12 midnight and not applicable for multiple entries)."
+D_RESORT,main,sat,00:00,24:00,per_min,,,,,0.024,,"Fri-Sat (Including PH, Eve of PH & School Holiday) $0.024 per min"
+D_RESORT,main,sat,17:00,24:00,per_entry,,,,,,5,$5 per entry. Max/day: $19
+D_RESORT,main,sun_ph,00:00,24:00,per_min,,,,,0.024,,"Fri-Sat (Including PH, Eve of PH & School Holiday) $0.024 per min"
+D_RESORT,main,sun_ph,17:00,24:00,per_entry,,,,,,5,$5 per entry. Max/day: $19
+DOWNTOWN_EAST,main,weekday,00:00,24:00,per_min,,,,,0.024,,"Mon-Thu (excluding PH, Eve of PH & School Holiday) $0.024 per min; Max/day: $12.50 (Valid up to 12 midnight and not applicable for multiple entries).; Mon-Thu (excluding PH, Eve of PH & School Holiday..."
+DOWNTOWN_EAST,main,weekday,17:00,24:00,per_entry,,,,,,2.4,$2.40 per entry. Max/day:$12.50
+DOWNTOWN_EAST,main,fri,00:00,24:00,per_entry,,,,,,3.4,$3.40 per entry
+DOWNTOWN_EAST,main,sat,00:00,24:00,per_min,,,,,0.024,,"Fri-Sat (Including PH, Eve of PH & School Holiday) $0.024 per min"
+DOWNTOWN_EAST,main,sat,17:00,24:00,per_entry,,,,,,3.4,$3.40 per entry. Max/day: $16
+DOWNTOWN_EAST,main,sun_ph,00:00,24:00,per_min,,,,,0.024,,"Fri-Sat (Including PH, Eve of PH & School Holiday) $0.024 per min"
+DOWNTOWN_EAST,main,sun_ph,17:00,24:00,per_entry,,,,,,3.4,$3.40 per entry. Max/day: $16
+EAST_COAST_PARK_E1_E2_E3_OFF_STREET,main,weekday,07:00,07:00 +1d,hourly,,,,0.5,,,$0.50 /30 Mins (Per Minute Charging)
+EAST_COAST_PARK_E1_E2_E3_OFF_STREET,main,sat,07:00,07:00 +1d,hourly,,,,0.5,,,$0.50 /30 Mins (Per Minute Charging)
+EAST_COAST_PARK_E1_E2_E3_OFF_STREET,main,sun_ph,07:00,07:00 +1d,hourly,,,,0.5,,,$0.50 /30 Mins (Per Minute Charging)
+EASTPOINT_MALL,main,weekday,00:00,24:00,tiered,1.2,,,0.6,,,"$1.20 for 1st hr or part thereof, $0.30 for sub. 15 mins or part thereof."
+EASTPOINT_MALL,main,sat,00:00,24:00,tiered,1.2,,,0.6,,,"$1.20 for 1st hr or part thereof, $0.30 for sub. 15 mins or part thereof."
+EASTPOINT_MALL,main,sun_ph,00:00,24:00,tiered,1.2,,,0.6,,,"$1.20 for 1st hr or part thereof, $0.30 for sub. 15 mins or part thereof."
+GRAND_MECURE_ROXY_HOTEL,main,weekday,00:00,24:00,hourly,,,,0.8,,,$1.60 per hr
+GRAND_MECURE_ROXY_HOTEL,main,sat,00:00,24:00,hourly,,,,0.8,,,$1.60 per hr
+GRAND_MECURE_ROXY_HOTEL,main,sun_ph,00:00,24:00,hourly,,,,0.8,,,$1.60 per hr
+IKEA_TAMPINES,main,weekday,00:00,24:00,free,,,,,,,Daily free: 7am-11pm
+IKEA_TAMPINES,main,sat,00:00,24:00,free,,,,,,,Daily free: 7am-11pm
+IKEA_TAMPINES,main,sun_ph,00:00,24:00,free,,,,,,,Daily free: 7am-11pm
+KATONG_SHOPPING_CENTRE,main,weekday,07:00,18:00,hourly,,,,0.5,,,$1 per hr
+KATONG_SHOPPING_CENTRE,main,weekday,18:00,24:00,per_entry,,,,,,2,$2 per entry
+KATONG_SHOPPING_CENTRE,main,sat,07:00,18:00,hourly,,,,0.5,,,$1 per hr
+KATONG_SHOPPING_CENTRE,main,sat,18:00,24:00,per_entry,,,,,,2,$2 per entry
+KATONG_SHOPPING_CENTRE,main,sun_ph,00:00,24:00,per_entry,,,,,,2,$2 per entry
+KATONG_VILLAGE,main,weekday,08:00,18:00,hourly,,,,1.1,,,$2.20 per hr
+KATONG_VILLAGE,main,weekday,18:00,24:00,per_entry,,,,,,6,$6 per entry
+KATONG_VILLAGE,main,sat,08:00,18:00,hourly,,,,1.1,,,$2.20 per hr
+KATONG_VILLAGE,main,sat,18:00,24:00,per_entry,,,,,,6,$6 per entry
+KATONG_VILLAGE,main,sun_ph,08:00,18:00,hourly,,,,1.1,,,$2.20 per hr
+KATONG_VILLAGE,main,sun_ph,18:00,24:00,per_entry,,,,,,6,$6 per entry
+LIFELONG_LEARNING_INSTITUTE,main,weekday,06:00,17:59,hourly,,,,0.9,,,$0.90 per 0.5 hr. Full Day Parking-
+LIFELONG_LEARNING_INSTITUTE,main,weekday,18:00,23:59,per_entry,,,,,,3.21,$3.21 per entry
+LIFELONG_LEARNING_INSTITUTE,main,weekday,00:00,05:59,per_entry,,,,,,12,$12 per entry
+LIFELONG_LEARNING_INSTITUTE,main,sat,06:00,17:59,hourly,,,,0.9,,,$0.90 per 0.5 hr. Full Day Parking-
+LIFELONG_LEARNING_INSTITUTE,main,sat,18:00,23:59,per_entry,,,,,,3.21,$3.21 per entry
+LIFELONG_LEARNING_INSTITUTE,main,sat,00:00,05:59,per_entry,,,,,,12,$12 per entry
+LIFELONG_LEARNING_INSTITUTE,main,sun_ph,06:00,23:59,per_entry,,,,,,3.21,$3.21 per entry
+LIFELONG_LEARNING_INSTITUTE,main,sun_ph,00:00,05:59,per_entry,,,,,,12,$12 per entry
+PARAMOUNT_HOTEL,main,weekday,08:00,17:00,hourly,,,,0.6,,,$0.60 per 0.5 hr
+PARAMOUNT_HOTEL,main,weekday,17:00,24:00,per_entry,,,,,,2.5,$2.50 per entry
+PARAMOUNT_HOTEL,main,sat,08:00,17:00,hourly,,,,0.6,,,$0.60 per 0.5 hr
+PARAMOUNT_HOTEL,main,sat,17:00,24:00,per_entry,,,,,,2.5,$2.50 per entry
+PARAMOUNT_HOTEL,main,sun_ph,00:00,24:00,per_entry,,,,,,2.5,$2.50 per entry
+PARKWAY_PARADE,main,weekday,06:00,18:00,tiered,1,,,0.4,,,$1 for 1st hr; $0.40 for sub. 0.5 hr
+PARKWAY_PARADE,main,weekday,18:00,02:00 +1d,per_entry,,,,,,1.5,$1.50 per entry
+PARKWAY_PARADE,main,weekday,02:00,24:00,per_entry,,,,,,20,$20 per entry
+PARKWAY_PARADE,main,sat,06:00,10:00,tiered,0.5,,,0.8,,,$0.50 for 1st hr; $0.40 for sub.15 mins
+PARKWAY_PARADE,main,sat,10:00,18:00,tiered,1.3,,,0.8,,,$1.30 for 1st hr; $0.40 for sub. 15 mins
+PARKWAY_PARADE,main,sat,18:00,02:00 +1d,per_entry,,,,,,2.1,$2.10 per entry
+PARKWAY_PARADE,main,sat,02:00,24:00,per_entry,,,,,,20,$20 per entry
+PARKWAY_PARADE,main,sun_ph,06:00,10:00,tiered,0.5,,,0.8,,,$0.50 for 1st hr; $0.40 for sub.15 mins
+PARKWAY_PARADE,main,sun_ph,10:00,18:00,tiered,1.3,,,0.8,,,$1.30 for 1st hr; $0.40 for sub. 15 mins
+PARKWAY_PARADE,main,sun_ph,18:00,02:00 +1d,per_entry,,,,,,2.1,$2.10 per entry
+PARKWAY_PARADE,main,sun_ph,02:00,24:00,per_entry,,,,,,20,$20 per entry
+ROXY_SQUARE,main,weekday,07:00,18:00,tiered,1.2,,,0.7,,,$1.20 for 1st hr; $1.40 for sub. hr
+ROXY_SQUARE,main,weekday,17:00,24:00,per_entry,,,,,,2.5,$2.50 per entry
+ROXY_SQUARE,main,sat,07:00,18:00,tiered,1.2,,,0.7,,,$1.20 for 1st hr; $1.40 for sub. hr
+ROXY_SQUARE,main,sat,17:00,24:00,per_entry,,,,,,2.5,$2.50 per entry
+ROXY_SQUARE,main,sun_ph,07:00,18:00,tiered,1.2,,,0.7,,,$1.20 for 1st hr; $1.40 for sub. hr
+ROXY_SQUARE,main,sun_ph,17:00,24:00,per_entry,,,,,,2.5,$2.50 per entry
+SINGAPORE_EXPO,main,weekday,00:00,24:00,tiered,,3.2,120,1.5,,,$3.20 for 1st 2hrs; $1.50 for sub. 0.5 hr (Maximum Daily Charge:$20)
+SINGAPORE_EXPO,main,sat,00:00,24:00,tiered,,3.2,120,1.5,,,$3.20 for 1st 2hrs; $1.50 for sub. 0.5 hr (Maximum Daily Charge:$20)
+SINGAPORE_EXPO,main,sun_ph,00:00,24:00,tiered,,3.2,120,1.5,,,$3.20 for 1st 2hrs; $1.50 for sub. 0.5 hr (Maximum Daily Charge:$20)
+SINGAPORE_POST_CENTRE,main,weekday,07:00,17:00,tiered,1.6,,,1,,,"$1.60 for 1st hr, $1.00 for next sub 0.5 hr"
+SINGAPORE_POST_CENTRE,main,weekday,17:00,24:00,per_entry,,,,,,3,$3/entry
+SINGAPORE_POST_CENTRE,main,weekday,00:00,07:00,tiered,1.6,,,1,,,"$1.60 for 1st hr, $1.00 for next sub 0.5 hr"
+SINGAPORE_POST_CENTRE,main,sat,07:00,13:00,tiered,1.6,,,1,,,"$1.60 for 1st hr, $1 for next sub 0.5 hr"
+SINGAPORE_POST_CENTRE,main,sat,13:00,24:00,tiered,1.6,,,1,,,"$3 per entry; 12am-7am $1.60 for 1st hr, $1.00 for next sub 0.5 hr"
+SINGAPORE_POST_CENTRE,main,sun_ph,07:00,24:00,tiered,1.6,,,1,,,"$3 per entry; 12am-7am $1.60 for 1st hr, $1.00 for next sub 0.5 hr"
+TAMPINES_1,main,weekday,00:00,24:00,tiered,1.07,,,0.55,,,1st hr $1.07; 2nd hr $0.55 per 0.5 hr; Aft 2hrs: $0.35 per 15 mins
+TAMPINES_1,main,sat,00:00,24:00,tiered,1.28,,,0.6,,,1st hr $1.28; 2nd hr $0.60 per 0.5 hr; Aft 2hrs: $0.45 per 15 mins
+TAMPINES_1,main,sun_ph,00:00,24:00,tiered,1.28,,,0.6,,,1st hr $1.28; 2nd hr $0.60 per 0.5 hr; Aft 2hrs: $0.45 per 15 mins
+TAMPINES_JUNCTION,main,weekday,08:00,17:00,tiered,1,,,0.5,,,$1 for 1st hr; $0.50 for sub. 0.5 hr
+TAMPINES_JUNCTION,main,weekday,17:00,24:00,per_entry,,,,,,2,$2 per entry
+TAMPINES_JUNCTION,main,sat,08:00,17:00,tiered,1,,,0.5,,,$1 for 1st hr; $0.50 for sub. 0.5 hr
+TAMPINES_JUNCTION,main,sat,17:00,24:00,per_entry,,,,,,2,$2 per entry
+TAMPINES_MALL,main,weekday,00:00,17:59,tiered,1.07,,,0.64,,,$1.07 for 1st hr; $0.32 for sub. 15mins
+TAMPINES_MALL,main,mon-thu,18:00,23:59,per_entry,,,,,,2.14,$2.14 per entry
+TAMPINES_MALL,main,fri_eve_ph,18:00,02:59 +1d,per_entry,,,,,,2.14,$2.14 per entry
+TAMPINES_MALL,main,sat,03:00,17:59,tiered,,2.14,120,0.64,,,$2.14 for 1st 2hrs; $0.32 for sub. 15mins
+TAMPINES_MALL,main,sat,18:00,02:59 +1d,per_entry,,,,,,2.14,$2.14 per entry
+TAMPINES_MALL,main,sun_ph,03:00,17:59,tiered,,2.14,120,0.64,,,$2.14 for 1st 2hrs; $0.32 for sub. 15mins
+TAMPINES_MALL,main,sun_ph,18:00,11:59 +1d,per_entry,,,,,,2.14,$2.14 per entry
+TAMPINES_PLAZA_COMPAQ_CENTRE,main,weekday,08:00,17:00,hourly,,,,1,,,$1 per 0.5 hr
+TAMPINES_PLAZA_COMPAQ_CENTRE,main,weekday,17:00,24:00,per_entry,,,,,,2,$2 per entry
+TAMPINES_PLAZA_COMPAQ_CENTRE,main,sat,08:00,17:00,hourly,,,,1,,,$1 per 0.5 hr
+TAMPINES_PLAZA_COMPAQ_CENTRE,main,sat,17:00,24:00,per_entry,,,,,,2,$2 per entry
+TAMPINES_PLAZA_COMPAQ_CENTRE,main,sun_ph,00:00,24:00,per_entry,,,,,,2,$2 per entry
+TELEPARK,main,weekday,07:00,22:00,hourly,,,,0.7,,,$0.70 per 0.5 hr (An additional surcharge of $22 per exit after 10pm)
+TELEPARK,main,sat,07:00,22:00,hourly,,,,0.7,,,$0.70 per 0.5 hr (An additional surcharge of $22 per exit after 10pm)
+TELEPARK,main,sun_ph,07:00,22:00,hourly,,,,0.7,,,$0.70 per 0.5 hr (An additional surcharge of $22 per exit after 10pm)
+WHITE_SANDS_SHOPPING_CENTRE,main,weekday,07:00,19:00,hourly,,,,0.6,,,$1.20 per hr for 1st 2hrs; $1.20 for sub. 0.5 hr
+WHITE_SANDS_SHOPPING_CENTRE,main,weekday,19:00,24:00,per_entry,,,,,,2,$2 per entry
+WHITE_SANDS_SHOPPING_CENTRE,main,sat,07:00,19:00,hourly,,,,0.6,,,$1.20 per hr for 1st 2hrs; $1.20 for sub. 0.5 hr
+WHITE_SANDS_SHOPPING_CENTRE,main,sat,19:00,24:00,per_entry,,,,,,2,$2 per entry
+WHITE_SANDS_SHOPPING_CENTRE,main,sun_ph,07:00,19:00,hourly,,,,0.6,,,$1.20 per hr for 1st 2hrs; $1.20 for sub. 0.5 hr
+WHITE_SANDS_SHOPPING_CENTRE,main,sun_ph,19:00,24:00,per_entry,,,,,,2,$2 per entry
+AMARA_HOTEL,main,weekday,08:00,16:59,hourly,,,,2,,,$2 per 0.5 hr; 5pm-7.59am (the following day) : $3 per entry
+AMARA_HOTEL,main,sat,08:00,16:59,hourly,,,,2,,,$2 per 0.5 hr; 5pm-7.59am (the following day) : $3 per entry
+AMARA_HOTEL,main,sun_ph,00:00,24:00,per_entry,,,,,,3,$3 per entry
+BERJAYA_HOTEL,main,weekday,08:30,17:00,hourly,,,,1,,,$1 per 0.5 hr
+BERJAYA_HOTEL,main,weekday,17:00,22:00,hourly,,,,0.5,,,$1 per hr
+BERJAYA_HOTEL,main,sat,08:30,17:00,hourly,,,,1,,,$1 per 0.5 hr
+BERJAYA_HOTEL,main,sat,17:00,22:00,hourly,,,,0.5,,,$1 per hr
+BERJAYA_HOTEL,main,sun_ph,08:30,22:00,hourly,,,,0.5,,,$1 per hr
+CARLTON_HOTEL,main,weekday,07:00,18:00,tiered,3,,,1.5,,,$3 for 1st hr; $1.50 for sub. 0.5 hr
+CARLTON_HOTEL,main,weekday,18:00,24:00,per_entry,,,,,,6,$6 per entry
+CARLTON_HOTEL,main,sat,07:00,18:00,tiered,3,,,1.5,,,$3 for 1st hr; $1.50 for sub. 0.5 hr
+CARLTON_HOTEL,main,sat,18:00,24:00,per_entry,,,,,,6,$6 per entry
+CARLTON_HOTEL,main,sun_ph,07:00,18:00,tiered,3,,,1.5,,,$3 for 1st hr; $1.50 for sub. 0.5 hr
+CARLTON_HOTEL,main,sun_ph,18:00,24:00,per_entry,,,,,,6,$6 per entry
+CHANGI_VILLAGE_HOTEL_2,main,weekday,08:00,18:00,tiered,2,,,0.75,,,$2 for 1st hr; $1.50 for sub. hr
+CHANGI_VILLAGE_HOTEL_2,main,weekday,18:00,24:00,per_entry,,,,,,5.35,$5.35 per entry
+CHANGI_VILLAGE_HOTEL_2,main,sat,08:00,18:00,tiered,2,,,0.75,,,$2 for 1st hr; $1.50 for sub. hr
+CHANGI_VILLAGE_HOTEL_2,main,sat,18:00,24:00,per_entry,,,,,,5.35,$5.35 per entry
+CHANGI_VILLAGE_HOTEL_2,main,sun_ph,08:00,18:00,tiered,2,,,0.75,,,$2 for 1st hr; $1.50 for sub. hr
+CHANGI_VILLAGE_HOTEL_2,main,sun_ph,18:00,24:00,per_entry,,,,,,5.35,$5.35 per entry
+CONCORDE_HOTEL,main,weekday,07:00,18:00,tiered,2.14,,,1.39,,,$2.14 for 1st hr; $1.39 for sub. 0.5 hr
+CONCORDE_HOTEL,main,weekday,18:00,24:00,per_entry,,,,,,3.75,$3.75 per entry
+CONCORDE_HOTEL,main,sat,07:00,18:00,tiered,2.14,,,1.39,,,$2.14 for 1st hr; $1.39 for sub. 0.5 hr
+CONCORDE_HOTEL,main,sat,18:00,24:00,per_entry,,,,,,3.75,$3.75 per entry
+CONCORDE_HOTEL,main,sun_ph,00:00,24:00,per_entry,,,,,,3.75,$3.75 per entry
+CONRAD_CENTENNIAL_HOTEL,main,weekday,07:00,18:00,tiered,3.3,,,1.1,,,$3.30 for 1st hr; $1.10 for sub.0.5 hr
+CONRAD_CENTENNIAL_HOTEL,main,weekday,18:00,24:00,per_entry,,,,,,2.2,$2.20 per entry
+CONRAD_CENTENNIAL_HOTEL,main,sat,00:00,24:00,tiered,,2.2,120,0.55,,,$2.20 for 1st 2hrs; $1.10 for sub. hr
+CONRAD_CENTENNIAL_HOTEL,main,sun_ph,00:00,24:00,tiered,,2.2,120,0.55,,,$2.20 for 1st 2hrs; $1.10 for sub. hr
+COPTHORNE_KING_S_HOTEL,main,weekday,07:00,24:00,tiered,3,,,1.5,,,$3 for 1st hr; $1.50 for sub 0.5 hr
+COPTHORNE_KING_S_HOTEL,main,weekday,00:00,24:00,tiered,4,,,2,,,$4 for 1st hr; $2 for sub 0.5 hr
+COPTHORNE_KING_S_HOTEL,main,sat,07:00,24:00,tiered,3,,,1.5,,,$3 for 1st hr; $1.50 for sub 0.5 hr
+COPTHORNE_KING_S_HOTEL,main,sat,00:00,24:00,tiered,4,,,2,,,$4 for 1st hr; $2 for sub 0.5 hr
+COPTHORNE_KING_S_HOTEL,main,sun_ph,07:00,24:00,tiered,3,,,1.5,,,$3 for 1st hr; $1.50 for sub 0.5 hr
+COPTHORNE_KING_S_HOTEL,main,sun_ph,00:00,24:00,tiered,4,,,2,,,$4 for 1st hr; $2 for sub 0.5 hr
+COPTHORNE_ORCHID_HOTEL,main,weekday,08:00,17:00,tiered,1.5,,,0.5,,,"$1.50 for 1st hr; $1 for sub. hr, per day $20)"
+COPTHORNE_ORCHID_HOTEL,main,weekday,17:00,24:00,per_entry,,,,,,3,$3 per entry
+COPTHORNE_ORCHID_HOTEL,main,sat,08:00,17:00,tiered,1.5,,,0.5,,,"$1.50 for 1st hr; $1 for sub. hr, per day $20)"
+COPTHORNE_ORCHID_HOTEL,main,sat,17:00,24:00,per_entry,,,,,,3,$3 per entry
+COPTHORNE_ORCHID_HOTEL,main,sun_ph,08:00,17:00,tiered,1.5,,,0.5,,,"$1.50 for 1st hr; $1 for sub. hr, per day $20)"
+COPTHORNE_ORCHID_HOTEL,main,sun_ph,17:00,24:00,per_entry,,,,,,3,$3 per entry
+ELIZABETH_HOTEL,main,weekday,07:00,17:00,tiered,3,,,1.5,,,$3 for 1st hr; $1.50 for sub. 0.5 hr
+ELIZABETH_HOTEL,main,weekday,17:00,24:00,per_entry,,,,,,4,$4 per entry
+ELIZABETH_HOTEL,main,sat,00:00,24:00,per_entry,,,,,,4,$4 per entry
+ELIZABETH_HOTEL,main,sun_ph,00:00,24:00,per_entry,,,,,,4,$4 per entry
+FOUR_SEASONS_HOTEL,main,weekday,06:00,17:00,tiered,6,,,3,,,$6 for 1st hr; $3 for sub. 0.5 hr
+FOUR_SEASONS_HOTEL,main,weekday,17:00,24:00,per_entry,,,,,,6,$6 per entry
+FOUR_SEASONS_HOTEL,main,sat,06:00,17:00,tiered,6,,,3,,,$6 for 1st hr; $3 for sub. 0.5 hr
+FOUR_SEASONS_HOTEL,main,sat,17:00,24:00,per_entry,,,,,,6,$6 per entry
+FOUR_SEASONS_HOTEL,main,sun_ph,06:00,17:00,tiered,6,,,3,,,$6 for 1st hr; $3 for sub. 0.5 hr
+FOUR_SEASONS_HOTEL,main,sun_ph,17:00,24:00,per_entry,,,,,,6,$6 per entry
+FURAMA_CITY_CENTRE_SINGAPORE,main,weekday,05:00,17:00,tiered,,1.4,30,1.5,,,$1.40 for 1st 0.5 hr; $1.50 for sub. 0.5 hr
+FURAMA_CITY_CENTRE_SINGAPORE,main,weekday,17:00,24:00,per_entry,,,,,,3,$3 per entry
+FURAMA_CITY_CENTRE_SINGAPORE,main,sat,05:00,17:00,tiered,,1.4,30,1.5,,,$1.40 for 1st 0.5 hr; $1.50 for sub. 0.5 hr
+FURAMA_CITY_CENTRE_SINGAPORE,main,sat,17:00,24:00,per_entry,,,,,,3,$3 per entry
+FURAMA_CITY_CENTRE_SINGAPORE,main,sun_ph,00:00,24:00,per_entry,,,,,,3,$3 per entry
+FURAMA_RIVERFRONT_SINGAPORE,main,weekday,07:00,17:00,hourly,,,,1,,,$1 per 0.5 hr
+FURAMA_RIVERFRONT_SINGAPORE,main,weekday,17:00,24:00,per_entry,,,,,,6,$6 per entry
+FURAMA_RIVERFRONT_SINGAPORE,main,sat,07:00,17:00,hourly,,,,1,,,$1 per 0.5 hr
+FURAMA_RIVERFRONT_SINGAPORE,main,sat,17:00,24:00,per_entry,,,,,,6,$6 per entry
+FURAMA_RIVERFRONT_SINGAPORE,main,sun_ph,07:00,17:00,hourly,,,,1,,,$1 per 0.5 hr
+FURAMA_RIVERFRONT_SINGAPORE,main,sun_ph,17:00,24:00,per_entry,,,,,,6,$6 per entry
+THE_RITZ_CARLTON_MILLENIA_SINGAPORE,main,weekday,07:00,18:00,tiered,3.3,,,1.1,,,$3.30 for 1st hr; $1.10 for sub.0.5 hr
+THE_RITZ_CARLTON_MILLENIA_SINGAPORE,main,weekday,18:00,24:00,per_entry,,,,,,2.2,$2.20 per entry
+THE_RITZ_CARLTON_MILLENIA_SINGAPORE,main,sat,00:00,24:00,tiered,,2.2,120,0.55,,,$2.20 for 1st 2hrs; $1.10 for sub. hr
+THE_RITZ_CARLTON_MILLENIA_SINGAPORE,main,sun_ph,00:00,24:00,tiered,,2.2,120,0.55,,,$2.20 for 1st 2hrs; $1.10 for sub. hr
+GALLERY_HOTEL,main,weekday,12:00,14:00,tiered,3,,,1,,,"$3 for 1st hr; $1 for sub. 0.5 hr; $2 for 1st hr, $0.50 for sub. 0.5 hr from 2.01pm to 6.00pm for Mon-Thu"
+GALLERY_HOTEL,main,weekday,18:00,23:59,tiered,3,,,1,,,$3 for 1st hr; $1 for sub. 0.5 hr; $2 for 1st hr; $0.50 for sub. 0.5 hr from 12am-11.59am for Mon-Thu
+GALLERY_HOTEL,main,sat,06:00,23:59,tiered,3,,,0.5,,,"$3 for 1st hr; $0.50 for sub. 0.5 hr, $3 for 1st hr; $0.50 for sub. 0.5 hr from 12am-1.59am for Fri-Sun/PH"
+GALLERY_HOTEL,main,sun_ph,00:00,24:00,tiered,2,,,0.5,,,$2 for 1st hr; $0.50 for sub. 0.5 hr from 2.01am-6am for Fri-Sun/PH
+GOODWOOD_PARK_HOTEL,main,weekday,08:00,18:00,tiered,4,,,2,,,$4 for 1st hr; $2 for sub. 0.5 hr
+GOODWOOD_PARK_HOTEL,main,weekday,18:00,24:00,per_entry,,,,,,5,$5 per entry
+GOODWOOD_PARK_HOTEL,main,sat,08:00,18:00,tiered,4,,,2,,,$4 for 1st hr; $2 for sub. 0.5 hr
+GOODWOOD_PARK_HOTEL,main,sat,18:00,24:00,per_entry,,,,,,5,$5 per entry
+GOODWOOD_PARK_HOTEL,main,sun_ph,00:00,24:00,per_entry,,,,,,5,$5 per entry
+GRAND_COPTHORNE_WATERFRONT_HOTEL,main,weekday,07:00,17:00,tiered,3.75,,,1.07,,,$3.75 for 1st hr; $2.14 for sub. hr
+GRAND_COPTHORNE_WATERFRONT_HOTEL,main,weekday,17:00,24:00,per_entry,,,,,,4.28,$4.28 per entry
+GRAND_COPTHORNE_WATERFRONT_HOTEL,main,sat,07:00,17:00,tiered,3.75,,,1.07,,,$3.75 for 1st hr; $2.14 for sub. hr
+GRAND_COPTHORNE_WATERFRONT_HOTEL,main,sat,17:00,24:00,per_entry,,,,,,4.28,$4.28 per entry
+GRAND_COPTHORNE_WATERFRONT_HOTEL,main,sun_ph,00:00,24:00,per_entry,,,,,,4.28,$4.28 per entry
+GRAND_HYATT_HOTEL,main,weekday,04:00,16:59,tiered,3.21,,,1.07,,,$3.21 for 1st hr; $1.07 for sub. 0.5 hr
+GRAND_HYATT_HOTEL,main,weekday,17:00,24:00,per_entry,,,,,,5.35,$5.35 per entry
+GRAND_HYATT_HOTEL,main,sat,04:00,16:59,tiered,3.21,,,1.07,,,$3.21 for 1st hr; $1.07 for sub. 0.5 hr
+GRAND_HYATT_HOTEL,main,sat,17:00,24:00,per_entry,,,,,,5.35,$5.35 per entry
+GRAND_HYATT_HOTEL,main,sun_ph,04:00,03:59 +1d,per_entry,,,,,,5.35,$5.35 per entry
+GRAND_MERCURE_ROXY_HOTEL,main,weekday,00:00,24:00,hourly,,,,0.8,,,$1.60 per hr
+GRAND_MERCURE_ROXY_HOTEL,main,sat,00:00,24:00,hourly,,,,0.8,,,$1.60 per hr
+GRAND_MERCURE_ROXY_HOTEL,main,sun_ph,00:00,24:00,hourly,,,,0.8,,,$1.60 per hr
+GRAND_PACIFIC_HOTEL_FORMERLY_ALLSON_HOTEL,main,weekday,07:00,17:00,hourly,,,,1.32,,,$1.32 per 0.5 hr
+GRAND_PACIFIC_HOTEL_FORMERLY_ALLSON_HOTEL,main,weekday,17:00,24:00,per_entry,,,,,,3.57,$3.57 per entry
+GRAND_PACIFIC_HOTEL_FORMERLY_ALLSON_HOTEL,main,sat,07:00,17:00,hourly,,,,1.32,,,$1.32 per 0.5 hr
+GRAND_PACIFIC_HOTEL_FORMERLY_ALLSON_HOTEL,main,sat,17:00,24:00,per_entry,,,,,,3.57,$3.57 per entry
+GRAND_PACIFIC_HOTEL_FORMERLY_ALLSON_HOTEL,main,sun_ph,00:00,24:00,per_entry,,,,,,3.57,$3.57 per entry
+GRAND_PARK_CITY_HALL_HOTEL,main,weekday,07:00,17:00,tiered,3.28,,,1.55,,,$3.28 for 1st hr; $1.55 for sub. 0.5 hr
+GRAND_PARK_CITY_HALL_HOTEL,main,weekday,17:00,24:00,per_entry,,,,,,5.35,$5.35 per entry
+GRAND_PARK_CITY_HALL_HOTEL,main,sat,07:00,17:00,tiered,3.28,,,1.55,,,$3.28 for 1st hr; $1.55 for sub. 0.5 hr
+GRAND_PARK_CITY_HALL_HOTEL,main,sat,17:00,24:00,per_entry,,,,,,5.35,$5.35 per entry
+GRAND_PARK_CITY_HALL_HOTEL,main,sun_ph,07:00,17:00,tiered,3.28,,,1.55,,,$3.28 for 1st hr; $1.55 for sub. 0.5 hr
+GRAND_PARK_CITY_HALL_HOTEL,main,sun_ph,17:00,24:00,per_entry,,,,,,5.35,$5.35 per entry
+GRAND_PARK_ORCHARD,main,weekday,08:00,17:00,tiered,3.5,,,1.5,,,$3.50 for 1st hr; $1.50 for sub. 0.5 hr
+GRAND_PARK_ORCHARD,main,weekday,17:00,24:00,per_entry,,,,,,5,$5 per entry
+GRAND_PARK_ORCHARD,main,sat,08:00,17:00,tiered,3.5,,,1.5,,,$3.50 for 1st hr; $1.50 for sub. 0.5 hr
+GRAND_PARK_ORCHARD,main,sat,17:00,24:00,per_entry,,,,,,5,$5 per entry
+GRAND_PARK_ORCHARD,main,sun_ph,08:00,17:00,tiered,3.5,,,1.5,,,$3.50 for 1st hr; $1.50 for sub. 0.5 hr
+GRAND_PARK_ORCHARD,main,sun_ph,17:00,24:00,per_entry,,,,,,5,$5 per entry
+HILTON_HOTEL,main,weekday,18:00,24:00,per_entry,,,,,,7,$7 per entry
+HILTON_HOTEL,main,sat,18:00,24:00,per_entry,,,,,,7,$7 per entry
+HILTON_HOTEL,main,sun_ph,00:00,24:00,per_entry,,,,,,7,$7 per entry
+HOLIDAY_INN_ATRIUM,main,weekday,07:00,17:00,hourly,,,,0.9,,,$1.80 per hr
+HOLIDAY_INN_ATRIUM,main,weekday,17:00,24:00,per_entry,,,,,,3.6,$3.60 per entry
+HOLIDAY_INN_ATRIUM,main,sat,07:00,17:00,hourly,,,,0.9,,,$1.80 per hr
+HOLIDAY_INN_ATRIUM,main,sat,17:00,24:00,per_entry,,,,,,3.6,$3.60 per entry
+HOLIDAY_INN_ATRIUM,main,sun_ph,00:00,24:00,per_entry,,,,,,3.6,$3.60 per entry
+HOLIDAY_INN_EXPRESS_SINGAPORE,main,weekday,00:00,24:00,hourly,,,,3,,,$3 per 0.5 hr.
+HOLIDAY_INN_EXPRESS_SINGAPORE,main,sat,00:00,24:00,hourly,,,,3,,,$3 per 0.5 hr.
+HOLIDAY_INN_EXPRESS_SINGAPORE,main,sun_ph,00:00,24:00,hourly,,,,3,,,$3 per 0.5 hr.
+HOLIDAY_INN_SINGAPORE_ORCHARD_CITY_CENTRE,main,weekday,00:00,24:00,tiered,3,,,1.5,,,$3 for 1st hr; $1.50 for sub. 0.5 hr
+HOLIDAY_INN_SINGAPORE_ORCHARD_CITY_CENTRE,main,sat,00:00,24:00,tiered,3,,,1.5,,,$3 for 1st hr; $1.50 for sub. 0.5 hr
+HOLIDAY_INN_SINGAPORE_ORCHARD_CITY_CENTRE,main,sun_ph,00:00,24:00,tiered,3,,,1.5,,,$3 for 1st hr; $1.50 for sub. 0.5 hr
+INTER_CONTINENTAL_HOTEL,main,weekday,08:00,17:00,tiered,1.07,,,1.11,,,$1.07 for 1st hr; $0.37 for sub. 10mins (Car park at Parco Bugis Junction)
+INTER_CONTINENTAL_HOTEL,main,mon-thu,17:00,24:00,tiered,,2.5,120,0.75,,,$2.50 per entry. Fri: $2.50 for 1st 2hrs; $0.25 for sub. 10 mins
+INTER_CONTINENTAL_HOTEL,main,sat,00:00,24:00,tiered,,2.5,120,0.75,,,$2.50 for 1st 2hrs; $0.25 for sub. 10 mins
+INTER_CONTINENTAL_HOTEL,main,sun_ph,00:00,24:00,tiered,,2.5,120,0.75,,,$2.50 for 1st 2hrs; $0.25 for sub. 10 mins
+KLAPSONS_THE_BOUTIQUE_HOTEL,main,sat,00:00,24:00,per_entry,,,,,,4,After 2pm - $4.00 flat
+KLAPSONS_THE_BOUTIQUE_HOTEL,main,sun_ph,00:00,24:00,per_entry,,,,,,4,$4.00 flat
+LANDMARK_VILLAGE_HOTEL_FORMALLY_GOLDEN_LANDMARK_HO,main,weekday,08:00,17:00,tiered,1.9,,,1.07,,,$1.90 for 1st hr; $1.07 for sub. 0.5 hr
+LANDMARK_VILLAGE_HOTEL_FORMALLY_GOLDEN_LANDMARK_HO,main,weekday,17:00,24:00,per_entry,,,,,,2.14,$2.14 per entry
+LANDMARK_VILLAGE_HOTEL_FORMALLY_GOLDEN_LANDMARK_HO,main,sat,08:00,17:00,tiered,1.9,,,1.07,,,$1.90 for 1st hr; $1.07 for sub. 0.5 hr
+LANDMARK_VILLAGE_HOTEL_FORMALLY_GOLDEN_LANDMARK_HO,main,sat,17:00,24:00,per_entry,,,,,,2.14,$2.14 per entry
+LANDMARK_VILLAGE_HOTEL_FORMALLY_GOLDEN_LANDMARK_HO,main,sun_ph,00:00,24:00,per_entry,,,,,,2.14,$2.14 per entry
+M_HOTEL,main,weekday,07:00,18:00,hourly,,,,1.5,,,$1.50 per 0.5 hr
+M_HOTEL,main,weekday,18:00,24:00,per_entry,,,,,,3,$3 per entry
+M_HOTEL,main,sat,07:00,18:00,hourly,,,,1.5,,,$1.50 per 0.5 hr
+M_HOTEL,main,sat,18:00,24:00,per_entry,,,,,,3,$3 per entry
+M_HOTEL,main,sun_ph,00:00,24:00,per_entry,,,,,,3,$3 per entry
+MANDARIN_ORCHARD_SINGAPORE,main,weekday,07:00,18:00,tiered,3.5,,,1.2,,,$3.50 for 1st hr; $1.20 for sub. 0.5 hr
+MANDARIN_ORCHARD_SINGAPORE,main,weekday,18:00,24:00,per_entry,,,,,,6,$6 per entry
+MANDARIN_ORCHARD_SINGAPORE,main,sat,07:00,18:00,tiered,3.5,,,1.2,,,$3.50 for 1st hr; $1.20 for sub. 0.5 hr
+MANDARIN_ORCHARD_SINGAPORE,main,sat,18:00,24:00,per_entry,,,,,,6,$6 per entry
+MANDARIN_ORCHARD_SINGAPORE,main,sun_ph,07:00,18:00,tiered,3.5,,,1.2,,,$3.50 for 1st hr; $1.20 for sub. 0.5 hr
+MANDARIN_ORCHARD_SINGAPORE,main,sun_ph,18:00,24:00,per_entry,,,,,,6,$6 per entry
+MANDARIN_ORIENTAL_HOTEL,main,mon-thu,07:00,17:00,tiered,,2.2,120,1.1,,,$2.20 for 1st 2hrs; $1.10 per 0.5 hr for sub. 0.5 hr (Car Park at Marina Square)
+MANDARIN_ORIENTAL_HOTEL,main,mon-thu,17:00,02:00 +1d,per_entry,,,,,,2.2,$2.20 per entry
+MANDARIN_ORIENTAL_HOTEL,main,mon-thu,02:00,07:00,hourly,,,,1.1,,,$1.10 per 0.5 hr
+MANDARIN_ORIENTAL_HOTEL,main,sat,07:00,02:00 +1d,tiered,,2.4,120,0.6,,,$2.40 for 1st 2 hrs; $1.20 per hr for sub. 2hrs; $1.40 per 0.5 hr for sub. 0.5 hr after 4 hrs of parking
+MANDARIN_ORIENTAL_HOTEL,main,sat,02:00,07:00,hourly,,,,1.1,,,$1.10 per 0.5 hr
+MANDARIN_ORIENTAL_HOTEL,main,sun_ph,07:00,02:00 +1d,tiered,,2.4,120,0.6,,,$2.40 for 1st 2 hrs; $1.20 per hr for sub. 2hrs; $1.40 per 0.5 hr for sub. 0.5 hr after 4 hrs of parking
+MANDARIN_ORIENTAL_HOTEL,main,sun_ph,02:00,07:00,hourly,,,,1.1,,,$1.10 per 0.5 hr
+MARINA_BAY_SANDS,main,weekday,07:00,19:00,tiered,6,,,0.5,,,$6 for 1st hr; $1 for sub. hr; (Capped at $26 every 24hrs)
+MARINA_BAY_SANDS,main,weekday,19:00,24:00,per_entry,,,,,,6,$6 per entry
+MARINA_BAY_SANDS,main,sat,07:00,19:00,tiered,6,,,0.5,,,$6 for 1st hr; $1 for sub. hr; (Capped at $26 every 24hrs)
+MARINA_BAY_SANDS,main,sat,19:00,24:00,per_entry,,,,,,6,$6 per entry
+MARINA_BAY_SANDS,main,sun_ph,07:00,19:00,tiered,6,,,0.5,,,$6 for 1st hr; $1 for sub. hr; (Capped at $26 every 24hrs)
+MARINA_BAY_SANDS,main,sun_ph,19:00,24:00,per_entry,,,,,,6,$6 per entry
+MARINA_MANDARIN_HOTEL,main,mon-thu,07:00,17:00,tiered,,2.2,120,1.1,,,$2.20 for 1st 2hrs; $1.10 per 0.5 hr for sub. 0.5 hr (Car Park at Marina Square)
+MARINA_MANDARIN_HOTEL,main,mon-thu,17:00,02:00 +1d,per_entry,,,,,,2.2,$2.20 per entry
+MARINA_MANDARIN_HOTEL,main,mon-thu,02:00,07:00,hourly,,,,1.1,,,$1.10 per 0.5 hr for sub. 0.5 hr
+MARINA_MANDARIN_HOTEL,main,sat,07:00,02:00 +1d,tiered,,2.4,120,0.6,,,$2.40 for 1st 2hrs; $1.20 per hr for sub. 2hrs; $1.40 per 0.5 hr for sub. 0.5 hr after 4 hrs of parking
+MARINA_MANDARIN_HOTEL,main,sat,02:00,07:00,hourly,,,,1.1,,,$1.10 per 0.5 hr for sub. 0.5 hr
+MARINA_MANDARIN_HOTEL,main,sun_ph,07:00,02:00 +1d,tiered,,2.4,120,0.6,,,$2.40 for 1st 2hrs; $1.20 per hr for sub. 2hrs; $1.40 per 0.5 hr for sub. 0.5 hr after 4 hrs of parking
+MARINA_MANDARIN_HOTEL,main,sun_ph,02:00,07:00,hourly,,,,1.1,,,$1.10 per 0.5 hr for sub. 0.5 hr
+NOVOTEL_CLARKE_QUAY,main,weekday,07:00,17:00,hourly,,,,0.535,,,$1.07 per hr
+NOVOTEL_CLARKE_QUAY,main,weekday,17:00,24:00,per_entry,,,,,,3.21,$3.21 per entry
+NOVOTEL_CLARKE_QUAY,main,sat,07:00,13:00,hourly,,,,0.535,,,$1.07 per hr
+NOVOTEL_CLARKE_QUAY,main,sat,13:00,24:00,per_entry,,,,,,3.21,$3.21 per entry
+NOVOTEL_CLARKE_QUAY,main,sun_ph,00:00,24:00,per_entry,,,,,,3.21,$3.21 per entry
+ONE_FULLERTON,main,weekday,07:00,18:00,hourly,,,,2.5,,,$2.50 per 0.5 hr
+ONE_FULLERTON,main,weekday,18:00,24:00,per_entry,,,,,,5,$5 per entry
+ONE_FULLERTON,main,sat,00:00,24:00,per_entry,,,,,,5,$5 per entry
+ONE_FULLERTON,main,sun_ph,00:00,24:00,per_entry,,,,,,5,$5 per entry
+ORCHARD_GRAND_COURT_HOTEL,main,weekday,07:00,17:00,hourly,,,,1.25,,,$2.50 per hr
+ORCHARD_GRAND_COURT_HOTEL,main,weekday,17:00,24:00,per_entry,,,,,,3,$3 per entry
+ORCHARD_GRAND_COURT_HOTEL,main,sat,07:00,17:00,hourly,,,,1.25,,,$2.50 per hr
+ORCHARD_GRAND_COURT_HOTEL,main,sat,17:00,24:00,per_entry,,,,,,3,$3 per entry
+ORCHARD_GRAND_COURT_HOTEL,main,sun_ph,00:00,24:00,per_entry,,,,,,3,$3 per entry
+ORCHARD_HOTEL_SHOPPING_ARCADE,main,weekday,07:00,18:00,tiered,5,,,1.5,,,$5 for 1st hr; $1.50 for sub. 0.5 hr
+ORCHARD_HOTEL_SHOPPING_ARCADE,main,weekday,18:00,24:00,per_entry,,,,,,5.5,$5.50 per entry
+ORCHARD_HOTEL_SHOPPING_ARCADE,main,sat,07:00,18:00,tiered,5,,,1.5,,,$5 for 1st hr; $1.50 for sub. 0.5 hr
+ORCHARD_HOTEL_SHOPPING_ARCADE,main,sat,18:00,24:00,per_entry,,,,,,5.5,$5.50 per entry
+ORCHARD_HOTEL_SHOPPING_ARCADE,main,sun_ph,00:00,24:00,per_entry,,,,,,5,$5 per entry
+ORCHARD_PARADE_HOTEL,main,weekday,07:00,17:00,tiered,4,,,1.5,,,$4 for 1st hr; $1.50 for sub. 0.5 hr
+ORCHARD_PARADE_HOTEL,main,weekday,18:00,24:00,per_entry,,,,,,4,$4 per entry
+ORCHARD_PARADE_HOTEL,main,sat,07:00,17:00,tiered,4,,,1.5,,,$4 for 1st hr; $1.50 for sub. 0.5 hr
+ORCHARD_PARADE_HOTEL,main,sat,18:00,24:00,per_entry,,,,,,4,$4 per entry
+ORCHARD_PARADE_HOTEL,main,sun_ph,00:00,24:00,per_entry,,,,,,4,$4 per entry
+PAN_PACIFIC_HOTEL,main,mon-thu,07:00,17:00,tiered,,2.2,120,1.1,,,$2.20 for 1st 2hrs; $1.10 per 0.5 hr for sub. 0.5 hr (Car Park at Marina Square)
+PAN_PACIFIC_HOTEL,main,mon-thu,17:00,02:00 +1d,per_entry,,,,,,2.2,$2.20 per entry
+PAN_PACIFIC_HOTEL,main,mon-thu,02:00,07:00,hourly,,,,1.1,,,$1.10 per 0.5 hr
+PAN_PACIFIC_HOTEL,main,sat,07:00,02:00 +1d,tiered,,2.4,120,0.6,,,$2.40 for 1st 2 hrs; $1.20 per hr for sub. 2hrs; $1.40 per 0.5 hr for sub. 0.5 hr after 4 hrs of parking
+PAN_PACIFIC_HOTEL,main,sat,02:00,07:00,hourly,,,,1.1,,,$1.10 per 0.5 hr
+PAN_PACIFIC_HOTEL,main,sun_ph,07:00,02:00 +1d,tiered,,2.4,120,0.6,,,$2.40 for 1st 2 hrs; $1.20 per hr for sub. 2hrs; $1.40 per 0.5 hr for sub. 0.5 hr after 4 hrs of parking
+PAN_PACIFIC_HOTEL,main,sun_ph,02:00,07:00,hourly,,,,1.1,,,$1.10 per 0.5 hr
+PAN_PACIFIC_ORCHARD,main,weekday,07:00,17:00,tiered,4,,,1.5,,,$4 for 1st hr; $1.50 for sub. 0.5 hr
+PAN_PACIFIC_ORCHARD,main,weekday,17:00,24:00,per_entry,,,,,,4,$4 per entry
+PAN_PACIFIC_ORCHARD,main,sat,07:00,17:00,tiered,4,,,1.5,,,$4 for 1st hr; $1.50 for sub. 0.5 hr
+PAN_PACIFIC_ORCHARD,main,sat,17:00,24:00,per_entry,,,,,,4,$4 per entry
+PAN_PACIFIC_ORCHARD,main,sun_ph,00:00,24:00,per_entry,,,,,,4,$4 per entry
+PARAMOUNT_HOTEL_2,main,weekday,08:00,17:00,hourly,,,,0.6,,,$0.60 per 0.5 hr
+PARAMOUNT_HOTEL_2,main,weekday,17:00,24:00,per_entry,,,,,,2.5,$2.50 per entry
+PARAMOUNT_HOTEL_2,main,sat,08:00,17:00,hourly,,,,0.6,,,$0.60 per 0.5 hr
+PARAMOUNT_HOTEL_2,main,sat,17:00,24:00,per_entry,,,,,,2.5,$2.50 per entry
+PARAMOUNT_HOTEL_2,main,sun_ph,00:00,24:00,per_entry,,,,,,2.5,$2.50 per entry
+PARKROYAL_ON_BEACH_ROAD,MSCP,weekday,00:00,24:00,tiered,2.5,,,1.5,,,$2.50 for 1st hr; $1.50 for sub. 0.5 hr
+PARKROYAL_ON_BEACH_ROAD,hotel_driveway,weekday,00:00,24:00,tiered,6,,,2,,,$6 for 1st hr; $2 for sub. 0.5 hr
+PARKROYAL_ON_BEACH_ROAD,hotel_driveway,weekday,17:00,24:00,per_entry,,,,,,2.5,Multi Storey Carpark - $2.50 per entry. Hotel Driveway - $6 per entry
+PARKROYAL_ON_BEACH_ROAD,MSCP,sat,00:00,24:00,tiered,2.5,,,1.5,,,$2.50 for 1st hr; $1.50 for sub. 0.5 hr
+PARKROYAL_ON_BEACH_ROAD,hotel_driveway,sat,00:00,24:00,tiered,6,,,2,,,$6 for 1st hr; $2 for sub. 0.5 hr
+PARKROYAL_ON_BEACH_ROAD,hotel_driveway,sat,17:00,24:00,per_entry,,,,,,2.5,Multi Storey Carpark - $2.50 per entry. Hotel Driveway - $6 per entry
+PARKROYAL_ON_BEACH_ROAD,MSCP,sun_ph,00:00,24:00,per_entry,,,,,,2.5,$2.50 per entry
+PARKROYAL_ON_BEACH_ROAD,hotel_driveway,sun_ph,00:00,24:00,per_entry,,,,,,6,$6 per entry
+PENINSULA_EXCELSIOR_HOTEL,main,weekday,08:00,17:00,tiered,2.6,,,1.5,,,$2.60 for 1st hr; $1.50 for sub. 0.5 hr
+PENINSULA_EXCELSIOR_HOTEL,main,weekday,17:00,24:00,per_entry,,,,,,4,$4 per entry
+PENINSULA_EXCELSIOR_HOTEL,main,sat,08:00,17:00,tiered,2.6,,,1.5,,,$2.60 for 1st hr; $1.50 for sub. 0.5 hr
+PENINSULA_EXCELSIOR_HOTEL,main,sat,17:00,24:00,per_entry,,,,,,4,$4 per entry
+PENINSULA_EXCELSIOR_HOTEL,main,sun_ph,08:00,17:00,hourly,,,,0.75,,,$1.50 per hr
+PENINSULA_EXCELSIOR_HOTEL,main,sun_ph,17:00,24:00,per_entry,,,,,,4,$4 per entry
+RAFFLES_HOTEL,main,weekday,00:00,18:00,tiered,,3,30,1.5,,,$3 for 1st 0.5 hr; $1.50 for sub. 0.5 hr
+RAFFLES_HOTEL,main,weekday,18:00,24:00,per_entry,,,,,,6,$6 per entry
+RAFFLES_HOTEL,main,sat,00:00,18:00,tiered,,3,30,1.5,,,$3 for 1st 0.5 hr; $1.50 for sub. 0.5 hr
+RAFFLES_HOTEL,main,sat,18:00,24:00,per_entry,,,,,,6,$6 per entry
+RAFFLES_HOTEL,main,sun_ph,00:00,24:00,per_entry,,,,,,6,$6 per entry
+RAMADA_HOTEL_2,main,weekday,06:00,18:00,hourly,,,,0.8,,,$1.60 per hr
+RAMADA_HOTEL_2,main,weekday,18:00,24:00,per_entry,,,,,,2.2,$2.20 per entry
+RAMADA_HOTEL_2,main,sat,06:00,18:00,hourly,,,,0.8,,,$1.60 per hr
+RAMADA_HOTEL_2,main,sat,18:00,24:00,per_entry,,,,,,2.2,$2.20 per entry
+RAMADA_HOTEL_2,main,sun_ph,06:00,18:00,hourly,,,,0.8,,,$1.60 per hr
+RAMADA_HOTEL_2,main,sun_ph,18:00,24:00,per_entry,,,,,,2.2,$2.20 per entry
+REGENT_HOTEL,main,weekday,07:00,18:00,tiered,5,,,2.5,,,$5 for 1st hr; $2.50 for sub. 0.5 hr
+REGENT_HOTEL,main,weekday,18:00,24:00,per_entry,,,,,,6,$6 per entry
+REGENT_HOTEL,main,sat,07:00,18:00,tiered,5,,,2.5,,,$5 for 1st hr; $2.50 for sub. 0.5 hr
+REGENT_HOTEL,main,sat,18:00,24:00,per_entry,,,,,,6,$6 per entry
+REGENT_HOTEL,main,sun_ph,07:00,18:00,tiered,5,,,2.5,,,$5 for 1st hr; $2.50 for sub. 0.5 hr
+REGENT_HOTEL,main,sun_ph,18:00,24:00,per_entry,,,,,,6,$6 per entry
+RENDEZVOUS_HOTEL,main,weekday,00:00,24:00,tiered,,3.2,120,0.8,,,$3.20 for 1st 2hrs; $1.60 for sub. hr
+RENDEZVOUS_HOTEL,main,sat,00:00,24:00,tiered,,3.2,120,0.8,,,$3.20 for 1st 2hrs; $1.60 for sub. hr
+RENDEZVOUS_HOTEL,main,sun_ph,00:00,24:00,tiered,,3.2,120,0.8,,,$3.20 for 1st 2hrs; $1.60 for sub. hr
+ROYAL_PLAZA_ON_SCOTTS,main,weekday,08:00,18:00,tiered,4,,,1.5,,,$4 for 1st hr; $1.50 for sub. 0.5 hr
+ROYAL_PLAZA_ON_SCOTTS,main,weekday,18:00,24:00,per_entry,,,,,,5.5,$5.50 per entry
+ROYAL_PLAZA_ON_SCOTTS,main,sat,08:00,18:00,tiered,4,,,1.5,,,$4 for 1st hr; $1.50 for sub. 0.5 hr
+ROYAL_PLAZA_ON_SCOTTS,main,sat,18:00,24:00,per_entry,,,,,,5.5,$5.50 per entry
+ROYAL_PLAZA_ON_SCOTTS,main,sun_ph,00:00,24:00,per_entry,,,,,,5.5,$5.50 per entry
+SHANGRI_LA_HOTEL,main,weekday,07:00,17:00,tiered,6,,,2,,,$6 for 1st hr; $2 for sub. 0.5 hr
+SHANGRI_LA_HOTEL,main,weekday,17:00,24:00,per_entry,,,,,,8,$8 per entry
+SHANGRI_LA_HOTEL,main,sat,07:00,17:00,tiered,6,,,2,,,$6 for 1st hr; $2 for sub. 0.5 hr
+SHANGRI_LA_HOTEL,main,sat,17:00,24:00,per_entry,,,,,,8,$8 per entry
+SHANGRI_LA_HOTEL,main,sun_ph,07:00,17:00,tiered,6,,,2,,,$6 for 1st hr; $2 for sub. 0.5 hr
+SHANGRI_LA_HOTEL,main,sun_ph,17:00,24:00,per_entry,,,,,,8,$8 per entry
+SHERATON_TOWERS_HOTEL,main,weekday,07:00,18:00,tiered,4,,,2,,,$4 for 1st hr; $2 for sub. 0.5 hr
+SHERATON_TOWERS_HOTEL,main,weekday,18:00,24:00,per_entry,,,,,,6,$6 per entry
+SHERATON_TOWERS_HOTEL,main,sat,07:00,18:00,tiered,4,,,2,,,$4 for 1st hr; $2 for sub. 0.5 hr
+SHERATON_TOWERS_HOTEL,main,sat,18:00,24:00,per_entry,,,,,,6,$6 per entry
+SHERATON_TOWERS_HOTEL,main,sun_ph,00:00,24:00,per_entry,,,,,,6,$6 per entry
+SINGAPORE_MARRIOTT_HOTEL,main,weekday,06:00,18:00,hourly,,,,1.5,,,$0.05 per min/$3 per hr
+SINGAPORE_MARRIOTT_HOTEL,main,weekday,18:00,24:00,hourly,,,,1.5,,,$0.05 per min/$3 per hr
+SINGAPORE_MARRIOTT_HOTEL,main,sat,06:00,18:00,hourly,,,,1.5,,,$0.05 per min/$3 per hr
+SINGAPORE_MARRIOTT_HOTEL,main,sat,18:00,24:00,hourly,,,,1.5,,,$0.05 per min/$3 per hr
+SINGAPORE_MARRIOTT_HOTEL,main,sun_ph,06:00,18:00,hourly,,,,1.5,,,$0.05 per min/$3 per hr
+SINGAPORE_MARRIOTT_HOTEL,main,sun_ph,18:00,24:00,hourly,,,,1.5,,,$0.05 per min/$3 per hr
+SWISSOTEL_MERCHANT_COURT_HOTEL,main,weekday,00:00,24:00,tiered,4.5,,,1.5,,,$4.50 for 1st hr; $1.50 for sub. 0.5 hr
+SWISSOTEL_MERCHANT_COURT_HOTEL,main,sat,00:00,24:00,tiered,4.5,,,1.5,,,$4.50 for 1st hr; $1.50 for sub. 0.5 hr
+SWISSOTEL_MERCHANT_COURT_HOTEL,main,sun_ph,00:00,24:00,tiered,4.5,,,1.5,,,$4.50 for 1st hr; $1.50 for sub. 0.5 hr
+SWISSOTEL_STAMFORD_HOTEL,main,weekday,08:00,17:00,tiered,2,,,1,,,$2 for 1st hr; $0.50 for sub. 15mins (Car park at Raffles City Shopping Centre)
+SWISSOTEL_STAMFORD_HOTEL,main,weekday,17:00,24:00,per_entry,,,,,,2.5,$2.50 per entry
+SWISSOTEL_STAMFORD_HOTEL,main,sat,00:00,24:00,tiered,,2,120,0.6,,,$2 for 1st 2hrs; $0.30 for sub. 15mins
+SWISSOTEL_STAMFORD_HOTEL,main,sun_ph,00:00,24:00,tiered,,2,120,0.6,,,$2 for 1st 2hrs; $0.30 for sub. 15mins
+SUNSHINE_PLACE,main,weekday,00:00,24:00,coupon,,,,,,,HDB coupon parking
+SUNSHINE_PLACE,main,sat,00:00,24:00,coupon,,,,,,,HDB coupon parking
+SUNSHINE_PLACE,main,sun_ph,00:00,24:00,coupon,,,,,,,HDB coupon parking
+TRADERS_HOTEL,main,weekday,06:00,17:00,tiered,2.4,,,1.2,,,$2.40 for 1st hr; $1.20 for sub. 0.5 hr
+TRADERS_HOTEL,main,weekday,17:00,24:00,per_entry,,,,,,3.5,$3.50 per entry
+TRADERS_HOTEL,main,sat,06:00,17:00,tiered,2.4,,,1.2,,,$2.40 for 1st hr; $1.20 for sub. 0.5 hr
+TRADERS_HOTEL,main,sat,17:00,24:00,per_entry,,,,,,3.5,$3.50 per entry
+TRADERS_HOTEL,main,sun_ph,00:00,24:00,per_entry,,,,,,3.5,$3.50 per entry
+YORK_HOTEL,main,weekday,08:01,18:00,tiered,4,,,2,,,$4 for 1st hr; $2 for sub. 0.5 hr
+YORK_HOTEL,main,weekday,18:00,24:00,per_entry,,,,,,5,$5 per entry
+YORK_HOTEL,main,sat,08:01,18:00,tiered,4,,,2,,,$4 for 1st hr; $2 for sub. 0.5 hr
+YORK_HOTEL,main,sat,18:00,24:00,per_entry,,,,,,5,$5 per entry
+YORK_HOTEL,main,sun_ph,00:00,24:00,per_entry,,,,,,5,$5 per entry
+313_SOMERSET,main,weekday,00:00,24:00,tiered,2,,,1,,,$2 for 1st hr; $1 for sub. 0.5 hr
+313_SOMERSET,main,weekday,18:00,24:00,tiered,,4.5,180,1.5,,,$4.50 for 1st 3hrs; $1.50 for sub. 0.5 hr
+313_SOMERSET,main,sat,00:00,24:00,tiered,2,,,1,,,$2 for 1st hr; $1 for sub. 0.5 hr
+313_SOMERSET,main,sat,18:00,24:00,tiered,,4.5,180,1.5,,,$4.50 for 1st 3hrs; $1.50 for sub. 0.5 hr
+313_SOMERSET,main,sun_ph,00:00,24:00,tiered,,4.5,180,1.5,,,$4.50 for 1st 3hrs; $1.50 for sub 0.5 hr
+ANGULLIA_PARK_OFF_STREET,main,weekday,00:00,24:00,hourly,,,,1,,,$1.00 /30 mins (Per Minute Charging); $0.50 /30 mins (Per Minute Charging)
+ANGULLIA_PARK_OFF_STREET,main,sat,07:00,17:00,hourly,,,,1,,,$1.00 per 30 mins
+ANGULLIA_PARK_OFF_STREET,main,sat,17:00,07:00 +1d,hourly,,,,0.5,,,$0.50 per 30 mins (Per Minute Charging)
+ANGULLIA_PARK_OFF_STREET,main,sun_ph,00:00,24:00,hourly,,,,0.5,,,$0.50 /30 mins (Per Minute Charging)
+ATRIUM_ORCHARD,main,mon-thu,00:00,17:59,tiered,1.07,,,0.64,,,$1.07 for 1st hr; $0.32 for sub. 15mins
+ATRIUM_ORCHARD,main,fri_eve_ph,00:00,24:00,tiered,1.07,,,0.64,,,$1.07 for 1st hr; $0.32 for sub. 15mins
+ATRIUM_ORCHARD,main,mon-thu,18:00,23:59,per_entry,,,,,,2.14,$2.14 per entry
+ATRIUM_ORCHARD,main,fri_eve_ph,00:00,24:00,per_entry,,,,,,2.14,6pm-2.59am (the next day): $2.14 per entry
+ATRIUM_ORCHARD,main,sat,03:00,17:59,tiered,,2.14,120,0.64,,,$2.14 for 1st 2 hrs; $0.32 for sub. 15mins
+ATRIUM_ORCHARD,main,sat,18:00,24:00,per_entry,,,,,,2.14,$2.14 per entry
+ATRIUM_ORCHARD,main,sun_ph,03:00,17:59,tiered,,2.14,120,0.64,,,$2.14 for 1st 2hrs; $0.32 for sub. 15mins
+ATRIUM_ORCHARD,main,sun_ph,18:00,23:59,per_entry,,,,,,2.14,$2.14 per entry
+CATHAY_CINELEISURE_ORCHARD,main,weekday,07:00,24:00,tiered,2.4,,,1.4,,,$2.40 for 1st hr; $1.40 for sub. 0.5 hr
+CATHAY_CINELEISURE_ORCHARD,main,weekday,18:00,24:00,tiered,,4.5,180,1.6,,,$4.50 for 1st 3hrs; $1.60 for sub.0.5 hr
+CATHAY_CINELEISURE_ORCHARD,main,sat,07:00,24:00,tiered,,4.5,180,1.6,,,$4.50 for 1st 3hrs; $1.60 for sub. 0.5 hr
+CATHAY_CINELEISURE_ORCHARD,main,sun_ph,07:00,24:00,tiered,,4.5,180,1.6,,,$4.50 for 1st 3hrs; $1.60 for sub. 0.5 hr
+COMCENTRE_EXETER_RD,main,weekday,07:00,18:00,tiered,3,,,1.5,,,$3 for 1st hr; $1.50 for sub. 0.5 hr
+COMCENTRE_EXETER_RD,main,weekday,18:00,06:59 +1d,per_entry,,,,,,3.5,$3.50 per entry
+COMCENTRE_EXETER_RD,main,sat,07:00,12:59,tiered,3,,,1.5,,,$3 for 1st hr; $1.50 for sub. 0.5 hr
+COMCENTRE_EXETER_RD,main,sat,13:00,22:00,tiered,,3,120,1.2,,,$3 for 1st 2hr; $1.20 for sub. 0.5 hr
+COMCENTRE_EXETER_RD,main,sun_ph,07:00,22:00,tiered,,3,120,1.2,,,$3 for 1st 2 hr; $1.20 for sub. 0.5 hr
+CONCORDE_HOTEL_2,main,weekday,07:00,18:00,tiered,2.14,,,1.39,,,$2.14 for 1st hr; $1.39 for sub. 0.5 hr
+CONCORDE_HOTEL_2,main,weekday,18:00,24:00,per_entry,,,,,,3.75,$3.75 per entry
+CONCORDE_HOTEL_2,main,sat,07:00,18:00,tiered,2.14,,,1.39,,,$2.14 for 1st hr; $1.39 for sub. 0.5 hr
+CONCORDE_HOTEL_2,main,sat,18:00,24:00,per_entry,,,,,,3.75,$3.75 per entry
+CONCORDE_HOTEL_2,main,sun_ph,00:00,24:00,per_entry,,,,,,3.75,$3.75 per entry
+DELFI_ORCHARD,main,weekday,08:00,17:00,tiered,3,,,1.93,,,$3 for 1st hr; $1.93 for sub. 0.5 hr
+DELFI_ORCHARD,main,weekday,17:00,23:00,per_entry,,,,,,4.07,$4.07 per entry (Car park closed at 11pm daily)
+DELFI_ORCHARD,main,sat,08:00,17:00,tiered,3,,,1.93,,,$3 for 1st hr; $1.93 for sub. 0.5 hr
+DELFI_ORCHARD,main,sat,17:00,23:00,per_entry,,,,,,4.07,$4.07 per entry (Car park closed at 11pm daily)
+DELFI_ORCHARD,main,sun_ph,08:00,23:00,per_entry,,,,,,4.07,$4.07 per entry
+ELIZABETH_HOTEL_2,main,weekday,07:00,18:00,tiered,4,,,2,,,$4 for 1st hr; $2 for sub. 0.5 hr
+ELIZABETH_HOTEL_2,main,weekday,18:00,24:00,per_entry,,,,,,5,$5 per entry
+ELIZABETH_HOTEL_2,main,sat,07:00,18:00,tiered,4,,,2,,,$4 for 1st hr; $2 for sub. 0.5 hr
+ELIZABETH_HOTEL_2,main,sat,18:00,24:00,per_entry,,,,,,5,$5 per entry
+ELIZABETH_HOTEL_2,main,sun_ph,00:00,24:00,per_entry,,,,,,5,$5 per entry
+FAR_EAST_PLAZA,main,weekday,08:00,17:00,tiered,2.14,,,1.07,,,$2.14 for 1st hr; $1.07 for sub. 0.5 hr
+FAR_EAST_PLAZA,main,weekday,17:00,24:00,per_entry,,,,,,3.53,$3.53 per entry
+FAR_EAST_PLAZA,main,sat,08:00,17:00,tiered,2.14,,,1.07,,,$2.14 for 1st hr; $1.07 for sub. 0.5 hr
+FAR_EAST_PLAZA,main,sat,17:00,24:00,per_entry,,,,,,3.53,$3.53 per entry
+FAR_EAST_PLAZA,main,sun_ph,00:00,24:00,per_entry,,,,,,3.53,$3.53 per entry.
+FAR_EAST_SHOPPING_CENTRE,main,weekday,08:00,17:00,hourly,,,,1.285,,,$2.57 per hr; $1.28 for sub. 0.5hr
+FAR_EAST_SHOPPING_CENTRE,main,weekday,17:00,24:00,per_entry,,,,,,3.75,$3.75 per entry; 12am-8am the following day: $3.75 per entry
+FAR_EAST_SHOPPING_CENTRE,main,sat,08:00,17:00,hourly,,,,1.285,,,$2.57 per hr; $1.28 for sub. 0.5hr
+FAR_EAST_SHOPPING_CENTRE,main,sat,17:00,24:00,per_entry,,,,,,3.75,$3.75 per entry; 12am-8am the following day: $3.75 per entry
+FAR_EAST_SHOPPING_CENTRE,main,sun_ph,08:00,24:00,per_entry,,,,,,3.75,$3.75 per entry; 12am-8am the folowing day : $3.75 per entry
+FORUM_THE_SHOPPING_MALL,main,weekday,06:00,17:00,tiered,2.4,,,1.2,,,$2.40 for 1st hr; $1.20 for sub. 0.5 hr
+FORUM_THE_SHOPPING_MALL,main,weekday,17:00,24:00,per_entry,,,,,,3.2,$3.20 per entry
+FORUM_THE_SHOPPING_MALL,main,sat,06:00,17:00,tiered,2.6,,,1.4,,,$2.60 for 1st hr; $1.40 for sub. 0.5 hr
+FORUM_THE_SHOPPING_MALL,main,sat,17:00,24:00,per_entry,,,,,,3.2,$3.20 per entry
+FORUM_THE_SHOPPING_MALL,main,sun_ph,00:00,24:00,per_entry,,,,,,3.2,$3.20 per entry
+FOUR_SEASONS_HOTEL_2,main,weekday,06:00,17:00,tiered,6,,,3,,,$6 for 1st hr; $3 for sub. 0.5 hr
+FOUR_SEASONS_HOTEL_2,main,weekday,17:00,24:00,per_entry,,,,,,6,$6 per entry
+FOUR_SEASONS_HOTEL_2,main,sat,06:00,17:00,tiered,6,,,3,,,$6 for 1st hr; $3 for sub. 0.5 hr
+FOUR_SEASONS_HOTEL_2,main,sat,17:00,24:00,per_entry,,,,,,6,$6 per entry
+FOUR_SEASONS_HOTEL_2,main,sun_ph,06:00,17:00,tiered,6,,,3,,,$6 for 1st hr; $3 for sub. 0.5 hr
+FOUR_SEASONS_HOTEL_2,main,sun_ph,17:00,24:00,per_entry,,,,,,6,$6 per entry
+GOODWOOD_PARK_HOTEL_2,main,weekday,08:00,18:00,tiered,4,,,2,,,$4 for 1st hr; $2 for sub. 0.5 hr
+GOODWOOD_PARK_HOTEL_2,main,weekday,18:00,24:00,per_entry,,,,,,5,$5 per entry
+GOODWOOD_PARK_HOTEL_2,main,sat,08:00,18:00,tiered,4,,,2,,,$4 for 1st hr; $2 for sub. 0.5 hr
+GOODWOOD_PARK_HOTEL_2,main,sat,18:00,24:00,per_entry,,,,,,5,$5 per entry
+GOODWOOD_PARK_HOTEL_2,main,sun_ph,00:00,24:00,per_entry,,,,,,5,$5 per entry
+GRAND_HYATT_SINGAPORE,main,weekday,04:00,16:59,tiered,3.21,,,1.07,,,$3.21 for 1st hr; $1.07 for sub. 0.5 hr
+GRAND_HYATT_SINGAPORE,main,weekday,17:00,24:00,per_entry,,,,,,5.35,$5.35 per entry
+GRAND_HYATT_SINGAPORE,main,sat,04:00,16:59,tiered,3.21,,,1.07,,,$3.21 for 1st hr; $1.07 for sub. 0.5 hr
+GRAND_HYATT_SINGAPORE,main,sat,17:00,24:00,per_entry,,,,,,5.35,$5.35 per entry
+GRAND_HYATT_SINGAPORE,main,sun_ph,04:00,03:59 +1d,per_entry,,,,,,5.35,$5.35 per entry
+GRAND_PARK_ORCHARD_2,main,weekday,08:00,17:00,tiered,3.5,,,1.5,,,$3.50 for 1st hr; $1.50 for sub. 0.5 hr
+GRAND_PARK_ORCHARD_2,main,weekday,17:00,24:00,per_entry,,,,,,5,$5 per entry
+GRAND_PARK_ORCHARD_2,main,sat,08:00,17:00,tiered,3.5,,,1.5,,,$3.50 for 1st hr; $1.50 for sub. 0.5 hr
+GRAND_PARK_ORCHARD_2,main,sat,17:00,24:00,per_entry,,,,,,5,$5 per entry
+GRAND_PARK_ORCHARD_2,main,sun_ph,08:00,17:00,tiered,3.5,,,1.5,,,$3.50 for 1st hr; $1.50 for sub. 0.5 hr
+GRAND_PARK_ORCHARD_2,main,sun_ph,17:00,24:00,per_entry,,,,,,5,$5 per entry
+GRANGE_ROAD_OFF_STREET,main,weekday,00:00,24:00,hourly,,,,1,,,$1.00 /30 Mins (Per Minute Charging); $0.50 /30 mins (Per Minute Charging)
+GRANGE_ROAD_OFF_STREET,main,sat,07:00,17:00,hourly,,,,1,,,$1.00 / 30 mins
+GRANGE_ROAD_OFF_STREET,main,sat,17:00,07:00 +1d,hourly,,,,0.5,,,$0.50 / 30 mins (Per Minute Charging)
+GRANGE_ROAD_OFF_STREET,main,sun_ph,00:00,24:00,hourly,,,,0.5,,,$0.50 / 30 Mins. (Per Minute Charging)
+HILTON_HOTEL_2,main,weekday,00:00,24:00,hourly,,,,3.5,,,$7 per hr
+HILTON_HOTEL_2,main,weekday,18:00,24:00,per_entry,,,,,,7,$7 per entry
+HILTON_HOTEL_2,main,sat,00:00,24:00,hourly,,,,3.5,,,$7 per hr
+HILTON_HOTEL_2,main,sat,18:00,24:00,per_entry,,,,,,7,$7 per entry
+HILTON_HOTEL_2,main,sun_ph,00:00,24:00,hourly,,,,3.5,,,$7 per hr
+HILTON_HOTEL_2,main,sun_ph,18:00,24:00,per_entry,,,,,,7,$7 per entry
+HOLIDAY_INN_EXPRESS_SINGAPORE_2,main,weekday,00:00,24:00,hourly,,,,3,,,$3 per 0.5 hr.
+HOLIDAY_INN_EXPRESS_SINGAPORE_2,main,sat,00:00,24:00,hourly,,,,3,,,$3 per 0.5 hr.
+HOLIDAY_INN_EXPRESS_SINGAPORE_2,main,sun_ph,00:00,24:00,hourly,,,,3,,,$3 per 0.5 hr.
+HOLIDAY_INN_SINGAPORE_ORCHARD_CITY_CENTRE_2,main,weekday,00:00,24:00,tiered,3,,,1.5,,,$3 for 1st hr; $1.50 for sub. 0.5 hr
+HOLIDAY_INN_SINGAPORE_ORCHARD_CITY_CENTRE_2,main,sat,00:00,24:00,tiered,3,,,1.5,,,$3 for 1st hr; $1.50 for sub. 0.5 hr
+HOLIDAY_INN_SINGAPORE_ORCHARD_CITY_CENTRE_2,main,sun_ph,00:00,24:00,tiered,3,,,1.5,,,$3 for 1st hr; $1.50 for sub. 0.5 hr
+INTERNATIONAL_BUILDING,main,weekday,00:00,24:00,not_public,,,,,,,Carpark not in use
+INTERNATIONAL_BUILDING,main,sat,00:00,24:00,not_public,,,,,,,Carpark not in use
+INTERNATIONAL_BUILDING,main,sun_ph,00:00,24:00,not_public,,,,,,,Carpark not in use
+ION_ORCHARD,main,mon-thu,08:00,16:59,tiered,2.67,,,1.28,,,$2.67 for 1st hr; $0.64 for sub. 15 mins
+ION_ORCHARD,main,mon-thu,17:00,23:59,hourly,,,,0.535,,,$3 per entry. 12am-7.59am $1.07 per hr
+ION_ORCHARD,main,sat,08:00,16:59,tiered,2.56,,,1.88,,,$2.56 for 1st hr; $0.94 for sub. 15 mins. 5-11.59pm: $3.74 per entry. 12am-7.59am $1.07 per hour
+ION_ORCHARD,main,sun_ph,08:00,16:59,tiered,2.56,,,1.88,,,$2.56 for 1st hr; $0.94 for sub. 15 mins. 5-11.59pm: $3.74 per entry. 12am-7.59am $1.07 per hour
+LIAT_TOWERS,main,weekday,07:00,18:00,tiered,2.5,,,1.3,,,$2.50 for 1st hr; $1.30 for sub. 0.5 hr
+LIAT_TOWERS,main,weekday,18:00,24:00,per_entry,,,,,,3.5,$3.50 per entry
+LIAT_TOWERS,main,sat,07:00,18:00,tiered,2.5,,,1.3,,,$2.50 for 1st hr; $1.30 for sub. 0.5 hr
+LIAT_TOWERS,main,sat,18:00,24:00,per_entry,,,,,,3.5,$3.50 per entry
+LIAT_TOWERS,main,sun_ph,07:00,18:00,tiered,2.5,,,1.3,,,$2.50 for 1st hr; $1.30 for sub. 0.5 hr
+LIAT_TOWERS,main,sun_ph,18:00,24:00,per_entry,,,,,,3.5,$3.50 per entry
+LUCKY_PLAZA,main,weekday,07:00,16:59,tiered,1.93,,,1.28,,,$1.93 for 1st hr; $1.28 for sub. 0.5 hr
+LUCKY_PLAZA,main,weekday,17:00,24:00,per_entry,,,,,,3.38,$3.38 per entry
+LUCKY_PLAZA,main,sat,07:00,16:59,tiered,1.93,,,1.28,,,$1.93 for 1st hr; $1.28 for sub. 0.5 hr
+LUCKY_PLAZA,main,sat,17:00,24:00,per_entry,,,,,,3.38,$3.38 per entry
+LUCKY_PLAZA,main,sun_ph,07:00,21:59,tiered,1.93,,,1.28,,,$1.93 for 1st hr; $1.28 for sub. 0.5 hr
+LUCKY_PLAZA,main,sun_ph,22:00,06:59 +1d,per_entry,,,,,,3.38,$3.38 per entry. PH: $4 per entry (Does not applies if PH falls on Sun)
+MANDARIN_GALLERY,main,weekday,06:00,18:00,per_min,,,,,0.05,,$3.50 for 1st hr; $0.05 per min
+MANDARIN_GALLERY,main,weekday,18:00,06:00 +1d,per_min,,,,,0.03,,$3.50 for 1st hr; $0.03 per min
+MANDARIN_GALLERY,main,sat,06:00,18:00,per_min,,,,,0.05,,$3.50 for 1st hr; $0.05 per min
+MANDARIN_GALLERY,main,sat,18:00,06:00 +1d,per_min,,,,,0.03,,$3.50 for 1st hr; $0.03 per min
+MANDARIN_GALLERY,main,sun_ph,06:00,18:00,per_min,,,,,0.05,,$3.50 for 1st hr; $0.05 per min
+MANDARIN_GALLERY,main,sun_ph,18:00,06:00 +1d,per_min,,,,,0.03,,$3.50 for 1st hr; $0.03 per min
+MERITUS_MANDARIN_SINGAPORE,main,weekday,06:00,18:00,tiered,3.5,,,1.3,,,$3.50 for 1st hr; $1.30 for sub. 0.5 hr
+MERITUS_MANDARIN_SINGAPORE,main,weekday,18:00,24:00,per_entry,,,,,,6,$6 per entry
+MERITUS_MANDARIN_SINGAPORE,main,sat,06:00,18:00,tiered,3.5,,,1.3,,,$3.50 for 1st hr; $1.30 for sub. 0.5 hr
+MERITUS_MANDARIN_SINGAPORE,main,sat,18:00,24:00,per_entry,,,,,,6,$6 per entry
+MERITUS_MANDARIN_SINGAPORE,main,sun_ph,06:00,18:00,tiered,3.5,,,1.3,,,$3.50 for 1st hr; $1.30 for sub. 0.5 hr
+MERITUS_MANDARIN_SINGAPORE,main,sun_ph,18:00,24:00,per_entry,,,,,,6,$6 per entry
+NGEE_ANN_CITY,main,weekday,14:01,17:00,hourly,,,,1.28,,,$1.28 for 0.5 hr
+NGEE_ANN_CITY,main,weekday,12:01,14:00,hourly,,,,1.82,,,$1.82 for 0.5 hr
+NGEE_ANN_CITY,main,weekday,17:01,19:00,hourly,,,,1.82,,,$1.82 for 0.5 hr
+NGEE_ANN_CITY,main,weekday,19:00,24:00,per_entry,,,,,,4.28,$4.28 per entry
+NGEE_ANN_CITY,main,sat,14:01,17:00,tiered,2.57,,,1.61,,,"$2.57 for 1st hr; $1.61 for sub. 0.5 hr, 12.01pm-2pm"
+NGEE_ANN_CITY,main,sat,17:01,19:00,tiered,3.64,,,2.14,,,$3.64 for 1st hr; $2.14 for sub. 0.5 hr
+NGEE_ANN_CITY,main,sat,19:00,24:00,per_entry,,,,,,4.28,$4.28 per entry
+NGEE_ANN_CITY,main,sun_ph,14:01,17:00,tiered,2.57,,,1.61,,,"$2.57 for 1st hr; $1.61 for sub. 0.5 hr, 12.01pm-2pm"
+NGEE_ANN_CITY,main,sun_ph,17:01,19:00,tiered,3.64,,,2.14,,,$3.64 for 1st hr; $2.14 for sub. 0.5 hr
+NGEE_ANN_CITY,main,sun_ph,19:00,24:00,per_entry,,,,,,4.28,$4.28 per entry
+OG_ORCHARD_POINT,main,weekday,07:00,22:59,tiered,2,,,1.5,,,$2 for 1st hr or part thereof; $1.50 per sub. 0.5 hr or part thereof
+OG_ORCHARD_POINT,main,weekday,23:00,06:59 +1d,hourly,,,,2,,,$2 per 0.5 hr or part thereof
+OG_ORCHARD_POINT,main,sat,07:00,22:59,tiered,2,,,1.5,,,$2 for 1st hr or part thereof; $1.50 per sub. 0.5 hr or part thereof
+OG_ORCHARD_POINT,main,sat,23:00,06:59 +1d,hourly,,,,2,,,$2 per 0.5 hr or part thereof
+OG_ORCHARD_POINT,main,sun_ph,07:00,22:59,tiered,2,,,1.5,,,$2 for 1st hr or part thereof; $1.50 per sub. 0.5 hr or part thereof
+OG_ORCHARD_POINT,main,sun_ph,23:00,06:59 +1d,hourly,,,,2,,,$2 per 0.5 hr or part thereof
+ORCHARD_BUILDING,main,weekday,07:00,17:00,tiered,2.2,,,1.2,,,$2.20 for 1st hr; $1.20 for sub. 0.5 hr (Car park closed at 1am daily )
+ORCHARD_BUILDING,main,weekday,17:00,01:00 +1d,per_entry,,,,,,3.6,$3.60 per entry
+ORCHARD_BUILDING,main,sat,07:00,17:00,tiered,2.2,,,1.2,,,$2.20 for 1st hr; $1.20 for sub. 0.5 hr (Car park closed at 1am daily )
+ORCHARD_BUILDING,main,sat,17:00,01:00 +1d,per_entry,,,,,,3.6,$3.60 per entry
+ORCHARD_BUILDING,main,sun_ph,07:00,17:00,tiered,,3.6,180,1.2,,,$3.60 for 1st 3hrs; $1.20 for sub. 0.5 hr
+ORCHARD_BUILDING,main,sun_ph,17:00,01:00 +1d,per_entry,,,,,,3.6,$3.60 per entry
+ORCHARD_CENTRAL,main,weekday,02:00,18:00,tiered,2,,,1,,,$2 for 1st hr; $1 for sub. 0.5 hr
+ORCHARD_CENTRAL,main,weekday,18:00,02:00 +1d,tiered,,4.5,180,1.5,,,$4.50 for 1st 3hrs; $1.50 for sub. 0.5 hr
+ORCHARD_CENTRAL,main,sat,02:00,18:00,tiered,2,,,1,,,$2 for 1st hr; $1 for sub. 0.5 hr
+ORCHARD_CENTRAL,main,sat,18:00,02:00 +1d,tiered,,4.5,180,1.5,,,$4.50 for 1st 3hrs; $1.50 for sub. 0.5 hr
+ORCHARD_CENTRAL,main,sun_ph,02:00,02:00 +1d,tiered,,4.5,180,1.5,,,$4.50 for 1st 3hrs; $1.50 for sub. 0.5 hr
+ORCHARD_HOTEL_SHOPPING_ARCADE_2,main,weekday,07:00,18:00,tiered,5,,,1.5,,,$5 for 1st hr; $1.50 for sub. 0.5 hr
+ORCHARD_HOTEL_SHOPPING_ARCADE_2,main,weekday,18:00,24:00,per_entry,,,,,,5.5,$5.50 per entry
+ORCHARD_HOTEL_SHOPPING_ARCADE_2,main,sat,07:00,18:00,tiered,5,,,1.5,,,$5 for 1st hr; $1.50 for sub. 0.5 hr
+ORCHARD_HOTEL_SHOPPING_ARCADE_2,main,sat,18:00,24:00,per_entry,,,,,,5.5,$5.50 per entry
+ORCHARD_HOTEL_SHOPPING_ARCADE_2,main,sun_ph,00:00,24:00,per_entry,,,,,,5,$5 per entry
+ORCHARD_PARADE_HOTEL_2,main,weekday,00:00,24:00,tiered,4,,,1.5,,,$4 for 1st hr; $1.50 for sub. 0.5 hr
+ORCHARD_PARADE_HOTEL_2,main,sat,00:00,24:00,tiered,4,,,1.5,,,$4 for 1st hr; $1.50 for sub. 0.5 hr
+ORCHARD_PARADE_HOTEL_2,main,sun_ph,00:00,24:00,tiered,4,,,1.5,,,$4 for 1st hr; $1.50 for sub. 0.5 hr
+ORCHARD_PLAZA,main,weekday,07:00,17:00,hourly,,,,1.39,,,$1.39 for 0.5 hr
+ORCHARD_PLAZA,main,weekday,17:00,24:00,per_entry,,,,,,3.85,$3.85 per entry for 1st 3 hrs; $1.39 for sub. 0.5 hr
+ORCHARD_PLAZA,main,sat,07:00,17:00,hourly,,,,1.39,,,$1.39 for 0.5 hr
+ORCHARD_PLAZA,main,sat,17:00,24:00,per_entry,,,,,,3.85,$3.85 per entry for 1st 3 hrs; $1.39 for sub. 0.5 hr
+ORCHARD_PLAZA,main,sun_ph,07:00,17:00,hourly,,,,1.39,,,$1.39 for 0.5 hr
+ORCHARD_PLAZA,main,sun_ph,17:00,24:00,per_entry,,,,,,3.85,$3.85 per entry for 1st 3 hrs; $1.39 for sub. 0.5 hr
+ORCHARD_TOWERS,main,weekday,07:00,17:59,hourly,,,,2.5,,,$5 per hr
+ORCHARD_TOWERS,main,weekday,18:00,01:59 +1d,per_entry,,,,,,9,$9 per entry
+ORCHARD_TOWERS,main,weekday,02:00,24:00,per_entry,,,,,,9,$9 per entry
+ORCHARD_TOWERS,main,sat,07:00,17:59,hourly,,,,2.5,,,$5 per hr
+ORCHARD_TOWERS,main,sat,18:00,01:59 +1d,per_entry,,,,,,9,$9 per entry
+ORCHARD_TOWERS,main,sat,02:00,24:00,per_entry,,,,,,9,$9 per entry
+ORCHARD_TOWERS,main,sun_ph,07:00,13:59,per_entry,,,,,,9,$9 per entry
+ORCHARD_TOWERS,main,sun_ph,02:00,18:59,per_entry,,,,,,9,$9 per entry
+ORCHARDGATEWAY,main,weekday,00:00,17:59,tiered,,3,630,1.5,,,$3 for 1st 10.5 hrs or part thereof; $1.50 for sub. 0.5 hr or part thereof
+ORCHARDGATEWAY,main,weekday,18:00,23:59,tiered,,4.8,1230,1.8,,,$4.80 1st 20.5 hrs or part thereof; $1.80 for sub. 0.5 hr or part thereof
+ORCHARDGATEWAY,main,sat,00:00,24:00,tiered,,4.8,1230,1.8,,,$4.80 1st 20.5 hrs or part thereof; $1.80 for sub. 0.5 hr or part thereof.
+ORCHARDGATEWAY,main,sun_ph,00:00,24:00,tiered,,4.8,1230,1.8,,,$4.80 1st 20.5 hrs or part thereof; $1.80 for sub. 0.5 hr or part thereof.
+PACIFIC_PLAZA,main,weekday,08:00,18:00,hourly,,,,1.5,,,$1.50 per 0.5 hr
+PACIFIC_PLAZA,main,weekday,18:00,24:00,tiered,,3,120,1,,,$3 for 1st 2hrs; $1 for sub. 0.5 hr
+PACIFIC_PLAZA,main,sat,08:00,18:00,hourly,,,,1.5,,,$1.50 per 0.5 hr
+PACIFIC_PLAZA,main,sat,18:00,24:00,tiered,,3,120,1,,,$3 for 1st 2hrs; $1 for sub. 0.5 hr
+PACIFIC_PLAZA,main,sun_ph,08:00,18:00,hourly,,,,1.5,,,$1.50 per 0.5 hr
+PACIFIC_PLAZA,main,sun_ph,18:00,24:00,tiered,,3,120,1,,,$3 for 1st 2hrs; $1 for sub. 0.5 hr
+PALAIS_RENAISSANCE,main,weekday,07:00,17:00,tiered,2.8,,,1.6,,,$2.80 for 1st hr; $1.60 for sub. 0.5 hr
+PALAIS_RENAISSANCE,main,weekday,17:00,01:00 +1d,per_entry,,,,,,3.8,$3.80 per entry
+PALAIS_RENAISSANCE,main,weekday,01:00,24:00,hourly,,,,0.75,,,$1.50 per hr
+PALAIS_RENAISSANCE,main,sat,07:00,17:00,tiered,2.8,,,1.6,,,$2.80 for 1st hr; $1.60 for sub. 0.5 hr
+PALAIS_RENAISSANCE,main,sat,17:00,01:00 +1d,per_entry,,,,,,3.8,$3.80 per entry
+PALAIS_RENAISSANCE,main,sat,01:00,24:00,hourly,,,,0.75,,,$1.50 per hr
+PALAIS_RENAISSANCE,main,sun_ph,07:00,01:00 +1d,hourly,,,,0.475,,,$3.80 per 4-hourly
+PALAIS_RENAISSANCE,main,sun_ph,01:00,07:00,hourly,,,,0.75,,,$1.50 per hr
+PAN_PACIFIC_ORCHARD_2,main,weekday,07:00,17:00,tiered,5,,,1.5,,,$5 for 1st hr; $1.50 for sub. 0.5 hr
+PAN_PACIFIC_ORCHARD_2,main,weekday,17:00,24:00,per_entry,,,,,,5,$5 per entry
+PAN_PACIFIC_ORCHARD_2,main,sat,07:00,17:00,tiered,5,,,1.5,,,$5 for 1st hr; $1.50 for sub. 0.5 hr
+PAN_PACIFIC_ORCHARD_2,main,sat,17:00,24:00,per_entry,,,,,,5,$5 per entry
+PAN_PACIFIC_ORCHARD_2,main,sun_ph,00:00,24:00,per_entry,,,,,,5,$5 per entry
+PARAGON_SHOPPING_CENTRE,main,weekday,03:00,17:59,tiered,2.58,,,1.48,,,$2.58 for 1st hr; $1.48 for sub. 0.5 hr. Daily $2 surcharge from 9am-9pm. Additional Peak Hr Surcharge of $1.28 from 12pm to 2:30pm daily
+PARAGON_SHOPPING_CENTRE,main,weekday,18:00,24:00,per_entry,,,,,,3.48,$3.48 per entry. Daily $2 surcharge from 9am-9pm
+PARAGON_SHOPPING_CENTRE,main,sat,03:00,17:59,tiered,2.58,,,1.48,,,$2.58 for 1st hr; $1.48 for sub. 0.5 hr. Daily $2 surcharge from 9am-9pm. Additional Peak Hr Surcharge of $1.28 from 12pm to 2:30pm daily
+PARAGON_SHOPPING_CENTRE,main,sat,18:00,24:00,per_entry,,,,,,3.48,$3.48 per entry. Daily $2 surcharge from 9am-9pm
+PARAGON_SHOPPING_CENTRE,main,sun_ph,18:00,24:00,per_entry,,,,,,3.48,$3.48 per entry. Daily $2 surcharge from 9am-9pm. Additional Peak Hr Surcharge of $1.28 from 12pm to 2:30pm daily
+PENANG_ROAD_OFF_STREET,main,weekday,00:00,24:00,hourly,,,,1,,,$1.00 / 30 mins (Per Minute Charging); $0.50 / 30 mins (Per Minute Charging)
+PENANG_ROAD_OFF_STREET,main,sat,07:00,17:00,hourly,,,,1,,,$1.00 / 30 mins
+PENANG_ROAD_OFF_STREET,main,sat,17:00,07:00 +1d,hourly,,,,0.5,,,$0.50 / 30 mins (Per Minute Charging)
+PENANG_ROAD_OFF_STREET,main,sun_ph,00:00,24:00,hourly,,,,0.5,,,$0.50 / 30 mins (Per Minute Charging)
+PLAZA_SINGAPURA,main,mon-thu,00:00,24:00,tiered,,2.14,120,0.64,,,$1.07 for 1st hr; $0.32 for sub. 15mins. Fri & Eve of PH: $2.14 for 1st 2 hr; $0.32 for sub. 15mins.
+PLAZA_SINGAPURA,main,mon-thu,18:00,23:59,per_entry,,,,,,2.14,$2.14 per entry
+PLAZA_SINGAPURA,main,fri_eve_ph,18:00,02:59 +1d,per_entry,,,,,,2.14,$2.14 per entry
+PLAZA_SINGAPURA,main,sat,03:00,17:59,tiered,,2.14,120,0.64,,,$2.14 for 1st 2hrs; $0.32 for sub. 15mins
+PLAZA_SINGAPURA,main,sat,18:00,24:00,per_entry,,,,,,2.14,$2.14 per entry
+PLAZA_SINGAPURA,main,sun_ph,03:00,17:59,tiered,,2.14,120,0.64,,,$2.14 for 1st 2hrs; $0.32 for sub. 15mins
+PLAZA_SINGAPURA,main,sun_ph,18:00,23:59,per_entry,,,,,,2.14,$2.14 per entry
+REGENT_HOTEL_2,main,weekday,07:00,18:00,tiered,5,,,2.5,,,$5 for 1st hr; $2.50 for sub. 0.5 hr
+REGENT_HOTEL_2,main,weekday,18:00,24:00,per_entry,,,,,,6,$6 per entry
+REGENT_HOTEL_2,main,sat,07:00,18:00,tiered,5,,,2.5,,,$5 for 1st hr; $2.50 for sub. 0.5 hr
+REGENT_HOTEL_2,main,sat,18:00,24:00,per_entry,,,,,,6,$6 per entry
+REGENT_HOTEL_2,main,sun_ph,07:00,18:00,tiered,5,,,2.5,,,$5 for 1st hr; $2.50 for sub. 0.5 hr
+REGENT_HOTEL_2,main,sun_ph,18:00,24:00,per_entry,,,,,,6,$6 per entry
+ROYAL_PLAZA_ON_SCOTTS_2,main,weekday,08:00,18:00,tiered,4,,,1.5,,,$4 for 1st hr; $1.50 for sub. 0.5 hr
+ROYAL_PLAZA_ON_SCOTTS_2,main,weekday,18:00,24:00,per_entry,,,,,,5.5,$5.50 per entry
+ROYAL_PLAZA_ON_SCOTTS_2,main,sat,08:00,18:00,tiered,4,,,1.5,,,$4 for 1st hr; $1.50 for sub. 0.5 hr
+ROYAL_PLAZA_ON_SCOTTS_2,main,sat,18:00,24:00,per_entry,,,,,,5.5,$5.50 per entry
+ROYAL_PLAZA_ON_SCOTTS_2,main,sun_ph,00:00,24:00,per_entry,,,,,,5.5,$5.50 per entry
+SCAPE,main,weekday,07:00,16:59,hourly,,,,0.975,,,$1.95 per hr
+SCAPE,main,weekday,17:00,06:59 +1d,tiered,,4.9,180,0.975,,,$4.90 for 1st 3hrs; $1.95 for sub. hr
+SCAPE,main,sat,00:00,24:00,hourly,,,,0.975,,,All day: $1.95 per hr or part thereof.
+SCAPE,main,sun_ph,07:00,16:59,hourly,,,,0.975,,,$1.95 per hr
+SCAPE,main,sun_ph,17:00,06:59 +1d,tiered,,4.9,180,0.975,,,$4.90 for 1st 3hrs; $1.95 for sub. hr
+SHANGRI_LA_HOTEL_2,main,weekday,07:00,17:00,tiered,6,,,2,,,$6 for 1st hr; $2 for sub. 0.5 hr
+SHANGRI_LA_HOTEL_2,main,weekday,17:00,24:00,per_entry,,,,,,8,$8 per entry
+SHANGRI_LA_HOTEL_2,main,sat,07:00,17:00,tiered,6,,,2,,,$6 for 1st hr; $2 for sub. 0.5 hr
+SHANGRI_LA_HOTEL_2,main,sat,17:00,24:00,per_entry,,,,,,8,$8 per entry
+SHANGRI_LA_HOTEL_2,main,sun_ph,07:00,17:00,tiered,6,,,2,,,$6 for 1st hr; $2 for sub. 0.5 hr
+SHANGRI_LA_HOTEL_2,main,sun_ph,17:00,24:00,per_entry,,,,,,8,$8 per entry
+SHAW_CENTRE,main,weekday,03:01,18:00,tiered,2,,,1.5,,,$2 for 1st hr; $1.50 for sub. 0.5 hr
+SHAW_CENTRE,main,weekday,18:01,03:01 +1d,per_entry,,,,,,4,$4 per entry
+SHAW_CENTRE,main,sat,03:01,18:00,tiered,2,,,1.5,,,$2 for 1st hr; $1.50 for sub. 0.5 hr
+SHAW_CENTRE,main,sat,18:01,03:01 +1d,per_entry,,,,,,4,$4 per entry
+SHAW_CENTRE,main,sun_ph,03:01,18:00,tiered,2,,,1.5,,,$2 for 1st hr; $1.50 for sub. 0.5 hr
+SHAW_CENTRE,main,sun_ph,18:01,03:01 +1d,per_entry,,,,,,4,$4 per entry
+SHAW_HOUSE,main,weekday,03:01,18:00,tiered,2,,,1.5,,,$2 for 1st hr; $1.50 for sub. 0.5 hr
+SHAW_HOUSE,main,weekday,18:01,03:01 +1d,per_entry,,,,,,4,$4 per entry
+SHAW_HOUSE,main,sat,03:01,18:00,tiered,2,,,1.5,,,$2 for 1st hr; $1.50 for sub. 0.5 hr
+SHAW_HOUSE,main,sat,18:01,03:01 +1d,per_entry,,,,,,4,$4 per entry
+SHAW_HOUSE,main,sun_ph,03:01,18:00,tiered,2,,,1.5,,,$2 for 1st hr; $1.50 for sub. 0.5 hr
+SHAW_HOUSE,main,sun_ph,18:01,03:01 +1d,per_entry,,,,,,4,$4 per entry
+SHERATON_TOWERS_SINGAPORE,main,weekday,07:00,18:00,tiered,4,,,2,,,$4 for 1st hr; $2 for sub. 0.5 hr
+SHERATON_TOWERS_SINGAPORE,main,weekday,18:00,24:00,per_entry,,,,,,6,$6 per entry
+SHERATON_TOWERS_SINGAPORE,main,sat,07:00,18:00,tiered,4,,,2,,,$4 for 1st hr; $2 for sub. 0.5 hr
+SHERATON_TOWERS_SINGAPORE,main,sat,18:00,24:00,per_entry,,,,,,6,$6 per entry
+SHERATON_TOWERS_SINGAPORE,main,sun_ph,00:00,24:00,per_entry,,,,,,6,$6 per entry
+SINGAPORE_MARRIOTT_HOTEL_2,main,weekday,06:00,18:00,hourly,,,,1.5,,,$0.05 per min/$3 per hr
+SINGAPORE_MARRIOTT_HOTEL_2,main,weekday,18:00,24:00,per_min,,,,,0.05,,$0.05 per min
+SINGAPORE_MARRIOTT_HOTEL_2,main,sat,06:00,18:00,hourly,,,,1.5,,,$0.05 per min/$3 per hr
+SINGAPORE_MARRIOTT_HOTEL_2,main,sat,18:00,24:00,per_min,,,,,0.05,,$0.05 per min
+SINGAPORE_MARRIOTT_HOTEL_2,main,sun_ph,06:00,18:00,hourly,,,,1.5,,,$0.05 per min/$3 per hr
+SINGAPORE_MARRIOTT_HOTEL_2,main,sun_ph,18:00,24:00,per_min,,,,,0.05,,$0.05 per min
+SINGAPORE_SHOPPING_CENTRE,main,weekday,08:00,20:00,tiered,2.5,,,1.25,,,$2.50 for 1st hr; $1.25 for sub. 0.5 hr
+SINGAPORE_SHOPPING_CENTRE,main,weekday,20:00,24:00,per_entry,,,,,,3,$3 per entry
+SINGAPORE_SHOPPING_CENTRE,main,sat,08:00,20:00,tiered,2.5,,,1.25,,,$2.50 for 1st hr; $1.25 for sub. 0.5 hr
+SINGAPORE_SHOPPING_CENTRE,main,sat,20:00,24:00,per_entry,,,,,,3,$3 per entry
+SINGAPORE_SHOPPING_CENTRE,main,sun_ph,08:00,20:00,tiered,2.5,,,1.25,,,$2.50 for 1st hr; $1.25 for sub. 0.5 hr
+SINGAPORE_SHOPPING_CENTRE,main,sun_ph,20:00,24:00,per_entry,,,,,,3,$3 per entry
+STARHUB_CENTRE,main,weekday,07:00,18:00,tiered,2,,,1.5,,,"$2 for 1st hr; $1.50 for sub. 0.5 hr; 6pm-7am the following day:$2.00 for 1st hr, $1.50 for next subq 0.5 hr"
+STARHUB_CENTRE,main,sat,07:00,18:00,tiered,2,,,1.5,,,"$2 for 1st hr; $1.50 for sub. 0.5 hr; 6pm-7am the following day:$2.00 for 1st hr, $1.50 for next subq 0.5 hr"
+STARHUB_CENTRE,main,sun_ph,07:00,18:00,tiered,2,,,1.5,,,"$2 for 1st hr; $1.50 for sub. 0.5 hr; 6pm-7am the following day:$2.00 for 1st hr, $1.50 for next subq 0.5 hr"
+TANGLIN_MALL,main,weekday,06:00,17:00,tiered,2.4,,,1.2,,,$2.40 for 1st hr; $1.20 for sub. 0.5 hr
+TANGLIN_MALL,main,weekday,17:00,24:00,per_entry,,,,,,3.5,$3.50 per entry
+TANGLIN_MALL,main,sat,06:00,17:00,tiered,2.4,,,1.2,,,$2.40 for 1st hr; $1.20 for sub. 0.5 hr
+TANGLIN_MALL,main,sat,17:00,24:00,per_entry,,,,,,3.5,$3.50 per entry
+TANGLIN_MALL,main,sun_ph,00:00,24:00,per_entry,,,,,,3.5,$3.50 per entry
+TANGLIN_SHOPPING_CENTRE,main,weekday,08:00,17:59,tiered,3,,,1.75,,,$3 for 1st hr; $1.75 for sub. 0.5 hr
+TANGLIN_SHOPPING_CENTRE,main,weekday,18:00,24:00,per_entry,,,,,,3.6,$3.60 per entry
+TANGLIN_SHOPPING_CENTRE,main,sat,08:00,17:59,tiered,3,,,1.75,,,$3 for 1st hr; $1.75 for sub. 0.5 hr
+TANGLIN_SHOPPING_CENTRE,main,sat,18:00,24:00,per_entry,,,,,,3.6,$3.60 per entry
+TANGLIN_SHOPPING_CENTRE,main,sun_ph,00:00,24:00,per_entry,,,,,,3.6,$3.60 per entry
+TANGS,main,weekday,06:00,18:00,per_min,,,,,0.05,,"$3 for 1st hr, $0.05/min; 6pm-6am the following day: $6 Per entry"
+TANGS,main,sat,06:00,18:00,per_min,,,,,0.05,,"$3 for 1st hr, $0.05/min; 6pm-6am the following day: $6 Per entry"
+TANGS,main,sun_ph,06:00,18:00,per_min,,,,,0.05,,"$3 for 1st hr, $0.05/min; 6pm-6am the following day: $6 Per entry"
+THE_CATHAY,main,weekday,08:00,09:59,hourly,,,,1.4,,,$1.40 for 0.5 hr
+THE_CATHAY,main,weekday,10:00,21:59,hourly,,,,0.7,,,$1.40 per hr
+THE_CATHAY,main,weekday,22:00,24:00,per_entry,,,,,,3,$3 per entry
+THE_CATHAY,main,sat,08:00,21:59,hourly,,,,0.7,,,$1.40 per hr
+THE_CATHAY,main,sat,22:00,24:00,per_entry,,,,,,3,$3 per entry
+THE_CATHAY,main,sun_ph,08:00,21:59,hourly,,,,0.7,,,$1.40 per hr
+THE_CATHAY,main,sun_ph,22:00,24:00,per_entry,,,,,,3,$3 per entry
+THE_CENTREPOINT,main,weekday,07:00,17:00,tiered,2,,,1.5,,,$2 for 1st hr; $1.50 sub. 0.5 hr
+THE_CENTREPOINT,main,weekday,17:00,24:00,tiered,2,,,0.75,,,$2 for 1st hr; $1.50 sub. hr
+THE_CENTREPOINT,main,sat,07:00,17:00,tiered,2,,,1.5,,,$2 for 1st hr; $1.50 sub. 0.5 hr
+THE_CENTREPOINT,main,sat,17:00,24:00,tiered,2,,,0.75,,,$2 for 1st hr; $1.50 sub. hr
+THE_CENTREPOINT,main,sun_ph,00:00,24:00,tiered,2,,,0.75,,,$2 for 1st hr; $1.50 for sub. hr
+THE_HEEREN,main,weekday,08:00,23:00,hourly,,,,1.5,,,$1.50 per 0.5 hr
+THE_HEEREN,main,sat,08:00,23:00,tiered,,5,180,1.5,,,$5 for 1st 3 hrs and $1.50 for subseqent 0.5 hr
+THE_HEEREN,main,sun_ph,08:00,23:00,tiered,,5,180,1.5,,,$5 for 1st 3 hrs and $1.50 for subseqent 0.5 hr
+TRADERS_HOTEL_2,main,weekday,06:00,17:00,tiered,2.4,,,1.2,,,$2.40 for 1st hr; $1.20 for sub. 0.5 hr
+TRADERS_HOTEL_2,main,weekday,17:00,24:00,per_entry,,,,,,3.5,$3.50 per entry
+TRADERS_HOTEL_2,main,sat,06:00,17:00,tiered,2.4,,,1.2,,,$2.40 for 1st hr; $1.20 for sub. 0.5 hr
+TRADERS_HOTEL_2,main,sat,17:00,24:00,per_entry,,,,,,3.5,$3.50 per entry
+TRADERS_HOTEL_2,main,sun_ph,00:00,24:00,per_entry,,,,,,3.5,$3.50 per entry
+TRIPLEONE_SOMERSET,main,weekday,07:00,17:59,hourly,,,,1.5,,,$1.50 per 0.5 hr (charges are before GST)
+TRIPLEONE_SOMERSET,main,weekday,18:00,11:59 +1d,hourly,,,,0.9,,,$1.80 per hr
+TRIPLEONE_SOMERSET,main,sat,07:00,17:59,tiered,2,,,1,,,$2 for 1st hr; $0.50 sub 15 mins
+TRIPLEONE_SOMERSET,main,sat,18:00,11:59 +1d,hourly,,,,0.9,,,$1.80 per hr
+TRIPLEONE_SOMERSET,main,sun_ph,07:00,23:59,hourly,,,,0.9,,,$1.80 per hr
+WHEELOCK_PLACE,main,weekday,08:00,18:00,tiered,3,,,1.5,,,$3 for 1st hr; $1.50 for sub. 0.5 hr
+WHEELOCK_PLACE,main,weekday,18:00,24:00,per_entry,,,,,,4.5,$4.50 per entry
+WHEELOCK_PLACE,main,sat,08:00,18:00,tiered,3,,,1.5,,,$3 for 1st hr; $1.50 for sub. 0.5 hr
+WHEELOCK_PLACE,main,sat,18:00,24:00,per_entry,,,,,,4.5,$4.50 per entry
+WHEELOCK_PLACE,main,sun_ph,08:00,18:00,tiered,3,,,1.5,,,$3 for 1st hr; $1.50 for sub. 0.5 hr
+WHEELOCK_PLACE,main,sun_ph,18:00,24:00,per_entry,,,,,,4.5,$4.50 per entry
+WINSLAND_HOUSE,main,weekday,07:00,19:00,tiered,2.5,,,1.2,,,$2.50 for 1st hr; $1.20 for sub. 0.5 hr
+WINSLAND_HOUSE,main,weekday,19:00,23:00,per_entry,,,,,,3.5,$3.50 per entry
+WINSLAND_HOUSE,main,weekday,23:00,24:00,per_entry,,,,,,3.5,$3.50 per entry
+WINSLAND_HOUSE,main,sat,07:00,19:00,tiered,2.5,,,1.2,,,$2.50 for 1st hr; $1.20 for sub. 0.5 hr
+WINSLAND_HOUSE,main,sat,19:00,23:00,per_entry,,,,,,3.5,$3.50 per entry
+WINSLAND_HOUSE,main,sat,23:00,24:00,per_entry,,,,,,3.5,$3.50 per entry
+WINSLAND_HOUSE,main,sun_ph,07:00,23:00,per_entry,,,,,,4.5,$4.50 per entry
+WINSLAND_HOUSE,main,sun_ph,23:00,24:00,per_entry,,,,,,3.5,$3.50 per entry
+WISMA_ATRIA,main,weekday,07:00,17:00,tiered,2.4,,,1.2,,,$2.40 for 1st hr; $1.20 for sub. 0.5 hr (Lunch Hr Surcharge of additional $1.07 between 12pm - 2pm)
+WISMA_ATRIA,main,weekday,17:00,24:00,per_entry,,,,,,3.5,$3.50 per entry
+WISMA_ATRIA,main,sat,00:00,24:00,tiered,,3.6,120,0.8,,,$3.60 for 1st 2hrs; $0.80 for sub. 0.5 hr
+WISMA_ATRIA,main,sun_ph,00:00,24:00,tiered,,3.6,120,0.8,,,$3.60 for 1st 2hrs; $0.80 for sub. 0.5 hr
+YORK_HOTEL_2,main,weekday,08:01,18:00,tiered,4,,,2,,,$4 for 1st hr; $2 for sub. 0.5 hr
+YORK_HOTEL_2,main,weekday,18:00,24:00,per_entry,,,,,,5,$5 per entry
+YORK_HOTEL_2,main,sat,08:01,18:00,tiered,4,,,2,,,$4 for 1st hr; $2 for sub. 0.5 hr
+YORK_HOTEL_2,main,sat,18:00,24:00,per_entry,,,,,,5,$5 per entry
+YORK_HOTEL_2,main,sun_ph,00:00,24:00,per_entry,,,,,,5,$5 per entry
+CHANGI_CHAPEL_AND_MUSEUM_THE_CHANGI_MUSEUM,main,weekday,00:00,24:00,free,,,,,,,Free daily
+CHANGI_CHAPEL_AND_MUSEUM_THE_CHANGI_MUSEUM,main,sat,00:00,24:00,free,,,,,,,Free daily
+CHANGI_CHAPEL_AND_MUSEUM_THE_CHANGI_MUSEUM,main,sun_ph,00:00,24:00,free,,,,,,,Free daily
+CHINESE_GARDEN,main,weekday,06:00,18:00,tiered,0,,,0.5,,,Free 1st hr; $0.50 for sub. 0.5 hr
+CHINESE_GARDEN,main,weekday,18:00,24:00,hourly,,,,0.5,,,$0.50 per 0.5 hr
+CHINESE_GARDEN,main,sat,06:00,18:00,tiered,0,,,0.5,,,Free 1st hr; $0.50 for sub. 0.5 hr
+CHINESE_GARDEN,main,sat,18:00,24:00,hourly,,,,0.5,,,$0.50 per 0.5 hr
+CHINESE_GARDEN,main,sun_ph,06:00,18:00,tiered,0,,,0.5,,,Free 1st hr; $0.50 for sub. 0.5 hr
+CHINESE_GARDEN,main,sun_ph,18:00,24:00,hourly,,,,0.5,,,$0.50 per 0.5 hr
+HAW_PAR_VILLA,main,weekday,00:00,24:00,per_entry,,,,,,5,Daily(9am-7pm): $5 per entry (Car park closed after 7pm)
+HAW_PAR_VILLA,main,sat,00:00,24:00,per_entry,,,,,,5,Daily(9am-7pm): $5 per entry (Car park closed after 7pm)
+HAW_PAR_VILLA,main,sun_ph,00:00,24:00,per_entry,,,,,,5,Daily(9am-7pm): $5 per entry (Car park closed after 7pm)
+HAY_DAIRIES_GOAT_FARM,main,weekday,00:00,24:00,free,,,,,,,Free daily: 9am-4pm
+HAY_DAIRIES_GOAT_FARM,main,sat,00:00,24:00,free,,,,,,,Free daily: 9am-4pm
+HAY_DAIRIES_GOAT_FARM,main,sun_ph,00:00,24:00,free,,,,,,,Free daily: 9am-4pm
+JURONG_BIRD_PARK,main,weekday,00:00,24:00,per_entry,,,,,,2,Daily(8am-5pm): $2 per entry
+JURONG_BIRD_PARK,main,sat,00:00,24:00,per_entry,,,,,,2,Daily(8am-5pm): $2 per entry
+JURONG_BIRD_PARK,main,sun_ph,00:00,24:00,per_entry,,,,,,2,Daily(8am-5pm): $2 per entry
+LABRADOR_SECRET_TUNNEL_LABRADOR_PARK,main,weekday,00:00,24:00,free,,,,,,,Free daily
+LABRADOR_SECRET_TUNNEL_LABRADOR_PARK,main,sat,00:00,24:00,free,,,,,,,Free daily
+LABRADOR_SECRET_TUNNEL_LABRADOR_PARK,main,sun_ph,00:00,24:00,free,,,,,,,Free daily
+MANDAI_ORCHID_GARDEN,main,weekday,00:00,24:00,free,,,,,,,Free daily
+MANDAI_ORCHID_GARDEN,main,sat,00:00,24:00,free,,,,,,,Free daily
+MANDAI_ORCHID_GARDEN,main,sun_ph,00:00,24:00,free,,,,,,,Free daily
+MEMORIES_AT_OLD_FORD_FACTORY,main,weekday,00:00,24:00,free,,,,,,,Daily free parking at Carparks C and D
+MEMORIES_AT_OLD_FORD_FACTORY,main,sat,00:00,24:00,free,,,,,,,Daily free parking at Carparks C and D
+MEMORIES_AT_OLD_FORD_FACTORY,main,sun_ph,00:00,24:00,free,,,,,,,Daily free parking at Carparks C and D
+REFLECTIONS_AT_BUKIT_CHANDU,main,weekday,00:00,24:00,free,,,,,,,Daily free parking at Carparks C and D of Pepys Road
+REFLECTIONS_AT_BUKIT_CHANDU,main,sat,00:00,24:00,free,,,,,,,Daily free parking at Carparks C and D of Pepys Road
+REFLECTIONS_AT_BUKIT_CHANDU,main,sun_ph,00:00,24:00,free,,,,,,,Daily free parking at Carparks C and D of Pepys Road
+RESORTS_WORLD_SENTOSA_UNIVERSAL_STUDIOS_SINGAPORE_,main,mon-thu,07:00,19:00,tiered,7,,,1,,,$7 for 1st hr; $1 for sub. 0.5 hr or part thereof. (Max: $28 per 24 hrs)
+RESORTS_WORLD_SENTOSA_UNIVERSAL_STUDIOS_SINGAPORE_,main,mon-thu,19:00,24:00,per_entry,,,,,,6,$6 per entry
+RESORTS_WORLD_SENTOSA_UNIVERSAL_STUDIOS_SINGAPORE_,main,sat,07:00,19:00,tiered,8,,,2,,,$8 for 1st hr; $2 for sub. 0.5 hr or part thereof
+RESORTS_WORLD_SENTOSA_UNIVERSAL_STUDIOS_SINGAPORE_,main,sat,19:00,24:00,per_entry,,,,,,8,$8 per entry (Max: $28 per 24 hrs)
+RESORTS_WORLD_SENTOSA_UNIVERSAL_STUDIOS_SINGAPORE_,main,sun_ph,07:00,19:00,tiered,8,,,2,,,$8 for 1st hr; $2 for sub. 0.5 hr or part thereof
+RESORTS_WORLD_SENTOSA_UNIVERSAL_STUDIOS_SINGAPORE_,main,sun_ph,19:00,24:00,per_entry,,,,,,8,$8 per entry (Max: $28 per 24 hrs)
+ROYAL_SELANGOR_PEWTER_MUSEUM_PARK_AT_CLARKE_QUAY,main,weekday,00:00,24:00,tiered,2.2,,,1.1,,,$2.20 for 1st hr; $1.10 for sub. 0.5 hr (Car park at Clarke Quay)
+ROYAL_SELANGOR_PEWTER_MUSEUM_PARK_AT_CLARKE_QUAY,main,weekday,17:00,24:00,per_entry,,,,,,2.5,$2.50 per entry
+ROYAL_SELANGOR_PEWTER_MUSEUM_PARK_AT_CLARKE_QUAY,main,sat,00:00,24:00,tiered,2.2,,,1.1,,,$2.20 for 1st hr; $1.10 for sub. 0.5 hr (Car park at Clarke Quay)
+ROYAL_SELANGOR_PEWTER_MUSEUM_PARK_AT_CLARKE_QUAY,main,sat,17:00,24:00,per_entry,,,,,,2.5,$2.50 per entry
+ROYAL_SELANGOR_PEWTER_MUSEUM_PARK_AT_CLARKE_QUAY,main,sun_ph,00:00,24:00,per_entry,,,,,,2.5,$2.50 per entry
+SENTOSA_BEACH_AND_IMBIAH_CAR_PARK,main,weekday,07:00,17:00,tiered,,3,240,0.5,,,Island Entry: $6 per car*; Parking - $3 for 1st 4hrs; $1 for sub. hr. Except
+SENTOSA_BEACH_AND_IMBIAH_CAR_PARK,main,weekday,17:01,06:59 +1d,per_entry,,,,,,1,Island entry: $2 per car*; parking - $1 per entry
+SENTOSA_BEACH_AND_IMBIAH_CAR_PARK,main,sat,07:00,17:00,tiered,,5,240,1,,,Island entry: $7 per car*; Parking - $5 for 1st 4 hrs; $2 for sub. hr
+SENTOSA_BEACH_AND_IMBIAH_CAR_PARK,main,sat,17:01,06:59 +1d,per_entry,,,,,,2,$3 per car*; parking - $2 per entry
+SENTOSA_BEACH_AND_IMBIAH_CAR_PARK,main,sun_ph,07:00,17:00,tiered,,5,240,1,,,Island entry: $7 per car*; Parking - $5 for 1st 4 hrs; $2 for sub. hr
+SENTOSA_BEACH_AND_IMBIAH_CAR_PARK,main,sun_ph,17:01,06:59 +1d,per_entry,,,,,,2,$3 per car*; parking - $2 per entry
+SENTOSA_TANJONG_PALAWAN_CAR_PARK,main,weekday,07:00,17:00,tiered,,3,480,0.5,,,Island Entry: $6 per car*; Parking - $3 for 1st 8hrs; $1 for sub. hr. Except
+SENTOSA_TANJONG_PALAWAN_CAR_PARK,main,weekday,17:01,06:59 +1d,per_entry,,,,,,1,Island entry: $2 per car*; parking - $1 per entry
+SENTOSA_TANJONG_PALAWAN_CAR_PARK,main,sat,07:00,17:00,tiered,,3,480,0.5,,,Island entry: $7 per car*; Parking - $3 for 1st 8hrs; $1 for sub. hr
+SENTOSA_TANJONG_PALAWAN_CAR_PARK,main,sat,17:01,06:59 +1d,per_entry,,,,,,1,$3 per car*; parking - $1 per entry
+SENTOSA_TANJONG_PALAWAN_CAR_PARK,main,sun_ph,07:00,17:00,tiered,,3,480,0.5,,,Island entry: $7 per car*; Parking - $3 for 1st 8hrs; $1 for sub. hr
+SENTOSA_TANJONG_PALAWAN_CAR_PARK,main,sun_ph,17:01,06:59 +1d,per_entry,,,,,,1,$3 per car*; parking - $1 per entry
+SINGAPORE_ART_MUSEUM,main,weekday,00:00,24:00,not_public,,,,,,,"Parking at SAM reserved for cars with NHB parking labels. Nearest Carparks available at Waterloo Street, Queen Street, NTUC Income Centre, Plaza by the Park and Singapore Management University."
+SINGAPORE_ART_MUSEUM,main,sat,00:00,24:00,not_public,,,,,,,"Parking at SAM reserved for cars with NHB parking labels. Nearest Carparks available at Waterloo Street, Queen Street, NTUC Income Centre, Plaza by the Park and Singapore Management University."
+SINGAPORE_ART_MUSEUM,main,sun_ph,00:00,24:00,not_public,,,,,,,"Parking at SAM reserved for cars with NHB parking labels. Nearest Carparks available at Waterloo Street, Queen Street, NTUC Income Centre, Plaza by the Park and Singapore Management University."
+SINGAPORE_BOTANIC_GARDENS,main,weekday,07:00,22:30,per_min,,,,,0.02,,$0.02 per min (
+SINGAPORE_BOTANIC_GARDENS,main,sat,07:00,22:30,per_min,,,,,0.02,,$0.02 per min (
+SINGAPORE_BOTANIC_GARDENS,main,sun_ph,07:00,22:30,per_min,,,,,0.02,,$0.02 per min (
+SINGAPORE_CITY_GALLERY_URA_CENTRE,main,weekday,06:00,22:00,hourly,,,,1.1,,,$1.10 per 0.5 hr (per min charging) Public parking is also available at the Erskine Road Off-Street Carpark next to Maxwell Road Food Centre
+SINGAPORE_CITY_GALLERY_URA_CENTRE,main,weekday,22:00,06:00 +1d,per_entry,,,,,,3,$3 per entry
+SINGAPORE_CITY_GALLERY_URA_CENTRE,main,sat,06:00,22:00,hourly,,,,1.1,,,$1.10 per 0.5 hr (per min charging) Public parking is also available at the Erskine Road Off-Street Carpark next to Maxwell Road Food Centre
+SINGAPORE_CITY_GALLERY_URA_CENTRE,main,sat,22:00,06:00 +1d,per_entry,,,,,,3,$3 per entry
+SINGAPORE_CITY_GALLERY_URA_CENTRE,main,sun_ph,06:00,22:00,hourly,,,,0.55,,,$0.55 per 0.5 hr (per min charging)
+SINGAPORE_CITY_GALLERY_URA_CENTRE,main,sun_ph,22:00,24:00,per_entry,,,,,,3,$3 per entry
+SINGAPORE_FLYER,main,weekday,06:00,18:00,hourly,,,,1,,,$2 per hr or part thereof. Free Lunchtime Parking from 12pm to 2pm (only valid for vehicles entering the multi-storey carpark after 12pm)
+SINGAPORE_FLYER,main,weekday,18:00,06:00 +1d,per_entry,,,,,,2,$2 per entry
+SINGAPORE_FLYER,main,sat,06:00,24:00,hourly,,,,1,,,$2 per hr or part thereof
+SINGAPORE_FLYER,main,sat,00:00,06:00,per_entry,,,,,,2,$2 per entry
+SINGAPORE_FLYER,main,sun_ph,06:00,24:00,hourly,,,,1,,,$2 per hr or part thereof
+SINGAPORE_FLYER,main,sun_ph,00:00,06:00,per_entry,,,,,,2,$2 per entry
+SINGAPORE_MINT_COIN_GALLERY,main,weekday,00:00,24:00,free,,,,,,,Wkdays free: 8.30am-4.30pm
+SINGAPORE_MINT_COIN_GALLERY,main,sat,00:00,24:00,free,,,,,,,Wkdays free: 8.30am-4.30pm
+SINGAPORE_MINT_COIN_GALLERY,main,sun_ph,00:00,24:00,free,,,,,,,Wkdays free: 8.30am-4.30pm
+SINGAPORE_PHILATELIC_MUSEUM,main,weekday,00:00,24:00,coupon,,,,,,,URA coupon parking. Nearest car park at Armenian Street between Bible House and Peranakan Museum
+SINGAPORE_PHILATELIC_MUSEUM,main,sat,00:00,24:00,coupon,,,,,,,URA coupon parking. Nearest car park at Armenian Street between Bible House and Peranakan Museum
+SINGAPORE_PHILATELIC_MUSEUM,main,sun_ph,00:00,24:00,coupon,,,,,,,URA coupon parking. Nearest car park at Armenian Street between Bible House and Peranakan Museum
+SINGAPORE_SCIENCE_CENTRE_SINGAPORE_DISCOVERY_CENTR,main,weekday,00:00,24:00,hourly,,,,0.5,,,$0.50 per 0.5 hour
+SINGAPORE_SCIENCE_CENTRE_SINGAPORE_DISCOVERY_CENTR,main,sat,00:00,24:00,hourly,,,,0.5,,,$0.50 per 0.5 hour
+SINGAPORE_SCIENCE_CENTRE_SINGAPORE_DISCOVERY_CENTR,main,sun_ph,00:00,24:00,hourly,,,,0.5,,,$0.50 per 0.5 hour
+SINGAPORE_TURF_CLUB_STC,main,weekday,00:00,24:00,per_entry,,,,,,5,$5 per entry
+SINGAPORE_TURF_CLUB_STC,main,sat,00:00,24:00,per_entry,,,,,,5,$5 per entry
+SINGAPORE_TURF_CLUB_STC,main,sun_ph,00:00,24:00,per_entry,,,,,,5,$5 per entry
+SINGAPORE_ZOOLOGICAL_GARDENS_NIGHT_SAFARI,main,weekday,00:00,24:00,tiered,3,,,1,,,$3 for 1st hr; $2 sub. hr or part thereof. 4th hour onwards: $8.00 flat rate (maximum)
+SINGAPORE_ZOOLOGICAL_GARDENS_NIGHT_SAFARI,main,sat,00:00,24:00,tiered,3,,,1,,,$3 for 1st hr; $2 sub. hr or part thereof. 4th hour onwards: $8.00 flat rate (maximum)
+SINGAPORE_ZOOLOGICAL_GARDENS_NIGHT_SAFARI,main,sun_ph,00:00,24:00,tiered,3,,,1,,,$3 for 1st hr; $2 sub. hr or part thereof. 4th hour onwards: $8.00 flat rate (maximum)
+SUNGEI_BULOH_WETLAND_RESERVE,main,weekday,00:00,24:00,free,,,,,,,Daily free: 7am-7pm
+SUNGEI_BULOH_WETLAND_RESERVE,main,sat,00:00,24:00,free,,,,,,,Daily free: 7am-7pm
+SUNGEI_BULOH_WETLAND_RESERVE,main,sun_ph,00:00,24:00,free,,,,,,,Daily free: 7am-7pm
+THE_BATTLE_BOX_PARK_AT_FORT_CANNING,main,weekday,00:00,24:00,coupon,,,,,,,URA coupon parking
+THE_BATTLE_BOX_PARK_AT_FORT_CANNING,main,sat,00:00,24:00,coupon,,,,,,,URA coupon parking
+THE_BATTLE_BOX_PARK_AT_FORT_CANNING,main,sun_ph,00:00,24:00,coupon,,,,,,,URA coupon parking
+UNDERWATER_WORLD_SINGAPORE,main,mon-thu,07:00,23:59,tiered,,7.5,180,2.5,,,$7.50 for 1st 3 hrs; $5 per hr or part thereof
+UNDERWATER_WORLD_SINGAPORE,main,mon-thu,00:00,06:59,per_entry,,,,,,20,$20 per entry
+UNDERWATER_WORLD_SINGAPORE,main,sat,07:00,23:59,tiered,,9,180,2.5,,,$9 for 1st 3 hrs; $5 per hr or part thereof
+UNDERWATER_WORLD_SINGAPORE,main,sat,00:00,06:59,per_entry,,,,,,20,$20 per entry
+UNDERWATER_WORLD_SINGAPORE,main,sun_ph,07:00,23:59,tiered,,9,180,2.5,,,$9 for 1st 3 hrs; $5 per hr or part thereof
+UNDERWATER_WORLD_SINGAPORE,main,sun_ph,00:00,06:59,per_entry,,,,,,20,$20 per entry
+10_RAEBURN_PARK,main,weekday,00:00,24:00,hourly,,,,0.535,,,$1.07 per hr
+10_RAEBURN_PARK,main,weekday,17:00,23:00,per_entry,,,,,,2.14,- $2.14 per entry
+10_RAEBURN_PARK,main,weekday,23:00,08:00 +1d,hourly,,,,0.535,,,$1.07 per hr
+10_RAEBURN_PARK,main,sat,08:00,17:00,hourly,,,,0.535,,,$1.07 per hr
+10_RAEBURN_PARK,main,sat,17:00,23:00,per_entry,,,,,,2.14,$2.14 per entry
+10_RAEBURN_PARK,main,sat,23:00,08:00 +1d,hourly,,,,0.535,,,$1.07 per hr
+10_RAEBURN_PARK,main,sun_ph,00:00,24:00,hourly,,,,0.535,,,$1.07 per hr
+1557_KEPPEL_ROAD,main,weekday,07:00,19:00,tiered,1.29,,,0.86,,,"$1.29 for 1st hr, $0.43 /15 mins thereafter"
+1557_KEPPEL_ROAD,main,weekday,19:00,07:00 +1d,per_entry,,,,,,2.14,$2.14 /Entry
+1557_KEPPEL_ROAD,main,sat,07:00,13:00,tiered,1.29,,,0.86,,,"-$1.29 for 1st hr, $0.43 per 15 mins thereafter"
+1557_KEPPEL_ROAD,main,sat,13:00,07:00 +1d,per_entry,,,,,,2.14,$2.14 /Entry
+1557_KEPPEL_ROAD,main,sun_ph,00:00,24:00,per_entry,,,,,,2.14,$2.14 / Entry
+34_BOON_LEAT_TERRACE,main,weekday,00:00,24:00,hourly,,,,0.8,,,$0.80 / 30 mins
+34_BOON_LEAT_TERRACE,main,weekday,18:00,22:00,per_entry,,,,,,2.5,$2.50 per entry
+34_BOON_LEAT_TERRACE,main,weekday,22:00,07:00 +1d,per_entry,,,,,,4,$4.00 per entry
+34_BOON_LEAT_TERRACE,main,sat,07:00,13:00,hourly,,,,0.8,,,$0.80 /30 mins
+34_BOON_LEAT_TERRACE,main,sat,13:00,07:00 +1d,per_entry,,,,,,4,$4.00 /entry
+34_BOON_LEAT_TERRACE,main,sun_ph,00:00,24:00,per_entry,,,,,,4,$4.00 / entry
+798_UPPER_BUKIT_TIMAH_ROAD,main,weekday,00:00,07:00,hourly,,,,2.14,,,$2.14 /30 mins
+798_UPPER_BUKIT_TIMAH_ROAD,main,weekday,07:00,24:00,hourly,,,,1.07,,,$1.07 /30 mins
+798_UPPER_BUKIT_TIMAH_ROAD,main,sat,00:00,07:00,hourly,,,,2.14,,,$2.14 /30 mins
+798_UPPER_BUKIT_TIMAH_ROAD,main,sat,07:00,24:00,hourly,,,,1.07,,,$1.07 /30 mins
+798_UPPER_BUKIT_TIMAH_ROAD,main,sun_ph,00:00,07:00,hourly,,,,2.14,,,$2.14 /30 mins
+798_UPPER_BUKIT_TIMAH_ROAD,main,sun_ph,07:00,24:00,hourly,,,,1.07,,,$1.07 /30 mins
+8_SHENTON_WAY,main,weekday,07:00,18:00,hourly,,,,2.3,,,$2.30 per 0.5 hr
+8_SHENTON_WAY,main,weekday,18:00,24:00,per_entry,,,,,,2.8,$2.80 per entry
+8_SHENTON_WAY,main,sat,07:00,18:00,hourly,,,,2.3,,,$2.30 per 0.5 hr
+8_SHENTON_WAY,main,sat,18:00,24:00,per_entry,,,,,,2.8,$2.80 per entry
+8_SHENTON_WAY,main,sun_ph,00:00,24:00,per_entry,,,,,,2.8,$2.80 per entry
+AMARA_HOTEL_2,main,weekday,08:00,16:59,hourly,,,,2,,,$2 per 0.5 hr; 5pm-7.59am (the following day) : $3 per entry
+AMARA_HOTEL_2,main,sat,08:00,16:59,hourly,,,,2,,,$2 per 0.5 hr; 5pm-7.59am (the following day) : $3 per entry
+AMARA_HOTEL_2,main,sun_ph,00:00,24:00,per_entry,,,,,,3,$3 per entry
+ASIA_SQUARE,main,weekday,07:00,17:59,per_min,,,,,0.08,,$0.08 per min; 6pm onwards: $3 per entry
+ASIA_SQUARE,main,sat,00:00,24:00,per_entry,,,,,,3,7am-6.59am (next day): $3 per entry
+ASIA_SQUARE,main,sun_ph,00:00,24:00,per_entry,,,,,,3,7am-6.59am (next day): $3 per entry
+BANGKOK_BANK_BUILDING,main,weekday,07:00,19:00,tiered,,2,30,2,,,$2 for 1st 0.5 hr; $4 for sub. hr
+BANGKOK_BANK_BUILDING,main,sat,07:00,19:00,tiered,,2,30,2,,,$2 for 1st 0.5 hr; $4 for sub. hr
+BAYFRONT_AVENUE,main,weekday,07:00,18:00,hourly,,,,1.5,,,$3 per hr
+BAYFRONT_AVENUE,main,weekday,18:00,24:00,hourly,,,,0.6,,,$1.20 per hr
+BAYFRONT_AVENUE,main,sat,07:00,13:00,hourly,,,,1.5,,,$3 per hr
+BAYFRONT_AVENUE,main,sat,13:00,24:00,hourly,,,,0.6,,,$1.20 per hr
+BAYFRONT_AVENUE,main,sun_ph,00:00,24:00,hourly,,,,0.6,,,$1.20 per hr
+BERJAYA_HOTEL_2,main,weekday,08:30,17:00,hourly,,,,1,,,$1 per 0.5 hr
+BERJAYA_HOTEL_2,main,weekday,17:00,22:00,hourly,,,,0.5,,,$1 per hr
+BERJAYA_HOTEL_2,main,sat,08:30,17:00,hourly,,,,1,,,$1 per 0.5 hr
+BERJAYA_HOTEL_2,main,sat,17:00,22:00,hourly,,,,0.5,,,$1 per hr
+BERJAYA_HOTEL_2,main,sun_ph,08:30,22:00,hourly,,,,0.5,,,$1 per hr
+BUGIS_JUNCTION,main,weekday,08:00,17:00,tiered,1.07,,,1.11,,,$1.07 for 1st hr; $0.37 for sub. 10mins
+BUGIS_JUNCTION,main,mon-thu,17:00,24:00,tiered,,2.5,120,1.11,,,$2.50 per entry. Fri: $2.50 for 1st 2hrs; $0.37 for sub. 10 mins
+BUGIS_JUNCTION,main,sat,00:00,24:00,tiered,,2.5,120,1.11,,,$2.50 for 1st 2hrs; $0.37 for sub. 10 mins
+BUGIS_JUNCTION,main,sun_ph,00:00,24:00,tiered,,2.5,120,1.11,,,$2.50 for 1st 2hrs; $0.37 for sub. 10 mins
+BURLINGTON_SQUARE,main,weekday,07:00,17:00,per_min,,,,,0.04,,$0.04 per min
+BURLINGTON_SQUARE,main,weekday,17:00,24:00,per_entry,,,,,,2.2,$2.20 per entry
+BURLINGTON_SQUARE,main,sat,00:00,24:00,per_min,,,,,0.06,,$0.06 per min
+BURLINGTON_SQUARE,main,sun_ph,00:00,24:00,per_min,,,,,0.06,,$0.06 per min
+CAPITACOMMERCIAL_TRUST_CCT,main,weekday,00:00,24:00,hourly,,,,2.05,,,$2.05 per 0.5 hr
+CAPITACOMMERCIAL_TRUST_CCT,main,sat,00:00,24:00,hourly,,,,2.05,,,$2.05 per 0.5 hr
+CAPITACOMMERCIAL_TRUST_CCT,main,sun_ph,00:00,24:00,hourly,,,,3.1,,,$3.10 per 0.5 hr
+CAPITAL_SQUARE,main,weekday,08:00,18:00,hourly,,,,2.2,,,$2.20 for 0.5 hr or part thereof
+CAPITAL_SQUARE,main,weekday,18:00,08:00 +1d,per_entry,,,,,,3.2,$3.20 per entry
+CAPITAL_SQUARE,main,sat,08:00,18:00,hourly,,,,2.2,,,$2.20 for 0.5 hr or part thereof
+CAPITAL_SQUARE,main,sat,18:00,08:00 +1d,per_entry,,,,,,3.2,$3.20 per entry
+CAPITAL_SQUARE,main,sun_ph,00:00,24:00,per_entry,,,,,,3.2,$3.20 per entry
+CAPITAL_TOWER,main,weekday,07:00,18:00,hourly,,,,2.8,,,$2.80 per 0.5 hr
+CAPITAL_TOWER,main,weekday,18:00,24:00,per_entry,,,,,,3.2,$3.20 per entry
+CAPITAL_TOWER,main,sat,07:00,18:00,hourly,,,,2.8,,,$2.80 per 0.5 hr
+CAPITAL_TOWER,main,sat,18:00,24:00,per_entry,,,,,,3.2,$3.20 per entry
+CAPITAL_TOWER,main,sun_ph,00:00,24:00,per_entry,,,,,,3.2,$3.20 per entry
+CARLTON_HOTEL_2,main,weekday,07:00,18:00,tiered,3,,,1.5,,,$3 for 1st hr; $1.50 for sub. 0.5 hr
+CARLTON_HOTEL_2,main,weekday,18:00,24:00,per_entry,,,,,,6,$6 per entry
+CARLTON_HOTEL_2,main,sat,07:00,18:00,tiered,3,,,1.5,,,$3 for 1st hr; $1.50 for sub. 0.5 hr
+CARLTON_HOTEL_2,main,sat,18:00,24:00,per_entry,,,,,,6,$6 per entry
+CARLTON_HOTEL_2,main,sun_ph,07:00,18:00,tiered,3,,,1.5,,,$3 for 1st hr; $1.50 for sub. 0.5 hr
+CARLTON_HOTEL_2,main,sun_ph,18:00,24:00,per_entry,,,,,,6,$6 per entry
+CENTRAL_MALL,main,weekday,06:00,17:00,tiered,2,,,1,,,$2.00 for 1st hr; $1.00 for sub. 0.5 hr
+CENTRAL_MALL,main,weekday,17:00,24:00,per_entry,,,,,,3,$3.00 per entry
+CENTRAL_MALL,main,sat,06:00,17:00,tiered,2,,,1,,,$2.00 for 1st hr; $1.00 for sub. 0.5 hr
+CENTRAL_MALL,main,sat,17:00,24:00,per_entry,,,,,,3,$3.00 per entry
+CENTRAL_MALL,main,sun_ph,00:00,24:00,per_entry,,,,,,3,$3.00 per entry
+CENTRAL,main,weekday,06:00,17:00,tiered,2.2,,,1.1,,,$2.20 for 1st hr; $1.10 for sub. 0.5 hr or part thereof
+CENTRAL,main,weekday,17:00,24:00,per_entry,,,,,,3.5,$3.50 per entry
+CENTRAL,main,sat,06:00,17:00,tiered,2.2,,,1.1,,,$2.20 for 1st hr; $1.10 for sub. 0.5 hr or part thereof
+CENTRAL,main,sat,17:00,24:00,per_entry,,,,,,3.5,$3.50 per entry
+CENTRAL,main,sun_ph,00:00,24:00,per_entry,,,,,,3.5,$3.50 per entry
+CHIJMES,main,weekday,08:00,05:59 +1d,tiered,2.2,,,1.1,,,$2.20 for 1st hr; $0.55 for sub. 15 mins
+CHIJMES,main,weekday,18:00,05:59 +1d,hourly,,,,2,,,"(Valet Parking Only) Valet Charge $4 per entry, Carpark charges: $4 per hr"
+CHIJMES,main,sat,08:00,05:59 +1d,tiered,2.2,,,1.1,,,$2.20 for 1st hr; $0.55 for sub. 15 mins
+CHIJMES,main,sat,18:00,05:59 +1d,hourly,,,,2,,,"(Valet Parking Only) Valet Charge $4 per entry, Carpark charges: $4 per hr"
+CHIJMES,main,sun_ph,08:00,05:59 +1d,tiered,2.2,,,1.1,,,$2.20 for 1st hr; $0.55 for sub. 15 mins
+CHIJMES,main,sun_ph,18:00,05:59 +1d,hourly,,,,2,,,"(Valet Parking Only) Valet Charge $4 per entry, Carpark charges: $4 per hr"
+CHINA_SQUARE_CENTRAL,main,weekday,08:00,18:00,hourly,,,,1.8,,,$1.80 per 0.5 hr or part thereof
+CHINA_SQUARE_CENTRAL,main,weekday,18:00,24:00,per_entry,,,,,,3,$3 per entry. (
+CHINA_SQUARE_CENTRAL,main,sat,00:00,24:00,per_entry,,,,,,3,$3 per entry. (
+CHINA_SQUARE_CENTRAL,main,sun_ph,00:00,24:00,per_entry,,,,,,3,$3 per entry. (
+CHINATOWN_POINT,main,weekday,07:00,17:00,hourly,,,,1.2,,,$1.20 per 0.5 hr
+CHINATOWN_POINT,main,weekday,17:00,24:00,per_entry,,,,,,2.5,$2.50 per entry
+CHINATOWN_POINT,main,sat,07:00,17:00,hourly,,,,1.2,,,$1.20 per 0.5 hr
+CHINATOWN_POINT,main,sat,17:00,24:00,per_entry,,,,,,2.5,$2.50 per entry
+CHINATOWN_POINT,main,sun_ph,00:00,24:00,per_entry,,,,,,2.5,$2.50 per entry
+CLARKE_QUAY,main,weekday,15:00,16:59,tiered,,2.14,120,0.535,,,$2.14 for 1st 2hrs; $1.07 for sub. hr (Free parking between 12pm-2.59pm)
+CLARKE_QUAY,main,weekday,17:00,24:00,tiered,2.14,,,0.535,,,$2.14 for 1st hr; $1.07 for sub. hr (Cap at $5.35)
+CLARKE_QUAY,main,sat,07:00,16:59,tiered,,2.14,120,0.535,,,$2.14 for 1st 2hrs; $1.07 for sub. hr
+CLARKE_QUAY,main,sat,17:00,24:00,tiered,2.14,,,0.535,,,$2.14 for 1st hr; $1.07 for sub. hr (Cap at $5.35)
+CLARKE_QUAY,main,sun_ph,00:00,24:00,per_entry,,,,,,2.68,$2.68 per entry
+CLIFFORD_CENTRE,main,weekday,06:00,17:00,hourly,,,,2.5,,,$5 per hr (Car park closed at 11pm daily from Mon-Sat)
+CLIFFORD_CENTRE,main,weekday,17:00,23:00,per_entry,,,,,,3,$3 per entry
+CLIFFORD_CENTRE,main,sat,06:00,17:00,hourly,,,,2.5,,,$5 per hr (Car park closed at 11pm daily from Mon-Sat)
+CLIFFORD_CENTRE,main,sat,17:00,23:00,per_entry,,,,,,3,$3 per entry
+CLIFFORD_CENTRE,main,sun_ph,06:00,17:00,hourly,,,,2.5,,,$5 per hr (Car park closed at 11pm daily from Mon-Sat)
+CLIFFORD_CENTRE,main,sun_ph,17:00,23:00,per_entry,,,,,,3,$3 per entry
+CONRAD_CENTENNIAL_SINGAPORE,main,weekday,07:00,18:00,tiered,3.3,,,1.1,,,$3.30 for 1st hr; $1.10 for sub.0.5 hr
+CONRAD_CENTENNIAL_SINGAPORE,main,weekday,18:00,24:00,per_entry,,,,,,2.2,$2.20 per entry
+CONRAD_CENTENNIAL_SINGAPORE,main,sat,00:00,24:00,tiered,,2.2,120,0.55,,,$2.20 for 1st 2hrs; $1.10 for sub. hr
+CONRAD_CENTENNIAL_SINGAPORE,main,sun_ph,00:00,24:00,tiered,,2.2,120,0.55,,,$2.20 for 1st 2hrs; $1.10 for sub. hr
+COPTHORNE_KING_S_HOTEL_2,main,weekday,07:00,24:00,tiered,3,,,1.5,,,$3 for 1st hr; $1.50 for sub 0.5 hr
+COPTHORNE_KING_S_HOTEL_2,main,weekday,00:00,24:00,tiered,4,,,2,,,$4 for 1st hr; $2 for sub 0.5 hr
+COPTHORNE_KING_S_HOTEL_2,main,sat,07:00,24:00,tiered,3,,,1.5,,,$3 for 1st hr; $1.50 for sub 0.5 hr
+COPTHORNE_KING_S_HOTEL_2,main,sat,00:00,24:00,tiered,4,,,2,,,$4 for 1st hr; $2 for sub 0.5 hr
+COPTHORNE_KING_S_HOTEL_2,main,sun_ph,07:00,24:00,tiered,3,,,1.5,,,$3 for 1st hr; $1.50 for sub 0.5 hr
+COPTHORNE_KING_S_HOTEL_2,main,sun_ph,00:00,24:00,tiered,4,,,2,,,$4 for 1st hr; $2 for sub 0.5 hr
+COPTHORNE_ORCHID_HOTEL_2,main,weekday,08:00,17:00,tiered,1.5,,,0.5,,,"$1.50 for 1st hr; $1 for sub. hr, per day $20)"
+COPTHORNE_ORCHID_HOTEL_2,main,weekday,17:00,24:00,per_entry,,,,,,3,$3 per entry
+COPTHORNE_ORCHID_HOTEL_2,main,sat,08:00,17:00,tiered,1.5,,,0.5,,,"$1.50 for 1st hr; $1 for sub. hr, per day $20)"
+COPTHORNE_ORCHID_HOTEL_2,main,sat,17:00,24:00,per_entry,,,,,,3,$3 per entry
+COPTHORNE_ORCHID_HOTEL_2,main,sun_ph,08:00,17:00,tiered,1.5,,,0.5,,,"$1.50 for 1st hr; $1 for sub. hr, per day $20)"
+COPTHORNE_ORCHID_HOTEL_2,main,sun_ph,17:00,24:00,per_entry,,,,,,3,$3 per entry
+CPF_BUILDING_ROBINSON_ROAD,main,weekday,06:00,17:00,hourly,,,,1.5,,,$1.50 per 0.5 hr; Closed at 5pm. Cars remaining from 5pm onward will be charged an additional flat rate of $5
+CPF_BUILDING_ROBINSON_ROAD,main,sat,06:00,13:00,hourly,,,,1.5,,,$1.50 per 0.5 hr. Closed at 1:00pm. Cars remaining from 1:00pm onward will be charged an additional flat rate of $5
+DBS_BUILDING,main,weekday,06:00,19:00,hourly,,,,2.57,,,$2.57 per 0.5 hr
+DBS_BUILDING,main,weekday,19:00,24:00,per_entry,,,,,,2.57,$2.57 per entry
+DBS_BUILDING,main,sat,06:00,13:00,hourly,,,,2.57,,,$2.57 per 0.5 hr
+DBS_BUILDING,main,sat,13:00,24:00,per_entry,,,,,,2.57,$2.57 per entry
+DBS_BUILDING,main,sun_ph,00:00,24:00,per_entry,,,,,,2.57,$2.57 per entry
+FAR_EAST_SQUARE,main,weekday,06:00,16:59,hourly,,,,2.14,,,$2.14 per 0.5 hr
+FAR_EAST_SQUARE,main,weekday,17:00,24:00,per_entry,,,,,,3.21,$3.21 per entry
+FAR_EAST_SQUARE,main,sat,00:00,24:00,per_entry,,,,,,3.21,$3.21 per entry
+FAR_EAST_SQUARE,main,sun_ph,00:00,24:00,per_entry,,,,,,3.21,$3.21 per entry
+FAR_EASTERN_BANK_BUILDING,main,weekday,07:00,18:00,hourly,,,,2.3,,,$2.30 per 0.5 hr
+FAR_EASTERN_BANK_BUILDING,main,weekday,18:30,24:00,per_entry,,,,,,3.2,$3.20 per entry
+FAR_EASTERN_BANK_BUILDING,main,sat,07:00,18:00,hourly,,,,2.3,,,$2.30 per 0.5 hr
+FAR_EASTERN_BANK_BUILDING,main,sat,18:30,24:00,per_entry,,,,,,3.2,$3.20 per entry
+FORTUNE_CENTRE,main,weekday,07:00,19:00,hourly,,,,1.61,,,$3.22 per hr
+FORTUNE_CENTRE,main,weekday,19:00,24:00,per_entry,,,,,,3.21,$3.21 per entry
+FORTUNE_CENTRE,main,sat,07:00,19:00,hourly,,,,1.61,,,$3.22 per hr
+FORTUNE_CENTRE,main,sat,19:00,24:00,per_entry,,,,,,3.21,$3.21 per entry
+FORTUNE_CENTRE,main,sun_ph,07:00,19:00,hourly,,,,1.61,,,$3.22 per hr
+FORTUNE_CENTRE,main,sun_ph,19:00,24:00,per_entry,,,,,,3.21,$3.21 per entry
+FU_LU_SHOU_COMPLEX,main,weekday,08:00,17:00,hourly,,,,1.2,,,$2.40 per hr
+FU_LU_SHOU_COMPLEX,main,weekday,17:00,24:00,per_entry,,,,,,2.2,$2.20 per entry (Car park closed at 12.30am daily)
+FU_LU_SHOU_COMPLEX,main,sat,08:00,17:00,hourly,,,,1.2,,,$2.40 per hr
+FU_LU_SHOU_COMPLEX,main,sat,17:00,24:00,per_entry,,,,,,2.2,$2.20 per entry (Car park closed at 12.30am daily)
+FU_LU_SHOU_COMPLEX,main,sun_ph,08:00,17:00,hourly,,,,1.2,,,$2.40 per hr
+FU_LU_SHOU_COMPLEX,main,sun_ph,17:00,24:00,per_entry,,,,,,2.2,$2.20 per entry (Car park closed at 12.30am daily)
+FULLERTON_HOTEL,main,weekday,07:00,18:00,hourly,,,,2.2,,,$2.20 per 0.5 hr
+FULLERTON_HOTEL,main,weekday,18:00,24:00,per_entry,,,,,,5,$5 per entry
+FULLERTON_HOTEL,main,sat,00:00,24:00,per_entry,,,,,,5,$5 per entry
+FULLERTON_HOTEL,main,sun_ph,00:00,24:00,per_entry,,,,,,5,$5 per entry
+FUNAN_DIGITALIFE_MALL,main,weekday,00:00,17:59,tiered,2.14,,,1.08,,,$2.14 for 1st hr; $0.54 for sub. 15mins
+FUNAN_DIGITALIFE_MALL,main,weekday,18:00,21:59,per_entry,,,,,,2.14,$2.14 per entry
+FUNAN_DIGITALIFE_MALL,main,sat,00:00,17:59,tiered,2.14,,,1.08,,,$2.14 for 1st hr; $0.54 for sub. 15mins
+FUNAN_DIGITALIFE_MALL,main,sat,18:00,21:59,per_entry,,,,,,2.14,$2.14 per entry
+FUNAN_DIGITALIFE_MALL,main,sun_ph,00:00,17:59,tiered,2.14,,,1.08,,,$2.14 for 1st hr; $0.54 for sub. 15mins
+FUNAN_DIGITALIFE_MALL,main,sun_ph,18:00,21:59,per_entry,,,,,,2.14,$2.14 per entry
+FURAMA_CITY_CENTRE_SINGAPORE_2,main,weekday,05:00,17:00,tiered,,1.4,30,1.5,,,$1.40 for 1st 0.5 hr; $1.50 for sub. 0.5 hr
+FURAMA_CITY_CENTRE_SINGAPORE_2,main,weekday,17:00,24:00,per_entry,,,,,,3,$3 per entry
+FURAMA_CITY_CENTRE_SINGAPORE_2,main,sat,05:00,17:00,tiered,,1.4,30,1.5,,,$1.40 for 1st 0.5 hr; $1.50 for sub. 0.5 hr
+FURAMA_CITY_CENTRE_SINGAPORE_2,main,sat,17:00,24:00,per_entry,,,,,,3,$3 per entry
+FURAMA_CITY_CENTRE_SINGAPORE_2,main,sun_ph,00:00,24:00,per_entry,,,,,,3,$3 per entry
+FURAMA_RIVERFRONT_SINGAPORE_2,main,weekday,07:00,17:00,hourly,,,,1,,,$1 per 0.5 hr
+FURAMA_RIVERFRONT_SINGAPORE_2,main,weekday,17:00,24:00,per_entry,,,,,,6,$6 per entry
+FURAMA_RIVERFRONT_SINGAPORE_2,main,sat,07:00,17:00,hourly,,,,1,,,$1 per 0.5 hr
+FURAMA_RIVERFRONT_SINGAPORE_2,main,sat,17:00,24:00,per_entry,,,,,,6,$6 per entry
+FURAMA_RIVERFRONT_SINGAPORE_2,main,sun_ph,07:00,17:00,hourly,,,,1,,,$1 per 0.5 hr
+FURAMA_RIVERFRONT_SINGAPORE_2,main,sun_ph,17:00,24:00,per_entry,,,,,,6,$6 per entry
+GALLERY_HOTEL_2,main,weekday,12:00,14:00,tiered,3,,,1,,,"$3 for 1st hr; $1 for sub. 0.5 hr; $2 for 1st hr, $0.50 for sub. 0.5 hr from 2.01pm to 6.00pm for Mon-Thu"
+GALLERY_HOTEL_2,main,weekday,18:00,23:59,tiered,3,,,1,,,$3 for 1st hr; $1 for sub. 0.5 hr; $2 for 1st hr; $0.50 for sub. 0.5 hr from 12am-11.59am for Mon-Thu
+GALLERY_HOTEL_2,main,sat,06:00,23:59,tiered,3,,,0.5,,,"$3 for 1st hr; $0.50 for sub. 0.5 hr, $3 for 1st hr; $0.50 for sub. 0.5 hr from 12am-1.59am for Fri-Sun/PH"
+GALLERY_HOTEL_2,main,sun_ph,00:00,24:00,tiered,2,,,0.5,,,$2 for 1st hr; $0.50 for sub. 0.5 hr from 2.01am-6am for Fri-Sun/PH
+GILLMAN_BARRACKS,main,weekday,00:00,24:00,hourly,,,,0.5,,,$0.50 / 30 mins
+GILLMAN_BARRACKS,main,weekday,17:00,24:00,per_entry,,,,,,2,$2.00 / entry
+GILLMAN_BARRACKS,main,sat,18:00,07:00 +1d,per_entry,,,,,,2,$2/entry
+GILLMAN_BARRACKS,main,sun_ph,00:00,24:00,free,,,,,,,Free Parking
+GOLDEN_MILE_COMPLEX,main,weekday,07:00,18:00,tiered,2,,,1,,,$2 for 1st hr; $1 for sub. 0.5 hr
+GOLDEN_MILE_COMPLEX,main,weekday,18:00,24:00,per_entry,,,,,,2.2,$2.20 per entry
+GOLDEN_MILE_COMPLEX,main,sat,07:00,18:00,tiered,2,,,1,,,$2 for 1st hr; $1 for sub. 0.5 hr
+GOLDEN_MILE_COMPLEX,main,sat,18:00,24:00,per_entry,,,,,,2.2,$2.20 per entry
+GOLDEN_MILE_COMPLEX,main,sun_ph,00:00,24:00,per_entry,,,,,,2.2,$2.20 per entry
+GOLDEN_SHOE_COMPLEX,main,weekday,07:00,17:00,hourly,,,,2.6,,,$2.60 per 0.5 hr
+GOLDEN_SHOE_COMPLEX,main,weekday,17:00,24:00,per_entry,,,,,,3.3,$3.30 per entry
+GOLDEN_SHOE_COMPLEX,main,sat,07:00,17:00,hourly,,,,2.6,,,$2.60 per 0.5 hr
+GOLDEN_SHOE_COMPLEX,main,sat,17:00,24:00,per_entry,,,,,,3.3,$3.30 per entry
+GOLDEN_SHOE_COMPLEX,main,sun_ph,00:00,24:00,per_entry,,,,,,3.3,$3.3 per entry
+GRAND_COPTHORNE_WATERFRONT_HOTEL_2,main,weekday,07:00,17:00,tiered,3.75,,,1.07,,,$3.75 for 1st hr; $2.14 for sub. hr
+GRAND_COPTHORNE_WATERFRONT_HOTEL_2,main,weekday,17:00,24:00,per_entry,,,,,,4.28,$4.28 per entry
+GRAND_COPTHORNE_WATERFRONT_HOTEL_2,main,sat,07:00,17:00,tiered,3.75,,,1.07,,,$3.75 for 1st hr; $2.14 for sub. hr
+GRAND_COPTHORNE_WATERFRONT_HOTEL_2,main,sat,17:00,24:00,per_entry,,,,,,4.28,$4.28 per entry
+GRAND_COPTHORNE_WATERFRONT_HOTEL_2,main,sun_ph,00:00,24:00,per_entry,,,,,,4.28,$4.28 per entry
+GRAND_PACIFIC_HOTEL_FORMERLY_ALLSON_HOTEL_2,main,weekday,07:00,17:00,hourly,,,,1.32,,,$1.32 per 0.5 hr
+GRAND_PACIFIC_HOTEL_FORMERLY_ALLSON_HOTEL_2,main,weekday,17:00,24:00,per_entry,,,,,,3.57,$3.57 per entry
+GRAND_PACIFIC_HOTEL_FORMERLY_ALLSON_HOTEL_2,main,sat,07:00,17:00,hourly,,,,1.32,,,$1.32 per 0.5 hr
+GRAND_PACIFIC_HOTEL_FORMERLY_ALLSON_HOTEL_2,main,sat,17:00,24:00,per_entry,,,,,,3.57,$3.57 per entry
+GRAND_PACIFIC_HOTEL_FORMERLY_ALLSON_HOTEL_2,main,sun_ph,00:00,24:00,per_entry,,,,,,3.57,$3.57 per entry
+GRAND_PARK_CITY_HALL,main,weekday,07:00,17:00,tiered,3.28,,,1.55,,,$3.28 for 1st hr; $1.55 for sub. 0.5 hr
+GRAND_PARK_CITY_HALL,main,weekday,17:00,24:00,per_entry,,,,,,5.35,$5.35 per entry
+GRAND_PARK_CITY_HALL,main,sat,07:00,17:00,tiered,3.28,,,1.55,,,$3.28 for 1st hr; $1.55 for sub. 0.5 hr
+GRAND_PARK_CITY_HALL,main,sat,17:00,24:00,per_entry,,,,,,5.35,$5.35 per entry
+GRAND_PARK_CITY_HALL,main,sun_ph,07:00,17:00,tiered,3.28,,,1.55,,,$3.28 for 1st hr; $1.55 for sub. 0.5 hr
+GRAND_PARK_CITY_HALL,main,sun_ph,17:00,24:00,per_entry,,,,,,5.35,$5.35 per entry
+GREAT_EASTERN_CENTRE,main,weekday,08:00,18:00,hourly,,,,1.8,,,$1.80 per 0.5 hr (Car park at China square central; B2 closed from 12am-6am daily)
+GREAT_EASTERN_CENTRE,main,weekday,18:00,24:00,per_entry,,,,,,3,$3 per entry
+GREAT_EASTERN_CENTRE,main,sat,08:00,24:00,per_entry,,,,,,3,$3 per entry
+GREAT_EASTERN_CENTRE,main,sun_ph,08:00,24:00,per_entry,,,,,,3,$3 per entry
+GREAT_WORLD_CITY,main,weekday,06:01,17:00,hourly,,,,0.775,,,$1.55 per hr
+GREAT_WORLD_CITY,main,weekday,17:00,24:00,per_entry,,,,,,3.3,$3.30 per entry
+GREAT_WORLD_CITY,main,sat,00:00,24:00,hourly,,,,0.825,,,$1.65 per hr (Max. of $6.00 per entry)
+GREAT_WORLD_CITY,main,sun_ph,00:00,24:00,hourly,,,,0.825,,,$1.65 per hr (Max. of $6.00 per entry)
+HARBOURFRONT_CENTRE,main,weekday,07:00,18:00,tiered,1.2,,,0.6,,,$1.20 for 1st hr; $0.60 for sub. 0.5 hr
+HARBOURFRONT_CENTRE,main,weekday,18:00,01:00 +1d,per_entry,,,,,,2.4,$2.40 per entry
+HARBOURFRONT_CENTRE,main,weekday,01:00,24:00,hourly,,,,1.02,,,$2.04 per hr
+HARBOURFRONT_CENTRE,main,sat,07:00,18:00,tiered,1.2,,,0.6,,,$1.20 for 1st hr; $0.60 for sub. 0.5 hr
+HARBOURFRONT_CENTRE,main,sat,18:00,01:00 +1d,per_entry,,,,,,2.4,$2.40 per entry
+HARBOURFRONT_CENTRE,main,sat,01:00,24:00,hourly,,,,1.02,,,$2.04 per hr
+HARBOURFRONT_CENTRE,main,sun_ph,07:00,18:00,tiered,1.2,,,0.6,,,$1.20 for 1st hr; $0.60 for sub. 0.5 hr
+HARBOURFRONT_CENTRE,main,sun_ph,18:00,01:00 +1d,per_entry,,,,,,2.4,$2.40 per entry
+HARBOURFRONT_CENTRE,main,sun_ph,01:00,24:00,hourly,,,,1.02,,,$2.04 per hr
+HOLIDAY_INN_ATRIUM_SINGAPORE,main,weekday,07:00,17:00,hourly,,,,0.9,,,$1.80 per hr
+HOLIDAY_INN_ATRIUM_SINGAPORE,main,weekday,17:00,24:00,per_entry,,,,,,3.8,$3.80 per entry
+HOLIDAY_INN_ATRIUM_SINGAPORE,main,sat,07:00,17:00,hourly,,,,0.9,,,$1.80 per hr
+HOLIDAY_INN_ATRIUM_SINGAPORE,main,sat,17:00,24:00,per_entry,,,,,,3.8,$3.80 per entry
+HOLIDAY_INN_ATRIUM_SINGAPORE,main,sun_ph,00:00,24:00,per_entry,,,,,,3.8,$3.80 per entry
+HONG_LEONG_BUILDING,main,weekday,07:00,17:00,hourly,,,,2.5,,,$2.50 per 0.5 hr
+HONG_LEONG_BUILDING,main,weekday,17:00,23:00,per_entry,,,,,,3.1,$3.10 per entry
+HONG_LEONG_BUILDING,main,sat,07:00,13:00,hourly,,,,2.5,,,$2.50 per 0.5 hr
+HONG_LEONG_BUILDING,main,sat,13:00,23:00,per_entry,,,,,,3.1,$3.10 per entry
+HONG_LEONG_BUILDING,main,sun_ph,07:00,23:00,per_entry,,,,,,3.1,$3.10 per entry
+HUB_SYNERGY_POINT_FORMERLY_APEX_TOWER,main,weekday,07:00,18:00,hourly,,,,1,,,$1 per 0.5 hr
+HUB_SYNERGY_POINT_FORMERLY_APEX_TOWER,main,weekday,18:00,24:00,hourly,,,,0.5,,,$1 per hr
+HUB_SYNERGY_POINT_FORMERLY_APEX_TOWER,main,sat,07:00,14:00,hourly,,,,1,,,$1 per 0.5 hr
+HUB_SYNERGY_POINT_FORMERLY_APEX_TOWER,main,sat,14:00,24:00,hourly,,,,0.5,,,$1 per hr
+HUB_SYNERGY_POINT_FORMERLY_APEX_TOWER,main,sun_ph,07:00,24:00,hourly,,,,0.5,,,$1 per hr
+ICON_VILLAGE,main,weekday,07:00,17:00,hourly,,,,1.5,,,$1.50 per 0.5 hr
+ICON_VILLAGE,main,weekday,17:00,24:00,per_entry,,,,,,3,$3 per entry
+ICON_VILLAGE,main,sat,07:00,13:00,hourly,,,,1.5,,,$3 per hr
+ICON_VILLAGE,main,sat,13:00,24:00,per_entry,,,,,,3,$3 per entry
+ICON_VILLAGE,main,sun_ph,00:00,24:00,per_entry,,,,,,3,$3 per entry
+ILUMA,main,weekday,08:00,17:00,tiered,1.07,,,1.11,,,$1.07 for 1st hr; $0.37 for sub. 10 mins
+ILUMA,main,mon-thu,17:00,24:00,per_entry,,,,,,2.5,$2.50 per entry
+ILUMA,main,fri,00:00,24:00,tiered,,2.5,120,0.75,,,$2.50 for 1st 2hrs; $0.25 for sub. 10 mins
+ILUMA,main,sat,00:00,24:00,tiered,,2.5,120,0.75,,,$2.50 for 1st 2hrs; $0.25 for sub. 10 mins
+ILUMA,main,sun_ph,00:00,24:00,tiered,,2.5,120,0.75,,,$2.50 for 1st 2hrs; $0.25 for sub. 10 mins
+INCOME_AT_RAFFLES_FORMER_HITACHI_TOWER,main,weekday,07:30,17:59,hourly,,,,2.75,,,$2.75 per 0.5 hr
+INCOME_AT_RAFFLES_FORMER_HITACHI_TOWER,main,weekday,18:00,07:29 +1d,per_entry,,,,,,3.3,$3.30 per entry
+INCOME_AT_RAFFLES_FORMER_HITACHI_TOWER,main,sat,07:30,12:59,hourly,,,,2.75,,,$2.75 per 0.5 hr
+INCOME_AT_RAFFLES_FORMER_HITACHI_TOWER,main,sat,13:00,07:29 +1d,per_entry,,,,,,3.3,$3.30 per entry
+INCOME_AT_RAFFLES_FORMER_HITACHI_TOWER,main,sun_ph,07:30,07:29 +1d,per_entry,,,,,,3.3,$3.30 per entry
+INTER_CONTINENTAL_SINGAPORE_HOTEL,main,weekday,08:00,17:00,tiered,1.07,,,1.11,,,$1.07 for 1st hr; $0.37 for sub. 10mins
+INTER_CONTINENTAL_SINGAPORE_HOTEL,main,mon-thu,17:00,24:00,tiered,,2.5,120,0.75,,,$2.50 per entry. Fri: $2.50 for 1st 2hrs; $0.25 for sub. 10 mins
+INTER_CONTINENTAL_SINGAPORE_HOTEL,main,sat,00:00,24:00,tiered,,2.5,120,0.75,,,$2.50 for 1st 2hrs; $0.25 for sub. 10 mins
+INTER_CONTINENTAL_SINGAPORE_HOTEL,main,sun_ph,00:00,24:00,tiered,,2.5,120,0.75,,,$2.50 for 1st 2hrs; $0.25 for sub. 10 mins
+INTERNATIONAL_PLAZA,main,weekday,07:00,17:00,hourly,,,,2.2,,,$2.20 per 0.5 hr
+INTERNATIONAL_PLAZA,main,weekday,17:00,24:00,per_entry,,,,,,3,$3 per entry
+INTERNATIONAL_PLAZA,main,sat,07:00,17:00,hourly,,,,2.2,,,$2.20 per 0.5 hr
+INTERNATIONAL_PLAZA,main,sat,17:00,24:00,per_entry,,,,,,3,$3 per entry
+INTERNATIONAL_PLAZA,main,sun_ph,00:00,24:00,per_entry,,,,,,3,$3 per entry
+KECK_SENG_TOWER,main,weekday,08:00,18:00,hourly,,,,2.5,,,$2.50 per 0.5 hr
+KECK_SENG_TOWER,main,weekday,18:00,22:00,per_entry,,,,,,2.5,$2.50 per entry
+KECK_SENG_TOWER,main,sat,08:00,14:00,hourly,,,,2.5,,,$2.50 per 0.5 hr
+KECK_SENG_TOWER,main,sat,14:00,22:00,per_entry,,,,,,2.5,$2.50 per entry
+KEPPEL_BAY_TOWER_HARBOURFRONT_TOWER_ONE,main,weekday,07:00,19:00,hourly,,,,1.05,,,$1.05 per 0.5 hr
+KEPPEL_BAY_TOWER_HARBOURFRONT_TOWER_ONE,main,weekday,19:00,01:00 +1d,per_entry,,,,,,3.1,$3.10 per entry
+KEPPEL_BAY_TOWER_HARBOURFRONT_TOWER_ONE,main,weekday,01:00,24:00,hourly,,,,1.55,,,$3.10 per hr
+KEPPEL_BAY_TOWER_HARBOURFRONT_TOWER_ONE,main,sat,07:00,13:00,hourly,,,,1.05,,,$1.05 per 0.5 hr
+KEPPEL_BAY_TOWER_HARBOURFRONT_TOWER_ONE,main,sat,13:00,18:00,tiered,1.2,,,0.6,,,$1.20 for 1st hr; $0.60 for sub. 0.5 hr
+KEPPEL_BAY_TOWER_HARBOURFRONT_TOWER_ONE,main,sat,18:00,01:00 +1d,per_entry,,,,,,2.4,$2.40 per entry
+KEPPEL_BAY_TOWER_HARBOURFRONT_TOWER_ONE,main,sat,01:00,24:00,hourly,,,,1.55,,,$3.10 per hr
+KEPPEL_BAY_TOWER_HARBOURFRONT_TOWER_ONE,main,sun_ph,07:00,18:00,tiered,1.2,,,0.6,,,$1.20 for 1st hr; $0.60 for sub. 0.5 hr
+KEPPEL_BAY_TOWER_HARBOURFRONT_TOWER_ONE,main,sun_ph,18:00,01:00 +1d,per_entry,,,,,,2.4,$2.40 per entry
+KEPPEL_BAY_TOWER_HARBOURFRONT_TOWER_ONE,main,sun_ph,01:00,24:00,hourly,,,,1.55,,,$3.10 per hr
+KEYPOINT,main,weekday,00:00,24:00,hourly,,,,1.1,,,$1.10 for 0.5 hr; $2 per entry (close at midnight)
+KEYPOINT,main,sat,00:00,24:00,hourly,,,,1.1,,,$1.10 for 0.5 hr; $2 per entry (close at midnight)
+KEYPOINT,main,sun_ph,00:00,24:00,per_entry,,,,,,2,$2 per entry
+KLAPSONS_THE_BOUTIQUE_HOTEL_2,main,sat,00:00,24:00,per_entry,,,,,,4,After 2pm - $4.00 flat
+KLAPSONS_THE_BOUTIQUE_HOTEL_2,main,sun_ph,00:00,24:00,per_entry,,,,,,4,$4.00 flat
+LANDMARK_VILLAGE_HOTEL,main,weekday,08:00,17:00,tiered,1.9,,,1.07,,,$1.90 for 1st hr; $1.07 for sub. 0.5 hr
+LANDMARK_VILLAGE_HOTEL,main,weekday,17:00,24:00,per_entry,,,,,,2.14,$2.14 per entry
+LANDMARK_VILLAGE_HOTEL,main,sat,08:00,17:00,tiered,1.9,,,1.07,,,$1.90 for 1st hr; $1.07 for sub. 0.5 hr
+LANDMARK_VILLAGE_HOTEL,main,sat,17:00,24:00,per_entry,,,,,,2.14,$2.14 per entry
+LANDMARK_VILLAGE_HOTEL,main,sun_ph,00:00,24:00,per_entry,,,,,,2.14,$2.14 per entry
+LIANG_COURT,main,weekday,07:00,17:00,hourly,,,,0.535,,,$1.07 per hr
+LIANG_COURT,main,weekday,17:00,24:00,per_entry,,,,,,3.21,$3.21 per entry
+LIANG_COURT,main,sat,07:00,13:00,hourly,,,,0.535,,,$1.07 per hr
+LIANG_COURT,main,sat,13:00,24:00,per_entry,,,,,,3.21,$3.21 per entry
+LIANG_COURT,main,sun_ph,00:00,24:00,per_entry,,,,,,3.21,$3.21 per entry
+M_HOTEL_2,main,weekday,07:00,18:00,hourly,,,,1.5,,,$1.50 per 0.5 hr
+M_HOTEL_2,main,weekday,18:00,24:00,per_entry,,,,,,3,$3 per entry
+M_HOTEL_2,main,sat,07:00,18:00,hourly,,,,1.5,,,$1.50 per 0.5 hr
+M_HOTEL_2,main,sat,18:00,24:00,per_entry,,,,,,3,$3 per entry
+M_HOTEL_2,main,sun_ph,00:00,24:00,per_entry,,,,,,3,$3 per entry
+MANDARIN_ORIENTAL_HOTEL_2,main,mon-thu,07:00,17:00,tiered,,2.2,120,1.1,,,$2.20 for 1st 2hrs; $1.10 per 0.5 hr for sub. 0.5 hr (Car Park at Marina Square)
+MANDARIN_ORIENTAL_HOTEL_2,main,mon-thu,17:00,02:00 +1d,per_entry,,,,,,2.2,$2.20 per entry
+MANDARIN_ORIENTAL_HOTEL_2,main,mon-thu,02:00,07:00,hourly,,,,1.1,,,$1.10 per 0.5 hr
+MANDARIN_ORIENTAL_HOTEL_2,main,sat,07:00,02:00 +1d,tiered,,2.4,120,0.6,,,$2.40 for 1st 2 hrs; $1.20 per hr for sub. 2hrs; $1.40 per 0.5 hr for sub. 0.5 hr after 4 hrs of parking
+MANDARIN_ORIENTAL_HOTEL_2,main,sat,02:00,07:00,hourly,,,,1.1,,,$1.10 per 0.5 hr
+MANDARIN_ORIENTAL_HOTEL_2,main,sun_ph,07:00,02:00 +1d,tiered,,2.4,120,0.6,,,$2.40 for 1st 2 hrs; $1.20 per hr for sub. 2hrs; $1.40 per 0.5 hr for sub. 0.5 hr after 4 hrs of parking
+MANDARIN_ORIENTAL_HOTEL_2,main,sun_ph,02:00,07:00,hourly,,,,1.1,,,$1.10 per 0.5 hr
+MARINA_BAY_FINANCIAL_CENTRE_TOWER_1_2_3_MARINA_BAY,main,weekday,06:00,18:00,hourly,,,,3.21,,,$1.07 per 10 mins
+MARINA_BAY_FINANCIAL_CENTRE_TOWER_1_2_3_MARINA_BAY,main,weekday,18:00,24:00,tiered,,3.21,240,0.81,,,$3.21 for 1st 4hrs; $0.27 for sub. 10 mins
+MARINA_BAY_FINANCIAL_CENTRE_TOWER_1_2_3_MARINA_BAY,main,sat,00:00,24:00,tiered,,3.21,240,0.81,,,$3.21 for 1st 4hrs; $0.27 for sub. 10 mins
+MARINA_BAY_FINANCIAL_CENTRE_TOWER_1_2_3_MARINA_BAY,main,sun_ph,00:00,24:00,tiered,,3.21,240,0.81,,,$3.21 for 1st 4hrs; $0.27 for sub. 10 mins
+MARINA_BAY_SANDS_2,main,weekday,07:00,19:00,tiered,7,,,1,,,$7 for 1st hr; $1 for sub.0.5 hr; (Capped at $26 every 24hrs)
+MARINA_BAY_SANDS_2,main,weekday,19:00,24:00,per_entry,,,,,,7,$7 per entry
+MARINA_BAY_SANDS_2,main,sat,07:00,19:00,tiered,8,,,1,,,$8 for 1st hr; $1 for sub. 0.5 hr
+MARINA_BAY_SANDS_2,main,sat,19:00,24:00,per_entry,,,,,,8,$8 per entry
+MARINA_BAY_SANDS_2,main,sun_ph,07:00,19:00,tiered,8,,,1,,,$8 for 1st hr; $1 for sub. 0.5 hr
+MARINA_BAY_SANDS_2,main,sun_ph,19:00,24:00,per_entry,,,,,,8,$8 per entry
+MARINA_MANDARIN_HOTEL_2,main,mon-thu,07:00,17:00,tiered,,2.2,120,1.1,,,$2.20 for 1st 2hrs; $1.10 per 0.5 hr for sub. 0.5 hr (Car Park at Marina Square)
+MARINA_MANDARIN_HOTEL_2,main,mon-thu,17:00,02:00 +1d,per_entry,,,,,,2.2,$2.20 per entry
+MARINA_MANDARIN_HOTEL_2,main,mon-thu,02:00,07:00,hourly,,,,1.1,,,$1.10 per 0.5 hr
+MARINA_MANDARIN_HOTEL_2,main,sat,07:00,02:00 +1d,tiered,,2.4,120,0.6,,,$2.40 for 1st 2 hrs; $1.20 per hr for sub. 2hrs; $1.40 per 0.5 hr for sub. 0.5 hr after 4 hrs of parking
+MARINA_MANDARIN_HOTEL_2,main,sat,02:00,07:00,hourly,,,,1.1,,,$1.10 per 0.5 hr
+MARINA_MANDARIN_HOTEL_2,main,sun_ph,07:00,02:00 +1d,tiered,,2.4,120,0.6,,,$2.40 for 1st 2 hrs; $1.20 per hr for sub. 2hrs; $1.40 per 0.5 hr for sub. 0.5 hr after 4 hrs of parking
+MARINA_MANDARIN_HOTEL_2,main,sun_ph,02:00,07:00,hourly,,,,1.1,,,$1.10 per 0.5 hr
+MARINA_SQUARE,main,mon-thu,07:00,17:00,tiered,,2.2,120,1.1,,,$2.20 for 1st 2hrs; $1.10 per 0.5 hr for sub. 0.5 hr
+MARINA_SQUARE,main,mon-thu,17:00,02:00 +1d,per_entry,,,,,,2.2,$2.20 per entry
+MARINA_SQUARE,main,mon-thu,02:00,07:00,hourly,,,,1.1,,,$1.10 per 0.5 hr
+MARINA_SQUARE,main,sat,07:00,02:00 +1d,tiered,,2.4,120,0.6,,,$2.40 for 1st 2 hrs; $1.20 per hr for sub. 2hrs; $1.40 per 0.5 hr for sub. 0.5 hr after 4 hrs of parking
+MARINA_SQUARE,main,sat,02:00,07:00,hourly,,,,1.1,,,$1.10 per 0.5 hr
+MARINA_SQUARE,main,sun_ph,07:00,02:00 +1d,tiered,,2.4,120,0.6,,,$2.40 for 1st 2 hrs; $1.20 per hr for sub. 2hrs; $1.40 per 0.5 hr for sub. 0.5 hr after 4 hrs of parking
+MARINA_SQUARE,main,sun_ph,02:00,07:00,hourly,,,,1.1,,,$1.10 per 0.5 hr
+MERCHANT_SQUARE,main,weekday,08:00,18:00,tiered,,2,30,0.5,,,$2 for 1st 0.5 hr; $1 for sub. hr
+MERCHANT_SQUARE,main,weekday,18:00,24:00,per_entry,,,,,,3,$3 per entry
+MERCHANT_SQUARE,main,sat,00:00,24:00,per_entry,,,,,,3,$3 per entry
+MERCHANT_SQUARE,main,sun_ph,00:00,24:00,per_entry,,,,,,3,$3 per entry
+MILLENIA_SINGAPORE,main,weekday,07:00,18:00,tiered,3.3,,,1.1,,,$3.30 for 1st hr; $1.10 for sub.0.5 hr
+MILLENIA_SINGAPORE,main,weekday,18:00,24:00,per_entry,,,,,,2.2,$2.20 per entry
+MILLENIA_SINGAPORE,main,sat,00:00,24:00,tiered,,2.2,120,0.55,,,$2.20 for 1st 2hrs; $1.10 for sub. hr
+MILLENIA_SINGAPORE,main,sun_ph,00:00,24:00,tiered,,2.2,120,0.55,,,$2.20 for 1st 2hrs; $1.10 for sub. hr
+MILLENIA_WALK_BASEMENT_CAR_PARK,main,weekday,07:00,18:00,tiered,3.3,,,1.1,,,$3.30 for 1st hr; $1.10 for sub.0.5 hr
+MILLENIA_WALK_BASEMENT_CAR_PARK,main,weekday,18:00,24:00,per_entry,,,,,,2.2,$2.20 per entry
+MILLENIA_WALK_BASEMENT_CAR_PARK,main,sat,00:00,24:00,tiered,,2.2,120,0.55,,,$2.20 for 1st 2hrs; $1.10 for sub. hr
+MILLENIA_WALK_BASEMENT_CAR_PARK,main,sun_ph,00:00,24:00,tiered,,2.2,120,0.55,,,$2.20 for 1st 2hrs; $1.10 for sub. hr
+MILLENIA_WALK_SURFACE_PARKING_L1,main,weekday,07:00,18:00,tiered,4.28,,,1.605,,,$4.28 for 1st hr; $1.605 for sub. 0.5 hr
+MILLENIA_WALK_SURFACE_PARKING_L1,main,weekday,18:00,24:00,tiered,,4.28,120,0.8025,,,$4.28 for 1st 2hrs; $1.605 for sub. hr
+MILLENIA_WALK_SURFACE_PARKING_L1,main,sat,00:00,24:00,tiered,,4.28,120,0.8025,,,$4.28 for 1st 2hrs; $1.605 for sub. hr
+MILLENIA_WALK_SURFACE_PARKING_L1,main,sun_ph,00:00,24:00,tiered,,4.28,120,0.8025,,,$4.28 for 1st 2hrs; $1.605 for sub. hr
+NEIL_ROAD_OFF_STREET,main,weekday,00:00,24:00,hourly,,,,1,,,$1.00 per 30 mins (Per Minute Charging); $0.50 per 30 mins (Per Minute Charging)
+NEIL_ROAD_OFF_STREET,main,sat,07:00,17:00,hourly,,,,1,,,$1.00 per 30 mins
+NEIL_ROAD_OFF_STREET,main,sat,17:00,07:00 +1d,hourly,,,,0.5,,,$0.50 per 30 mins (Per Minute Charging)
+NEIL_ROAD_OFF_STREET,main,sun_ph,00:00,24:00,hourly,,,,0.5,,,$0.50 per 30 mins (Per Minute Charging)
+NORTH_BRIDGE_CENTRE,main,weekday,08:00,17:00,hourly,,,,1.3,,,$1.30 per 0.5 hr
+NORTH_BRIDGE_CENTRE,main,weekday,17:00,23:00,per_entry,,,,,,3,$3 per entry
+NORTH_BRIDGE_CENTRE,main,sat,00:00,24:00,per_entry,,,,,,3,$3 per entry
+NORTH_BRIDGE_CENTRE,main,sun_ph,00:00,24:00,per_entry,,,,,,3,$3 per entry
+NOVOTEL_CLARKE_QUAY_2,main,weekday,07:00,17:00,hourly,,,,0.535,,,$1.07 per hr
+NOVOTEL_CLARKE_QUAY_2,main,weekday,17:00,24:00,per_entry,,,,,,3.21,$3.21 per entry
+NOVOTEL_CLARKE_QUAY_2,main,sat,07:00,13:00,hourly,,,,0.535,,,$1.07 per hr
+NOVOTEL_CLARKE_QUAY_2,main,sat,13:00,24:00,per_entry,,,,,,3.21,$3.21 per entry
+NOVOTEL_CLARKE_QUAY_2,main,sun_ph,00:00,24:00,per_entry,,,,,,3.21,$3.21 per entry
+OCBC_CENTRE,main,weekday,07:00,18:00,hourly,,,,2,,,$4 per hr
+OCBC_CENTRE,main,weekday,18:00,24:00,per_entry,,,,,,3,$3 per entry
+OCBC_CENTRE,main,sat,00:00,24:00,per_entry,,,,,,3,$3 per entry
+OCBC_CENTRE,main,sun_ph,00:00,24:00,per_entry,,,,,,3,$3 per entry
+ONE_FULLERTON_2,main,weekday,07:00,18:00,hourly,,,,2.5,,,$2.50 per 0.5 hr
+ONE_FULLERTON_2,main,weekday,18:00,24:00,per_entry,,,,,,5,$5 per entry
+ONE_FULLERTON_2,main,sat,00:00,24:00,per_entry,,,,,,5,$5 per entry
+ONE_FULLERTON_2,main,sun_ph,00:00,24:00,per_entry,,,,,,5,$5 per entry
+ONE_RAFFLES_QUAY,main,weekday,06:00,18:00,hourly,,,,3.21,,,$1.07 per 10mins
+ONE_RAFFLES_QUAY,main,weekday,18:00,24:00,tiered,,3.21,240,0.81,,,$3.21 for 1st 4hrs; $0.27 per sub. 10 mins
+ONE_RAFFLES_QUAY,main,sat,00:00,24:00,tiered,,3.21,240,0.81,,,$3.21 for 1st 4hrs; $0.27 per sub. 10 mins
+ONE_RAFFLES_QUAY,main,sun_ph,00:00,24:00,tiered,,3.21,240,0.81,,,$3.21 for 1st 4hrs; $0.27 per sub. 10 mins
+OUB_CENTRE,main,weekday,07:00,17:00,hourly,,,,2.62,,,$2.62 per 0.5 hr
+OUB_CENTRE,main,weekday,17:00,24:00,per_entry,,,,,,3.21,$3.21 per entry
+OUB_CENTRE,main,sat,07:00,17:00,hourly,,,,2.62,,,$2.62 per 0.5 hr
+OUB_CENTRE,main,sat,17:00,24:00,per_entry,,,,,,3.21,$3.21 per entry
+OUB_CENTRE,main,sun_ph,07:00,17:00,hourly,,,,2.62,,,$2.62 per 0.5 hr
+OUB_CENTRE,main,sun_ph,17:00,24:00,per_entry,,,,,,3.21,$3.21 per entry
+OUE_BAYFRONT_FORMERLY_OVERSEAS_UNION_HOUSE,main,weekday,07:00,17:59,hourly,,,,2.58,,,$0.86 per 10mins block
+OUE_BAYFRONT_FORMERLY_OVERSEAS_UNION_HOUSE,main,weekday,18:00,24:00,per_entry,,,,,,3.21,$3.21 per entry
+OUE_BAYFRONT_FORMERLY_OVERSEAS_UNION_HOUSE,main,sat,07:00,14:59,hourly,,,,2.58,,,$0.86 per 10mins block. 3pm-11.59am $3.21 per entry
+OUE_BAYFRONT_FORMERLY_OVERSEAS_UNION_HOUSE,main,sun_ph,00:00,24:00,per_entry,,,,,,3.21,$3.21 per entry
+PAN_PACIFIC_HOTEL_2,main,weekday,07:00,17:00,tiered,,2.2,120,1.1,,,$2.20 for 1st 2hrs; $1.10 per 0.5 hr for sub. 0.5 hr (Car Park at Marina Square); Mon-Fri:
+PAN_PACIFIC_HOTEL_2,main,weekday,17:00,02:00 +1d,per_entry,,,,,,2.2,$2.20 per entry
+PAN_PACIFIC_HOTEL_2,main,weekday,02:00,07:00,hourly,,,,1.1,,,$1.10 per 0.5 hr
+PAN_PACIFIC_HOTEL_2,main,sat,07:00,02:00 +1d,tiered,,2.4,120,0.6,,,$2.40 for 1st 2 hrs; $1.20 per hr for sub. 2hrs; $1.20 per 0.5 hr for sub. 0.5 hr after 4 hrs of parking
+PAN_PACIFIC_HOTEL_2,main,sat,02:00,07:00,hourly,,,,1.1,,,$1.10 per 0.5 hr
+PAN_PACIFIC_HOTEL_2,main,sun_ph,07:00,02:00 +1d,tiered,,2.4,120,0.6,,,$2.40 for 1st 2 hrs; $1.20 per hr for sub. 2hrs; $1.20 per 0.5 hr for sub. 0.5 hr after 4 hrs of parking
+PAN_PACIFIC_HOTEL_2,main,sun_ph,02:00,07:00,hourly,,,,1.1,,,$1.10 per 0.5 hr
+PARKLANE_SHOPPING_MALL,main,weekday,07:00,19:00,tiered,2.5,,,1.25,,,$2.50 for 1st hr; $1.25 for sub. 0.5 hr
+PARKLANE_SHOPPING_MALL,main,weekday,19:00,24:00,per_entry,,,,,,2.5,$2.50 per entry
+PARKLANE_SHOPPING_MALL,main,weekday,00:00,24:00,per_entry,,,,,,2.5,$2.50 per entry
+PARKLANE_SHOPPING_MALL,main,sat,07:00,19:00,tiered,2.5,,,1.25,,,$2.50 for 1st hr; $1.25 for sub. 0.5 hr
+PARKLANE_SHOPPING_MALL,main,sat,19:00,24:00,per_entry,,,,,,2.5,$2.50 per entry
+PARKLANE_SHOPPING_MALL,main,sat,00:00,24:00,per_entry,,,,,,2.5,$2.50 per entry
+PARKLANE_SHOPPING_MALL,main,sun_ph,07:00,24:00,per_entry,,,,,,3,$3 per entry
+PARKROYAL_ON_BEACH_ROAD_2,MSCP,weekday,00:00,24:00,tiered,2.5,,,1.5,,,$2.50 for 1st hr; $1.50 for sub. 0.5 hr
+PARKROYAL_ON_BEACH_ROAD_2,hotel_driveway,weekday,00:00,24:00,tiered,6,,,2,,,$6 for 1st hr; $2 for sub. 0.5 hr
+PARKROYAL_ON_BEACH_ROAD_2,hotel_driveway,weekday,17:00,24:00,per_entry,,,,,,2.5,Multi Storey Carpark - $2.50 per entry. Hotel Driveway - $6 per entry
+PARKROYAL_ON_BEACH_ROAD_2,MSCP,sat,00:00,24:00,tiered,2.5,,,1.5,,,$2.50 for 1st hr; $1.50 for sub. 0.5 hr
+PARKROYAL_ON_BEACH_ROAD_2,hotel_driveway,sat,00:00,24:00,tiered,6,,,2,,,$6 for 1st hr; $2 for sub. 0.5 hr
+PARKROYAL_ON_BEACH_ROAD_2,hotel_driveway,sat,17:00,24:00,per_entry,,,,,,2.5,Multi Storey Carpark - $2.50 per entry. Hotel Driveway - $6 per entry
+PARKROYAL_ON_BEACH_ROAD_2,MSCP,sun_ph,00:00,24:00,per_entry,,,,,,2.5,$2.50 per entry
+PARKROYAL_ON_BEACH_ROAD_2,hotel_driveway,sun_ph,00:00,24:00,per_entry,,,,,,6,$6 per entry
+PEARL_S_CENTRE,main,weekday,08:30,17:00,hourly,,,,1.2,,,$1.20 per 0.5 hr (max $22.90)
+PEARL_S_CENTRE,main,weekday,17:00,24:00,per_entry,,,,,,2.5,$2.50 per entry
+PEARL_S_CENTRE,main,sat,08:30,17:00,hourly,,,,1.2,,,$1.20 per 0.5 hr (max $22.90)
+PEARL_S_CENTRE,main,sat,17:00,24:00,per_entry,,,,,,2.5,$2.50 per entry
+PEARL_S_CENTRE,main,sun_ph,00:00,24:00,per_entry,,,,,,2.5,$2.50 per entry
+PENINSULA_EXCELSIOR_HOTEL_2,main,weekday,08:00,17:00,tiered,2.6,,,1.5,,,$2.60 for 1st hr; $1.50 for sub. 0.5 hr
+PENINSULA_EXCELSIOR_HOTEL_2,main,weekday,17:00,24:00,per_entry,,,,,,4,$4 per entry
+PENINSULA_EXCELSIOR_HOTEL_2,main,sat,08:00,17:00,tiered,2.6,,,1.5,,,$2.60 for 1st hr; $1.50 for sub. 0.5 hr
+PENINSULA_EXCELSIOR_HOTEL_2,main,sat,17:00,24:00,per_entry,,,,,,4,$4 per entry
+PENINSULA_EXCELSIOR_HOTEL_2,main,sun_ph,08:00,17:00,hourly,,,,0.75,,,$1.50 per hr
+PENINSULA_EXCELSIOR_HOTEL_2,main,sun_ph,17:00,24:00,per_entry,,,,,,4,$4 per entry
+PENINSULAR_PLAZA,main,weekday,00:00,24:00,not_public,,,,,,,Season Parking Only
+PENINSULAR_PLAZA,main,sat,00:00,24:00,not_public,,,,,,,Season Parking Only
+PENINSULAR_PLAZA,main,sun_ph,00:00,24:00,not_public,,,,,,,Season Parking Only
+PEOPLE_S_PARK_CENTRE,main,weekday,07:00,17:00,hourly,,,,1.5,,,$1.50 per 0.5 hr
+PEOPLE_S_PARK_CENTRE,main,weekday,17:00,24:00,per_entry,,,,,,2.5,$2.50 per entry
+PEOPLE_S_PARK_CENTRE,main,sat,07:00,17:00,hourly,,,,1.5,,,$1.50 per 0.5 hr
+PEOPLE_S_PARK_CENTRE,main,sat,17:00,24:00,per_entry,,,,,,2.5,$2.50 per entry
+PEOPLE_S_PARK_CENTRE,main,sun_ph,07:00,17:00,hourly,,,,1.5,,,$1.50 per 0.5 hr
+PEOPLE_S_PARK_CENTRE,main,sun_ph,17:00,24:00,per_entry,,,,,,2.5,$2.50 per entry
+POMO_FOMERLY_PARADIZ_CENTRE,main,weekday,08:00,17:00,hourly,,,,1.25,,,$1.25 per 0.5 hr
+POMO_FOMERLY_PARADIZ_CENTRE,main,weekday,17:00,24:00,per_entry,,,,,,2.95,$2.95 per entry
+POMO_FOMERLY_PARADIZ_CENTRE,main,sat,08:00,17:00,hourly,,,,1.25,,,$1.25 per 0.5 hr
+POMO_FOMERLY_PARADIZ_CENTRE,main,sat,17:00,24:00,per_entry,,,,,,2.95,$2.95 per entry
+POMO_FOMERLY_PARADIZ_CENTRE,main,sun_ph,00:00,24:00,per_entry,,,,,,2.95,$2.95 per entry
+PWC_BUILDING,main,weekday,08:00,18:00,hourly,,,,2.2,,,$2.20 per 0.5 hr
+PWC_BUILDING,main,weekday,18:00,24:00,per_entry,,,,,,3,$3 per entry
+PWC_BUILDING,main,sat,00:00,24:00,per_entry,,,,,,3,$3 per entry
+RAFFLES_CITY,main,weekday,08:00,17:59,tiered,2.2,,,1.1,,,$2.20 for 1st hr; $0.55 for sub. 15mins
+RAFFLES_CITY,main,weekday,18:00,07:59 +1d,per_entry,,,,,,3,$3 per entry
+RAFFLES_CITY,main,sat,00:00,24:00,tiered,,2.2,120,0.8,,,"$2.20 for 1st 2hrs, $0.40 for sub. 15mins for 3rd and 4th hr, $0.60 for sub. 15mins for 5th hr onwards."
+RAFFLES_CITY,main,sun_ph,00:00,24:00,tiered,,2.2,120,0.8,,,"$2.20 for 1st 2hrs, $0.40 for sub. 15mins for 3rd and 4th hr, $0.60 for sub. 15mins for 5th hr onwards."
+RAFFLES_HOTEL_2,main,weekday,00:00,18:00,tiered,,3,30,1.5,,,$3 for 1st 0.5 hr; $1.50 for sub. 0.5 hr
+RAFFLES_HOTEL_2,main,weekday,18:00,24:00,per_entry,,,,,,6,$6 per entry
+RAFFLES_HOTEL_2,main,sat,00:00,18:00,tiered,,3,30,1.5,,,$3 for 1st 0.5 hr; $1.50 for sub. 0.5 hr
+RAFFLES_HOTEL_2,main,sat,18:00,24:00,per_entry,,,,,,6,$6 per entry
+RAFFLES_HOTEL_2,main,sun_ph,00:00,24:00,per_entry,,,,,,6,$6 per entry
+REPUBLIC_PLAZA,main,weekday,07:00,17:00,hourly,,,,3,,,$3 per 0.5 hr
+REPUBLIC_PLAZA,main,weekday,17:00,24:00,per_entry,,,,,,3,$3 per entry
+REPUBLIC_PLAZA,main,sat,07:00,17:00,hourly,,,,3,,,$3 per 0.5 hr
+REPUBLIC_PLAZA,main,sat,17:00,24:00,per_entry,,,,,,3,$3 per entry
+REPUBLIC_PLAZA,main,sun_ph,00:00,24:00,per_entry,,,,,,3,$3 per entry
+RESORTS_WORLD_SENTOSA,main,mon-thu,07:00,19:00,tiered,7,,,1,,,$7 for 1st hr; $1 for sub. 0.5 hr or part thereof. (Max: $28 per 24 hrs)
+RESORTS_WORLD_SENTOSA,main,mon-thu,19:00,24:00,per_entry,,,,,,6,$6 per entry
+RESORTS_WORLD_SENTOSA,main,sat,07:00,19:00,tiered,8,,,2,,,$8 for 1st hr; $2 for sub. 0.5 hr or part thereof
+RESORTS_WORLD_SENTOSA,main,sat,19:00,24:00,per_entry,,,,,,8,$8 per entry (Max: $28 per 24 hrs)
+RESORTS_WORLD_SENTOSA,main,sun_ph,07:00,19:00,tiered,8,,,2,,,$8 for 1st hr; $2 for sub. 0.5 hr or part thereof
+RESORTS_WORLD_SENTOSA,main,sun_ph,19:00,24:00,per_entry,,,,,,8,$8 per entry (Max: $28 per 24 hrs)
+ROBERTSON_WALK,main,weekday,06:00,18:00,tiered,1.5,,,0.5,,,$1.50 for 1st hr or part thereof; $0.50 for sub. 0.5 hr or part thereof
+ROBERTSON_WALK,main,weekday,18:00,24:00,per_entry,,,,,,4,$4 per entry
+ROBERTSON_WALK,main,sat,06:00,18:00,tiered,1.5,,,0.5,,,$1.50 for 1st hr or part thereof; $0.50 for sub. 0.5 hr or part thereof
+ROBERTSON_WALK,main,sat,18:00,24:00,per_entry,,,,,,4,$4 per entry
+ROBERTSON_WALK,main,sun_ph,00:00,24:00,per_entry,,,,,,4,$4 per entry
+ROBINSON_77_FORMERLY_SIA_BUILDING,main,weekday,07:00,17:00,hourly,,,,2.4,,,$2.4 per 0.5 hr
+ROBINSON_77_FORMERLY_SIA_BUILDING,main,weekday,17:00,23:00,per_entry,,,,,,2.4,$2.4 per entry
+ROBINSON_77_FORMERLY_SIA_BUILDING,main,sat,07:00,17:00,hourly,,,,2.4,,,$2.4 per 0.5 hr
+ROBINSON_77_FORMERLY_SIA_BUILDING,main,sat,17:00,23:00,per_entry,,,,,,2.4,$2.4 per entry
+ROBINSON_77_FORMERLY_SIA_BUILDING,main,sun_ph,00:00,24:00,per_entry,,,,,,2.4,$2.4 per entry
+ROBINSON_CENTRE,main,weekday,08:00,17:00,hourly,,,,2,,,$2 per 0.5 hr
+ROBINSON_CENTRE,main,weekday,17:00,24:00,per_entry,,,,,,3,$3 per entry
+ROBINSON_CENTRE,main,sat,08:00,17:00,hourly,,,,2,,,$2 per 0.5 hr
+ROBINSON_CENTRE,main,sat,17:00,24:00,per_entry,,,,,,3,$3 per entry
+ROBINSON_CENTRE,main,sun_ph,08:00,17:00,hourly,,,,2,,,$2 per 0.5 hr
+ROBINSON_CENTRE,main,sun_ph,17:00,24:00,per_entry,,,,,,3,$3 per entry
+THE_CLEMENTI_MALL,main,weekday,00:00,24:00,tiered,1.5,,,0.8,,,$1.50 for 1st hr; $0.80 for sub. 0.5 hr
+THE_CLEMENTI_MALL,main,sat,00:00,24:00,tiered,1.5,,,0.8,,,$1.50 for 1st hr; $0.80 for sub. 0.5 hr
+THE_CLEMENTI_MALL,main,sun_ph,00:00,24:00,tiered,1.5,,,0.8,,,$1.50 for 1st hr; $0.80 for sub. 0.5 hr
+SCHOOL_OF_THE_ARTS_SINGAPORE_SOTA,main,weekday,07:00,17:59,hourly,,,,1.25,,,$2.50 per hr; 6pm-2am (the next day): $5 per entry
+SCHOOL_OF_THE_ARTS_SINGAPORE_SOTA,main,sat,07:00,17:59,hourly,,,,1.25,,,$2.50 per hr. 6pm-2am (the next day): $5 per entry
+SCHOOL_OF_THE_ARTS_SINGAPORE_SOTA,main,sun_ph,07:00,17:59,hourly,,,,1.25,,,$2.50 per hr. 6pm-2am (the next day): $5 per entry
+SGX_CENTRE,main,weekday,07:00,17:00,hourly,,,,2.5,,,$2.50 per 0.5 hr
+SGX_CENTRE,main,weekday,17:00,22:00,per_entry,,,,,,3,$3 per entry (The car park closed at 10pm daily)
+SGX_CENTRE,main,sat,07:00,22:00,per_entry,,,,,,3,$3 per entry
+SGX_CENTRE,main,sun_ph,07:00,22:00,per_entry,,,,,,3,$3 per entry
+SHENTON_HOUSE,main,weekday,08:00,17:30,hourly,,,,3,,,$3 per 0.5 hr
+SHENTON_HOUSE,main,weekday,17:30,24:00,per_entry,,,,,,3,$3 per entry
+SHENTON_HOUSE,main,sat,08:00,17:30,hourly,,,,3,,,$3 per 0.5 hr
+SHENTON_HOUSE,main,sat,17:30,24:00,per_entry,,,,,,3,$3 per entry
+SHENTON_HOUSE,main,sun_ph,00:00,24:00,per_entry,,,,,,3,$3 per entry
+SIM_LIM_SQUARE,main,weekday,03:30,18:00,per_min,,,,,0.05,,$0.05 per min
+SIM_LIM_SQUARE,main,weekday,18:00,24:00,per_entry,,,,,,2,$2 per entry (1st hr Free parking from 6pm-10pm daily inclusive of PH)
+SIM_LIM_SQUARE,main,sat,03:30,18:00,per_min,,,,,0.05,,$0.05 per min
+SIM_LIM_SQUARE,main,sat,18:00,24:00,per_entry,,,,,,2,$2 per entry (1st hr Free parking from 6pm-10pm daily inclusive of PH)
+SIM_LIM_SQUARE,main,sun_ph,03:30,18:00,per_min,,,,,0.05,,$0.05 per min
+SIM_LIM_SQUARE,main,sun_ph,18:00,24:00,per_entry,,,,,,2,$2 per entry (1st hr Free parking from 6pm-10pm daily inclusive of PH)
+SIM_LIM_TOWER,main,weekday,08:00,18:00,hourly,,,,1.5,,,$1.50 per 0.5 hr
+SIM_LIM_TOWER,main,weekday,18:00,24:00,per_entry,,,,,,3,$3 per entry
+SIM_LIM_TOWER,main,sat,08:00,18:00,hourly,,,,1.5,,,$1.50 per 0.5 hr
+SIM_LIM_TOWER,main,sat,18:00,24:00,per_entry,,,,,,3,$3 per entry
+SIM_LIM_TOWER,main,sun_ph,00:00,24:00,per_entry,,,,,,3,$3 per entry
+SINGAPORE_GENERAL_HOSPITAL_CARPARK_C_E_G_I,main,weekday,07:00,21:59,hourly,,,,1.08,,,$0.036 per min/$2.16 per hr
+SINGAPORE_GENERAL_HOSPITAL_CARPARK_C_E_G_I,main,weekday,22:00,06:59 +1d,per_entry,,,,,,2.14,$2.14 per entry
+SINGAPORE_GENERAL_HOSPITAL_CARPARK_C_E_G_I,main,sat,07:00,21:59,hourly,,,,1.08,,,$0.036 per min/$2.16 per hr
+SINGAPORE_GENERAL_HOSPITAL_CARPARK_C_E_G_I,main,sat,22:00,06:59 +1d,per_entry,,,,,,2.14,$2.14 per entry
+SINGAPORE_GENERAL_HOSPITAL_CARPARK_C_E_G_I,main,sun_ph,07:00,21:59,hourly,,,,0.54,,,$0.018 per min/$1.08 per hr
+SINGAPORE_GENERAL_HOSPITAL_CARPARK_C_E_G_I,main,sun_ph,22:00,24:00,per_entry,,,,,,2.14,$2.14 per entry
+SINGAPORE_GENERAL_HOSPITAL_MULTI_STOREY_CARPARK_H,main,weekday,07:00,21:59,hourly,,,,0.54,,,$0.018 per min/$1.08 per hr
+SINGAPORE_GENERAL_HOSPITAL_MULTI_STOREY_CARPARK_H,main,weekday,22:00,06:59 +1d,per_entry,,,,,,2.14,$2.14 per entry
+SINGAPORE_GENERAL_HOSPITAL_MULTI_STOREY_CARPARK_H,main,sat,07:00,21:59,hourly,,,,0.54,,,$0.018 per min/$1.08 per hr
+SINGAPORE_GENERAL_HOSPITAL_MULTI_STOREY_CARPARK_H,main,sat,22:00,06:59 +1d,per_entry,,,,,,2.14,$2.14 per entry
+SINGAPORE_GENERAL_HOSPITAL_MULTI_STOREY_CARPARK_H,main,sun_ph,00:00,24:00,per_entry,,,,,,2.14,$2.14 per entry
+SINGAPORE_LAND_TOWER,main,weekday,00:00,24:00,not_public,,,,,,,For Tenants only
+SINGAPORE_LAND_TOWER,main,sat,00:00,24:00,not_public,,,,,,,For Tenants only
+SINGAPORE_LAND_TOWER,main,sun_ph,00:00,24:00,not_public,,,,,,,For Tenants only
+SIX_BATTERY_ROAD,main,weekday,07:00,18:00,hourly,,,,3.1,,,$3.10 per 0.5 hr
+SIX_BATTERY_ROAD,main,weekday,18:00,24:00,per_entry,,,,,,3.7,$3.70 per entry
+SIX_BATTERY_ROAD,main,sat,07:00,18:00,hourly,,,,3.1,,,$3.10 per 0.5 hr
+SIX_BATTERY_ROAD,main,sat,18:00,24:00,per_entry,,,,,,3.7,$3.70 per entry
+SIX_BATTERY_ROAD,main,sun_ph,00:00,24:00,per_entry,,,,,,3.7,$3.70 per entry
+SUNSHINE_PLAZA,main,weekday,07:00,18:00,hourly,,,,1.07,,,$1.07 per 0.5 hr
+SUNSHINE_PLAZA,main,weekday,18:00,24:00,per_entry,,,,,,3.21,$3.21 per entry
+SUNSHINE_PLAZA,main,sat,07:00,18:00,hourly,,,,1.07,,,$1.07 per 0.5 hr
+SUNSHINE_PLAZA,main,sat,18:00,24:00,per_entry,,,,,,3.21,$3.21 per entry
+SUNSHINE_PLAZA,main,sun_ph,07:00,18:00,hourly,,,,1.07,,,$1.07 per 0.5 hr
+SUNSHINE_PLAZA,main,sun_ph,18:00,24:00,per_entry,,,,,,3.21,$3.21 per entry
+SUNTEC_CITY,main,weekday,07:00,17:00,tiered,2.2,,,1.1,,,$2.20 for 1st hr; $1.10 for sub. 0.5 hr (excluding PH)
+SUNTEC_CITY,main,weekday,17:00,24:00,per_entry,,,,,,2.2,$2.20 per entry
+SUNTEC_CITY,main,weekday,00:00,24:00,hourly,,,,0.55,,,$1.10 per hr
+SUNTEC_CITY,main,sat,00:00,24:00,hourly,,,,0.55,,,$1.10 per hr
+SUNTEC_CITY,main,sun_ph,00:00,24:00,hourly,,,,0.55,,,$1.10 per hr
+SWISSOTEL_MERCHANT_COURT_HOTEL_2,main,weekday,00:00,24:00,tiered,4.5,,,1.5,,,$4.50 for 1st hr; $3 for sub. hr
+SWISSOTEL_MERCHANT_COURT_HOTEL_2,main,sat,00:00,24:00,tiered,4.5,,,1.5,,,$4.50 for 1st hr; $3 for sub. hr
+SWISSOTEL_MERCHANT_COURT_HOTEL_2,main,sun_ph,00:00,24:00,tiered,4.5,,,1.5,,,$4.50 for 1st hr; $3 for sub. hr
+SWISSOTEL_THE_STAMFORD_HOTEL,main,weekday,08:00,17:00,tiered,2,,,1,,,$2 for 1st hr; $0.50 for sub. 15mins (Car park at Raffles City Shopping Centre)
+SWISSOTEL_THE_STAMFORD_HOTEL,main,weekday,17:00,24:00,per_entry,,,,,,2.5,$2.50 per entry
+SWISSOTEL_THE_STAMFORD_HOTEL,main,sat,00:00,24:00,tiered,,2,120,0.6,,,$2 for 1st 2hrs; $0.30 for sub. 15mins
+SWISSOTEL_THE_STAMFORD_HOTEL,main,sun_ph,00:00,24:00,tiered,,2,120,0.6,,,$2 for 1st 2hrs; $0.30 for sub. 15mins
+TANJONG_KATONG_COMPLEX,main,weekday,00:00,24:00,coupon,,,,,,,HDB coupon parking
+TANJONG_KATONG_COMPLEX,main,sat,00:00,24:00,coupon,,,,,,,HDB coupon parking
+TANJONG_KATONG_COMPLEX,main,sun_ph,00:00,24:00,coupon,,,,,,,HDB coupon parking
+THE_ADELPHI,main,weekday,06:00,17:00,tiered,2.4,,,1.2,,,$2.40 for 1st hr; $1.20 for sub. 0.5 hr
+THE_ADELPHI,main,weekday,17:00,01:00 +1d,per_entry,,,,,,3.21,$3.21 per entry
+THE_ADELPHI,main,sat,06:00,17:00,tiered,2.4,,,1.2,,,$2.40 for 1st hr; $1.20 for sub. 0.5 hr
+THE_ADELPHI,main,sat,17:00,01:00 +1d,per_entry,,,,,,3.21,$3.21 per entry
+THE_ADELPHI,main,sun_ph,06:00,01:00 +1d,per_entry,,,,,,3.21,$3.21 per entry
+THE_CONCOURSE,main,weekday,07:00,17:00,tiered,2.14,,,1.07,,,$2.14 for 1st hr; $1.07 for sub. 0.5 hr
+THE_CONCOURSE,main,weekday,17:00,24:00,per_entry,,,,,,2.14,$2.14 per entry
+THE_CONCOURSE,main,sat,07:00,17:00,tiered,2.14,,,1.07,,,$2.14 for 1st hr; $1.07 for sub. 0.5 hr
+THE_CONCOURSE,main,sat,17:00,24:00,per_entry,,,,,,2.14,$2.14 per entry
+THE_CONCOURSE,main,sun_ph,00:00,24:00,per_entry,,,,,,1.07,$1.07 per entry
+THE_CORPORATE_OFFICE,main,weekday,07:00,17:00,hourly,,,,2,,,$4 per hr
+THE_CORPORATE_OFFICE,main,weekday,17:00,24:00,per_entry,,,,,,2.5,$2.50 per entry
+THE_CORPORATE_OFFICE,main,sat,07:00,17:00,hourly,,,,2,,,$4 per hr
+THE_CORPORATE_OFFICE,main,sat,17:00,24:00,per_entry,,,,,,2.5,$2.50 per entry
+THE_ESPLANADE,main,weekday,06:00,18:00,hourly,,,,1.5,,,$2 per hr ($1.50 per 0.5 hr at Waterfront car park daily) 12pm-2pm $2 per entry
+THE_ESPLANADE,main,weekday,18:00,22:00,per_entry,,,,,,6,$6 per entry
+THE_ESPLANADE,main,weekday,22:00,24:00,per_entry,,,,,,2,$2 per entry
+THE_ESPLANADE,main,sat,06:00,18:00,hourly,,,,1.5,,,$2 per hr ($1.50 per 0.5 hr at Waterfront car park daily)
+THE_ESPLANADE,main,sun_ph,06:00,18:00,hourly,,,,1.5,,,$2 per hr ($1.50 per 0.5 hr at Waterfront car park daily)
+UE_SQUARE,main,weekday,08:00,17:00,tiered,2,,,0.5,,,$2.00 for 1st hr; $1 for sub. hr
+UE_SQUARE,main,weekday,17:00,24:00,per_entry,,,,,,3,$3 per entry
+UE_SQUARE,main,sat,08:00,13:00,tiered,2,,,0.5,,,$2.00 for 1st hr; $1 for sub. hr
+UE_SQUARE,main,sat,23:00,24:00,per_entry,,,,,,3,$3 per entry
+UE_SQUARE,main,sun_ph,00:00,24:00,per_entry,,,,,,3,$3 per entry
+UOB_PLAZA,main,weekday,07:00,18:00,hourly,,,,2.5,,,$2.50 per 0.5 hr
+UOB_PLAZA,main,weekday,18:00,24:00,per_entry,,,,,,3.5,$3.50 per entry
+UOB_PLAZA,main,weekday,00:00,24:00,per_entry,,,,,,3.5,$3.50 per entry
+UOB_PLAZA,main,sat,07:00,24:00,per_entry,,,,,,3.5,$3.50 per entry. Aft 12am $3.50 per entry
+UOB_PLAZA,main,sun_ph,07:00,24:00,per_entry,,,,,,3.5,$3.50 per entry. Aft 12am $3.50 per entry
+VIVOCITY,main,weekday,07:00,18:00,tiered,1.2,,,0.6,,,$1.20 for 1st hr; $0.60 for sub. 0.5 hr
+VIVOCITY,main,weekday,18:01,04:00 +1d,per_entry,,,,,,3,$3 per entry
+VIVOCITY,main,weekday,04:00,24:00,hourly,,,,1.25,,,$2.50 per hr
+VIVOCITY,main,sat,07:00,18:00,tiered,1.4,,,0.7,,,$1.40 for 1st hr; $0.70 for sub. 0.5 hr
+VIVOCITY,main,sat,18:01,04:00 +1d,per_entry,,,,,,3.5,$3.50 per entry
+VIVOCITY,main,sat,04:00,24:00,hourly,,,,1.25,,,$2.50 per hr
+VIVOCITY,main,sun_ph,07:00,18:00,tiered,1.4,,,0.7,,,$1.40 for 1st hr; $0.70 for sub. 0.5 hr
+VIVOCITY,main,sun_ph,18:01,04:00 +1d,per_entry,,,,,,3.5,$3.50 per entry
+VIVOCITY,main,sun_ph,04:00,24:00,hourly,,,,1.25,,,$2.50 per hr
+27_WEST_COAST_HIGHWAY,main,weekday,00:00,07:00,hourly,,,,0.75,,,$0.75 / 30 mins (Capped at $4.28)
+27_WEST_COAST_HIGHWAY,main,weekday,07:00,20:00,hourly,,,,0.75,,,$0.75 / 30 mins (Capped at $4.28)
+27_WEST_COAST_HIGHWAY,main,sat,00:00,07:00,hourly,,,,0.75,,,$0.75 / 30 mins (Capped at $4.28)
+27_WEST_COAST_HIGHWAY,main,sat,07:00,20:00,hourly,,,,0.75,,,$0.75 / 30 mins (Capped at $4.28)
+27_WEST_COAST_HIGHWAY,main,sun_ph,00:00,07:00,hourly,,,,0.75,,,$0.75 / 30 mins (Capped at $4.28)
+27_WEST_COAST_HIGHWAY,main,sun_ph,07:00,20:00,hourly,,,,0.75,,,$0.75 / 30 mins (Capped at $4.28)
+798_UPPER_BUKIT_TIMAH_ROAD_2,main,weekday,00:00,07:00,hourly,,,,2.14,,,$2.14 /30 mins
+798_UPPER_BUKIT_TIMAH_ROAD_2,main,weekday,07:00,24:00,hourly,,,,1.07,,,$1.07 /30 mins
+798_UPPER_BUKIT_TIMAH_ROAD_2,main,sat,00:00,07:00,hourly,,,,2.14,,,$2.14 /30 mins
+798_UPPER_BUKIT_TIMAH_ROAD_2,main,sat,07:00,24:00,hourly,,,,1.07,,,$1.07 /30 mins
+798_UPPER_BUKIT_TIMAH_ROAD_2,main,sun_ph,00:00,07:00,hourly,,,,2.14,,,$2.14 /30 mins
+798_UPPER_BUKIT_TIMAH_ROAD_2,main,sun_ph,07:00,24:00,hourly,,,,1.07,,,$1.07 /30 mins
+ALEXANDRA_RETAIL_CENTRE,main,weekday,07:00,18:00,hourly,,,,1,,,$2/hr or part thereof.; 6pm to 12mn: $2.40/entry; 12 mn to 7am: $2.40/hr or part thereof
+ALEXANDRA_RETAIL_CENTRE,main,sat,07:00,10:00,hourly,,,,1,,,$2/hr or part thereof; 10am to 12mn: $2.40/entry; 12 mn to 7am: $2.40/hr or part thereof
+ALEXANDRA_RETAIL_CENTRE,main,sun_ph,00:00,24:00,hourly,,,,1.2,,,7am to 12mn: $2.40/entry; 12 mn to 7am: $2.40/hr or part thereof.
+ANCHORPOINT_SHOPPING_CENTRE,main,weekday,08:00,18:59,tiered,,1,30,1,,,$1 for 1st 0.5 hr or part thereof; $2 for sub hr or part thereof
+ANCHORPOINT_SHOPPING_CENTRE,main,weekday,19:00,07:59 +1d,per_entry,,,,,,2.5,$2.50 per entry
+ANCHORPOINT_SHOPPING_CENTRE,main,sat,08:00,18:59,tiered,,1,30,1,,,$1 for 1st 0.5 hr or part thereof; $2 for sub hr or part thereof
+ANCHORPOINT_SHOPPING_CENTRE,main,sat,19:00,07:59 +1d,per_entry,,,,,,2.5,$2.50 per entry
+ANCHORPOINT_SHOPPING_CENTRE,main,sun_ph,08:00,18:59,tiered,,1,30,1,,,$1 for 1st 0.5 hr or part thereof; $2 for sub hr or part thereof
+ANCHORPOINT_SHOPPING_CENTRE,main,sun_ph,19:00,07:59 +1d,per_entry,,,,,,2.5,$2.50 per entry
+BUKIT_PANJANG_PLAZA,main,weekday,00:00,18:00,per_min,,,,,0.32,,"$1.07 for 1st hr, $0.32/min for sub.min"
+BUKIT_PANJANG_PLAZA,main,weekday,18:00,24:00,per_entry,,,,,,2.14,$2.14 per entry
+BUKIT_PANJANG_PLAZA,main,sat,00:00,18:00,tiered,,2.14,120,0.64,,,"$2.14 for 1st 2 hr, $0.32 for sub 15mins"
+BUKIT_PANJANG_PLAZA,main,sun_ph,00:00,18:00,tiered,,2.14,120,0.64,,,"$2.14 for 1st 2 hr, $0.32 for sub 15mins"
+BUKIT_TIMAH_PLAZA_MULTI_STOREY_CAR_PARK,main,weekday,07:30,17:00,hourly,,,,0.64,,,$1.28 per hr
+BUKIT_TIMAH_PLAZA_MULTI_STOREY_CAR_PARK,main,weekday,17:00,24:00,per_entry,,,,,,2.25,$2.25 per entry
+BUKIT_TIMAH_PLAZA_MULTI_STOREY_CAR_PARK,main,weekday,00:00,24:00,per_entry,,,,,,2.25,$2.25 per entry
+BUKIT_TIMAH_PLAZA_MULTI_STOREY_CAR_PARK,main,sat,07:30,17:00,hourly,,,,0.64,,,$1.28 per hr
+BUKIT_TIMAH_PLAZA_MULTI_STOREY_CAR_PARK,main,sat,17:00,24:00,per_entry,,,,,,2.25,$2.25 per entry
+BUKIT_TIMAH_PLAZA_MULTI_STOREY_CAR_PARK,main,sat,00:00,24:00,per_entry,,,,,,2.25,$2.25 per entry
+BUKIT_TIMAH_PLAZA_MULTI_STOREY_CAR_PARK,main,sun_ph,07:30,17:00,hourly,,,,0.64,,,$1.28 per hr
+BUKIT_TIMAH_PLAZA_MULTI_STOREY_CAR_PARK,main,sun_ph,17:00,24:00,per_entry,,,,,,2.25,$2.25 per entry
+BUKIT_TIMAH_PLAZA_MULTI_STOREY_CAR_PARK,main,sun_ph,00:00,24:00,per_entry,,,,,,2.25,$2.25 per entry
+BUKIT_TIMAH_SHOPPING_CENTRE,main,weekday,08:00,17:00,hourly,,,,0.625,,,$1.25 per hr
+BUKIT_TIMAH_SHOPPING_CENTRE,main,weekday,17:00,24:00,per_entry,,,,,,2.1,$2.10 per entry
+BUKIT_TIMAH_SHOPPING_CENTRE,main,sat,08:00,17:00,hourly,,,,0.625,,,$1.25 per hr
+BUKIT_TIMAH_SHOPPING_CENTRE,main,sat,17:00,24:00,per_entry,,,,,,2.1,$2.10 per entry
+BUKIT_TIMAH_SHOPPING_CENTRE,main,sun_ph,08:00,17:00,hourly,,,,0.625,,,$1.25 per hr
+BUKIT_TIMAH_SHOPPING_CENTRE,main,sun_ph,17:00,24:00,per_entry,,,,,,2.1,$2.10 per entry
+CORONATION_SHOPPING_PLAZA,main,weekday,00:00,24:00,hourly,,,,1,,,Daily(7.01am-7am): $2 per hr.
+CORONATION_SHOPPING_PLAZA,main,sat,00:00,24:00,hourly,,,,1,,,Daily(7.01am-7am): $2 per hr.
+CORONATION_SHOPPING_PLAZA,main,sun_ph,00:00,24:00,hourly,,,,1,,,Daily(7.01am-7am): $2 per hr.
+HOLLAND_ROAD_SHOPPING_CENTRE,main,weekday,00:00,20:59,hourly,,,,1.55,,,$1.55 per 0.5 hr
+HOLLAND_ROAD_SHOPPING_CENTRE,main,weekday,21:00,24:00,per_entry,,,,,,3.25,$3.25 per entry
+HOLLAND_ROAD_SHOPPING_CENTRE,main,sat,00:00,20:59,hourly,,,,1.55,,,$1.55 per 0.5 hr
+HOLLAND_ROAD_SHOPPING_CENTRE,main,sat,21:00,24:00,per_entry,,,,,,3.25,$3.25 per entry
+HOLLAND_ROAD_SHOPPING_CENTRE,main,sun_ph,00:00,20:59,hourly,,,,1.55,,,$1.55 per 0.5 hr
+HOLLAND_ROAD_SHOPPING_CENTRE,main,sun_ph,21:00,24:00,per_entry,,,,,,3.25,$3.25 per entry
+IKEA_ALEXANDRA,main,weekday,00:00,24:00,hourly,,,,1.5,,,"$0.05 per min, $1.50 per 30 Mins (subsequently charged on a per minute basis)"
+IKEA_ALEXANDRA,main,sat,00:00,24:00,hourly,,,,1.5,,,"$0.05 per min, $1.50 per 30 Mins (subsequently charged on a per minute basis)"
+IKEA_ALEXANDRA,main,sun_ph,00:00,24:00,hourly,,,,1.5,,,"$0.05 per min, $1.50 per 30 Mins (subsequently charged on a per minute basis)"
+IMM_BUILDING,main,weekday,00:00,24:00,hourly,,,,0.535,,,Free for 1st 2hrs for first entry only. Chargeable after 2nd hr of 1st entry @ $1.07 /hr; $0.30 for sub. 15 mins.
+IMM_BUILDING,main,sat,00:00,24:00,hourly,,,,0.535,,,Free for 1st 2hrs for first entry only. Chargeable after 2nd hr of 1st entry @ $1.07 /hr; $0.30 for sub. 15 mins.
+IMM_BUILDING,main,sun_ph,00:00,24:00,hourly,,,,0.535,,,Free for 1st 2hrs for first entry only. Chargeable after 2nd hr of 1st entry @ $1.07 /hr; $0.30 for sub. 15 mins.
+JCUBE,main,weekday,18:00,03:29 +1d,per_entry,,,,,,2.5,$2.50 per entry
+JCUBE,main,sat,18:00,03:29 +1d,per_entry,,,,,,2.5,$2.50 per entry
+JCUBE,main,sun_ph,18:00,03:29 +1d,per_entry,,,,,,2.5,$2.50 per entry
+JUNCTION_10,main,weekday,00:00,24:00,tiered,1.25,,,0.325,,,$1.25 for 1st hr; $0.65 for sub. hr
+JUNCTION_10,main,sat,00:00,24:00,tiered,1.25,,,0.325,,,$1.25 for 1st hr; $0.65 for sub. hr
+JUNCTION_10,main,sun_ph,00:00,24:00,tiered,1.25,,,0.325,,,$1.25 for 1st hr; $0.65 for sub. hr
+JURONG_POINT_SHOPPING_CENTRE,main,weekday,07:00,17:00,tiered,,1.07,120,0.535,,,$1.07 for 1st 2hrs; $1.07 for sub. hr (Free parking from 12pm-2pm on Monday-Thursday)
+JURONG_POINT_SHOPPING_CENTRE,main,weekday,17:00,21:00,tiered,,2.14,120,0.535,,,$2.14 for 1st 2hrs; $1.07 for sub. hr
+JURONG_POINT_SHOPPING_CENTRE,main,weekday,21:00,24:00,tiered,,1.07,180,0.535,,,$1.07 for 1st 3hrs; $1.07 for sub. hr
+JURONG_POINT_SHOPPING_CENTRE,main,sat,00:00,24:00,tiered,,2.14,120,0.535,,,$2.14 for 1st 2hrs; $1.07 for sub. hr
+JURONG_POINT_SHOPPING_CENTRE,main,sat,21:00,24:00,tiered,,1.07,180,0.535,,,$1.07 for 1st 3hrs; $1.07 for sub. hr
+JURONG_POINT_SHOPPING_CENTRE,main,sun_ph,00:00,24:00,tiered,,2.14,120,0.535,,,$2.14 for 1st 2hrs; $1.07 for sub. hr
+JURONG_POINT_SHOPPING_CENTRE,main,sun_ph,21:00,24:00,tiered,,1.07,180,0.535,,,$1.07 for 1st 3hrs; $1.07 for sub. hr
+JURONG_THEATRE,main,weekday,08:00,20:59,hourly,,,,0.8,,,$1.60 per hr
+JURONG_THEATRE,main,weekday,21:00,24:00,per_entry,,,,,,3,$3 per entry
+JURONG_THEATRE,main,sat,08:00,20:59,hourly,,,,0.8,,,$1.60 per hr
+JURONG_THEATRE,main,sat,21:00,24:00,per_entry,,,,,,3,$3 per entry
+JURONG_THEATRE,main,sun_ph,00:00,24:00,per_entry,,,,,,3,$3 per entry
+LOT_1_SHOPPING_CENTRE,main,weekday,00:00,17:59,tiered,1.07,,,0.64,,,$1.07 for 1st hr; $0.32 for sub. 15 mins.; Mon-Thurs
+LOT_1_SHOPPING_CENTRE,main,weekday,18:00,23:59,per_entry,,,,,,2.14,$2.14 per entry. Fri & Eve of PH
+LOT_1_SHOPPING_CENTRE,main,weekday,18:00,02:59 +1d,per_entry,,,,,,2.14,$2.14 per entry
+LOT_1_SHOPPING_CENTRE,main,sat,03:00,17:59,tiered,,2.14,120,0.64,,,$2.14 for 1st 2-hrs; $0.32 for sub. 15 mins
+LOT_1_SHOPPING_CENTRE,main,sat,18:00,02:59 +1d,per_entry,,,,,,2.14,$2.14 per entry
+LOT_1_SHOPPING_CENTRE,main,sun_ph,03:00,17:59,tiered,,2.14,120,0.64,,,$2.14 for 1st 2-hrs; $0.32 for sub. 15 mins
+LOT_1_SHOPPING_CENTRE,main,sun_ph,18:00,11:59 +1d,per_entry,,,,,,2.14,$2.14 per entry
+NUH,main,weekday,00:00,24:00,per_min,,,,,0.03,,$0.03 per min
+NUH,main,sat,00:00,24:00,per_min,,,,,0.03,,$0.03 per min
+NUH,main,sun_ph,00:00,24:00,per_min,,,,,0.03,,$0.03 per min
+QUEENSWAY_SHOPPING_CENTRE,main,weekday,08:00,18:00,tiered,,2,630,1.2,,,$2 for 1st 10.5hr; $1.20 for sub. 0.5 hr
+QUEENSWAY_SHOPPING_CENTRE,main,weekday,18:00,24:00,per_entry,,,,,,2.3,$2.30 per entry
+QUEENSWAY_SHOPPING_CENTRE,main,sat,08:00,18:00,tiered,,1.5,60,1.2,,,$1.50 for 1st 1hr; $1.20 for sub. 0.5 hr
+QUEENSWAY_SHOPPING_CENTRE,main,sat,18:00,24:00,per_entry,,,,,,2.3,$2.30 per entry
+QUEENSWAY_SHOPPING_CENTRE,main,sun_ph,08:00,18:00,tiered,,2,630,1.2,,,$2 for 1st 10.5hr; $1.20 for sub. 0.5 hr
+QUEENSWAY_SHOPPING_CENTRE,main,sun_ph,18:00,24:00,per_entry,,,,,,2.3,$2.30 per entry
+SAVOY_THEATRE,main,weekday,08:00,17:00,hourly,,,,0.6,,,$1.20 per hr
+SAVOY_THEATRE,main,weekday,17:00,24:00,per_entry,,,,,,3,$3.00 per entry
+SAVOY_THEATRE,main,sat,08:00,17:00,hourly,,,,0.6,,,$1.20 per hr
+SAVOY_THEATRE,main,sat,17:00,24:00,per_entry,,,,,,3,$3.00 per entry
+SAVOY_THEATRE,main,sun_ph,00:00,24:00,per_entry,,,,,,3,$3.00 per entry
+SERENE_CENTRE,main,weekday,08:00,22:00,tiered,1.53,,,1.53,,,$1.53 for 1st hr; $1.53 for sub. 0.5 hr
+SERENE_CENTRE,main,weekday,22:00,24:00,per_entry,,,,,,1.53,$1.53 per entry
+SERENE_CENTRE,main,sat,08:00,22:00,tiered,1.53,,,1.53,,,$1.53 for 1st hr; $1.53 for sub. 0.5 hr
+SERENE_CENTRE,main,sat,22:00,24:00,per_entry,,,,,,1.53,$1.53 per entry
+SERENE_CENTRE,main,sun_ph,08:00,22:00,tiered,1.53,,,1.53,,,$1.53 for 1st hr; $1.53 for sub. 0.5 hr
+SERENE_CENTRE,main,sun_ph,22:00,24:00,per_entry,,,,,,1.53,$1.53 per entry
+THE_METROPOLIS,main,weekday,06:00,18:00,tiered,2.5,,,1.25,,,"$2.50 for 1st hr, sub $1.25 per 0.5 hr; Time period 1:"
+THE_METROPOLIS,main,weekday,18:00,24:00,per_entry,,,,,,2.5,$2.50 per entry; Time period 2:
+THE_METROPOLIS,main,weekday,00:00,06:00,per_entry,,,,,,2.5,$2.50 per entry
+THE_METROPOLIS,main,sat,06:00,18:00,tiered,2.5,,,1.25,,,"$2.50 for 1st hr, sub $1.25 per 0.5 hr; Time period 1:"
+THE_METROPOLIS,main,sat,18:00,24:00,per_entry,,,,,,2.5,$2.50 per entry; Time period 2:
+THE_METROPOLIS,main,sat,00:00,06:00,per_entry,,,,,,2.5,$2.50 per entry
+THE_METROPOLIS,main,sun_ph,06:00,18:00,tiered,2.5,,,1.25,,,"$2.50 for 1st hr, sub $1.25 per 0.5 hr; Time period 1:"
+THE_METROPOLIS,main,sun_ph,18:00,24:00,per_entry,,,,,,2.5,$2.50 per entry; Time period 2:
+THE_METROPOLIS,main,sun_ph,00:00,06:00,per_entry,,,,,,2.5,$2.50 per entry
+THE_STAR_VISTA,main,weekday,00:00,23:59,tiered,1.3,,,0.65,,,"$1.30 for 1st hr, $0.65 for sub. 30 mins or part thereof.; $1.30 for 1st hr, $0.65 for sub. 30 mins or part thereof"
+THE_STAR_VISTA,main,sat,00:00,23:59,tiered,1.3,,,0.65,,,"$1.30 for 1st hr, $0.65 for sub. 30 mins or part thereof.; $1.30 for 1st hr, $0.65 for sub. 30 mins or part thereof"
+THE_STAR_VISTA,main,sun_ph,00:00,23:59,tiered,2.14,,,1.07,,,"$2.14 for 1st hr, $1.07 for sub. 30 mins or part thereof"
+TIONG_BAHRU_PLAZA,main,weekday,00:00,24:00,tiered,1.5,,,0.8,,,$1.50 for 1st hr; $0.80 for sub. 0.5 hr
+TIONG_BAHRU_PLAZA,main,sat,00:00,24:00,tiered,1.5,,,0.8,,,$1.50 for 1st hr; $0.80 for sub. 0.5 hr
+TIONG_BAHRU_PLAZA,main,sun_ph,07:00,18:00,hourly,,,,0.75,,,$1.50 per hr
+TIONG_BAHRU_PLAZA,main,sun_ph,18:00,24:00,per_entry,,,,,,3.6,$3.60 per entry
+TURF_CITY,main,weekday,00:00,24:00,free,,,,,,,Daily: Free parking
+TURF_CITY,main,sat,00:00,24:00,free,,,,,,,Daily: Free parking
+TURF_CITY,main,sun_ph,00:00,24:00,free,,,,,,,Daily: Free parking
+VALLEY_POINT,main,weekday,00:00,24:00,tiered,1.5,,,0.8,,,$1.50 for 1st hr; $0.80 for sub. 0.5 hr
+VALLEY_POINT,main,sat,00:00,24:00,tiered,1.5,,,0.8,,,$1.50 for 1st hr; $0.80 for sub. 0.5 hr
+VALLEY_POINT,main,sun_ph,00:00,24:00,tiered,1.5,,,0.8,,,$1.50 for 1st hr; $0.80 for sub. 0.5 hr
+WEST_COAST_PLAZA_GINZA_PLAZA,main,weekday,00:00,24:00,tiered,1.25,,,1,,,$1.25 for 1st hr; $1.00 for sub. 0.5 hr
+WEST_COAST_PLAZA_GINZA_PLAZA,main,sat,00:00,24:00,tiered,1.5,,,1,,,$1.50 for 1st hr; $1.00 for sub. 0.5 hr
+WEST_COAST_PLAZA_GINZA_PLAZA,main,sun_ph,00:00,24:00,tiered,1.5,,,1,,,$1.50 for 1st hr; $1.00 for sub. 0.5 hr
+WEST_MALL,main,weekday,06:00,17:00,tiered,,1.1,120,0.6,,,$1.10 for 1st 2hrs or part thereof; $0.60 for sub. 0.5 hr or part thereof
+WEST_MALL,main,weekday,17:00,06:00 +1d,per_entry,,,,,,2.5,$2.50 per entry
+WEST_MALL,main,sat,06:00,17:00,tiered,1.1,,,0.6,,,$1.10 for 1st hr or part thereof; $0.60 for sub. 0.5 hr or part thereof
+WEST_MALL,main,sat,17:00,06:00 +1d,per_entry,,,,,,2.5,$2.50 per entry
+WEST_MALL,main,sun_ph,00:00,24:00,per_entry,,,,,,2.5,6am-6am next day: $2.50 per entry.
+WESTGATE,main,weekday,00:00,24:00,tiered,1.3,,,1,,,$1.30 for 1st hr; $0.50 for sub. 15 mins
+WESTGATE,main,weekday,18:00,23:59,per_entry,,,,,,2.5,$2.50 per entry
+WESTGATE,main,sat,00:00,24:00,tiered,1.3,,,1,,,$1.30 for 1st hr; $0.50 for sub. 15 mins
+WESTGATE,main,sat,18:00,23:59,per_entry,,,,,,2.5,$2.50 per entry
+WESTGATE,main,sun_ph,00:00,24:00,tiered,1.3,,,1,,,$1.30 for 1st hr; $0.50 for sub. 15 mins
+WESTGATE,main,sun_ph,18:00,23:59,per_entry,,,,,,2.5,$2.50 per entry
+YEW_TEE_POINT,main,weekday,00:00,24:00,tiered,1.18,,,0.64,,,$1.18 for 1st hr; $0.64 for sub. 0.5 hr or part thereof.
+YEW_TEE_POINT,main,sat,00:00,24:00,tiered,1.18,,,0.64,,,$1.18 for 1st hr; $0.64 for sub. 0.5 hr or part thereof.
+YEW_TEE_POINT,main,sun_ph,00:00,24:00,tiered,1.18,,,0.64,,,$1.18 for 1st hr; $0.64 for sub. 0.5 hr or part thereof.
