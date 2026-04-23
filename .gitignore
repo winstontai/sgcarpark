@@ -1,4 +1,9 @@
 node_modules/
 scripts/.geocode-cache.json
+scripts/.motorist-cache.json
 .DS_Store
 *.log
+
+# Raw data — kept local, not published
+data/
+CarparkRates.csv

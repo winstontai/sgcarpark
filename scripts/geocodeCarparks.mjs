@@ -153,13 +153,22 @@ async function geocodeWithFallback(name) {
   return null;
 }
 
+// Extract 6-digit Singapore postal code from an address string.
+function extractPostal(addr) {
+  const m = addr?.match(/(?:singapore\s+|S\()(\d{6})\)?/i);
+  return m ? m[1] : null;
+}
+
 async function main() {
   const rows = parseCsv(readFileSync(CSV_PATH, "utf8"));
   const header = rows.shift();
   const idx = {
-    id: header.indexOf("carpark_id"),
-    name: header.indexOf("name"),
-    coupon: header.indexOf("has_coupon_parking")
+    id:      header.indexOf("carpark_id"),
+    name:    header.indexOf("name"),
+    lat:     header.indexOf("lat"),
+    lng:     header.indexOf("lng"),
+    address: header.indexOf("address"),
+    coupon:  header.indexOf("has_coupon_parking"),
   };
 
   const cache = existsSync(CACHE_PATH) ? JSON.parse(readFileSync(CACHE_PATH, "utf8")) : {};
@@ -170,30 +179,49 @@ async function main() {
 
   for (let i = 0; i < rows.length; i++) {
     const row = rows[i];
-    if (!row[idx.id] || !row[idx.id].trim()) continue;
-    const id = row[idx.id];
-    const name = row[idx.name];
+    if (!row[idx.id]?.trim()) continue;
+    const id     = row[idx.id];
+    const name   = row[idx.name];
     const coupon = row[idx.coupon];
+    const existingLat = row[idx.lat];
+    const existingLng = row[idx.lng];
+    const existingAddr = row[idx.address] || "";
 
-    let geo = cache[name];
+    // Already geocoded — preserve as-is, no network call needed.
+    if (existingLat && existingLng && +existingLat && +existingLng) {
+      out.push([id, name, existingLat, existingLng, existingAddr, coupon]);
+      continue;
+    }
+
+    // Build search queries: try postal code first (most precise), then name.
+    const postal = extractPostal(existingAddr);
+    const cacheKey = postal ? `postal:${postal}` : name;
+
+    let geo = cache[cacheKey];
     if (!geo || geo._miss || geo.lat == null) {
       process.stdout.write(`[${i + 1}/${rows.length}] geocoding: ${name}\n`);
       try {
-        geo = await geocodeWithFallback(name);
+        // Try postal code via OneMap first
+        if (postal) {
+          geo = await geocodeOneMap(postal).catch(() => null);
+          if (!geo) geo = await geocodeOneMap(existingAddr).catch(() => null);
+        }
+        // Fall back to name-based variants
+        if (!geo) geo = await geocodeWithFallback(name);
       } catch {
         geo = null;
       }
-      cache[name] = geo || { _miss: true };
+      cache[cacheKey] = geo || { _miss: true };
       writeFileSync(CACHE_PATH, JSON.stringify(cache, null, 2));
       fetched++;
-      await new Promise(r => setTimeout(r, 250));
+      await new Promise(r => setTimeout(r, 300));
     }
 
     if (!geo || geo._miss || geo.lat == null) {
       misses.push({ id, name });
-      out.push([id, name, "", "", "", coupon]);
+      out.push([id, name, "", "", existingAddr, coupon]);
     } else {
-      out.push([id, name, geo.lat, geo.lng, geo.address || "", coupon]);
+      out.push([id, name, geo.lat, geo.lng, geo.address || existingAddr, coupon]);
     }
   }
 
