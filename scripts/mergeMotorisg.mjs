@@ -312,13 +312,17 @@ function main() {
   }
 
   // --- Load existing rates ---
-  const rtRows = parseCsv(readFileSync(RATES_CSV, "utf8"));
-  const rtHeader = rtRows.shift();
-  // Track existing (carpark_id, day_group) pairs so we don't duplicate
+  const rtRowsRaw = parseCsv(readFileSync(RATES_CSV, "utf8"));
+  const rtHeader = rtRowsRaw.shift();
+  // Drop all MOT_* rows — we're going to re-process motorist rates from scratch
+  // so fixes to the parser/dedup logic actually take effect.
+  const rtRows = rtRowsRaw.filter(r => !(r[0] && r[0].startsWith("MOT_")));
+  // Dedup key is (id, day_group, window_start) so carparks with multiple time
+  // slots per day (e.g. morning hourly + evening flat) keep all slots.
   const existingRateKeys = new Set();
   for (const r of rtRows) {
-    const [id, , dayGroup] = r;
-    if (id && dayGroup) existingRateKeys.add(`${id}|${dayGroup}`);
+    const [id, , dayGroup, ws] = r;
+    if (id && dayGroup) existingRateKeys.add(`${id}|${dayGroup}|${ws}`);
   }
 
   // --- Load motorist carparks ---
@@ -368,8 +372,12 @@ function main() {
     const entry = slugMap.get(slug);
     if (!entry) { skippedNoSlug++; continue; }
 
-    // Skip rates for existing carparks (keep curated data)
-    if (!entry.isNew) { skippedExisting++; continue; }
+    // Keep curated rates for pre-existing (non-motorist) carparks; re-process
+    // any MOT_* carpark even if it already exists, since we just cleared its rows.
+    if (!entry.isNew && !entry.carpark_id.startsWith("MOT_")) {
+      skippedExisting++;
+      continue;
+    }
 
     const dayGroups = expandDay(dayRaw);
     if (!dayGroups.length) { skippedBadDay++; continue; }
@@ -386,8 +394,8 @@ function main() {
     const { rate_type, first_hour, first_Nhr, first_Nhr_covers_mins, rate_30min, rate_per_min, per_entry } = parsed;
 
     for (const dayGroup of dayGroups) {
-      const key = `${entry.carpark_id}|${dayGroup}`;
-      if (existingRateKeys.has(key)) continue; // already have this day_group
+      const key = `${entry.carpark_id}|${dayGroup}|${window_start}`;
+      if (existingRateKeys.has(key)) continue; // already have this slot
       existingRateKeys.add(key); // dedupe within this run
 
       newRateRows.push([

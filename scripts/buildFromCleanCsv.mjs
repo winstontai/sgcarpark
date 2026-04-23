@@ -116,8 +116,11 @@ function buildTariff(rates) {
   // `fri_eve_ph` with different Friday-evening pricing - pick mon-thu as the
   // weekday face since Fri-evening edge case isn't modeled by rates.js.
   const WEEKDAY_GROUPS = ["weekday", "mon-thu", "mon-fri"];
-  const weekdays = main.filter(r => WEEKDAY_GROUPS.includes(r.day_group));
-  const sats = main.filter(r => r.day_group === "sat");
+  // Sort by window_start so earliest slot is primary; later slots (e.g. 5pm-7am
+  // flat fee) become the evening_per_entry window downstream.
+  const byStart = (a, b) => (a.window_start ?? 0) - (b.window_start ?? 0);
+  const weekdays = main.filter(r => WEEKDAY_GROUPS.includes(r.day_group)).sort(byStart);
+  const sats = main.filter(r => r.day_group === "sat").sort(byStart);
 
   if (!weekdays.length) return null;
 
