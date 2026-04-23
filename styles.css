@@ -46,6 +46,8 @@
 
 *, *::before, *::after { box-sizing: border-box; }
 
+button, input, select, a, label { touch-action: manipulation; }
+
 html, body {
   margin: 0;
   padding: 0;
@@ -866,16 +868,26 @@ footer .sep { margin: 0 8px; opacity: 0.4; }
 /* ---------- Mobile responsiveness ---------- */
 @media (max-width: 640px) {
   .hero { padding: 28px 18px 56px; }
-  .hero h1 { font-size: 30px; }
+  .hero h1 { font-size: 28px; }
   .hero p { font-size: 14.5px; }
   .hero-stats { gap: 8px; margin-top: 18px; }
   .hero-stats .stat { font-size: 11.5px; padding: 6px 11px 6px 9px; }
   main { padding: 0 14px 20px; gap: 14px; margin-top: -28px; }
-  .search-card { padding: 20px; position: static; }
-  .search-card h2 { font-size: 17px; margin-bottom: 18px; }
-  .map-wrap { height: 280px; }
+  .search-card { padding: 18px; position: static; }
+  .search-card h2 { font-size: 17px; margin-bottom: 16px; }
+
+  /* Stack arrival + duration vertically so each input is full-width */
+  .field-grid { grid-template-columns: 1fr; }
+
+  /* 44px minimum touch target for all input rows */
+  .icon-field { padding: 13px; min-height: 44px; }
+
+  /* Shorter autocomplete list so the keyboard doesn't hide results */
+  .suggestions { max-height: 180px; }
+
+  .map-wrap { height: 260px; }
   .map-legend { font-size: 10.5px; gap: 10px; padding: 7px 11px; }
-  .plan { padding: 18px; }
+  .plan { padding: 16px 14px; }
   .plan-cost { font-size: 26px; }
   .plan-title { font-size: 15.5px; }
   .plan-header { flex-direction: column; gap: 6px; }
@@ -893,7 +905,7 @@ footer .sep { margin: 0 8px; opacity: 0.4; }
   }
   .step-meta { gap: 4px 10px; font-size: 11px; }
   .step-name { font-size: 13.5px; }
-  button.primary { padding: 14px 16px; font-size: 15px; }
+  button.primary { padding: 15px 16px; font-size: 15px; min-height: 48px; }
   footer { padding: 20px 14px; font-size: 11.5px; }
   footer .sep { display: none; }
   footer span { display: block; margin: 2px 0; }

@@ -1,0 +1,21 @@
+carpark_id,name,column,text
+CENTURY_SQUARE,Century Square,saturday,$0.32 every 15 mins or part thereof
+LIFELONG_LEARNING_INSTITUTE,Lifelong Learning Institute,weekdays,$16
+HILTON_HOTEL,Hilton Hotel,weekdays,$7 for 1st hr
+KLAPSONS_THE_BOUTIQUE_HOTEL,"klapsons, The Boutique Hotel",weekdays,6.30am to 6.30pm - first 3 hours at $3.00 and subsequent half an hour at $1.50; 6.30pm to 6.30am - $ 4.00 flat
+PARAGON_SHOPPING_CENTRE,Paragon Shopping Centre,sunday_ph,$3.48 for 1st 2hrs; $0.05 for sub. mins
+TRIPLEONE_SOMERSET,TripleOne Somerset,weekdays,$0.50 sub 15 mins
+TRIPLEONE_SOMERSET,TripleOne Somerset,saturday,$0.50 sub 15 mins
+TRIPLEONE_SOMERSET,TripleOne Somerset,sunday_ph,$0.50 sub 15 mins
+MOUNT_FABER_JEWEL_BOX,Mount Faber (Jewel Box),weekdays,Limited public parking spaces availiable. Valet parking at The Jewel Box is available at $5 per car
+SENTOSA_BEACH_AND_IMBIAH_CAR_PARK,Sentosa (Beach and Imbiah car park),weekdays,"Island Entry $2 per car*, free parking. *Rates covers all passengers in car"
+SENTOSA_TANJONG_PALAWAN_CAR_PARK,Sentosa (Tanjong & Palawan car park),weekdays,"Island Entry $2 per car*, free parking. *Rates covers all passengers in car"
+SINGAPORE_BOTANIC_GARDENS,Singapore Botanic Gardens,weekdays,$1 peak hr charge for all passing vehicles that enter from Kheam Hock Road and exit at Evans/Cluny Road) - Closed from 12am-5am daily | $2 per maximum cap
+CAPITACOMMERCIAL_TRUST_CCT,CapitaCommercial Trust (CCT),weekdays,$3.10 per 0.5
+HONG_LEONG_BUILDING,Hong Leong Building,weekdays,Overnight Charge of $12
+HONG_LEONG_BUILDING,Hong Leong Building,saturday,Overnight Charge of $12
+HONG_LEONG_BUILDING,Hong Leong Building,sunday_ph,Overnight Charge of $12
+KLAPSONS_THE_BOUTIQUE_HOTEL_2,"klapsons, The Boutique Hotel",weekdays,6.30am to 6.30pm - first 3 hours at $3.00 and subsequent half an hour at $1.50; 6.30pm to 6.30am - $ 4.00 flat
+SCHOOL_OF_THE_ARTS_SINGAPORE_SOTA,"School of the Arts, Singapore (SOTA)",weekdays,$5 (additional flat fee for overnight parking)
+SCHOOL_OF_THE_ARTS_SINGAPORE_SOTA,"School of the Arts, Singapore (SOTA)",saturday,$5 (additional flat fee for overnight parking)
+JCUBE,JCube,weekdays,$1.30 for 1st hr; sub 15 mins or part thereof: $0.30. *Free 2 Hour Parking from 12 - 2pm daily (Monday - Friday) from now to 15 Oct 2015

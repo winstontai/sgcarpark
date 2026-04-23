@@ -51,7 +51,7 @@
             <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0z"/>
             <circle cx="12" cy="10" r="3"/>
           </svg>
-          <input type="text" id="location" placeholder="Postal code or address" autocomplete="off" />
+          <input type="text" id="location" placeholder="Postal code or address" autocomplete="off" autocorrect="off" autocapitalize="none" spellcheck="false" inputmode="search" />
         </div>
         <ul id="suggestions" class="suggestions hidden"></ul>
       </div>
@@ -74,7 +74,7 @@
               <circle cx="12" cy="14" r="8"/>
               <path d="M12 10v4l2 2M9 2h6M12 6V4"/>
             </svg>
-            <input type="number" id="hours" min="0.5" max="48" step="0.5" value="3" />
+            <input type="number" id="hours" min="0.5" max="48" step="0.5" value="3" inputmode="decimal" />
             <span class="field-unit">hrs</span>
           </div>
         </div>
@@ -87,7 +87,7 @@
             <circle cx="13" cy="4" r="2"/>
             <path d="m15 22-3-5 1-6-3 2-1 4m5 0-3-6-5-1m3 6H6"/>
           </svg>
-          <input type="number" id="radius" min="100" max="2000" step="100" value="500" />
+          <input type="number" id="radius" min="100" max="2000" step="100" value="500" inputmode="numeric" />
           <span class="field-unit">m</span>
         </div>
       </div>
