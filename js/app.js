@@ -8,7 +8,7 @@
 // HDB dataset is cached in localStorage for 24h (locations rarely change).
 
 const OM_SEARCH = "https://www.onemap.gov.sg/api/common/elastic/search";
-const DG_INFO   = "https://data.gov.sg/api/action/datastore_search?resource_id=d_23f946fa557947f93a8043bbef41dd09&limit=3000";
+const DG_INFO   = "https://data.gov.sg/api/action/datastore_search?resource_id=d_23f946fa557947f93a8043bbef41dd09&limit=2000";
 const CACHE_KEY = "cp_info_v1";
 const CACHE_TTL = 24 * 3600 * 1000;
 
@@ -47,8 +47,15 @@ async function loadHdbCarparks() {
     } catch (_) { /* ignore */ }
   }
 
-  const res = await fetch(DG_INFO);
-  if (!res.ok) throw new Error("Failed to load HDB carpark dataset");
+  const controller = new AbortController();
+  const timeout = setTimeout(() => controller.abort(), 8000);
+  let res;
+  try {
+    res = await fetch(DG_INFO, { signal: controller.signal });
+  } finally {
+    clearTimeout(timeout);
+  }
+  if (!res.ok) throw new Error(`data.gov.sg returned ${res.status}`);
   const json = await res.json();
   const records = (json.result && json.result.records) || [];
 
@@ -225,14 +232,11 @@ async function runSearch() {
   searchBtn.disabled = true;
   showPlansSkeleton();
 
-  let hdb;
+  let hdb = [];
   try {
     hdb = await loadHdbCarparks();
   } catch (e) {
-    setStatus("Could not load HDB data: " + e.message, true);
-    plansEl.innerHTML = "";
-    searchBtn.disabled = false;
-    return;
+    console.warn("HDB data unavailable (" + e.message + ") — continuing with CSV carparks only");
   }
   const priv = loadPrivateCarparks();
   const allCarparks = [...hdb, ...priv];
