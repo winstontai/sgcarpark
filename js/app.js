@@ -1,16 +1,15 @@
 // Main application wiring: geocoding, carpark data, map, results.
 //
 // Data sources:
-//   - OneMap search (geocoding):      https://www.onemap.gov.sg/api/common/elastic/search
-//   - HDB carpark info (data.gov.sg): https://data.gov.sg/api/action/datastore_search?resource_id=d_23f946fa557947f93a8043bbef41dd09
-//   - Private/mall carparks:          bundled in js/privateCarparks.js
+//   - OneMap search (geocoding): https://www.onemap.gov.sg/api/common/elastic/search
+//   - HDB carpark info:          bundled in js/hdbCarparks.js (snapshot of data.gov.sg)
+//   - Private/mall carparks:     bundled in js/privateCarparks.js + js/csvCarparks.js
 //
-// HDB dataset is cached in localStorage for 24h (locations rarely change).
+// Rationale: data.gov.sg rate-limits by IP (HTTP 429), which caused random
+// search failures for visitors. HDB carpark locations change rarely, so we
+// ship a snapshot built by scripts/buildHdbCarparks.mjs.
 
 const OM_SEARCH = "https://www.onemap.gov.sg/api/common/elastic/search";
-const DG_INFO   = "https://data.gov.sg/api/action/datastore_search?resource_id=d_23f946fa557947f93a8043bbef41dd09&limit=2000";
-const CACHE_KEY = "cp_info_v1";
-const CACHE_TTL = 24 * 3600 * 1000;
 
 // ---------- Map setup ----------
 const map = L.map("map").setView([1.3521, 103.8198], 12);
@@ -37,49 +36,9 @@ async function geocode(query) {
   }));
 }
 
-// ---------- HDB carpark info (SVY21 to WGS84 + cached) ----------
-async function loadHdbCarparks() {
-  const cached = localStorage.getItem(CACHE_KEY);
-  if (cached) {
-    try {
-      const { ts, data } = JSON.parse(cached);
-      if (Date.now() - ts < CACHE_TTL && Array.isArray(data)) return data;
-    } catch (_) { /* ignore */ }
-  }
-
-  const controller = new AbortController();
-  const timeout = setTimeout(() => controller.abort(), 8000);
-  let res;
-  try {
-    res = await fetch(DG_INFO, { signal: controller.signal });
-  } finally {
-    clearTimeout(timeout);
-  }
-  if (!res.ok) throw new Error(`data.gov.sg returned ${res.status}`);
-  const json = await res.json();
-  const records = (json.result && json.result.records) || [];
-
-  const converted = records
-    .map(r => {
-      const x = parseFloat(r.x_coord);
-      const y = parseFloat(r.y_coord);
-      if (!isFinite(x) || !isFinite(y)) return null;
-      const { lat, lng } = SVY21.toLatLon(y, x);
-      return {
-        car_park_no: r.car_park_no,
-        name: `HDB ${r.car_park_no}`,
-        address: r.address,
-        lat, lng,
-        car_park_type: r.car_park_type,
-        short_term_parking: r.short_term_parking,
-        night_parking_available: r.night_parking === "YES",
-        kind: "hdb"
-      };
-    })
-    .filter(Boolean);
-
-  localStorage.setItem(CACHE_KEY, JSON.stringify({ ts: Date.now(), data: converted }));
-  return converted;
+// ---------- HDB carpark info (bundled snapshot) ----------
+function loadHdbCarparks() {
+  return (window.HDB_CARPARKS || []).map((cp) => ({ ...cp, kind: "hdb" }));
 }
 
 function loadPrivateCarparks() {
@@ -232,12 +191,7 @@ async function runSearch() {
   searchBtn.disabled = true;
   showPlansSkeleton();
 
-  let hdb = [];
-  try {
-    hdb = await loadHdbCarparks();
-  } catch (e) {
-    console.warn("HDB data unavailable (" + e.message + ") — continuing with CSV carparks only");
-  }
+  const hdb = loadHdbCarparks();
   const priv = loadPrivateCarparks();
   const allCarparks = [...hdb, ...priv];
 
