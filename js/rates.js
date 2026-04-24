@@ -94,26 +94,42 @@ function hdbStayCost(carpark, startMin, endMin) {
 }
 
 // ---------- Private / mall cost ----------
-// Hourly portion: applies first_hour_rate (if set) for the first 60 min,
+// Hourly portion: applies the first tier (if set) for its covered minutes,
 // then subsequent_rate_per_30min (if set) else rate_per_30min.
 function hourlyCost(chargeMin, t, useWeekend) {
   const baseRate = (useWeekend && t.weekend_rate_per_30min) ? t.weekend_rate_per_30min : t.rate_per_30min;
   const subRate  = t.subsequent_rate_per_30min != null ? t.subsequent_rate_per_30min : baseRate;
+  const firstTierMinutes = t.first_tier_minutes ?? (t.first_hour_rate != null ? 60 : null);
+  const firstTierRate = t.first_hour_rate;
 
-  if (t.first_hour_rate != null) {
-    if (chargeMin <= 60) {
-      return { cost: t.first_hour_rate, note: `1st hr flat $${t.first_hour_rate.toFixed(2)}` };
+  if (firstTierRate != null && firstTierMinutes != null) {
+    if (chargeMin <= firstTierMinutes) {
+      const tierLabel = firstTierMinutes === 60
+        ? "1st hr"
+        : `1st ${formatTierMinutes(firstTierMinutes)}`;
+      return { cost: firstTierRate, note: `${tierLabel} flat $${firstTierRate.toFixed(2)}` };
     }
-    const after = chargeMin - 60;
+    const after = chargeMin - firstTierMinutes;
     const blocks = Math.ceil(after / 30);
-    const cost = t.first_hour_rate + blocks * subRate;
+    const cost = firstTierRate + blocks * subRate;
+    const tierLabel = firstTierMinutes === 60
+      ? "1st hr"
+      : `1st ${formatTierMinutes(firstTierMinutes)}`;
     return {
       cost,
-      note: `1st hr $${t.first_hour_rate.toFixed(2)} + ${blocks} x 30min @ $${subRate.toFixed(2)}`
+      note: `${tierLabel} $${firstTierRate.toFixed(2)} + ${blocks} x 30min @ $${subRate.toFixed(2)}`
     };
   }
   const blocks = Math.ceil(chargeMin / 30);
   return { cost: blocks * baseRate, note: `${blocks} x 30min @ $${baseRate.toFixed(2)}` };
+}
+
+function formatTierMinutes(minutes) {
+  if (minutes % 60 === 0) {
+    const hours = minutes / 60;
+    return `${hours} hr${hours === 1 ? "" : "s"}`;
+  }
+  return `${minutes} min`;
 }
 
 function privateStayCost(carpark, startMin, endMin) {

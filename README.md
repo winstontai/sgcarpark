@@ -2,7 +2,7 @@
 
 ParkSmart SG is a lightweight browser app for comparing nearby Singapore carparks and finding the cheapest parking plan for a specific trip.
 
-It combines live HDB location data, OneMap geocoding, a curated set of private or mall carparks, and an additional CSV-sourced dataset of ~230 private/mall carparks. Instead of only showing the cheapest single carpark, it can also model plans where you move your car mid-stay to take advantage of entry caps, evening flat-fee windows, or night rates.
+It combines geocoded HDB carpark locations (2,000+ carparks), OneMap geocoding, a curated set of private or mall carparks, and a larger CSV-sourced dataset of ~980 private/mall carparks. Instead of only showing the cheapest single carpark, it can also model plans where you move your car mid-stay to take advantage of entry caps, evening flat-fee windows, or night rates.
 
 ## What it does
 
@@ -32,20 +32,21 @@ This helps the app handle cases like:
 
 ```text
 index.html                     Main app shell
-styles.css                     UI styles
+styles.css                     UI styles (mobile-friendly)
 js/app.js                      App flow, map, geocoding, result rendering
 js/optimizer.js                Parking-plan optimization logic
 js/rates.js                    HDB and tariff cost calculations
 js/privateCarparks.js          Curated private and mall carpark dataset
-js/csvCarparks.js              Auto-generated dataset from CarparkRates.csv
-js/svy21.js                    SVY21 to WGS84 coordinate conversion
-scripts/buildCsvCarparks.mjs   Node builder that parses CarparkRates.csv
-CarparkRates.csv               Raw private/mall tariff rows (source data)
+js/csvCarparks.js              Auto-generated private/mall dataset
+js/hdbCarparks.js              Auto-generated HDB carpark snapshot
+scripts/                       Data-pipeline scripts (scraping, merging, building)
+data/                          Intermediate CSV datasets
+CarparkRates.csv               Raw private/mall tariff rows (seed data)
 ```
 
 ## Run locally
 
-Because the app fetches remote APIs in the browser, serve it over HTTP instead of opening `index.html` directly.
+Because the app uses OneMap for live geocoding, serve it over HTTP instead of opening `index.html` directly.
 
 ### Python
 
@@ -64,36 +65,39 @@ npx serve .
 ## Data sources
 
 - OneMap Search API for geocoding
-- data.gov.sg HDB Carpark Information dataset for HDB carpark locations
+- data.gov.sg HDB Carpark Information dataset (bundled as a snapshot in `js/hdbCarparks.js`)
+- motorist.sg for private/mall carpark tariffs (scraped, merged into `js/csvCarparks.js`)
 - Curated private and mall carpark data in `js/privateCarparks.js`
 
 ## Notes and limitations
 
 - Public holidays are not detected automatically; select "Sunday / Public Holiday" from the day-of-visit dropdown manually
 - Private carpark tariffs are curated or parsed estimates and may change without notice
-- Tiered "$X for first 2 hours" rates from the CSV dataset are approximated as a flat first-hour rate plus the subsequent per-30-min rate
+- Tiered "$X for first 2 hours" rates are approximated as a flat first-hour rate plus the subsequent per-30-min rate
 - Carpark availability is not included; the app focuses on cost optimization
-- HDB location data is cached in `localStorage` for 24 hours to reduce repeated API calls
+- HDB locations are bundled as a static snapshot — re-run `node scripts/buildHdbCarparks.mjs` every few months to refresh
 
-## Updating private carparks
+## Updating data
 
-There are two sources:
+There are two private/mall sources:
 
-1. **Curated (`js/privateCarparks.js`)** - hand-maintained entries; these take precedence on name collisions.
-2. **CSV-sourced (`js/csvCarparks.js`)** - auto-generated from `CarparkRates.csv`.
+1. **Curated (`js/privateCarparks.js`)** — hand-maintained entries; these take precedence on name collisions.
+2. **CSV-sourced (`js/csvCarparks.js`)** — auto-generated from `data/carparks.csv` + `data/rates.csv`.
 
-To update a curated carpark, edit the matching entry in `js/privateCarparks.js`.
-
-To regenerate the CSV-sourced dataset after editing `CarparkRates.csv`:
+To regenerate the CSV-sourced dataset:
 
 ```bash
-node scripts/buildCsvCarparks.mjs
+node scripts/buildFromCleanCsv.mjs
 ```
 
-The builder geocodes each row via OneMap and caches results in `scripts/.geocode-cache.json` (git-ignored) so reruns are fast.
+To refresh the HDB carpark snapshot:
+
+```bash
+node scripts/buildHdbCarparks.mjs
+```
 
 ## Tech stack
 
 - HTML, CSS, and vanilla JavaScript
 - Leaflet for mapping
-- OneMap and data.gov.sg APIs
+- OneMap for geocoding

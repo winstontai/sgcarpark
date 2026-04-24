@@ -55,7 +55,7 @@ function segmentsFrom(startMin, endMin, extraDailyMarks) {
 /**
  * Find the globally cheapest plan that uses at most (maxChanges + 1) blocks.
  */
-function optimise(carparks, startMin, endMin, maxChanges) {
+function prepare(carparks, startMin, endMin) {
   if (!carparks.length || endMin <= startMin) return null;
 
   const segs = segmentsFrom(startMin, endMin, collectCarparkMarks(carparks));
@@ -91,6 +91,15 @@ function optimise(carparks, startMin, endMin, maxChanges) {
       blockBest[i][j] = best;
     }
   }
+
+  return { segs, blockBest };
+}
+
+function solvePrepared(prepared, maxChanges) {
+  if (!prepared) return null;
+
+  const { segs, blockBest } = prepared;
+  const M = segs.length;
 
   // DP. F[i][b] = min cost covering segs[0..i-1] using exactly b blocks.
   //      P[i][b] = backpointer { j, block }.
@@ -144,4 +153,9 @@ function optimise(carparks, startMin, endMin, maxChanges) {
   return { plan, total: bestCost, changes: plan.length - 1 };
 }
 
-window.Optimizer = { optimise };
+function optimise(carparks, startMin, endMin, maxChanges) {
+  const prepared = prepare(carparks, startMin, endMin);
+  return solvePrepared(prepared, maxChanges);
+}
+
+window.Optimizer = { optimise, prepare, solvePrepared };

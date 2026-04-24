@@ -58,7 +58,7 @@ function numOrNull(v) {
   return isNaN(n) ? null : n;
 }
 
-// Primary-window rate in $/30min. Returns { rate_per_30min, first_hour_rate?, subsequent_rate_per_30min?, per_entry_flat? }
+// Primary-window rate in $/30min. Returns { rate_per_30min, first_hour_rate?, first_tier_minutes?, subsequent_rate_per_30min?, per_entry_flat? }
 function extractPrimaryRate(row) {
   switch (row.rate_type) {
     case "free":
@@ -69,13 +69,12 @@ function extractPrimaryRate(row) {
       return row.rate_per_min != null ? { rate_per_30min: row.rate_per_min * 30 } : null;
     case "tiered": {
       // first_hour OR first_Nhr (e.g. $2.14 covers 1st 120 min).
-      // rates.js only supports a 1-hour flat, so we collapse N-hour flat onto first_hour_rate.
-      // Slightly overcharges for stays 60..Nhr*60 min, otherwise matches.
       const firstFlat = row.first_hour ?? row.first_Nhr;
       if (firstFlat == null && row.rate_30min == null) return null;
       return {
         rate_per_30min: row.rate_30min ?? firstFlat,
         first_hour_rate: firstFlat,
+        first_tier_minutes: row.first_Nhr_covers_mins ?? (row.first_hour != null ? 60 : null),
         subsequent_rate_per_30min: row.rate_30min
       };
     }
@@ -137,6 +136,7 @@ function buildTariff(rates) {
     chargeable_end: capDay(primary.window_end) ?? 1440
   };
   if (primRate.first_hour_rate != null) tariff.first_hour_rate = primRate.first_hour_rate;
+  if (primRate.first_tier_minutes != null) tariff.first_tier_minutes = primRate.first_tier_minutes;
   if (primRate.subsequent_rate_per_30min != null) tariff.subsequent_rate_per_30min = primRate.subsequent_rate_per_30min;
 
   // Flat per-entry with no hourly component - surface as a per_entry_cap and leave rate_per_30min=0.
@@ -196,7 +196,8 @@ function main() {
   const ri = name => rtHeader.indexOf(name);
   const idxC = ri("carpark_id"), idxF = ri("facility"), idxD = ri("day_group");
   const idxWs = ri("window_start"), idxWe = ri("window_end"), idxT = ri("rate_type");
-  const idxFh = ri("first_hour"), idxR30 = ri("rate_30min"), idxRpm = ri("rate_per_min"), idxPe = ri("per_entry"), idxRaw = ri("raw");
+  const idxFh = ri("first_hour"), idxFn = ri("first_Nhr"), idxFnMins = ri("first_Nhr_covers_mins");
+  const idxR30 = ri("rate_30min"), idxRpm = ri("rate_per_min"), idxPe = ri("per_entry"), idxRaw = ri("raw");
 
   // Group rates by carpark_id.
   const byId = new Map();
@@ -211,6 +212,8 @@ function main() {
       window_end: minFromTime(row[idxWe]),
       rate_type: row[idxT],
       first_hour: numOrNull(row[idxFh]),
+      first_Nhr: numOrNull(row[idxFn]),
+      first_Nhr_covers_mins: numOrNull(row[idxFnMins]),
       rate_30min: numOrNull(row[idxR30]),
       rate_per_min: numOrNull(row[idxRpm]),
       per_entry: numOrNull(row[idxPe]),

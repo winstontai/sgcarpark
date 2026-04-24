@@ -13,18 +13,19 @@ const OM_SEARCH = "https://www.onemap.gov.sg/api/common/elastic/search";
 
 // ---------- Map setup ----------
 const map = L.map("map").setView([1.3521, 103.8198], 12);
-L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
-  attribution: "(c) OpenStreetMap contributors",
-  maxZoom: 19
+L.tileLayer("https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png", {
+  attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/attributions">CARTO</a>',
+  subdomains: "abcd",
+  maxZoom: 20
 }).addTo(map);
 
 let destMarker = null;
 let carparkLayer = L.layerGroup().addTo(map);
 
 // ---------- Geocoding ----------
-async function geocode(query) {
+async function geocode(query, options) {
   const url = `${OM_SEARCH}?searchVal=${encodeURIComponent(query)}&returnGeom=Y&getAddrDetails=Y&pageNum=1`;
-  const res = await fetch(url);
+  const res = await fetch(url, options);
   if (!res.ok) throw new Error("Geocoding failed");
   const data = await res.json();
   if (!data.results || data.results.length === 0) return [];
@@ -67,6 +68,19 @@ function haversineMetres(lat1, lon1, lat2, lon2) {
   return 2 * R * Math.asin(Math.sqrt(a));
 }
 
+// Approximate walking distance by scaling crow-fly by a typical urban
+// sinuosity factor. Avoids an API call per carpark; within ~15% of routed
+// walking distance in dense Singapore street grids.
+const WALK_FACTOR = 1.3;
+function walkingMetres(lat1, lon1, lat2, lon2) {
+  return haversineMetres(lat1, lon1, lat2, lon2) * WALK_FACTOR;
+}
+
+// "4 Fourth Chin Bee Road, S(619698)" -> "4 Fourth Chin Bee Road, 619698"
+function stripPostalPrefix(addr) {
+  return String(addr || "").replace(/S\((\d{6})\)/g, "$1");
+}
+
 // ---------- UI ----------
 const $ = sel => document.querySelector(sel);
 const locationInput = $("#location");
@@ -87,6 +101,11 @@ const dayTypeInput = $("#dayType");
   arrivalInput.value = d.toTimeString().slice(0, 5);
 })();
 
+(function initDayType() {
+  const dow = new Date().getDay();
+  dayTypeInput.value = dow === 0 ? "sunday_ph" : dow === 6 ? "saturday" : "weekday";
+})();
+
 function changesLabelText(n) {
   if (n === 0) return "Park once";
   if (n === 1) return "1 move OK";
@@ -99,20 +118,31 @@ changesLabel.textContent = changesLabelText(parseInt(changesInput.value, 10));
 
 let chosenDestination = null;
 let debounceTimer = null;
+let suggestController = null;
+let suggestSeq = 0;
+let searchSeq = 0;
 locationInput.addEventListener("input", () => {
   chosenDestination = null;
   clearTimeout(debounceTimer);
+  if (suggestController) suggestController.abort();
   const q = locationInput.value.trim();
   if (q.length < 3) {
+    suggestController = null;
     suggestionsEl.classList.add("hidden");
     return;
   }
   debounceTimer = setTimeout(async () => {
+    const requestId = ++suggestSeq;
+    suggestController = new AbortController();
     try {
-      const results = await geocode(q);
+      const results = await geocode(q, { signal: suggestController.signal });
+      if (requestId !== suggestSeq || locationInput.value.trim() !== q) return;
       renderSuggestions(results);
-    } catch (_) {
+    } catch (err) {
+      if (err.name === "AbortError") return;
       suggestionsEl.classList.add("hidden");
+    } finally {
+      if (requestId === suggestSeq) suggestController = null;
     }
   }, 250);
 });
@@ -145,6 +175,8 @@ function renderSuggestions(results) {
 searchBtn.addEventListener("click", runSearch);
 
 async function runSearch() {
+  if (searchBtn.disabled) return;
+
   setStatus("", false);
   plansEl.innerHTML = "";
   carparkLayer.clearLayers();
@@ -160,94 +192,97 @@ async function runSearch() {
     return;
   }
 
+  searchBtn.disabled = true;
+  const runId = ++searchSeq;
+
   let dest = chosenDestination;
-  if (!dest) {
-    const q = locationInput.value.trim();
-    if (!q) {
-      setStatus("Enter a postal code or address.", true);
-      return;
-    }
-    setStatus("Looking up destination...", false, true);
-    try {
+  try {
+    if (!dest) {
+      const q = locationInput.value.trim();
+      if (!q) {
+        setStatus("Enter a postal code or address.", true);
+        return;
+      }
+      setStatus("Looking up destination...", false, true);
       const hits = await geocode(q);
+      if (runId !== searchSeq) return;
       if (!hits.length) {
         setStatus("No matching location found.", true);
         return;
       }
       dest = hits[0];
-    } catch (e) {
-      setStatus("Geocoding failed: " + e.message, true);
+    }
+
+    map.setView([dest.lat, dest.lng], 16);
+    if (destMarker) destMarker.remove();
+    destMarker = L.marker([dest.lat, dest.lng], { title: "Destination" })
+      .addTo(map)
+      .bindPopup(`<b>Destination</b><br/>${escapeHtml(dest.label)}`);
+
+    setStatus("Loading carparks...", false, true);
+    showPlansSkeleton();
+
+    const hdb = loadHdbCarparks();
+    const priv = loadPrivateCarparks();
+    const allCarparks = [...hdb, ...priv];
+
+    const nearby = [];
+    for (const cp of allCarparks) {
+      const d = walkingMetres(dest.lat, dest.lng, cp.lat, cp.lng);
+      if (d <= radius) {
+        nearby.push({
+          ...cp,
+          distance: d,
+          _day_type: dayType
+        });
+      }
+    }
+
+    if (nearby.length === 0) {
+      setStatus(`No carparks within ${radius}m. Try widening the radius.`, true);
+      plansEl.innerHTML = "";
       return;
     }
-  }
 
-  map.setView([dest.lat, dest.lng], 16);
-  if (destMarker) destMarker.remove();
-  destMarker = L.marker([dest.lat, dest.lng], { title: "Destination" })
-    .addTo(map)
-    .bindPopup(`<b>Destination</b><br/>${escapeHtml(dest.label)}`);
-
-  setStatus("Loading carparks...", false, true);
-  searchBtn.disabled = true;
-  showPlansSkeleton();
-
-  const hdb = loadHdbCarparks();
-  const priv = loadPrivateCarparks();
-  const allCarparks = [...hdb, ...priv];
-
-  const nearby = [];
-  for (const cp of allCarparks) {
-    const d = haversineMetres(dest.lat, dest.lng, cp.lat, cp.lng);
-    if (d <= radius) {
-      nearby.push({
-        ...cp,
-        distance: d,
-        _day_type: dayType
-      });
+    for (const cp of nearby) {
+      const colour = cp.kind === "private" ? "#7c3aed" : "#0284c7";
+      L.circleMarker([cp.lat, cp.lng], {
+        radius: 7, color: "#fff", fillColor: colour, weight: 2, fillOpacity: 1
+      })
+        .bindPopup(
+          `<b>${escapeHtml(cp.name || cp.car_park_no)}</b><br/>${escapeHtml(stripPostalPrefix(cp.address))}<br/>` +
+          `<small>${cp.kind === "private" ? "Private / Mall" : "HDB"}</small>`
+        )
+        .addTo(carparkLayer);
     }
+
+    const [hh, mm] = arrival.split(":").map(Number);
+    const startMin = hh * 60 + mm;
+    const endMin = startMin + Math.round(hours * 60);
+    const prepared = Optimizer.prepare(nearby, startMin, endMin);
+
+    const plans = [];
+    for (let c = 0; c <= changes; c++) {
+      const result = Optimizer.solvePrepared(prepared, c);
+      if (result) plans.push({ allowedChanges: c, ...result });
+    }
+
+    const unique = [];
+    const seen = new Set();
+    for (const p of plans) {
+      const key = p.plan.map(s => `${s.carpark.car_park_no}@${s.startMin}-${s.endMin}`).join("|");
+      if (!seen.has(key)) { seen.add(key); unique.push(p); }
+    }
+
+    renderPlans(unique);
+    const hdbCount = nearby.filter(c => c.kind === "hdb").length;
+    const privCount = nearby.filter(c => c.kind === "private").length;
+    setStatus(`Compared ${hdbCount} HDB and ${privCount} private carparks within ${radius}m.`);
+  } catch (e) {
+    setStatus("Search failed: " + e.message, true);
+  } finally {
+    if (runId === searchSeq) searchBtn.disabled = false;
   }
-
-  if (nearby.length === 0) {
-    setStatus(`No carparks within ${radius}m. Try widening the radius.`, true);
-    plansEl.innerHTML = "";
-    searchBtn.disabled = false;
-    return;
-  }
-
-  for (const cp of nearby) {
-    const colour = cp.kind === "private" ? "#7c3aed" : "#0284c7";
-    L.circleMarker([cp.lat, cp.lng], {
-      radius: 7, color: "#fff", fillColor: colour, weight: 2, fillOpacity: 1
-    })
-      .bindPopup(
-        `<b>${escapeHtml(cp.name || cp.car_park_no)}</b><br/>${escapeHtml(cp.address || "")}<br/>` +
-        `<small>${cp.kind === "private" ? "Private / Mall" : "HDB"}</small>`
-      )
-      .addTo(carparkLayer);
-  }
-
-  const [hh, mm] = arrival.split(":").map(Number);
-  const startMin = hh * 60 + mm;
-  const endMin = startMin + Math.round(hours * 60);
-
-  const plans = [];
-  for (let c = 0; c <= changes; c++) {
-    const result = Optimizer.optimise(nearby, startMin, endMin, c);
-    if (result) plans.push({ allowedChanges: c, ...result });
-  }
-
-  const unique = [];
-  const seen = new Set();
-  for (const p of plans) {
-    const key = p.plan.map(s => `${s.carpark.car_park_no}@${s.startMin}-${s.endMin}`).join("|");
-    if (!seen.has(key)) { seen.add(key); unique.push(p); }
-  }
-
-  renderPlans(unique);
-  const hdbCount = nearby.filter(c => c.kind === "hdb").length;
-  const privCount = nearby.filter(c => c.kind === "private").length;
-  setStatus(`Compared ${hdbCount} HDB and ${privCount} private carparks within ${radius}m.`);
-  searchBtn.disabled = false;
 }
 
 // Inline SVG icons used in step meta
@@ -309,6 +344,7 @@ function showPlansSkeleton() {
 }
 
 function addPlanMarkers(plan) {
+  carparkLayer.clearLayers();
   plan.forEach((stay, i) => {
     const icon = L.divIcon({
       className: "plan-marker-wrap",
@@ -333,12 +369,25 @@ function renderPlans(plans) {
   const byChanges = [...plans].sort((a, b) => a.allowedChanges - b.allowedChanges);
   const cheapestTotal = Math.min(...plans.map(p => p.total));
   const baseline = byChanges[0].total; // "park once" baseline for savings calc
+  const bestNoMove = byChanges.find(p => p.allowedChanges === 0) || byChanges[0];
+  const bestOverall = byChanges.find(p => Math.abs(p.total - cheapestTotal) < 1e-9) || byChanges[0];
+  let activeCard = null;
+
+  function setActivePlan(card, plan) {
+    if (activeCard) activeCard.classList.remove("selected");
+    activeCard = card;
+    if (activeCard) activeCard.classList.add("selected");
+    addPlanMarkers(plan.plan);
+  }
+
+  plansEl.appendChild(renderPlanHighlights(bestNoMove, bestOverall));
 
   for (const p of byChanges) {
     const isBest = Math.abs(p.total - cheapestTotal) < 1e-9;
     const savings = baseline - p.total;
     const card = document.createElement("article");
     card.className = "plan" + (isBest ? " best" : "");
+    card.tabIndex = 0;
 
     const titleText = p.allowedChanges === 0
       ? "Park once, stay put"
@@ -378,7 +427,7 @@ function renderPlans(plans) {
         ? '<span class="tag private">Private</span>'
         : '<span class="tag hdb">HDB</span>';
       const displayName = escapeHtml(stay.carpark.name || stay.carpark.car_park_no);
-      const address = escapeHtml(stay.carpark.address || "");
+      const address = escapeHtml(stripPostalPrefix(stay.carpark.address));
 
       li.innerHTML = `
         <span class="step-num">${i + 1}</span>
@@ -403,12 +452,89 @@ function renderPlans(plans) {
       });
       list.appendChild(li);
     });
-    plansEl.appendChild(card);
-  }
 
-  // Overlay numbered markers for the cheapest plan's stops on the map.
-  const cheapest = byChanges.find(p => Math.abs(p.total - cheapestTotal) < 1e-9);
-  if (cheapest) addPlanMarkers(cheapest.plan);
+    card.addEventListener("click", () => setActivePlan(card, p));
+    card.addEventListener("keydown", (e) => {
+      if (e.key !== "Enter" && e.key !== " ") return;
+      e.preventDefault();
+      setActivePlan(card, p);
+    });
+
+    plansEl.appendChild(card);
+
+    if (isBest || !activeCard) setActivePlan(card, p);
+  }
+}
+
+function renderPlanHighlights(bestNoMove, bestOverall) {
+  const wrap = document.createElement("section");
+  wrap.className = "plan-highlights";
+  wrap.innerHTML = `
+    <div class="plan-highlights-header">
+      <div>
+        <div class="plan-highlights-eyebrow">Top picks</div>
+        <h3 class="plan-highlights-title">Start with the clearest recommendation</h3>
+      </div>
+      <p class="plan-highlights-copy">Compare the easiest no-move option against the absolute cheapest plan before diving into the full breakdowns.</p>
+    </div>
+  `;
+
+  wrap.appendChild(buildHighlightCard({
+    title: "Best park-once option",
+    subtitle: "No car moves required",
+    plan: bestNoMove,
+    savings: 0,
+    tone: "calm"
+  }));
+
+  wrap.appendChild(buildHighlightCard({
+    title: "Best overall option",
+    subtitle: bestOverall.changes > 0
+      ? `${bestOverall.changes} move${bestOverall.changes === 1 ? "" : "s"} for the lowest total`
+      : "Same as the best no-move plan",
+    plan: bestOverall,
+    savings: Math.max(0, bestNoMove.total - bestOverall.total),
+    tone: "success"
+  }));
+
+  return wrap;
+}
+
+function buildHighlightCard({ title, subtitle, plan, savings, tone }) {
+  const el = document.createElement("article");
+  el.className = `plan-highlight ${tone}`;
+
+  const firstStay = plan.plan[0];
+  const primaryName = escapeHtml(firstStay.carpark.name || firstStay.carpark.car_park_no);
+  const distance = Math.round(firstStay.carpark.distance);
+  const walkMin = Math.max(1, Math.round(firstStay.carpark.distance / 80));
+  const moveLabel = plan.changes === 0
+    ? "Single carpark"
+    : `${plan.plan.length} carparks | ${plan.changes} move${plan.changes === 1 ? "" : "s"}`;
+  const savingsText = savings > 0.005
+    ? `Save $${savings.toFixed(2)} vs park-once`
+    : "Lowest-friction choice";
+  const toneBadge = tone === "success" ? "Lowest total" : "Least hassle";
+
+  el.innerHTML = `
+    <div class="plan-highlight-topline">
+      <div class="plan-highlight-label">${title}</div>
+      <div class="plan-highlight-badge">${toneBadge}</div>
+    </div>
+    <div class="plan-highlight-title">${primaryName}</div>
+    <div class="plan-highlight-meta">${escapeHtml(subtitle)} | ${moveLabel}</div>
+    <div class="plan-highlight-stats">
+      <span class="plan-highlight-stat">${distance}m walk</span>
+      <span class="plan-highlight-stat">~${walkMin} min on foot</span>
+      <span class="plan-highlight-stat">${formatTime(plan.plan[0].startMin)} -> ${formatTime(plan.plan[plan.plan.length - 1].endMin)}</span>
+    </div>
+    <div class="plan-highlight-footer">
+      <div class="plan-highlight-cost"><span class="currency">$</span>${plan.total.toFixed(2)}</div>
+      <div class="plan-highlight-note">${escapeHtml(savingsText)}</div>
+    </div>
+  `;
+
+  return el;
 }
 
 function formatTime(minutes) {

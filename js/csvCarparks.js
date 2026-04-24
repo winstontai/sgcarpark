@@ -49,6 +49,7 @@ window.CSV_CARPARKS = [
       "chargeable_start": 0,
       "chargeable_end": 1440,
       "first_hour_rate": 1.2,
+      "first_tier_minutes": 60,
       "subsequent_rate_per_30min": 0.6,
       "weekend_rate_per_30min": 0.65
     },
@@ -121,6 +122,7 @@ window.CSV_CARPARKS = [
       "chargeable_start": 420,
       "chargeable_end": 1350,
       "first_hour_rate": 1.2,
+      "first_tier_minutes": 60,
       "subsequent_rate_per_30min": 0.6
     },
     "notes": "Mon-Fri: $1.20 for 1st hr or part thereof; $0.60 for sub.0.5 hr or part thereof || Sat: $1.20 for 1st hr or part thereof; $0.60 for sub. 0.5 hr or part thereof"
@@ -139,6 +141,7 @@ window.CSV_CARPARKS = [
       "chargeable_start": 0,
       "chargeable_end": 1440,
       "first_hour_rate": 1.8,
+      "first_tier_minutes": 60,
       "subsequent_rate_per_30min": 0.85
     },
     "notes": "Mon-Fri: $1.80 for 1st hr; $0.85 for 0.5 hr"
@@ -157,6 +160,7 @@ window.CSV_CARPARKS = [
       "chargeable_start": 420,
       "chargeable_end": 1080,
       "first_hour_rate": 1.2,
+      "first_tier_minutes": 60,
       "subsequent_rate_per_30min": 0.6,
       "evening_per_entry": {
         "start_min": 1080,
@@ -181,6 +185,7 @@ window.CSV_CARPARKS = [
       "chargeable_start": 0,
       "chargeable_end": 1440,
       "first_hour_rate": 1.2,
+      "first_tier_minutes": 60,
       "subsequent_rate_per_30min": 0.6
     },
     "notes": "Mon-Fri: Daily(7am-11pm): $1.20 for 1st hr or part thereof; $0.60 for sub. 0.5 hr or part thereof."
@@ -199,6 +204,7 @@ window.CSV_CARPARKS = [
       "chargeable_start": 420,
       "chargeable_end": 1050,
       "first_hour_rate": 1.6,
+      "first_tier_minutes": 60,
       "subsequent_rate_per_30min": 1,
       "evening_per_entry": {
         "start_min": 1050,
@@ -255,6 +261,7 @@ window.CSV_CARPARKS = [
       "chargeable_start": 420,
       "chargeable_end": 1020,
       "first_hour_rate": 1.07,
+      "first_tier_minutes": 60,
       "subsequent_rate_per_30min": 0.55,
       "evening_per_entry": {
         "start_min": 1020,
@@ -278,6 +285,7 @@ window.CSV_CARPARKS = [
       "chargeable_start": 0,
       "chargeable_end": 1440,
       "first_hour_rate": 1.2,
+      "first_tier_minutes": 60,
       "subsequent_rate_per_30min": 0.7,
       "weekend_rate_per_30min": 0.7
     },
@@ -318,6 +326,7 @@ window.CSV_CARPARKS = [
       "chargeable_start": 0,
       "chargeable_end": 1440,
       "first_hour_rate": 1.07,
+      "first_tier_minutes": 60,
       "subsequent_rate_per_30min": 0.64,
       "evening_per_entry": {
         "start_min": 1080,
@@ -374,6 +383,7 @@ window.CSV_CARPARKS = [
       "chargeable_start": 0,
       "chargeable_end": 1440,
       "first_hour_rate": 0,
+      "first_tier_minutes": 60,
       "subsequent_rate_per_30min": 1
     },
     "notes": "Mon-Fri: 1st hr: Free; $2 for sub. hr"
@@ -392,6 +402,7 @@ window.CSV_CARPARKS = [
       "chargeable_start": 0,
       "chargeable_end": 1440,
       "first_hour_rate": 1.3,
+      "first_tier_minutes": 60,
       "subsequent_rate_per_30min": 0.65,
       "weekend_rate_per_30min": 0.7
     },
@@ -411,6 +422,7 @@ window.CSV_CARPARKS = [
       "chargeable_start": 0,
       "chargeable_end": 1440,
       "first_hour_rate": 1.2,
+      "first_tier_minutes": 60,
       "subsequent_rate_per_30min": 0.8
     },
     "notes": "Mon-Fri: $1.20 for 1st hr or part thereof; $0.80 for sub. 0.5 hr or part thereof."
@@ -471,6 +483,7 @@ window.CSV_CARPARKS = [
       "chargeable_start": 0,
       "chargeable_end": 1440,
       "first_hour_rate": 1.28,
+      "first_tier_minutes": 60,
       "subsequent_rate_per_30min": 0.64
     },
     "notes": "Mon-Fri: $1.28 for 1st hr, $0.64 for sub. 30 mins or part thereof."
@@ -489,6 +502,7 @@ window.CSV_CARPARKS = [
       "chargeable_start": 0,
       "chargeable_end": 1439,
       "first_hour_rate": 1.2,
+      "first_tier_minutes": 60,
       "subsequent_rate_per_30min": 0.64
     },
     "notes": "Mon-Fri: $1.20 for 1st hr; $0.32 for sub. 15 mins; $1.20 for 1st hr; $0.30 for sub. 15 mins"
@@ -507,6 +521,7 @@ window.CSV_CARPARKS = [
       "chargeable_start": 480,
       "chargeable_end": 1020,
       "first_hour_rate": 1.04,
+      "first_tier_minutes": 60,
       "subsequent_rate_per_30min": 0.53,
       "evening_per_entry": {
         "start_min": 1020,
@@ -546,6 +561,7 @@ window.CSV_CARPARKS = [
       "chargeable_start": 420,
       "chargeable_end": 1080,
       "first_hour_rate": 1.6,
+      "first_tier_minutes": 60,
       "subsequent_rate_per_30min": 0.8,
       "evening_per_entry": {
         "start_min": 1080,
@@ -569,6 +585,7 @@ window.CSV_CARPARKS = [
       "chargeable_start": 420,
       "chargeable_end": 1020,
       "first_hour_rate": 1.2,
+      "first_tier_minutes": 60,
       "subsequent_rate_per_30min": 0.65,
       "evening_per_entry": {
         "start_min": 1020,
@@ -613,6 +630,7 @@ window.CSV_CARPARKS = [
       "chargeable_start": 420,
       "chargeable_end": 1440,
       "first_hour_rate": 1,
+      "first_tier_minutes": 60,
       "subsequent_rate_per_30min": 0.6,
       "weekend_rate_per_30min": 1
     },
@@ -670,6 +688,7 @@ window.CSV_CARPARKS = [
       "chargeable_start": 360,
       "chargeable_end": 1080,
       "first_hour_rate": 1.6,
+      "first_tier_minutes": 60,
       "subsequent_rate_per_30min": 0.8,
       "evening_per_entry": {
         "start_min": 1080,
@@ -709,6 +728,7 @@ window.CSV_CARPARKS = [
       "chargeable_start": 360,
       "chargeable_end": 599,
       "first_hour_rate": 0.54,
+      "first_tier_minutes": 60,
       "subsequent_rate_per_30min": 0.32
     },
     "notes": "Mon-Fri: $0.54 for 1st hr; $0.16 for sub. 15mins | $1.07 for 1st hr; $0.27 for sub. 15mins | $1.28 for 1st 30mins; $0.65 for sub. 15mins | $0.54 for 1st hr; $0.16 for sub. 15mins || Sat: $0.54 for 1st"
@@ -727,6 +747,7 @@ window.CSV_CARPARKS = [
       "chargeable_start": 0,
       "chargeable_end": 1440,
       "first_hour_rate": 1.5,
+      "first_tier_minutes": 60,
       "subsequent_rate_per_30min": 0.8
     },
     "notes": "Mon-Fri: 12-11.59pm: $1.50 for 1st hr, $0.40 for sub. 15 mins"
@@ -745,6 +766,7 @@ window.CSV_CARPARKS = [
       "chargeable_start": 0,
       "chargeable_end": 1440,
       "first_hour_rate": 1.2,
+      "first_tier_minutes": 60,
       "subsequent_rate_per_30min": 0.7
     },
     "notes": "Mon-Fri: $1.20 for 1st hr or part thereof; $0.70 for sub 0.5 hr or part thereof."
@@ -763,6 +785,7 @@ window.CSV_CARPARKS = [
       "chargeable_start": 181,
       "chargeable_end": 1080,
       "first_hour_rate": 1.07,
+      "first_tier_minutes": 60,
       "subsequent_rate_per_30min": 0.64,
       "evening_per_entry": {
         "start_min": 361,
@@ -841,6 +864,7 @@ window.CSV_CARPARKS = [
       "chargeable_start": 480,
       "chargeable_end": 1080,
       "first_hour_rate": 2,
+      "first_tier_minutes": 60,
       "subsequent_rate_per_30min": 0.75,
       "evening_per_entry": {
         "start_min": 1080,
@@ -938,6 +962,7 @@ window.CSV_CARPARKS = [
       "chargeable_start": 0,
       "chargeable_end": 1440,
       "first_hour_rate": 1.2,
+      "first_tier_minutes": 60,
       "subsequent_rate_per_30min": 0.6
     },
     "notes": "Mon-Fri: $1.20 for 1st hr or part thereof, $0.30 for sub. 15 mins or part thereof."
@@ -1093,6 +1118,7 @@ window.CSV_CARPARKS = [
       "chargeable_start": 420,
       "chargeable_end": 1080,
       "first_hour_rate": 1.2,
+      "first_tier_minutes": 60,
       "subsequent_rate_per_30min": 0.7,
       "evening_per_entry": {
         "start_min": 1020,
@@ -1115,6 +1141,8 @@ window.CSV_CARPARKS = [
       "per_entry_cap": null,
       "chargeable_start": 0,
       "chargeable_end": 1440,
+      "first_hour_rate": 3.2,
+      "first_tier_minutes": 120,
       "subsequent_rate_per_30min": 1.5
     },
     "notes": "Mon-Fri: $3.20 for 1st 2hrs; $1.50 for sub. 0.5 hr (Maximum Daily Charge:$20)"
@@ -1133,6 +1161,7 @@ window.CSV_CARPARKS = [
       "chargeable_start": 0,
       "chargeable_end": 420,
       "first_hour_rate": 1.6,
+      "first_tier_minutes": 60,
       "subsequent_rate_per_30min": 1,
       "evening_per_entry": {
         "start_min": 1020,
@@ -1156,6 +1185,7 @@ window.CSV_CARPARKS = [
       "chargeable_start": 0,
       "chargeable_end": 1440,
       "first_hour_rate": 1.07,
+      "first_tier_minutes": 60,
       "subsequent_rate_per_30min": 0.55,
       "weekend_rate_per_30min": 0.6
     },
@@ -1175,6 +1205,7 @@ window.CSV_CARPARKS = [
       "chargeable_start": 480,
       "chargeable_end": 1020,
       "first_hour_rate": 1,
+      "first_tier_minutes": 60,
       "subsequent_rate_per_30min": 0.5,
       "evening_per_entry": {
         "start_min": 1020,
@@ -1198,6 +1229,7 @@ window.CSV_CARPARKS = [
       "chargeable_start": 0,
       "chargeable_end": 1079,
       "first_hour_rate": 1.07,
+      "first_tier_minutes": 60,
       "subsequent_rate_per_30min": 0.64,
       "evening_per_entry": {
         "start_min": 1080,
@@ -1312,6 +1344,7 @@ window.CSV_CARPARKS = [
       "chargeable_start": 420,
       "chargeable_end": 1080,
       "first_hour_rate": 3,
+      "first_tier_minutes": 60,
       "subsequent_rate_per_30min": 1.5,
       "evening_per_entry": {
         "start_min": 1080,
@@ -1335,6 +1368,7 @@ window.CSV_CARPARKS = [
       "chargeable_start": 420,
       "chargeable_end": 1080,
       "first_hour_rate": 2.14,
+      "first_tier_minutes": 60,
       "subsequent_rate_per_30min": 1.39,
       "evening_per_entry": {
         "start_min": 1080,
@@ -1358,6 +1392,7 @@ window.CSV_CARPARKS = [
       "chargeable_start": 420,
       "chargeable_end": 1080,
       "first_hour_rate": 3.3,
+      "first_tier_minutes": 60,
       "subsequent_rate_per_30min": 1.1,
       "evening_per_entry": {
         "start_min": 1080,
@@ -1382,6 +1417,7 @@ window.CSV_CARPARKS = [
       "chargeable_start": 0,
       "chargeable_end": 1440,
       "first_hour_rate": 4,
+      "first_tier_minutes": 60,
       "subsequent_rate_per_30min": 2
     },
     "notes": "Mon-Fri: $3 for 1st hr; $1.50 for sub 0.5 hr | $4 for 1st hr; $2 for sub 0.5 hr"
@@ -1400,6 +1436,7 @@ window.CSV_CARPARKS = [
       "chargeable_start": 480,
       "chargeable_end": 1020,
       "first_hour_rate": 1.5,
+      "first_tier_minutes": 60,
       "subsequent_rate_per_30min": 0.5,
       "evening_per_entry": {
         "start_min": 1020,
@@ -1423,6 +1460,7 @@ window.CSV_CARPARKS = [
       "chargeable_start": 420,
       "chargeable_end": 1020,
       "first_hour_rate": 3,
+      "first_tier_minutes": 60,
       "subsequent_rate_per_30min": 1.5,
       "evening_per_entry": {
         "start_min": 1020,
@@ -1447,6 +1485,7 @@ window.CSV_CARPARKS = [
       "chargeable_start": 360,
       "chargeable_end": 1020,
       "first_hour_rate": 6,
+      "first_tier_minutes": 60,
       "subsequent_rate_per_30min": 3,
       "evening_per_entry": {
         "start_min": 1020,
@@ -1469,6 +1508,8 @@ window.CSV_CARPARKS = [
       "per_entry_cap": null,
       "chargeable_start": 300,
       "chargeable_end": 1020,
+      "first_hour_rate": 1.4,
+      "first_tier_minutes": 30,
       "subsequent_rate_per_30min": 1.5,
       "evening_per_entry": {
         "start_min": 1020,
@@ -1513,6 +1554,7 @@ window.CSV_CARPARKS = [
       "chargeable_start": 420,
       "chargeable_end": 1080,
       "first_hour_rate": 3.3,
+      "first_tier_minutes": 60,
       "subsequent_rate_per_30min": 1.1,
       "evening_per_entry": {
         "start_min": 1080,
@@ -1537,6 +1579,7 @@ window.CSV_CARPARKS = [
       "chargeable_start": 720,
       "chargeable_end": 840,
       "first_hour_rate": 3,
+      "first_tier_minutes": 60,
       "subsequent_rate_per_30min": 1
     },
     "notes": "Mon-Fri: $3 for 1st hr; $1 for sub. 0.5 hr; $2 for 1st hr, $0.50 for sub. 0.5 hr from 2.01pm to 6.00pm for Mon-Thu | $3 for 1st hr; $1 for sub. 0.5 hr; $2 for 1st hr; $0.50 for sub. 0.5 hr from 12am-1"
@@ -1555,6 +1598,7 @@ window.CSV_CARPARKS = [
       "chargeable_start": 480,
       "chargeable_end": 1080,
       "first_hour_rate": 4,
+      "first_tier_minutes": 60,
       "subsequent_rate_per_30min": 2,
       "evening_per_entry": {
         "start_min": 1080,
@@ -1578,6 +1622,7 @@ window.CSV_CARPARKS = [
       "chargeable_start": 420,
       "chargeable_end": 1020,
       "first_hour_rate": 3.75,
+      "first_tier_minutes": 60,
       "subsequent_rate_per_30min": 1.07,
       "evening_per_entry": {
         "start_min": 1020,
@@ -1601,6 +1646,7 @@ window.CSV_CARPARKS = [
       "chargeable_start": 240,
       "chargeable_end": 1019,
       "first_hour_rate": 3.21,
+      "first_tier_minutes": 60,
       "subsequent_rate_per_30min": 1.07,
       "evening_per_entry": {
         "start_min": 1020,
@@ -1661,6 +1707,7 @@ window.CSV_CARPARKS = [
       "chargeable_start": 420,
       "chargeable_end": 1020,
       "first_hour_rate": 3.28,
+      "first_tier_minutes": 60,
       "subsequent_rate_per_30min": 1.55,
       "evening_per_entry": {
         "start_min": 1020,
@@ -1684,6 +1731,7 @@ window.CSV_CARPARKS = [
       "chargeable_start": 480,
       "chargeable_end": 1020,
       "first_hour_rate": 3.5,
+      "first_tier_minutes": 60,
       "subsequent_rate_per_30min": 1.5,
       "evening_per_entry": {
         "start_min": 1020,
@@ -1760,6 +1808,7 @@ window.CSV_CARPARKS = [
       "chargeable_start": 0,
       "chargeable_end": 1440,
       "first_hour_rate": 3,
+      "first_tier_minutes": 60,
       "subsequent_rate_per_30min": 1.5
     },
     "notes": "Mon-Fri: $3 for 1st hr; $1.50 for sub. 0.5 hr"
@@ -1778,6 +1827,7 @@ window.CSV_CARPARKS = [
       "chargeable_start": 480,
       "chargeable_end": 1020,
       "first_hour_rate": 1.07,
+      "first_tier_minutes": 60,
       "subsequent_rate_per_30min": 1.11,
       "weekend_rate_per_30min": 0.75
     },
@@ -1797,6 +1847,7 @@ window.CSV_CARPARKS = [
       "chargeable_start": 480,
       "chargeable_end": 1020,
       "first_hour_rate": 1.9,
+      "first_tier_minutes": 60,
       "subsequent_rate_per_30min": 1.07,
       "evening_per_entry": {
         "start_min": 1020,
@@ -1841,6 +1892,7 @@ window.CSV_CARPARKS = [
       "chargeable_start": 420,
       "chargeable_end": 1080,
       "first_hour_rate": 3.5,
+      "first_tier_minutes": 60,
       "subsequent_rate_per_30min": 1.2,
       "evening_per_entry": {
         "start_min": 1080,
@@ -1885,6 +1937,7 @@ window.CSV_CARPARKS = [
       "chargeable_start": 420,
       "chargeable_end": 1140,
       "first_hour_rate": 6,
+      "first_tier_minutes": 60,
       "subsequent_rate_per_30min": 0.5,
       "evening_per_entry": {
         "start_min": 1140,
@@ -1993,6 +2046,7 @@ window.CSV_CARPARKS = [
       "chargeable_start": 420,
       "chargeable_end": 1080,
       "first_hour_rate": 5,
+      "first_tier_minutes": 60,
       "subsequent_rate_per_30min": 1.5,
       "evening_per_entry": {
         "start_min": 1080,
@@ -2016,6 +2070,7 @@ window.CSV_CARPARKS = [
       "chargeable_start": 420,
       "chargeable_end": 1020,
       "first_hour_rate": 4,
+      "first_tier_minutes": 60,
       "subsequent_rate_per_30min": 1.5,
       "evening_per_entry": {
         "start_min": 1080,
@@ -2060,6 +2115,7 @@ window.CSV_CARPARKS = [
       "chargeable_start": 420,
       "chargeable_end": 1020,
       "first_hour_rate": 4,
+      "first_tier_minutes": 60,
       "subsequent_rate_per_30min": 1.5,
       "evening_per_entry": {
         "start_min": 1020,
@@ -2083,6 +2139,7 @@ window.CSV_CARPARKS = [
       "chargeable_start": 0,
       "chargeable_end": 1440,
       "first_hour_rate": 2.5,
+      "first_tier_minutes": 60,
       "subsequent_rate_per_30min": 1.5
     },
     "notes": ""
@@ -2101,6 +2158,7 @@ window.CSV_CARPARKS = [
       "chargeable_start": 480,
       "chargeable_end": 1020,
       "first_hour_rate": 2.6,
+      "first_tier_minutes": 60,
       "subsequent_rate_per_30min": 1.5,
       "evening_per_entry": {
         "start_min": 1020,
@@ -2123,6 +2181,8 @@ window.CSV_CARPARKS = [
       "per_entry_cap": null,
       "chargeable_start": 0,
       "chargeable_end": 1080,
+      "first_hour_rate": 3,
+      "first_tier_minutes": 30,
       "subsequent_rate_per_30min": 1.5,
       "evening_per_entry": {
         "start_min": 1080,
@@ -2146,6 +2206,7 @@ window.CSV_CARPARKS = [
       "chargeable_start": 420,
       "chargeable_end": 1080,
       "first_hour_rate": 5,
+      "first_tier_minutes": 60,
       "subsequent_rate_per_30min": 2.5,
       "evening_per_entry": {
         "start_min": 1080,
@@ -2168,6 +2229,8 @@ window.CSV_CARPARKS = [
       "per_entry_cap": null,
       "chargeable_start": 0,
       "chargeable_end": 1440,
+      "first_hour_rate": 3.2,
+      "first_tier_minutes": 120,
       "subsequent_rate_per_30min": 0.8
     },
     "notes": "Mon-Fri: $3.20 for 1st 2hrs; $1.60 for sub. hr"
@@ -2186,6 +2249,7 @@ window.CSV_CARPARKS = [
       "chargeable_start": 480,
       "chargeable_end": 1080,
       "first_hour_rate": 4,
+      "first_tier_minutes": 60,
       "subsequent_rate_per_30min": 1.5,
       "evening_per_entry": {
         "start_min": 1080,
@@ -2209,6 +2273,7 @@ window.CSV_CARPARKS = [
       "chargeable_start": 420,
       "chargeable_end": 1020,
       "first_hour_rate": 6,
+      "first_tier_minutes": 60,
       "subsequent_rate_per_30min": 2,
       "evening_per_entry": {
         "start_min": 1020,
@@ -2232,6 +2297,7 @@ window.CSV_CARPARKS = [
       "chargeable_start": 420,
       "chargeable_end": 1080,
       "first_hour_rate": 4,
+      "first_tier_minutes": 60,
       "subsequent_rate_per_30min": 2,
       "evening_per_entry": {
         "start_min": 1080,
@@ -2271,6 +2337,7 @@ window.CSV_CARPARKS = [
       "chargeable_start": 0,
       "chargeable_end": 1440,
       "first_hour_rate": 4.5,
+      "first_tier_minutes": 60,
       "subsequent_rate_per_30min": 1.5
     },
     "notes": "Mon-Fri: $4.50 for 1st hr; $1.50 for sub. 0.5 hr"
@@ -2289,13 +2356,13 @@ window.CSV_CARPARKS = [
       "chargeable_start": 480,
       "chargeable_end": 1020,
       "first_hour_rate": 2,
+      "first_tier_minutes": 60,
       "subsequent_rate_per_30min": 1,
       "evening_per_entry": {
         "start_min": 1020,
         "end_min": 1440,
         "price": 2.5
-      },
-      "weekend_rate_per_30min": 0.6
+      }
     },
     "notes": "Mon-Fri: $2 for 1st hr; $0.50 for sub. 15mins (Car park at Raffles City Shopping Centre) | $2.50 per entry || Sat: $2 for 1st 2hrs; $0.30 for sub. 15mins"
   },
@@ -2313,6 +2380,7 @@ window.CSV_CARPARKS = [
       "chargeable_start": 360,
       "chargeable_end": 1020,
       "first_hour_rate": 2.4,
+      "first_tier_minutes": 60,
       "subsequent_rate_per_30min": 1.2,
       "evening_per_entry": {
         "start_min": 1020,
@@ -2336,6 +2404,7 @@ window.CSV_CARPARKS = [
       "chargeable_start": 481,
       "chargeable_end": 1080,
       "first_hour_rate": 4,
+      "first_tier_minutes": 60,
       "subsequent_rate_per_30min": 2,
       "evening_per_entry": {
         "start_min": 1080,
@@ -2359,6 +2428,7 @@ window.CSV_CARPARKS = [
       "chargeable_start": 0,
       "chargeable_end": 1440,
       "first_hour_rate": 2,
+      "first_tier_minutes": 60,
       "subsequent_rate_per_30min": 1
     },
     "notes": "Mon-Fri: $2 for 1st hr; $1 for sub. 0.5 hr | $4.50 for 1st 3hrs; $1.50 for sub. 0.5 hr"
@@ -2393,6 +2463,7 @@ window.CSV_CARPARKS = [
       "chargeable_start": 0,
       "chargeable_end": 1079,
       "first_hour_rate": 1.07,
+      "first_tier_minutes": 60,
       "subsequent_rate_per_30min": 0.64,
       "evening_per_entry": {
         "start_min": 1080,
@@ -2417,6 +2488,7 @@ window.CSV_CARPARKS = [
       "chargeable_start": 420,
       "chargeable_end": 1440,
       "first_hour_rate": 2.4,
+      "first_tier_minutes": 60,
       "subsequent_rate_per_30min": 1.4,
       "weekend_rate_per_30min": 1.6
     },
@@ -2436,6 +2508,7 @@ window.CSV_CARPARKS = [
       "chargeable_start": 420,
       "chargeable_end": 1080,
       "first_hour_rate": 3,
+      "first_tier_minutes": 60,
       "subsequent_rate_per_30min": 1.5,
       "evening_per_entry": {
         "start_min": 1080,
@@ -2459,6 +2532,7 @@ window.CSV_CARPARKS = [
       "chargeable_start": 480,
       "chargeable_end": 1020,
       "first_hour_rate": 3,
+      "first_tier_minutes": 60,
       "subsequent_rate_per_30min": 1.93,
       "evening_per_entry": {
         "start_min": 1020,
@@ -2482,6 +2556,7 @@ window.CSV_CARPARKS = [
       "chargeable_start": 480,
       "chargeable_end": 1020,
       "first_hour_rate": 2.14,
+      "first_tier_minutes": 60,
       "subsequent_rate_per_30min": 1.07,
       "evening_per_entry": {
         "start_min": 1020,
@@ -2526,6 +2601,7 @@ window.CSV_CARPARKS = [
       "chargeable_start": 360,
       "chargeable_end": 1020,
       "first_hour_rate": 2.4,
+      "first_tier_minutes": 60,
       "subsequent_rate_per_30min": 1.2,
       "evening_per_entry": {
         "start_min": 1020,
@@ -2550,6 +2626,7 @@ window.CSV_CARPARKS = [
       "chargeable_start": 240,
       "chargeable_end": 1019,
       "first_hour_rate": 3.21,
+      "first_tier_minutes": 60,
       "subsequent_rate_per_30min": 1.07,
       "evening_per_entry": {
         "start_min": 1020,
@@ -2589,6 +2666,7 @@ window.CSV_CARPARKS = [
       "chargeable_start": 480,
       "chargeable_end": 1019,
       "first_hour_rate": 2.67,
+      "first_tier_minutes": 60,
       "subsequent_rate_per_30min": 1.28,
       "weekend_rate_per_30min": 1.88
     },
@@ -2608,6 +2686,7 @@ window.CSV_CARPARKS = [
       "chargeable_start": 420,
       "chargeable_end": 1080,
       "first_hour_rate": 2.5,
+      "first_tier_minutes": 60,
       "subsequent_rate_per_30min": 1.3,
       "evening_per_entry": {
         "start_min": 1080,
@@ -2631,6 +2710,7 @@ window.CSV_CARPARKS = [
       "chargeable_start": 420,
       "chargeable_end": 1019,
       "first_hour_rate": 1.93,
+      "first_tier_minutes": 60,
       "subsequent_rate_per_30min": 1.28,
       "evening_per_entry": {
         "start_min": 1020,
@@ -2670,6 +2750,7 @@ window.CSV_CARPARKS = [
       "chargeable_start": 360,
       "chargeable_end": 1080,
       "first_hour_rate": 3.5,
+      "first_tier_minutes": 60,
       "subsequent_rate_per_30min": 1.3,
       "evening_per_entry": {
         "start_min": 1080,
@@ -2715,6 +2796,7 @@ window.CSV_CARPARKS = [
       "chargeable_start": 420,
       "chargeable_end": 1379,
       "first_hour_rate": 2,
+      "first_tier_minutes": 60,
       "subsequent_rate_per_30min": 1.5
     },
     "notes": "Mon-Fri: $2 for 1st hr or part thereof; $1.50 per sub. 0.5 hr or part thereof | $2 per 0.5 hr or part thereof"
@@ -2733,6 +2815,7 @@ window.CSV_CARPARKS = [
       "chargeable_start": 420,
       "chargeable_end": 1020,
       "first_hour_rate": 2.2,
+      "first_tier_minutes": 60,
       "subsequent_rate_per_30min": 1.2,
       "evening_per_entry": {
         "start_min": 1020,
@@ -2756,6 +2839,7 @@ window.CSV_CARPARKS = [
       "chargeable_start": 120,
       "chargeable_end": 1080,
       "first_hour_rate": 2,
+      "first_tier_minutes": 60,
       "subsequent_rate_per_30min": 1
     },
     "notes": "Mon-Fri: $2 for 1st hr; $1 for sub. 0.5 hr | $4.50 for 1st 3hrs; $1.50 for sub. 0.5 hr"
@@ -2815,6 +2899,8 @@ window.CSV_CARPARKS = [
       "per_entry_cap": null,
       "chargeable_start": 0,
       "chargeable_end": 1079,
+      "first_hour_rate": 3,
+      "first_tier_minutes": 630,
       "subsequent_rate_per_30min": 1.5,
       "weekend_rate_per_30min": 1.8
     },
@@ -2871,6 +2957,7 @@ window.CSV_CARPARKS = [
       "chargeable_start": 180,
       "chargeable_end": 1079,
       "first_hour_rate": 2.58,
+      "first_tier_minutes": 60,
       "subsequent_rate_per_30min": 1.48,
       "evening_per_entry": {
         "start_min": 1080,
@@ -2909,6 +2996,8 @@ window.CSV_CARPARKS = [
       "per_entry_cap": null,
       "chargeable_start": 0,
       "chargeable_end": 1440,
+      "first_hour_rate": 2.14,
+      "first_tier_minutes": 120,
       "subsequent_rate_per_30min": 0.64,
       "evening_per_entry": {
         "start_min": 1080,
@@ -2948,6 +3037,7 @@ window.CSV_CARPARKS = [
       "chargeable_start": 181,
       "chargeable_end": 1080,
       "first_hour_rate": 2,
+      "first_tier_minutes": 60,
       "subsequent_rate_per_30min": 1.5,
       "evening_per_entry": {
         "start_min": 1081,
@@ -2971,6 +3061,7 @@ window.CSV_CARPARKS = [
       "chargeable_start": 181,
       "chargeable_end": 1080,
       "first_hour_rate": 2,
+      "first_tier_minutes": 60,
       "subsequent_rate_per_30min": 1.5,
       "evening_per_entry": {
         "start_min": 1081,
@@ -2994,6 +3085,7 @@ window.CSV_CARPARKS = [
       "chargeable_start": 420,
       "chargeable_end": 1080,
       "first_hour_rate": 4,
+      "first_tier_minutes": 60,
       "subsequent_rate_per_30min": 2,
       "evening_per_entry": {
         "start_min": 1080,
@@ -3017,6 +3109,7 @@ window.CSV_CARPARKS = [
       "chargeable_start": 480,
       "chargeable_end": 1200,
       "first_hour_rate": 2.5,
+      "first_tier_minutes": 60,
       "subsequent_rate_per_30min": 1.25,
       "evening_per_entry": {
         "start_min": 1200,
@@ -3040,6 +3133,7 @@ window.CSV_CARPARKS = [
       "chargeable_start": 420,
       "chargeable_end": 1080,
       "first_hour_rate": 2,
+      "first_tier_minutes": 60,
       "subsequent_rate_per_30min": 1.5
     },
     "notes": "Mon-Fri: $2 for 1st hr; $1.50 for sub. 0.5 hr; 6pm-7am the following day:$2.00 for 1st hr, $1.50 for next subq 0.5 hr"
@@ -3058,6 +3152,7 @@ window.CSV_CARPARKS = [
       "chargeable_start": 360,
       "chargeable_end": 1020,
       "first_hour_rate": 2.4,
+      "first_tier_minutes": 60,
       "subsequent_rate_per_30min": 1.2,
       "evening_per_entry": {
         "start_min": 1020,
@@ -3081,6 +3176,7 @@ window.CSV_CARPARKS = [
       "chargeable_start": 480,
       "chargeable_end": 1079,
       "first_hour_rate": 3,
+      "first_tier_minutes": 60,
       "subsequent_rate_per_30min": 1.75,
       "evening_per_entry": {
         "start_min": 1080,
@@ -3142,6 +3238,7 @@ window.CSV_CARPARKS = [
       "chargeable_start": 420,
       "chargeable_end": 1020,
       "first_hour_rate": 2,
+      "first_tier_minutes": 60,
       "subsequent_rate_per_30min": 1.5
     },
     "notes": "Mon-Fri: $2 for 1st hr; $1.50 sub. 0.5 hr | $2 for 1st hr; $1.50 sub. hr"
@@ -3158,7 +3255,8 @@ window.CSV_CARPARKS = [
       "first_free_minutes": 0,
       "per_entry_cap": null,
       "chargeable_start": 480,
-      "chargeable_end": 1380
+      "chargeable_end": 1380,
+      "weekend_rate_per_30min": 1.5
     },
     "notes": "Mon-Fri: $1.50 per 0.5 hr || Sat: $5 for 1st 3 hrs and $1.50 for subseqent 0.5 hr"
   },
@@ -3193,6 +3291,7 @@ window.CSV_CARPARKS = [
       "chargeable_start": 480,
       "chargeable_end": 1080,
       "first_hour_rate": 3,
+      "first_tier_minutes": 60,
       "subsequent_rate_per_30min": 1.5,
       "evening_per_entry": {
         "start_min": 1080,
@@ -3216,6 +3315,7 @@ window.CSV_CARPARKS = [
       "chargeable_start": 420,
       "chargeable_end": 1140,
       "first_hour_rate": 2.5,
+      "first_tier_minutes": 60,
       "subsequent_rate_per_30min": 1.2,
       "evening_per_entry": {
         "start_min": 1140,
@@ -3239,6 +3339,7 @@ window.CSV_CARPARKS = [
       "chargeable_start": 420,
       "chargeable_end": 1020,
       "first_hour_rate": 2.4,
+      "first_tier_minutes": 60,
       "subsequent_rate_per_30min": 1.2,
       "evening_per_entry": {
         "start_min": 1020,
@@ -3279,6 +3380,7 @@ window.CSV_CARPARKS = [
       "chargeable_start": 360,
       "chargeable_end": 1080,
       "first_hour_rate": 0,
+      "first_tier_minutes": 60,
       "subsequent_rate_per_30min": 0.5
     },
     "notes": "Mon-Fri: Free 1st hr; $0.50 for sub. 0.5 hr | $0.50 per 0.5 hr"
@@ -3409,6 +3511,7 @@ window.CSV_CARPARKS = [
       "chargeable_start": 420,
       "chargeable_end": 1140,
       "first_hour_rate": 7,
+      "first_tier_minutes": 60,
       "subsequent_rate_per_30min": 1,
       "evening_per_entry": {
         "start_min": 1140,
@@ -3433,6 +3536,7 @@ window.CSV_CARPARKS = [
       "chargeable_start": 0,
       "chargeable_end": 1440,
       "first_hour_rate": 2.2,
+      "first_tier_minutes": 60,
       "subsequent_rate_per_30min": 1.1,
       "evening_per_entry": {
         "start_min": 1020,
@@ -3455,6 +3559,8 @@ window.CSV_CARPARKS = [
       "per_entry_cap": null,
       "chargeable_start": 420,
       "chargeable_end": 1020,
+      "first_hour_rate": 3,
+      "first_tier_minutes": 240,
       "subsequent_rate_per_30min": 0.5,
       "evening_per_entry": {
         "start_min": 1021,
@@ -3478,6 +3584,8 @@ window.CSV_CARPARKS = [
       "per_entry_cap": null,
       "chargeable_start": 420,
       "chargeable_end": 1020,
+      "first_hour_rate": 3,
+      "first_tier_minutes": 480,
       "subsequent_rate_per_30min": 0.5,
       "evening_per_entry": {
         "start_min": 1021,
@@ -3608,6 +3716,7 @@ window.CSV_CARPARKS = [
       "chargeable_start": 0,
       "chargeable_end": 1440,
       "first_hour_rate": 3,
+      "first_tier_minutes": 60,
       "subsequent_rate_per_30min": 1
     },
     "notes": "Mon-Fri: $3 for 1st hr; $2 sub. hr or part thereof. 4th hour onwards: $8.00 flat rate (maximum)"
@@ -3679,6 +3788,7 @@ window.CSV_CARPARKS = [
       "chargeable_start": 420,
       "chargeable_end": 1140,
       "first_hour_rate": 1.29,
+      "first_tier_minutes": 60,
       "subsequent_rate_per_30min": 0.86,
       "evening_per_entry": {
         "start_min": 1140,
@@ -3776,6 +3886,8 @@ window.CSV_CARPARKS = [
       "per_entry_cap": null,
       "chargeable_start": 420,
       "chargeable_end": 1140,
+      "first_hour_rate": 2,
+      "first_tier_minutes": 30,
       "subsequent_rate_per_30min": 2
     },
     "notes": "Mon-Fri: $2 for 1st 0.5 hr; $4 for sub. hr"
@@ -3810,6 +3922,7 @@ window.CSV_CARPARKS = [
       "chargeable_start": 480,
       "chargeable_end": 1020,
       "first_hour_rate": 1.07,
+      "first_tier_minutes": 60,
       "subsequent_rate_per_30min": 1.11,
       "weekend_rate_per_30min": 1.11
     },
@@ -3909,6 +4022,7 @@ window.CSV_CARPARKS = [
       "chargeable_start": 360,
       "chargeable_end": 1020,
       "first_hour_rate": 2,
+      "first_tier_minutes": 60,
       "subsequent_rate_per_30min": 1,
       "evening_per_entry": {
         "start_min": 1020,
@@ -3932,6 +4046,7 @@ window.CSV_CARPARKS = [
       "chargeable_start": 360,
       "chargeable_end": 1020,
       "first_hour_rate": 2.2,
+      "first_tier_minutes": 60,
       "subsequent_rate_per_30min": 1.1,
       "evening_per_entry": {
         "start_min": 1020,
@@ -3955,6 +4070,7 @@ window.CSV_CARPARKS = [
       "chargeable_start": 480,
       "chargeable_end": 1440,
       "first_hour_rate": 2.2,
+      "first_tier_minutes": 60,
       "subsequent_rate_per_30min": 1.1
     },
     "notes": "Mon-Fri: $2.20 for 1st hr; $0.55 for sub. 15 mins | (Valet Parking Only) Valet Charge $4 per entry, Carpark charges: $4 per hr"
@@ -4015,6 +4131,8 @@ window.CSV_CARPARKS = [
       "per_entry_cap": null,
       "chargeable_start": 900,
       "chargeable_end": 1019,
+      "first_hour_rate": 2.14,
+      "first_tier_minutes": 120,
       "subsequent_rate_per_30min": 0.535
     },
     "notes": "Mon-Fri: $2.14 for 1st 2hrs; $1.07 for sub. hr (Free parking between 12pm-2.59pm) | $2.14 for 1st hr; $1.07 for sub. hr (Cap at $5.35) || Sat: $2.14 for 1st 2hrs; $1.07 for sub. hr"
@@ -4054,6 +4172,7 @@ window.CSV_CARPARKS = [
       "chargeable_start": 420,
       "chargeable_end": 1080,
       "first_hour_rate": 3.3,
+      "first_tier_minutes": 60,
       "subsequent_rate_per_30min": 1.1,
       "evening_per_entry": {
         "start_min": 1080,
@@ -4222,6 +4341,7 @@ window.CSV_CARPARKS = [
       "chargeable_start": 0,
       "chargeable_end": 1079,
       "first_hour_rate": 2.14,
+      "first_tier_minutes": 60,
       "subsequent_rate_per_30min": 1.08,
       "evening_per_entry": {
         "start_min": 1080,
@@ -4267,6 +4387,7 @@ window.CSV_CARPARKS = [
       "chargeable_start": 420,
       "chargeable_end": 1080,
       "first_hour_rate": 2,
+      "first_tier_minutes": 60,
       "subsequent_rate_per_30min": 1,
       "evening_per_entry": {
         "start_min": 1080,
@@ -4311,6 +4432,7 @@ window.CSV_CARPARKS = [
       "chargeable_start": 420,
       "chargeable_end": 1020,
       "first_hour_rate": 3.28,
+      "first_tier_minutes": 60,
       "subsequent_rate_per_30min": 1.55,
       "evening_per_entry": {
         "start_min": 1020,
@@ -4478,6 +4600,7 @@ window.CSV_CARPARKS = [
       "chargeable_start": 480,
       "chargeable_end": 1020,
       "first_hour_rate": 1.07,
+      "first_tier_minutes": 60,
       "subsequent_rate_per_30min": 1.11,
       "evening_per_entry": {
         "start_min": 1020,
@@ -4523,6 +4646,7 @@ window.CSV_CARPARKS = [
       "chargeable_start": 480,
       "chargeable_end": 1020,
       "first_hour_rate": 1.07,
+      "first_tier_minutes": 60,
       "subsequent_rate_per_30min": 1.11,
       "weekend_rate_per_30min": 0.75
     },
@@ -4621,6 +4745,7 @@ window.CSV_CARPARKS = [
       "chargeable_start": 480,
       "chargeable_end": 1020,
       "first_hour_rate": 1.9,
+      "first_tier_minutes": 60,
       "subsequent_rate_per_30min": 1.07,
       "evening_per_entry": {
         "start_min": 1020,
@@ -4702,6 +4827,8 @@ window.CSV_CARPARKS = [
       "per_entry_cap": null,
       "chargeable_start": 480,
       "chargeable_end": 1080,
+      "first_hour_rate": 2,
+      "first_tier_minutes": 30,
       "subsequent_rate_per_30min": 0.5,
       "evening_per_entry": {
         "start_min": 1080,
@@ -4726,6 +4853,7 @@ window.CSV_CARPARKS = [
       "chargeable_start": 420,
       "chargeable_end": 1080,
       "first_hour_rate": 3.3,
+      "first_tier_minutes": 60,
       "subsequent_rate_per_30min": 1.1,
       "evening_per_entry": {
         "start_min": 1080,
@@ -4750,6 +4878,7 @@ window.CSV_CARPARKS = [
       "chargeable_start": 420,
       "chargeable_end": 1080,
       "first_hour_rate": 3.3,
+      "first_tier_minutes": 60,
       "subsequent_rate_per_30min": 1.1,
       "evening_per_entry": {
         "start_min": 1080,
@@ -4774,8 +4903,8 @@ window.CSV_CARPARKS = [
       "chargeable_start": 420,
       "chargeable_end": 1080,
       "first_hour_rate": 4.28,
-      "subsequent_rate_per_30min": 1.605,
-      "weekend_rate_per_30min": 0.8025
+      "first_tier_minutes": 60,
+      "subsequent_rate_per_30min": 1.605
     },
     "notes": "Mon-Fri: $4.28 for 1st hr; $1.605 for sub. 0.5 hr | $4.28 for 1st 2hrs; $1.605 for sub. hr || Sat: $4.28 for 1st 2hrs; $1.605 for sub. hr"
   },
@@ -5018,13 +5147,13 @@ window.CSV_CARPARKS = [
       "chargeable_start": 480,
       "chargeable_end": 1079,
       "first_hour_rate": 2.2,
+      "first_tier_minutes": 60,
       "subsequent_rate_per_30min": 1.1,
       "evening_per_entry": {
         "start_min": 1080,
         "end_min": 1440,
         "price": 3
-      },
-      "weekend_rate_per_30min": 0.8
+      }
     },
     "notes": "Mon-Fri: $2.20 for 1st hr; $0.55 for sub. 15mins | $3 per entry || Sat: $2.20 for 1st 2hrs, $0.40 for sub. 15mins for 3rd and 4th hr, $0.60 for sub. 15mins for 5th hr onwards."
   },
@@ -5063,6 +5192,7 @@ window.CSV_CARPARKS = [
       "chargeable_start": 420,
       "chargeable_end": 1140,
       "first_hour_rate": 7,
+      "first_tier_minutes": 60,
       "subsequent_rate_per_30min": 1,
       "evening_per_entry": {
         "start_min": 1140,
@@ -5087,6 +5217,7 @@ window.CSV_CARPARKS = [
       "chargeable_start": 360,
       "chargeable_end": 1080,
       "first_hour_rate": 1.5,
+      "first_tier_minutes": 60,
       "subsequent_rate_per_30min": 0.5,
       "evening_per_entry": {
         "start_min": 1080,
@@ -5152,6 +5283,7 @@ window.CSV_CARPARKS = [
       "chargeable_start": 0,
       "chargeable_end": 1440,
       "first_hour_rate": 1.5,
+      "first_tier_minutes": 60,
       "subsequent_rate_per_30min": 0.8
     },
     "notes": "Mon-Fri: $1.50 for 1st hr; $0.80 for sub. 0.5 hr"
@@ -5376,13 +5508,13 @@ window.CSV_CARPARKS = [
       "chargeable_start": 480,
       "chargeable_end": 1020,
       "first_hour_rate": 2,
+      "first_tier_minutes": 60,
       "subsequent_rate_per_30min": 1,
       "evening_per_entry": {
         "start_min": 1020,
         "end_min": 1440,
         "price": 2.5
-      },
-      "weekend_rate_per_30min": 0.6
+      }
     },
     "notes": "Mon-Fri: $2 for 1st hr; $0.50 for sub. 15mins (Car park at Raffles City Shopping Centre) | $2.50 per entry || Sat: $2 for 1st 2hrs; $0.30 for sub. 15mins"
   },
@@ -5400,6 +5532,7 @@ window.CSV_CARPARKS = [
       "chargeable_start": 360,
       "chargeable_end": 1020,
       "first_hour_rate": 2.4,
+      "first_tier_minutes": 60,
       "subsequent_rate_per_30min": 1.2,
       "evening_per_entry": {
         "start_min": 1020,
@@ -5423,6 +5556,7 @@ window.CSV_CARPARKS = [
       "chargeable_start": 420,
       "chargeable_end": 1020,
       "first_hour_rate": 2.14,
+      "first_tier_minutes": 60,
       "subsequent_rate_per_30min": 1.07,
       "evening_per_entry": {
         "start_min": 1020,
@@ -5488,6 +5622,7 @@ window.CSV_CARPARKS = [
       "chargeable_start": 480,
       "chargeable_end": 1020,
       "first_hour_rate": 2,
+      "first_tier_minutes": 60,
       "subsequent_rate_per_30min": 0.5,
       "evening_per_entry": {
         "start_min": 1020,
@@ -5584,6 +5719,8 @@ window.CSV_CARPARKS = [
       "per_entry_cap": null,
       "chargeable_start": 480,
       "chargeable_end": 1139,
+      "first_hour_rate": 1,
+      "first_tier_minutes": 30,
       "subsequent_rate_per_30min": 1,
       "evening_per_entry": {
         "start_min": 1140,
@@ -5756,6 +5893,7 @@ window.CSV_CARPARKS = [
       "chargeable_start": 0,
       "chargeable_end": 1440,
       "first_hour_rate": 1.25,
+      "first_tier_minutes": 60,
       "subsequent_rate_per_30min": 0.325
     },
     "notes": "Mon-Fri: $1.25 for 1st hr; $0.65 for sub. hr"
@@ -5773,7 +5911,10 @@ window.CSV_CARPARKS = [
       "per_entry_cap": null,
       "chargeable_start": 420,
       "chargeable_end": 1020,
-      "subsequent_rate_per_30min": 0.535
+      "first_hour_rate": 1.07,
+      "first_tier_minutes": 120,
+      "subsequent_rate_per_30min": 0.535,
+      "weekend_rate_per_30min": 0.535
     },
     "notes": "Mon-Fri: $1.07 for 1st 2hrs; $1.07 for sub. hr (Free parking from 12pm-2pm on Monday-Thursday) | $2.14 for 1st 2hrs; $1.07 for sub. hr | $1.07 for 1st 3hrs; $1.07 for sub. hr || Sat: $2.14 for 1st 2hr"
   },
@@ -5812,6 +5953,7 @@ window.CSV_CARPARKS = [
       "chargeable_start": 0,
       "chargeable_end": 1079,
       "first_hour_rate": 1.07,
+      "first_tier_minutes": 60,
       "subsequent_rate_per_30min": 0.64,
       "evening_per_entry": {
         "start_min": 1080,
@@ -5851,12 +5993,15 @@ window.CSV_CARPARKS = [
       "per_entry_cap": null,
       "chargeable_start": 480,
       "chargeable_end": 1080,
+      "first_hour_rate": 2,
+      "first_tier_minutes": 630,
       "subsequent_rate_per_30min": 1.2,
       "evening_per_entry": {
         "start_min": 1080,
         "end_min": 1440,
         "price": 2.3
-      }
+      },
+      "weekend_rate_per_30min": 1.2
     },
     "notes": "Mon-Fri: $2 for 1st 10.5hr; $1.20 for sub. 0.5 hr | $2.30 per entry || Sat: $1.50 for 1st 1hr; $1.20 for sub. 0.5 hr"
   },
@@ -5895,6 +6040,7 @@ window.CSV_CARPARKS = [
       "chargeable_start": 480,
       "chargeable_end": 1320,
       "first_hour_rate": 1.53,
+      "first_tier_minutes": 60,
       "subsequent_rate_per_30min": 1.53,
       "evening_per_entry": {
         "start_min": 1320,
@@ -5939,6 +6085,7 @@ window.CSV_CARPARKS = [
       "chargeable_start": 0,
       "chargeable_end": 1439,
       "first_hour_rate": 1.3,
+      "first_tier_minutes": 60,
       "subsequent_rate_per_30min": 0.65
     },
     "notes": "Mon-Fri: $1.30 for 1st hr, $0.65 for sub. 30 mins or part thereof.; $1.30 for 1st hr, $0.65 for sub. 30 mins or part thereof"
@@ -5957,6 +6104,7 @@ window.CSV_CARPARKS = [
       "chargeable_start": 0,
       "chargeable_end": 1440,
       "first_hour_rate": 1.5,
+      "first_tier_minutes": 60,
       "subsequent_rate_per_30min": 0.8
     },
     "notes": "Mon-Fri: $1.50 for 1st hr; $0.80 for sub. 0.5 hr"
@@ -5991,6 +6139,7 @@ window.CSV_CARPARKS = [
       "chargeable_start": 0,
       "chargeable_end": 1440,
       "first_hour_rate": 1.5,
+      "first_tier_minutes": 60,
       "subsequent_rate_per_30min": 0.8
     },
     "notes": "Mon-Fri: $1.50 for 1st hr; $0.80 for sub. 0.5 hr"
@@ -6009,6 +6158,7 @@ window.CSV_CARPARKS = [
       "chargeable_start": 0,
       "chargeable_end": 1440,
       "first_hour_rate": 1.25,
+      "first_tier_minutes": 60,
       "subsequent_rate_per_30min": 1,
       "weekend_rate_per_30min": 1
     },
@@ -6027,13 +6177,14 @@ window.CSV_CARPARKS = [
       "per_entry_cap": null,
       "chargeable_start": 360,
       "chargeable_end": 1020,
+      "first_hour_rate": 1.1,
+      "first_tier_minutes": 120,
       "subsequent_rate_per_30min": 0.6,
       "evening_per_entry": {
         "start_min": 1020,
         "end_min": 1440,
         "price": 2.5
-      },
-      "weekend_rate_per_30min": 0.6
+      }
     },
     "notes": "Mon-Fri: $1.10 for 1st 2hrs or part thereof; $0.60 for sub. 0.5 hr or part thereof | $2.50 per entry || Sat: $1.10 for 1st hr or part thereof; $0.60 for sub. 0.5 hr or part thereof"
   },
@@ -6051,6 +6202,7 @@ window.CSV_CARPARKS = [
       "chargeable_start": 0,
       "chargeable_end": 1440,
       "first_hour_rate": 1.3,
+      "first_tier_minutes": 60,
       "subsequent_rate_per_30min": 1,
       "evening_per_entry": {
         "start_min": 1080,
@@ -6074,6 +6226,7 @@ window.CSV_CARPARKS = [
       "chargeable_start": 0,
       "chargeable_end": 1440,
       "first_hour_rate": 1.18,
+      "first_tier_minutes": 60,
       "subsequent_rate_per_30min": 0.64
     },
     "notes": "Mon-Fri: $1.18 for 1st hr; $0.64 for sub. 0.5 hr or part thereof."
@@ -6113,6 +6266,7 @@ window.CSV_CARPARKS = [
       "chargeable_start": 420,
       "chargeable_end": 1440,
       "first_hour_rate": 1.4,
+      "first_tier_minutes": 60,
       "subsequent_rate_per_30min": 0.7
     },
     "notes": "Mon-Fri: 10 mins grace period; First hour $1.40; Subsequent 30 mins $0.70"
@@ -6131,6 +6285,7 @@ window.CSV_CARPARKS = [
       "chargeable_start": 420,
       "chargeable_end": 1080,
       "first_hour_rate": 1.28,
+      "first_tier_minutes": 60,
       "subsequent_rate_per_30min": 0.64
     },
     "notes": "Mon-Fri: First hour $1.28; Subsequent 30 mins $0.64 | $2.00 per 13 hours"
@@ -6365,6 +6520,7 @@ window.CSV_CARPARKS = [
       "chargeable_start": 420,
       "chargeable_end": 1020,
       "first_hour_rate": 1.4,
+      "first_tier_minutes": 60,
       "subsequent_rate_per_30min": 0.7
     },
     "notes": "Mon-Fri: 10 mins grace period; First hour $1.40; Subsequent 30 mins $0.70 | 10 mins grace period; First hour $1.40; Subsequent 30 mins $0.70 || Sat: 10 mins grace period; First hour $1.40; Subsequent "
@@ -6441,6 +6597,7 @@ window.CSV_CARPARKS = [
       "chargeable_start": 0,
       "chargeable_end": 1440,
       "first_hour_rate": 1.28,
+      "first_tier_minutes": 60,
       "subsequent_rate_per_30min": 0.64
     },
     "notes": "Mon-Fri: 10 mins grace period; First hour $1.28; Subsequent 30 mins $0.64"
@@ -6549,6 +6706,7 @@ window.CSV_CARPARKS = [
       "chargeable_start": 420,
       "chargeable_end": 1080,
       "first_hour_rate": 2.5,
+      "first_tier_minutes": 60,
       "subsequent_rate_per_30min": 1.25,
       "evening_per_entry": {
         "start_min": 1080,
@@ -6614,6 +6772,7 @@ window.CSV_CARPARKS = [
       "chargeable_start": 0,
       "chargeable_end": 1440,
       "first_hour_rate": 1,
+      "first_tier_minutes": 60,
       "subsequent_rate_per_30min": 0.75
     },
     "notes": "Mon-Fri: First hour $1.00; Subsequent 30 mins $0.75"
@@ -6702,6 +6861,7 @@ window.CSV_CARPARKS = [
       "chargeable_start": 0,
       "chargeable_end": 1440,
       "first_hour_rate": 0,
+      "first_tier_minutes": 60,
       "subsequent_rate_per_30min": 1
     },
     "notes": "Mon-Fri: 15 mins grace period; First hour free; Subsequent hour $2.00 || Sat: 15 mins grace period; $2.00 per entry"
@@ -6763,6 +6923,7 @@ window.CSV_CARPARKS = [
       "chargeable_start": 480,
       "chargeable_end": 1080,
       "first_hour_rate": 3,
+      "first_tier_minutes": 60,
       "subsequent_rate_per_30min": 1.5
     },
     "notes": "Mon-Fri: First hour $3.00; Subsequent 30 mins $1.50 | First hour $3.00; Subsequent 30 mins $1.50"
@@ -6855,6 +7016,7 @@ window.CSV_CARPARKS = [
       "chargeable_start": 420,
       "chargeable_end": 659,
       "first_hour_rate": 2.5,
+      "first_tier_minutes": 60,
       "subsequent_rate_per_30min": 1.2,
       "evening_per_entry": {
         "start_min": 1020,
@@ -6948,6 +7110,7 @@ window.CSV_CARPARKS = [
       "chargeable_start": 420,
       "chargeable_end": 1020,
       "first_hour_rate": 2.8,
+      "first_tier_minutes": 60,
       "subsequent_rate_per_30min": 1.2
     },
     "notes": "Mon-Fri: First hour $2.80; Subsequent 30 mins $1.20 | First hour $2.80; Subsequent hour $1.20"
@@ -7003,6 +7166,7 @@ window.CSV_CARPARKS = [
       "chargeable_start": 480,
       "chargeable_end": 1080,
       "first_hour_rate": 2.5,
+      "first_tier_minutes": 60,
       "subsequent_rate_per_30min": 1,
       "evening_per_entry": {
         "start_min": 1080,
@@ -7143,6 +7307,7 @@ window.CSV_CARPARKS = [
       "chargeable_start": 420,
       "chargeable_end": 1440,
       "first_hour_rate": 1.51,
+      "first_tier_minutes": 60,
       "subsequent_rate_per_30min": 0.92
     },
     "notes": "Mon-Fri: 15 mins grace period; First hour $1.51; Subsequent 30 mins $0.92"
@@ -7327,6 +7492,7 @@ window.CSV_CARPARKS = [
       "chargeable_start": 420,
       "chargeable_end": 1140,
       "first_hour_rate": 2,
+      "first_tier_minutes": 60,
       "subsequent_rate_per_30min": 1,
       "evening_per_entry": {
         "start_min": 1140,
@@ -7404,6 +7570,7 @@ window.CSV_CARPARKS = [
       "chargeable_start": 0,
       "chargeable_end": 1440,
       "first_hour_rate": 0.04,
+      "first_tier_minutes": 60,
       "subsequent_rate_per_30min": 5
     },
     "notes": "Mon-Fri: 10 mins grace period; First hour $0.04; Subsequent 30 mins $5.00"
@@ -7540,6 +7707,7 @@ window.CSV_CARPARKS = [
       "chargeable_start": 0,
       "chargeable_end": 1440,
       "first_hour_rate": 1.2,
+      "first_tier_minutes": 60,
       "subsequent_rate_per_30min": 0.8
     },
     "notes": "Mon-Fri: 10 mins grace period; First hour $1.20; Subsequent 30 mins $0.80"
@@ -7574,6 +7742,7 @@ window.CSV_CARPARKS = [
       "chargeable_start": 420,
       "chargeable_end": 1140,
       "first_hour_rate": 1.8,
+      "first_tier_minutes": 60,
       "subsequent_rate_per_30min": 0.65,
       "evening_per_entry": {
         "start_min": 1140,
@@ -7691,7 +7860,8 @@ window.CSV_CARPARKS = [
       "per_entry_cap": null,
       "chargeable_start": 0,
       "chargeable_end": 1440,
-      "first_hour_rate": 1.5
+      "first_hour_rate": 1.5,
+      "first_tier_minutes": 60
     },
     "notes": "Mon-Fri: First hour $1.50; Subsequent min $0.03"
   },
@@ -7740,6 +7910,8 @@ window.CSV_CARPARKS = [
       "per_entry_cap": null,
       "chargeable_start": 360,
       "chargeable_end": 1020,
+      "first_hour_rate": 3.24,
+      "first_tier_minutes": 120,
       "subsequent_rate_per_30min": 0.81
     },
     "notes": "Mon-Fri: First 2 hours $3.24; Subsequent hour $1.62 | First 2 hours $4.28; Subsequent hour $2.16"
@@ -7956,6 +8128,7 @@ window.CSV_CARPARKS = [
       "chargeable_start": 420,
       "chargeable_end": 1320,
       "first_hour_rate": 2.5,
+      "first_tier_minutes": 60,
       "subsequent_rate_per_30min": 1.5,
       "evening_per_entry": {
         "start_min": 1320,
@@ -8027,6 +8200,7 @@ window.CSV_CARPARKS = [
       "chargeable_start": 0,
       "chargeable_end": 1440,
       "first_hour_rate": 2.4,
+      "first_tier_minutes": 60,
       "subsequent_rate_per_30min": 1.2
     },
     "notes": "Mon-Fri: First hour $2.40; Subsequent 15 mins $0.60"
@@ -8248,6 +8422,7 @@ window.CSV_CARPARKS = [
       "chargeable_start": 480,
       "chargeable_end": 1080,
       "first_hour_rate": 1.6,
+      "first_tier_minutes": 60,
       "subsequent_rate_per_30min": 1,
       "evening_per_entry": {
         "start_min": 1080,
@@ -8448,6 +8623,7 @@ window.CSV_CARPARKS = [
       "chargeable_start": 360,
       "chargeable_end": 1080,
       "first_hour_rate": 2.35,
+      "first_tier_minutes": 60,
       "subsequent_rate_per_30min": 1.18,
       "evening_per_entry": {
         "start_min": 1080,
@@ -8471,6 +8647,7 @@ window.CSV_CARPARKS = [
       "chargeable_start": 360,
       "chargeable_end": 1080,
       "first_hour_rate": 2.35,
+      "first_tier_minutes": 60,
       "subsequent_rate_per_30min": 1.18,
       "evening_per_entry": {
         "start_min": 1080,
@@ -8494,6 +8671,7 @@ window.CSV_CARPARKS = [
       "chargeable_start": 420,
       "chargeable_end": 1080,
       "first_hour_rate": 1.5,
+      "first_tier_minutes": 60,
       "subsequent_rate_per_30min": 0.6,
       "evening_per_entry": {
         "start_min": 1080,
@@ -8534,6 +8712,7 @@ window.CSV_CARPARKS = [
       "chargeable_start": 360,
       "chargeable_end": 1080,
       "first_hour_rate": 2.1,
+      "first_tier_minutes": 60,
       "subsequent_rate_per_30min": 1.04,
       "evening_per_entry": {
         "start_min": 1080,
@@ -8653,6 +8832,7 @@ window.CSV_CARPARKS = [
       "chargeable_start": 420,
       "chargeable_end": 1080,
       "first_hour_rate": 1.55,
+      "first_tier_minutes": 60,
       "subsequent_rate_per_30min": 0.8,
       "evening_per_entry": {
         "start_min": 1080,
@@ -8741,6 +8921,7 @@ window.CSV_CARPARKS = [
       "chargeable_start": 0,
       "chargeable_end": 1440,
       "first_hour_rate": 1.4,
+      "first_tier_minutes": 60,
       "subsequent_rate_per_30min": 0.7
     },
     "notes": "Mon-Fri: 5 mins grace period; First hour $1.40; Subsequent 30 mins $0.70"
@@ -8823,8 +9004,9 @@ window.CSV_CARPARKS = [
       "per_entry_cap": null,
       "chargeable_start": 420,
       "chargeable_end": 1080,
-      "subsequent_rate_per_30min": 1,
-      "weekend_rate_per_30min": 1.5
+      "first_hour_rate": 0.1,
+      "first_tier_minutes": 5,
+      "subsequent_rate_per_30min": 1
     },
     "notes": "Mon-Fri: First 5 mins $0.10; Subsequent hour $2.00 | First 5 mins $0.10; Subsequent hour $3.00 || Sat: First 5 mins $0.10; Subsequent hour $3.00"
   },
@@ -8911,6 +9093,7 @@ window.CSV_CARPARKS = [
       "chargeable_start": 480,
       "chargeable_end": 1080,
       "first_hour_rate": 4.28,
+      "first_tier_minutes": 60,
       "subsequent_rate_per_30min": 2.68,
       "evening_per_entry": {
         "start_min": 1080,
@@ -8949,6 +9132,8 @@ window.CSV_CARPARKS = [
       "per_entry_cap": null,
       "chargeable_start": 480,
       "chargeable_end": 1380,
+      "first_hour_rate": 2.5,
+      "first_tier_minutes": 120,
       "subsequent_rate_per_30min": 1.25
     },
     "notes": "Mon-Fri: First 2 hours $2.50; Subsequent 30 mins $1.25"
@@ -9000,6 +9185,7 @@ window.CSV_CARPARKS = [
       "chargeable_start": 480,
       "chargeable_end": 1020,
       "first_hour_rate": 1.5,
+      "first_tier_minutes": 60,
       "subsequent_rate_per_30min": 1.5
     },
     "notes": "Mon-Fri: First hour $1.50; Subsequent 30 mins $1.50"
@@ -9034,6 +9220,7 @@ window.CSV_CARPARKS = [
       "chargeable_start": 420,
       "chargeable_end": 1380,
       "first_hour_rate": 1.2,
+      "first_tier_minutes": 60,
       "subsequent_rate_per_30min": 0.6,
       "evening_per_entry": {
         "start_min": 1380,
@@ -9057,6 +9244,7 @@ window.CSV_CARPARKS = [
       "chargeable_start": 480,
       "chargeable_end": 1440,
       "first_hour_rate": 1.5,
+      "first_tier_minutes": 60,
       "subsequent_rate_per_30min": 0.75
     },
     "notes": "Mon-Fri: 10 mins grace period; First hour $1.50; Subsequent 30 mins $0.75"
@@ -9091,6 +9279,7 @@ window.CSV_CARPARKS = [
       "chargeable_start": 420,
       "chargeable_end": 1080,
       "first_hour_rate": 1.33,
+      "first_tier_minutes": 60,
       "subsequent_rate_per_30min": 0.74,
       "evening_per_entry": {
         "start_min": 1080,
@@ -9114,6 +9303,7 @@ window.CSV_CARPARKS = [
       "chargeable_start": 480,
       "chargeable_end": 1440,
       "first_hour_rate": 2.14,
+      "first_tier_minutes": 60,
       "subsequent_rate_per_30min": 1.6
     },
     "notes": "Mon-Fri: 15 mins grace period; First hour $2.14; Subsequent 30 mins $1.60; Capped at $12.00"
@@ -9153,6 +9343,7 @@ window.CSV_CARPARKS = [
       "chargeable_start": 480,
       "chargeable_end": 1020,
       "first_hour_rate": 0.92,
+      "first_tier_minutes": 60,
       "subsequent_rate_per_30min": 0.56,
       "evening_per_entry": {
         "start_min": 1020,
@@ -9176,6 +9367,7 @@ window.CSV_CARPARKS = [
       "chargeable_start": 360,
       "chargeable_end": 600,
       "first_hour_rate": 0.48,
+      "first_tier_minutes": 60,
       "subsequent_rate_per_30min": 0.24,
       "weekend_rate_per_30min": 0.32
     },
@@ -9195,6 +9387,7 @@ window.CSV_CARPARKS = [
       "chargeable_start": 480,
       "chargeable_end": 1080,
       "first_hour_rate": 1.28,
+      "first_tier_minutes": 60,
       "subsequent_rate_per_30min": 0.64,
       "evening_per_entry": {
         "start_min": 1080,
@@ -9234,6 +9427,7 @@ window.CSV_CARPARKS = [
       "chargeable_start": 420,
       "chargeable_end": 1320,
       "first_hour_rate": 2.2,
+      "first_tier_minutes": 60,
       "subsequent_rate_per_30min": 2.7
     },
     "notes": "Mon-Fri: 10 mins grace period; First hour $2.20; Subsequent 30 mins $2.70"
@@ -9341,6 +9535,8 @@ window.CSV_CARPARKS = [
       "per_entry_cap": null,
       "chargeable_start": 495,
       "chargeable_end": 1080,
+      "first_hour_rate": 0.7,
+      "first_tier_minutes": 30,
       "subsequent_rate_per_30min": 0.35,
       "evening_per_entry": {
         "start_min": 1080,
@@ -9381,6 +9577,7 @@ window.CSV_CARPARKS = [
       "chargeable_start": 420,
       "chargeable_end": 1440,
       "first_hour_rate": 1.4,
+      "first_tier_minutes": 60,
       "subsequent_rate_per_30min": 0.7
     },
     "notes": "Mon-Fri: First hour $1.40; Subsequent 30 mins $0.70"
@@ -9399,6 +9596,7 @@ window.CSV_CARPARKS = [
       "chargeable_start": 420,
       "chargeable_end": 1440,
       "first_hour_rate": 1.4,
+      "first_tier_minutes": 60,
       "subsequent_rate_per_30min": 0.7
     },
     "notes": "Mon-Fri: First hour $1.40; Subsequent 30 mins $0.70"
@@ -9470,6 +9668,7 @@ window.CSV_CARPARKS = [
       "chargeable_start": 0,
       "chargeable_end": 1440,
       "first_hour_rate": 0.71,
+      "first_tier_minutes": 60,
       "subsequent_rate_per_30min": 0.56
     },
     "notes": "Mon-Fri: First hour $0.71; Subsequent hour $1.12"
@@ -9520,6 +9719,7 @@ window.CSV_CARPARKS = [
       "chargeable_start": 420,
       "chargeable_end": 1380,
       "first_hour_rate": 3,
+      "first_tier_minutes": 60,
       "subsequent_rate_per_30min": 1.5
     },
     "notes": "Mon-Fri: 5 mins grace period; First hour $3.00; Subsequent 15 mins $0.75 | 5 mins grace period; Per 3 mins free"
@@ -9554,6 +9754,7 @@ window.CSV_CARPARKS = [
       "chargeable_start": 360,
       "chargeable_end": 1080,
       "first_hour_rate": 1.5,
+      "first_tier_minutes": 60,
       "subsequent_rate_per_30min": 0.8
     },
     "notes": "Mon-Fri: First hour $1.50; Subsequent 30 mins $0.80 | First hour $1.00; Subsequent 30 mins $0.50"
@@ -9572,6 +9773,7 @@ window.CSV_CARPARKS = [
       "chargeable_start": 360,
       "chargeable_end": 1440,
       "first_hour_rate": 1.5,
+      "first_tier_minutes": 60,
       "subsequent_rate_per_30min": 0.8,
       "weekend_rate_per_30min": 0.8
     },
@@ -9622,6 +9824,8 @@ window.CSV_CARPARKS = [
       "per_entry_cap": null,
       "chargeable_start": 420,
       "chargeable_end": 1080,
+      "first_hour_rate": 2.16,
+      "first_tier_minutes": 30,
       "subsequent_rate_per_30min": 1.62,
       "evening_per_entry": {
         "start_min": 1080,
@@ -9720,6 +9924,7 @@ window.CSV_CARPARKS = [
       "chargeable_start": 420,
       "chargeable_end": 1080,
       "first_hour_rate": 1.28,
+      "first_tier_minutes": 60,
       "subsequent_rate_per_30min": 0.64,
       "evening_per_entry": {
         "start_min": 1081,
@@ -9834,6 +10039,7 @@ window.CSV_CARPARKS = [
       "chargeable_start": 120,
       "chargeable_end": 1080,
       "first_hour_rate": 1.8,
+      "first_tier_minutes": 60,
       "subsequent_rate_per_30min": 1,
       "evening_per_entry": {
         "start_min": 1080,
@@ -9878,6 +10084,7 @@ window.CSV_CARPARKS = [
       "chargeable_start": 480,
       "chargeable_end": 1020,
       "first_hour_rate": 1.6,
+      "first_tier_minutes": 60,
       "subsequent_rate_per_30min": 0.8,
       "evening_per_entry": {
         "start_min": 1020,
@@ -9922,6 +10129,7 @@ window.CSV_CARPARKS = [
       "chargeable_start": 420,
       "chargeable_end": 1020,
       "first_hour_rate": 2.1,
+      "first_tier_minutes": 60,
       "subsequent_rate_per_30min": 1.05,
       "evening_per_entry": {
         "start_min": 1020,
@@ -10002,6 +10210,8 @@ window.CSV_CARPARKS = [
       "per_entry_cap": null,
       "chargeable_start": 420,
       "chargeable_end": 1080,
+      "first_hour_rate": 2.5,
+      "first_tier_minutes": 30,
       "subsequent_rate_per_30min": 2.5,
       "evening_per_entry": {
         "start_min": 1080,
@@ -10042,6 +10252,7 @@ window.CSV_CARPARKS = [
       "chargeable_start": 0,
       "chargeable_end": 1440,
       "first_hour_rate": 1.28,
+      "first_tier_minutes": 60,
       "subsequent_rate_per_30min": 0.64
     },
     "notes": "Mon-Fri: First hour $1.28; Subsequent 30 mins $0.64"
@@ -10109,12 +10320,14 @@ window.CSV_CARPARKS = [
       "chargeable_start": 0,
       "chargeable_end": 1079,
       "first_hour_rate": 2.2,
+      "first_tier_minutes": 60,
       "subsequent_rate_per_30min": 1.1,
       "evening_per_entry": {
         "start_min": 1080,
         "end_min": 1440,
         "price": 3.3
-      }
+      },
+      "weekend_rate_per_30min": 1.1
     },
     "notes": "Mon-Fri: First hour $2.20; Subsequent 15 mins $0.55 || Sat: First 2 hours $3.30; Subsequent 15 mins $0.55"
   },
@@ -10148,6 +10361,7 @@ window.CSV_CARPARKS = [
       "chargeable_start": 420,
       "chargeable_end": 1079,
       "first_hour_rate": 5.5,
+      "first_tier_minutes": 60,
       "subsequent_rate_per_30min": 2.4,
       "evening_per_entry": {
         "start_min": 1080,
@@ -10191,6 +10405,8 @@ window.CSV_CARPARKS = [
       "per_entry_cap": null,
       "chargeable_start": 480,
       "chargeable_end": 1020,
+      "first_hour_rate": 8,
+      "first_tier_minutes": 120,
       "subsequent_rate_per_30min": 1
     },
     "notes": "Mon-Fri: 15 mins grace period; First 2 hours $8.00; Subsequent 30 mins $1.00; Capped at $25.00 | 15 mins grace period; First 2 hours $8.00; Subsequent 30 mins $1.00; Capped at $25.00 || Sat: 15 mins g"
@@ -10230,12 +10446,14 @@ window.CSV_CARPARKS = [
       "chargeable_start": 180,
       "chargeable_end": 1019,
       "first_hour_rate": 4,
+      "first_tier_minutes": 60,
       "subsequent_rate_per_30min": 2,
       "evening_per_entry": {
         "start_min": 1020,
         "end_min": 1440,
         "price": 4.5
-      }
+      },
+      "weekend_rate_per_30min": 2
     },
     "notes": "Mon-Fri: First hour $4.00; Subsequent 30 mins $2.00 | $4.50 per entry || Sat: First 2 hours $6.00; Subsequent 30 mins $2.00"
   },
@@ -10253,6 +10471,7 @@ window.CSV_CARPARKS = [
       "chargeable_start": 660,
       "chargeable_end": 1079,
       "first_hour_rate": 2.45,
+      "first_tier_minutes": 60,
       "subsequent_rate_per_30min": 1.1,
       "evening_per_entry": {
         "start_min": 1080,
@@ -10319,6 +10538,7 @@ window.CSV_CARPARKS = [
       "chargeable_start": 0,
       "chargeable_end": 420,
       "first_hour_rate": 3.9,
+      "first_tier_minutes": 60,
       "subsequent_rate_per_30min": 1.95,
       "evening_per_entry": {
         "start_min": 1080,
@@ -10417,6 +10637,7 @@ window.CSV_CARPARKS = [
       "chargeable_start": 420,
       "chargeable_end": 1440,
       "first_hour_rate": 1.35,
+      "first_tier_minutes": 60,
       "subsequent_rate_per_30min": 0.75
     },
     "notes": "Mon-Fri: 10 mins grace period; First hour $1.35; Subsequent 30 mins $0.75"
@@ -10435,6 +10656,7 @@ window.CSV_CARPARKS = [
       "chargeable_start": 480,
       "chargeable_end": 1020,
       "first_hour_rate": 2.1,
+      "first_tier_minutes": 60,
       "subsequent_rate_per_30min": 1.05,
       "evening_per_entry": {
         "start_min": 1020,
@@ -10687,6 +10909,7 @@ window.CSV_CARPARKS = [
       "chargeable_start": 420,
       "chargeable_end": 1440,
       "first_hour_rate": 1.3,
+      "first_tier_minutes": 60,
       "subsequent_rate_per_30min": 0.65
     },
     "notes": "Mon-Fri: 10 mins grace period; First hour $1.30; Subsequent 30 mins $0.65"
@@ -10705,6 +10928,7 @@ window.CSV_CARPARKS = [
       "chargeable_start": 0,
       "chargeable_end": 1440,
       "first_hour_rate": 2.14,
+      "first_tier_minutes": 60,
       "subsequent_rate_per_30min": 1.2
     },
     "notes": "Mon-Fri: 10 mins grace period; First hour $2.14; Subsequent 30 mins $1.20"
@@ -10722,6 +10946,8 @@ window.CSV_CARPARKS = [
       "per_entry_cap": null,
       "chargeable_start": 420,
       "chargeable_end": 1440,
+      "first_hour_rate": 0.5,
+      "first_tier_minutes": 30,
       "subsequent_rate_per_30min": 0.5
     },
     "notes": "Mon-Fri: First 30 mins $0.50; Subsequent hour $1.00"
@@ -10740,6 +10966,7 @@ window.CSV_CARPARKS = [
       "chargeable_start": 360,
       "chargeable_end": 1080,
       "first_hour_rate": 2,
+      "first_tier_minutes": 60,
       "subsequent_rate_per_30min": 1
     },
     "notes": "Mon-Fri: First hour $2.00; Subsequent 30 mins $1.00 | First hour $1.20; Subsequent 30 mins $0.60"
@@ -10758,6 +10985,7 @@ window.CSV_CARPARKS = [
       "chargeable_start": 420,
       "chargeable_end": 1140,
       "first_hour_rate": 1.8,
+      "first_tier_minutes": 60,
       "subsequent_rate_per_30min": 0.8,
       "evening_per_entry": {
         "start_min": 1140,
@@ -10797,6 +11025,7 @@ window.CSV_CARPARKS = [
       "chargeable_start": 420,
       "chargeable_end": 1080,
       "first_hour_rate": 1.28,
+      "first_tier_minutes": 60,
       "subsequent_rate_per_30min": 0.8,
       "evening_per_entry": {
         "start_min": 1080,
@@ -10895,6 +11124,7 @@ window.CSV_CARPARKS = [
       "chargeable_start": 420,
       "chargeable_end": 1080,
       "first_hour_rate": 1.44,
+      "first_tier_minutes": 60,
       "subsequent_rate_per_30min": 0.74,
       "evening_per_entry": {
         "start_min": 1080,
@@ -10939,6 +11169,7 @@ window.CSV_CARPARKS = [
       "chargeable_start": 420,
       "chargeable_end": 1440,
       "first_hour_rate": 1.5,
+      "first_tier_minutes": 60,
       "subsequent_rate_per_30min": 0.8
     },
     "notes": "Mon-Fri: 10 mins grace period; First hour $1.50; Subsequent 30 mins $0.80"
@@ -10978,6 +11209,7 @@ window.CSV_CARPARKS = [
       "chargeable_start": 420,
       "chargeable_end": 1020,
       "first_hour_rate": 2.2,
+      "first_tier_minutes": 60,
       "subsequent_rate_per_30min": 0.6
     },
     "notes": "Mon-Fri: 10 mins grace period; First hour $2.20; Subsequent 30 mins $0.60 | 10 mins grace period; First hour $2.20; Subsequent 30 mins $0.60"
@@ -11075,6 +11307,7 @@ window.CSV_CARPARKS = [
       "chargeable_start": 420,
       "chargeable_end": 1079,
       "first_hour_rate": 1.44,
+      "first_tier_minutes": 60,
       "subsequent_rate_per_30min": 0.74,
       "evening_per_entry": {
         "start_min": 1080,
@@ -11172,6 +11405,7 @@ window.CSV_CARPARKS = [
       "chargeable_start": 420,
       "chargeable_end": 1080,
       "first_hour_rate": 2.16,
+      "first_tier_minutes": 60,
       "subsequent_rate_per_30min": 1.3,
       "evening_per_entry": {
         "start_min": 1080,
@@ -11270,6 +11504,7 @@ window.CSV_CARPARKS = [
       "chargeable_start": 420,
       "chargeable_end": 1020,
       "first_hour_rate": 1.4,
+      "first_tier_minutes": 60,
       "subsequent_rate_per_30min": 0.7,
       "evening_per_entry": {
         "start_min": 1020,
@@ -11362,6 +11597,7 @@ window.CSV_CARPARKS = [
       "chargeable_start": 480,
       "chargeable_end": 1440,
       "first_hour_rate": 2.8,
+      "first_tier_minutes": 60,
       "subsequent_rate_per_30min": 1.4
     },
     "notes": "Mon-Fri: 10 mins grace period; First hour $2.80; Subsequent 30 mins $1.40; Capped at $22.50"
@@ -11412,6 +11648,7 @@ window.CSV_CARPARKS = [
       "chargeable_start": 420,
       "chargeable_end": 1020,
       "first_hour_rate": 1.2,
+      "first_tier_minutes": 60,
       "subsequent_rate_per_30min": 0.6
     },
     "notes": "Mon-Fri: First hour $1.20; Subsequent 30 mins $0.60 | First hour $1.20; Subsequent 30 mins $0.60"
@@ -11462,6 +11699,7 @@ window.CSV_CARPARKS = [
       "chargeable_start": 420,
       "chargeable_end": 1080,
       "first_hour_rate": 1.2,
+      "first_tier_minutes": 60,
       "subsequent_rate_per_30min": 0.6,
       "evening_per_entry": {
         "start_min": 1080,
@@ -11527,6 +11765,7 @@ window.CSV_CARPARKS = [
       "chargeable_start": 0,
       "chargeable_end": 1440,
       "first_hour_rate": 2.2,
+      "first_tier_minutes": 60,
       "subsequent_rate_per_30min": 1.53
     },
     "notes": "Mon-Fri: 8 mins grace period; First hour $2.20; Subsequent 30 mins $1.53"
@@ -11545,6 +11784,7 @@ window.CSV_CARPARKS = [
       "chargeable_start": 360,
       "chargeable_end": 1020,
       "first_hour_rate": 2.24,
+      "first_tier_minutes": 60,
       "subsequent_rate_per_30min": 1.12,
       "evening_per_entry": {
         "start_min": 1020,
@@ -11584,6 +11824,7 @@ window.CSV_CARPARKS = [
       "chargeable_start": 480,
       "chargeable_end": 1140,
       "first_hour_rate": 2.14,
+      "first_tier_minutes": 60,
       "subsequent_rate_per_30min": 1.6,
       "weekend_rate_per_30min": 0
     },
@@ -11790,6 +12031,7 @@ window.CSV_CARPARKS = [
       "chargeable_start": 420,
       "chargeable_end": 1080,
       "first_hour_rate": 1.2,
+      "first_tier_minutes": 60,
       "subsequent_rate_per_30min": 1.2,
       "evening_per_entry": {
         "start_min": 1080,
@@ -11884,6 +12126,7 @@ window.CSV_CARPARKS = [
       "chargeable_start": 360,
       "chargeable_end": 1080,
       "first_hour_rate": 2.4,
+      "first_tier_minutes": 60,
       "subsequent_rate_per_30min": 1.8,
       "evening_per_entry": {
         "start_min": 1080,
@@ -12015,6 +12258,7 @@ window.CSV_CARPARKS = [
       "chargeable_start": 0,
       "chargeable_end": 1080,
       "first_hour_rate": 1.6,
+      "first_tier_minutes": 60,
       "subsequent_rate_per_30min": 0.85,
       "evening_per_entry": {
         "start_min": 1080,
@@ -12078,6 +12322,7 @@ window.CSV_CARPARKS = [
       "chargeable_start": 661,
       "chargeable_end": 1079,
       "first_hour_rate": 1.38,
+      "first_tier_minutes": 60,
       "subsequent_rate_per_30min": 0.92,
       "evening_per_entry": {
         "start_min": 1080,
@@ -12171,6 +12416,7 @@ window.CSV_CARPARKS = [
       "chargeable_start": 420,
       "chargeable_end": 1080,
       "first_hour_rate": 3,
+      "first_tier_minutes": 60,
       "subsequent_rate_per_30min": 1.5,
       "evening_per_entry": {
         "start_min": 1080,
@@ -12327,6 +12573,7 @@ window.CSV_CARPARKS = [
       "chargeable_start": 0,
       "chargeable_end": 1440,
       "first_hour_rate": 2,
+      "first_tier_minutes": 60,
       "subsequent_rate_per_30min": 1
     },
     "notes": "Mon-Fri: First hour $2.00; Subsequent 30 mins $1.00"
@@ -12345,6 +12592,7 @@ window.CSV_CARPARKS = [
       "chargeable_start": 420,
       "chargeable_end": 1080,
       "first_hour_rate": 3,
+      "first_tier_minutes": 60,
       "subsequent_rate_per_30min": 1.5,
       "evening_per_entry": {
         "start_min": 1080,
@@ -12368,6 +12616,7 @@ window.CSV_CARPARKS = [
       "chargeable_start": 360,
       "chargeable_end": 1080,
       "first_hour_rate": 2.1,
+      "first_tier_minutes": 60,
       "subsequent_rate_per_30min": 1.06,
       "evening_per_entry": {
         "start_min": 1080,
@@ -12412,6 +12661,7 @@ window.CSV_CARPARKS = [
       "chargeable_start": 420,
       "chargeable_end": 1380,
       "first_hour_rate": 1.2,
+      "first_tier_minutes": 60,
       "subsequent_rate_per_30min": 0.6,
       "evening_per_entry": {
         "start_min": 1380,
@@ -12435,6 +12685,7 @@ window.CSV_CARPARKS = [
       "chargeable_start": 480,
       "chargeable_end": 1080,
       "first_hour_rate": 1.2,
+      "first_tier_minutes": 60,
       "subsequent_rate_per_30min": 0.9
     },
     "notes": "Sat: 10 mins grace period; First hour $1.20; Subsequent hour $2.40"
@@ -12538,6 +12789,7 @@ window.CSV_CARPARKS = [
       "chargeable_start": 360,
       "chargeable_end": 1079,
       "first_hour_rate": 2.16,
+      "first_tier_minutes": 60,
       "subsequent_rate_per_30min": 1.08,
       "evening_per_entry": {
         "start_min": 1080,
@@ -12625,7 +12877,8 @@ window.CSV_CARPARKS = [
       "per_entry_cap": null,
       "chargeable_start": 480,
       "chargeable_end": 1020,
-      "first_hour_rate": 1.3
+      "first_hour_rate": 1.3,
+      "first_tier_minutes": 60
     },
     "notes": "Mon-Fri: 10 mins grace period; First hour $1.30; $1.60 per entry | Free parking"
   },
@@ -12642,7 +12895,8 @@ window.CSV_CARPARKS = [
       "per_entry_cap": null,
       "chargeable_start": 360,
       "chargeable_end": 1080,
-      "first_hour_rate": 1.5
+      "first_hour_rate": 1.5,
+      "first_tier_minutes": 60
     },
     "notes": "Mon-Fri: First hour $1.50; Subsequent min $0.02"
   },
@@ -12676,12 +12930,14 @@ window.CSV_CARPARKS = [
       "chargeable_start": 480,
       "chargeable_end": 1080,
       "first_hour_rate": 1.28,
+      "first_tier_minutes": 60,
       "subsequent_rate_per_30min": 0.64,
       "evening_per_entry": {
         "start_min": 1080,
         "end_min": 1440,
         "price": 2.5
-      }
+      },
+      "weekend_rate_per_30min": 0.64
     },
     "notes": "Mon-Fri: 10 mins grace period; First hour $1.28; Subsequent 30 mins $0.64 | 10 mins grace period; $2.50 per entry || Sat: 10 mins grace period; First 2 hours free; Subsequent 30 mins $0.64"
   },
@@ -12747,6 +13003,7 @@ window.CSV_CARPARKS = [
       "chargeable_start": 0,
       "chargeable_end": 1440,
       "first_hour_rate": 1.2,
+      "first_tier_minutes": 60,
       "subsequent_rate_per_30min": 0.7
     },
     "notes": "Mon-Fri: First hour $1.20; Subsequent 30 mins $0.70"
@@ -12797,6 +13054,7 @@ window.CSV_CARPARKS = [
       "chargeable_start": 420,
       "chargeable_end": 1080,
       "first_hour_rate": 2.14,
+      "first_tier_minutes": 60,
       "subsequent_rate_per_30min": 1.07,
       "evening_per_entry": {
         "start_min": 1080,
@@ -12835,6 +13093,8 @@ window.CSV_CARPARKS = [
       "per_entry_cap": null,
       "chargeable_start": 60,
       "chargeable_end": 480,
+      "first_hour_rate": 2.1,
+      "first_tier_minutes": 120,
       "subsequent_rate_per_30min": 1.05,
       "evening_per_entry": {
         "start_min": 1020,
@@ -12873,6 +13133,8 @@ window.CSV_CARPARKS = [
       "per_entry_cap": null,
       "chargeable_start": 60,
       "chargeable_end": 480,
+      "first_hour_rate": 2.1,
+      "first_tier_minutes": 120,
       "subsequent_rate_per_30min": 1.05,
       "evening_per_entry": {
         "start_min": 1020,
@@ -12928,6 +13190,7 @@ window.CSV_CARPARKS = [
       "chargeable_start": 0,
       "chargeable_end": 1020,
       "first_hour_rate": 2.14,
+      "first_tier_minutes": 60,
       "subsequent_rate_per_30min": 1.6,
       "evening_per_entry": {
         "start_min": 1020,
@@ -12951,6 +13214,7 @@ window.CSV_CARPARKS = [
       "chargeable_start": 480,
       "chargeable_end": 1320,
       "first_hour_rate": 2.14,
+      "first_tier_minutes": 60,
       "subsequent_rate_per_30min": 1.6
     },
     "notes": "Mon-Fri: 10 mins grace period; First hour $2.14; Subsequent 30 mins $1.60"
@@ -12969,6 +13233,7 @@ window.CSV_CARPARKS = [
       "chargeable_start": 0,
       "chargeable_end": 1440,
       "first_hour_rate": 1.2,
+      "first_tier_minutes": 60,
       "subsequent_rate_per_30min": 0.7
     },
     "notes": "Mon-Fri: 10 mins grace period; First hour $1.20; Subsequent 30 mins $0.70"
@@ -13035,6 +13300,7 @@ window.CSV_CARPARKS = [
       "chargeable_start": 0,
       "chargeable_end": 1440,
       "first_hour_rate": 1.2,
+      "first_tier_minutes": 60,
       "subsequent_rate_per_30min": 0.6
     },
     "notes": "Mon-Fri: 10 mins grace period; First hour $1.20; Subsequent 30 mins $0.60"
@@ -13075,6 +13341,7 @@ window.CSV_CARPARKS = [
       "chargeable_start": 0,
       "chargeable_end": 420,
       "first_hour_rate": 3,
+      "first_tier_minutes": 60,
       "subsequent_rate_per_30min": 1.5
     },
     "notes": "Mon-Fri: 10 mins grace period; First hour $1.40; Subsequent 30 mins $0.70 | 10 mins grace period; First hour $3.00; Subsequent 30 mins $1.50"
@@ -13151,6 +13418,7 @@ window.CSV_CARPARKS = [
       "chargeable_start": 0,
       "chargeable_end": 1440,
       "first_hour_rate": 1.5,
+      "first_tier_minutes": 60,
       "subsequent_rate_per_30min": 0.75
     },
     "notes": "Mon-Fri: 15 mins grace period; First hour $1.50; Subsequent 30 mins $0.75"
@@ -13269,6 +13537,7 @@ window.CSV_CARPARKS = [
       "chargeable_start": 420,
       "chargeable_end": 1020,
       "first_hour_rate": 1.4,
+      "first_tier_minutes": 60,
       "subsequent_rate_per_30min": 0.7
     },
     "notes": "Mon-Fri: First hour $1.40; Subsequent 30 mins $0.70"
@@ -13287,6 +13556,7 @@ window.CSV_CARPARKS = [
       "chargeable_start": 0,
       "chargeable_end": 1440,
       "first_hour_rate": 2.67,
+      "first_tier_minutes": 60,
       "subsequent_rate_per_30min": 1.6,
       "weekend_rate_per_30min": 1.07
     },
@@ -13327,6 +13597,7 @@ window.CSV_CARPARKS = [
       "chargeable_start": 480,
       "chargeable_end": 1020,
       "first_hour_rate": 2.15,
+      "first_tier_minutes": 60,
       "subsequent_rate_per_30min": 1.07
     },
     "notes": "Mon-Fri: First hour $2.15; Subsequent 30 mins $1.07 | First hour $2.15; Subsequent 30 mins $1.07"
@@ -13345,6 +13616,7 @@ window.CSV_CARPARKS = [
       "chargeable_start": 420,
       "chargeable_end": 1080,
       "first_hour_rate": 1.5,
+      "first_tier_minutes": 60,
       "subsequent_rate_per_30min": 0.75,
       "evening_per_entry": {
         "start_min": 1080,
@@ -13470,6 +13742,7 @@ window.CSV_CARPARKS = [
       "chargeable_start": 0,
       "chargeable_end": 1079,
       "first_hour_rate": 1.35,
+      "first_tier_minutes": 60,
       "subsequent_rate_per_30min": 0.9,
       "evening_per_entry": {
         "start_min": 1020,
@@ -13525,6 +13798,8 @@ window.CSV_CARPARKS = [
       "per_entry_cap": null,
       "chargeable_start": 360,
       "chargeable_end": 1019,
+      "first_hour_rate": 2,
+      "first_tier_minutes": 120,
       "subsequent_rate_per_30min": 1.5,
       "weekend_rate_per_30min": 0.6
     },
@@ -13624,6 +13899,8 @@ window.CSV_CARPARKS = [
       "per_entry_cap": null,
       "chargeable_start": 420,
       "chargeable_end": 1080,
+      "first_hour_rate": 1.2,
+      "first_tier_minutes": 30,
       "subsequent_rate_per_30min": 1.5,
       "evening_per_entry": {
         "start_min": 1080,
@@ -13647,6 +13924,7 @@ window.CSV_CARPARKS = [
       "chargeable_start": 480,
       "chargeable_end": 1079,
       "first_hour_rate": 2.4,
+      "first_tier_minutes": 60,
       "subsequent_rate_per_30min": 1.5,
       "evening_per_entry": {
         "start_min": 1080,
@@ -13970,6 +14248,7 @@ window.CSV_CARPARKS = [
       "chargeable_start": 420,
       "chargeable_end": 1080,
       "first_hour_rate": 2.18,
+      "first_tier_minutes": 60,
       "subsequent_rate_per_30min": 1.1,
       "evening_per_entry": {
         "start_min": 1080,
@@ -14047,6 +14326,7 @@ window.CSV_CARPARKS = [
       "chargeable_start": 421,
       "chargeable_end": 1080,
       "first_hour_rate": 1,
+      "first_tier_minutes": 60,
       "subsequent_rate_per_30min": 0.5,
       "evening_per_entry": {
         "start_min": 1081,
@@ -14086,6 +14366,7 @@ window.CSV_CARPARKS = [
       "chargeable_start": 480,
       "chargeable_end": 1020,
       "first_hour_rate": 2.2,
+      "first_tier_minutes": 60,
       "subsequent_rate_per_30min": 1.1
     },
     "notes": "Mon-Fri: First hour $2.20; Subsequent 30 mins $1.10"
@@ -14104,6 +14385,7 @@ window.CSV_CARPARKS = [
       "chargeable_start": 480,
       "chargeable_end": 1020,
       "first_hour_rate": 1.6,
+      "first_tier_minutes": 60,
       "subsequent_rate_per_30min": 1.07
     },
     "notes": "Mon-Fri: 15 mins grace period; First hour $1.60; Subsequent 30 mins $1.07 | 15 mins grace period; First hour $1.60; Subsequent 30 mins $1.07"
@@ -14122,6 +14404,7 @@ window.CSV_CARPARKS = [
       "chargeable_start": 360,
       "chargeable_end": 1079,
       "first_hour_rate": 2.1,
+      "first_tier_minutes": 60,
       "subsequent_rate_per_30min": 1.04,
       "evening_per_entry": {
         "start_min": 1080,
@@ -14257,6 +14540,7 @@ window.CSV_CARPARKS = [
       "chargeable_start": 420,
       "chargeable_end": 1019,
       "first_hour_rate": 1.2,
+      "first_tier_minutes": 60,
       "subsequent_rate_per_30min": 0.6,
       "weekend_rate_per_30min": 0.6
     },
@@ -14276,6 +14560,7 @@ window.CSV_CARPARKS = [
       "chargeable_start": 450,
       "chargeable_end": 1170,
       "first_hour_rate": 0.56,
+      "first_tier_minutes": 60,
       "subsequent_rate_per_30min": 0.535
     },
     "notes": "Mon-Fri: 10 mins grace period; First hour $0.56; Subsequent hour $1.07"
@@ -14294,6 +14579,7 @@ window.CSV_CARPARKS = [
       "chargeable_start": 450,
       "chargeable_end": 1170,
       "first_hour_rate": 1.6,
+      "first_tier_minutes": 60,
       "subsequent_rate_per_30min": 1.07,
       "weekend_rate_per_30min": 0
     },
@@ -14313,6 +14599,7 @@ window.CSV_CARPARKS = [
       "chargeable_start": 450,
       "chargeable_end": 1170,
       "first_hour_rate": 1.6,
+      "first_tier_minutes": 60,
       "subsequent_rate_per_30min": 1.07
     },
     "notes": "Mon-Fri: 10 mins grace period; First hour $1.60; Subsequent 30 mins $1.07 | Free parking"
@@ -14331,6 +14618,7 @@ window.CSV_CARPARKS = [
       "chargeable_start": 0,
       "chargeable_end": 359,
       "first_hour_rate": 1.62,
+      "first_tier_minutes": 60,
       "subsequent_rate_per_30min": 1.08,
       "weekend_rate_per_30min": 0
     },
@@ -14372,6 +14660,7 @@ window.CSV_CARPARKS = [
       "chargeable_start": 450,
       "chargeable_end": 1170,
       "first_hour_rate": 0.56,
+      "first_tier_minutes": 60,
       "subsequent_rate_per_30min": 1.07,
       "weekend_rate_per_30min": 0
     },
@@ -14407,6 +14696,7 @@ window.CSV_CARPARKS = [
       "chargeable_start": 450,
       "chargeable_end": 1170,
       "first_hour_rate": 1.6,
+      "first_tier_minutes": 60,
       "subsequent_rate_per_30min": 1.07,
       "weekend_rate_per_30min": 0
     },
@@ -14426,6 +14716,7 @@ window.CSV_CARPARKS = [
       "chargeable_start": 450,
       "chargeable_end": 1170,
       "first_hour_rate": 1.6,
+      "first_tier_minutes": 60,
       "subsequent_rate_per_30min": 1.07
     },
     "notes": "Mon-Fri: 10 mins grace period; First hour $1.60; Subsequent 30 mins $1.07"
@@ -14444,6 +14735,7 @@ window.CSV_CARPARKS = [
       "chargeable_start": 420,
       "chargeable_end": 1140,
       "first_hour_rate": 1.4,
+      "first_tier_minutes": 60,
       "subsequent_rate_per_30min": 0.6
     },
     "notes": "Mon-Fri: First hour $1.40; Subsequent 30 mins $0.60 | First hour $1.40; Subsequent 30 mins $0.60"
@@ -14478,6 +14770,7 @@ window.CSV_CARPARKS = [
       "chargeable_start": 420,
       "chargeable_end": 1320,
       "first_hour_rate": 2,
+      "first_tier_minutes": 60,
       "subsequent_rate_per_30min": 1.5,
       "evening_per_entry": {
         "start_min": 1320,
@@ -14518,6 +14811,7 @@ window.CSV_CARPARKS = [
       "chargeable_start": 420,
       "chargeable_end": 1320,
       "first_hour_rate": 2,
+      "first_tier_minutes": 60,
       "subsequent_rate_per_30min": 1.5,
       "evening_per_entry": {
         "start_min": 1321,
@@ -14557,6 +14851,7 @@ window.CSV_CARPARKS = [
       "chargeable_start": 480,
       "chargeable_end": 1440,
       "first_hour_rate": 2,
+      "first_tier_minutes": 60,
       "subsequent_rate_per_30min": 1.6
     },
     "notes": "Mon-Fri: 10 mins grace period; First hour $2.00; Subsequent 30 mins $1.60"
@@ -14575,6 +14870,7 @@ window.CSV_CARPARKS = [
       "chargeable_start": 420,
       "chargeable_end": 1440,
       "first_hour_rate": 1.28,
+      "first_tier_minutes": 60,
       "subsequent_rate_per_30min": 0.64
     },
     "notes": "Mon-Fri: 30 mins grace period; First hour $1.28; Subsequent 30 mins $0.64; Capped at $6.40"
@@ -14593,6 +14889,7 @@ window.CSV_CARPARKS = [
       "chargeable_start": 0,
       "chargeable_end": 1080,
       "first_hour_rate": 1.85,
+      "first_tier_minutes": 60,
       "subsequent_rate_per_30min": 0.98,
       "evening_per_entry": {
         "start_min": 1080,
@@ -14685,8 +14982,8 @@ window.CSV_CARPARKS = [
       "chargeable_start": 480,
       "chargeable_end": 1080,
       "first_hour_rate": 2.2,
-      "subsequent_rate_per_30min": 1.1,
-      "weekend_rate_per_30min": 0.8
+      "first_tier_minutes": 60,
+      "subsequent_rate_per_30min": 1.1
     },
     "notes": "Mon-Fri: First hour $2.20; Subsequent 15 mins $0.55 | $3.00 per hour || Sat: First 2 hours $2.20; Subsequent 15 mins $0.40"
   },
@@ -14785,6 +15082,7 @@ window.CSV_CARPARKS = [
       "chargeable_start": 420,
       "chargeable_end": 1080,
       "first_hour_rate": 4,
+      "first_tier_minutes": 60,
       "subsequent_rate_per_30min": 1.5,
       "evening_per_entry": {
         "start_min": 1080,
@@ -14966,6 +15264,7 @@ window.CSV_CARPARKS = [
       "chargeable_start": 420,
       "chargeable_end": 1020,
       "first_hour_rate": 1.3,
+      "first_tier_minutes": 60,
       "subsequent_rate_per_30min": 0.65
     },
     "notes": "Mon-Fri: 15 mins grace period; First hour $1.30; Subsequent 30 mins $0.65 | 15 mins grace period; First hour $1.30; Subsequent 30 mins $0.65"
@@ -15027,6 +15326,7 @@ window.CSV_CARPARKS = [
       "chargeable_start": 0,
       "chargeable_end": 1079,
       "first_hour_rate": 2.16,
+      "first_tier_minutes": 60,
       "subsequent_rate_per_30min": 1.62,
       "evening_per_entry": {
         "start_min": 1080,
@@ -15099,6 +15399,8 @@ window.CSV_CARPARKS = [
       "per_entry_cap": null,
       "chargeable_start": 420,
       "chargeable_end": 1440,
+      "first_hour_rate": 3,
+      "first_tier_minutes": 30,
       "subsequent_rate_per_30min": 2
     },
     "notes": "Mon-Fri: 10 mins grace period; First 30 mins $3.00; Subsequent 15 mins $1.00"
@@ -15117,6 +15419,7 @@ window.CSV_CARPARKS = [
       "chargeable_start": 420,
       "chargeable_end": 1140,
       "first_hour_rate": 3,
+      "first_tier_minutes": 60,
       "subsequent_rate_per_30min": 2,
       "evening_per_entry": {
         "start_min": 1140,
@@ -15162,6 +15465,7 @@ window.CSV_CARPARKS = [
       "chargeable_start": 390,
       "chargeable_end": 1080,
       "first_hour_rate": 2.2,
+      "first_tier_minutes": 60,
       "subsequent_rate_per_30min": 1.5,
       "evening_per_entry": {
         "start_min": 1080,
@@ -15200,6 +15504,8 @@ window.CSV_CARPARKS = [
       "per_entry_cap": null,
       "chargeable_start": 420,
       "chargeable_end": 1080,
+      "first_hour_rate": 1,
+      "first_tier_minutes": 120,
       "subsequent_rate_per_30min": 3.02,
       "evening_per_entry": {
         "start_min": 1081,
@@ -15245,6 +15551,7 @@ window.CSV_CARPARKS = [
       "chargeable_start": 480,
       "chargeable_end": 1020,
       "first_hour_rate": 5.25,
+      "first_tier_minutes": 60,
       "subsequent_rate_per_30min": 2.25
     },
     "notes": "Mon-Fri: First hour $5.25; Subsequent 30 mins $2.25"
@@ -15263,6 +15570,7 @@ window.CSV_CARPARKS = [
       "chargeable_start": 0,
       "chargeable_end": 419,
       "first_hour_rate": 3.9,
+      "first_tier_minutes": 60,
       "subsequent_rate_per_30min": 1.95,
       "evening_per_entry": {
         "start_min": 1080,
@@ -15346,6 +15654,7 @@ window.CSV_CARPARKS = [
       "chargeable_start": 480,
       "chargeable_end": 1320,
       "first_hour_rate": 3,
+      "first_tier_minutes": 60,
       "subsequent_rate_per_30min": 2,
       "evening_per_entry": {
         "start_min": 1320,
@@ -15369,6 +15678,7 @@ window.CSV_CARPARKS = [
       "chargeable_start": 420,
       "chargeable_end": 1020,
       "first_hour_rate": 2.68,
+      "first_tier_minutes": 60,
       "subsequent_rate_per_30min": 1.07,
       "evening_per_entry": {
         "start_min": 1020,
@@ -15413,6 +15723,7 @@ window.CSV_CARPARKS = [
       "chargeable_start": 420,
       "chargeable_end": 1020,
       "first_hour_rate": 4,
+      "first_tier_minutes": 60,
       "subsequent_rate_per_30min": 2,
       "evening_per_entry": {
         "start_min": 1020,
@@ -15436,6 +15747,7 @@ window.CSV_CARPARKS = [
       "chargeable_start": 420,
       "chargeable_end": 1019,
       "first_hour_rate": 3.2,
+      "first_tier_minutes": 60,
       "subsequent_rate_per_30min": 1.8,
       "evening_per_entry": {
         "start_min": 1020,
@@ -15502,6 +15814,7 @@ window.CSV_CARPARKS = [
       "chargeable_start": 480,
       "chargeable_end": 1080,
       "first_hour_rate": 2.64,
+      "first_tier_minutes": 60,
       "subsequent_rate_per_30min": 2.04,
       "evening_per_entry": {
         "start_min": 1080,
@@ -15564,6 +15877,7 @@ window.CSV_CARPARKS = [
       "chargeable_start": 0,
       "chargeable_end": 1440,
       "first_hour_rate": 6,
+      "first_tier_minutes": 60,
       "subsequent_rate_per_30min": 4.5
     },
     "notes": "Mon-Fri: 15 mins grace period; First hour $6.00; Subsequent 30 mins $4.50"
@@ -15624,6 +15938,7 @@ window.CSV_CARPARKS = [
       "chargeable_start": 480,
       "chargeable_end": 1020,
       "first_hour_rate": 4,
+      "first_tier_minutes": 60,
       "subsequent_rate_per_30min": 2,
       "evening_per_entry": {
         "start_min": 1020,
@@ -15684,6 +15999,7 @@ window.CSV_CARPARKS = [
       "chargeable_start": 240,
       "chargeable_end": 1020,
       "first_hour_rate": 2.6,
+      "first_tier_minutes": 60,
       "subsequent_rate_per_30min": 1.3,
       "evening_per_entry": {
         "start_min": 1020,
@@ -15707,6 +16023,7 @@ window.CSV_CARPARKS = [
       "chargeable_start": 420,
       "chargeable_end": 1020,
       "first_hour_rate": 1.5,
+      "first_tier_minutes": 60,
       "subsequent_rate_per_30min": 1
     },
     "notes": "Mon-Fri: First hour $1.50; Subsequent 30 mins $1.00 | First hour $1.50; Subsequent 30 mins $1.00"
@@ -15758,6 +16075,7 @@ window.CSV_CARPARKS = [
       "chargeable_start": 420,
       "chargeable_end": 1019,
       "first_hour_rate": 2.8,
+      "first_tier_minutes": 60,
       "subsequent_rate_per_30min": 1.4,
       "evening_per_entry": {
         "start_min": 1020,
@@ -15956,6 +16274,7 @@ window.CSV_CARPARKS = [
       "chargeable_start": 480,
       "chargeable_end": 1020,
       "first_hour_rate": 2.4,
+      "first_tier_minutes": 60,
       "subsequent_rate_per_30min": 1.2000000000000002
     },
     "notes": "Mon-Fri: 10 mins grace period; First hour $2.40; Subsequent 5 mins $0.20"
@@ -15996,6 +16315,7 @@ window.CSV_CARPARKS = [
       "chargeable_start": 0,
       "chargeable_end": 1440,
       "first_hour_rate": 2,
+      "first_tier_minutes": 60,
       "subsequent_rate_per_30min": 1
     },
     "notes": "Mon-Fri: 15 mins grace period; First hour $2.00; Subsequent 30 mins $1.00 | 10 mins grace period; First hour $3.00; Subsequent 30 mins $1.50 | 10 mins grace period; First hour $3.00; Subsequent 30 min"
@@ -16014,6 +16334,7 @@ window.CSV_CARPARKS = [
       "chargeable_start": 420,
       "chargeable_end": 1020,
       "first_hour_rate": 2.4,
+      "first_tier_minutes": 60,
       "subsequent_rate_per_30min": 0.9
     },
     "notes": "Mon-Fri: First hour $2.40; Subsequent 30 mins $0.90 | First hour $2.40; Subsequent 30 mins $0.90"
@@ -16116,6 +16437,7 @@ window.CSV_CARPARKS = [
       "chargeable_start": 360,
       "chargeable_end": 1080,
       "first_hour_rate": 2.5,
+      "first_tier_minutes": 60,
       "subsequent_rate_per_30min": 1.2,
       "evening_per_entry": {
         "start_min": 1080,
@@ -16139,6 +16461,7 @@ window.CSV_CARPARKS = [
       "chargeable_start": 361,
       "chargeable_end": 1080,
       "first_hour_rate": 2.4,
+      "first_tier_minutes": 60,
       "subsequent_rate_per_30min": 1.2
     },
     "notes": "Mon-Fri: First hour $2.40; Subsequent 30 mins $1.20 | First hour $2.40; Subsequent 30 mins $1.20"
@@ -16199,6 +16522,7 @@ window.CSV_CARPARKS = [
       "chargeable_start": 361,
       "chargeable_end": 1020,
       "first_hour_rate": 2.4,
+      "first_tier_minutes": 60,
       "subsequent_rate_per_30min": 1.2,
       "evening_per_entry": {
         "start_min": 1021,
@@ -16222,6 +16546,7 @@ window.CSV_CARPARKS = [
       "chargeable_start": 360,
       "chargeable_end": 1140,
       "first_hour_rate": 3.24,
+      "first_tier_minutes": 60,
       "subsequent_rate_per_30min": 1.73,
       "evening_per_entry": {
         "start_min": 1141,
@@ -16244,6 +16569,8 @@ window.CSV_CARPARKS = [
       "per_entry_cap": null,
       "chargeable_start": 420,
       "chargeable_end": 1140,
+      "first_hour_rate": 1.35,
+      "first_tier_minutes": 30,
       "subsequent_rate_per_30min": 1.35,
       "evening_per_entry": {
         "start_min": 1140,
@@ -16458,6 +16785,7 @@ window.CSV_CARPARKS = [
       "chargeable_start": 0,
       "chargeable_end": 1079,
       "first_hour_rate": 1.95,
+      "first_tier_minutes": 60,
       "subsequent_rate_per_30min": 1.1,
       "evening_per_entry": {
         "start_min": 1080,
@@ -16524,6 +16852,7 @@ window.CSV_CARPARKS = [
       "chargeable_start": 480,
       "chargeable_end": 1020,
       "first_hour_rate": 1.5,
+      "first_tier_minutes": 60,
       "subsequent_rate_per_30min": 0.75,
       "evening_per_entry": {
         "start_min": 1020,
@@ -16632,6 +16961,7 @@ window.CSV_CARPARKS = [
       "chargeable_start": 420,
       "chargeable_end": 1139,
       "first_hour_rate": 4.86,
+      "first_tier_minutes": 60,
       "evening_per_entry": {
         "start_min": 1140,
         "end_min": 1440,
@@ -16671,6 +17001,7 @@ window.CSV_CARPARKS = [
       "chargeable_start": 420,
       "chargeable_end": 1139,
       "first_hour_rate": 2,
+      "first_tier_minutes": 60,
       "subsequent_rate_per_30min": 1
     },
     "notes": "Mon-Fri: 10 mins grace period; First hour $2.00; Subsequent 30 mins $1.00 | 10 mins grace period; First hour $2.00; Subsequent 30 mins $1.00"
@@ -16705,6 +17036,7 @@ window.CSV_CARPARKS = [
       "chargeable_start": 420,
       "chargeable_end": 1080,
       "first_hour_rate": 2.8,
+      "first_tier_minutes": 60,
       "subsequent_rate_per_30min": 1.5,
       "evening_per_entry": {
         "start_min": 1080,
@@ -16846,6 +17178,7 @@ window.CSV_CARPARKS = [
       "chargeable_start": 420,
       "chargeable_end": 1020,
       "first_hour_rate": 2.4,
+      "first_tier_minutes": 60,
       "subsequent_rate_per_30min": 1.2,
       "evening_per_entry": {
         "start_min": 1020,
@@ -16885,6 +17218,7 @@ window.CSV_CARPARKS = [
       "chargeable_start": 480,
       "chargeable_end": 1080,
       "first_hour_rate": 1.2,
+      "first_tier_minutes": 60,
       "subsequent_rate_per_30min": 0.6,
       "evening_per_entry": {
         "start_min": 1080,
@@ -16908,6 +17242,7 @@ window.CSV_CARPARKS = [
       "chargeable_start": 420,
       "chargeable_end": 1080,
       "first_hour_rate": 3.5,
+      "first_tier_minutes": 60,
       "subsequent_rate_per_30min": 1,
       "evening_per_entry": {
         "start_min": 1080,
@@ -16930,6 +17265,8 @@ window.CSV_CARPARKS = [
       "per_entry_cap": null,
       "chargeable_start": 0,
       "chargeable_end": 1080,
+      "first_hour_rate": 2,
+      "first_tier_minutes": 30,
       "subsequent_rate_per_30min": 2,
       "evening_per_entry": {
         "start_min": 1080,
@@ -16953,6 +17290,7 @@ window.CSV_CARPARKS = [
       "chargeable_start": 420,
       "chargeable_end": 1019,
       "first_hour_rate": 2.5,
+      "first_tier_minutes": 60,
       "subsequent_rate_per_30min": 1.5,
       "evening_per_entry": {
         "start_min": 1020,
@@ -16992,6 +17330,7 @@ window.CSV_CARPARKS = [
       "chargeable_start": 480,
       "chargeable_end": 1019,
       "first_hour_rate": 2.3,
+      "first_tier_minutes": 60,
       "subsequent_rate_per_30min": 1.5,
       "evening_per_entry": {
         "start_min": 1020,
@@ -17037,6 +17376,7 @@ window.CSV_CARPARKS = [
       "chargeable_start": 420,
       "chargeable_end": 1020,
       "first_hour_rate": 2,
+      "first_tier_minutes": 60,
       "subsequent_rate_per_30min": 1,
       "evening_per_entry": {
         "start_min": 1020,
@@ -17187,6 +17527,7 @@ window.CSV_CARPARKS = [
       "chargeable_start": 420,
       "chargeable_end": 1259,
       "first_hour_rate": 5,
+      "first_tier_minutes": 60,
       "subsequent_rate_per_30min": 2.5,
       "evening_per_entry": {
         "start_min": 1260,
@@ -17210,6 +17551,7 @@ window.CSV_CARPARKS = [
       "chargeable_start": 421,
       "chargeable_end": 1080,
       "first_hour_rate": 2,
+      "first_tier_minutes": 60,
       "subsequent_rate_per_30min": 1,
       "evening_per_entry": {
         "start_min": 1080,
@@ -17233,6 +17575,7 @@ window.CSV_CARPARKS = [
       "chargeable_start": 480,
       "chargeable_end": 1440,
       "first_hour_rate": 4.28,
+      "first_tier_minutes": 60,
       "subsequent_rate_per_30min": 2.14
     },
     "notes": "Mon-Fri: First hour $4.28; Subsequent 30 mins $2.14"
@@ -17251,6 +17594,7 @@ window.CSV_CARPARKS = [
       "chargeable_start": 180,
       "chargeable_end": 1019,
       "first_hour_rate": 3,
+      "first_tier_minutes": 60,
       "subsequent_rate_per_30min": 1.6,
       "evening_per_entry": {
         "start_min": 1020,
@@ -17274,6 +17618,7 @@ window.CSV_CARPARKS = [
       "chargeable_start": 480,
       "chargeable_end": 1080,
       "first_hour_rate": 3,
+      "first_tier_minutes": 60,
       "subsequent_rate_per_30min": 1.5
     },
     "notes": "Mon-Fri: First hour $3.00; Subsequent 15 mins $0.75 | First hour $3.00; Subsequent 15 mins $0.75"
@@ -17329,6 +17674,7 @@ window.CSV_CARPARKS = [
       "chargeable_start": 360,
       "chargeable_end": 1079,
       "first_hour_rate": 2,
+      "first_tier_minutes": 60,
       "subsequent_rate_per_30min": 0.8,
       "evening_per_entry": {
         "start_min": 1080,
@@ -17394,6 +17740,7 @@ window.CSV_CARPARKS = [
       "chargeable_start": 480,
       "chargeable_end": 1020,
       "first_hour_rate": 5,
+      "first_tier_minutes": 60,
       "subsequent_rate_per_30min": 2.5
     },
     "notes": "Mon-Fri: First hour $5.00; Subsequent 30 mins $2.50 | First hour $5.00; Subsequent 30 mins $2.50"
@@ -17433,6 +17780,7 @@ window.CSV_CARPARKS = [
       "chargeable_start": 420,
       "chargeable_end": 1019,
       "first_hour_rate": 6,
+      "first_tier_minutes": 60,
       "subsequent_rate_per_30min": 2,
       "evening_per_entry": {
         "start_min": 1020,
@@ -17532,6 +17880,7 @@ window.CSV_CARPARKS = [
       "chargeable_start": 360,
       "chargeable_end": 1080,
       "first_hour_rate": 1.5,
+      "first_tier_minutes": 60,
       "subsequent_rate_per_30min": 0.5,
       "evening_per_entry": {
         "start_min": 1080,
@@ -17715,6 +18064,7 @@ window.CSV_CARPARKS = [
       "chargeable_start": 420,
       "chargeable_end": 1079,
       "first_hour_rate": 1.2,
+      "first_tier_minutes": 60,
       "subsequent_rate_per_30min": 0.6,
       "evening_per_entry": {
         "start_min": 1080,
@@ -17754,6 +18104,7 @@ window.CSV_CARPARKS = [
       "chargeable_start": 420,
       "chargeable_end": 1080,
       "first_hour_rate": 7,
+      "first_tier_minutes": 60,
       "subsequent_rate_per_30min": 3.5,
       "evening_per_entry": {
         "start_min": 1080,
@@ -17878,6 +18229,7 @@ window.CSV_CARPARKS = [
       "chargeable_start": 420,
       "chargeable_end": 1020,
       "first_hour_rate": 2,
+      "first_tier_minutes": 60,
       "evening_per_entry": {
         "start_min": 1020,
         "end_min": 1380,
@@ -17921,6 +18273,7 @@ window.CSV_CARPARKS = [
       "chargeable_start": 420,
       "chargeable_end": 1020,
       "first_hour_rate": 2.16,
+      "first_tier_minutes": 60,
       "subsequent_rate_per_30min": 1.08
     },
     "notes": "Mon-Fri: First hour $2.16; Subsequent 30 mins $1.08 | $5.40 per 4 hours"
@@ -17939,6 +18292,7 @@ window.CSV_CARPARKS = [
       "chargeable_start": 480,
       "chargeable_end": 1019,
       "first_hour_rate": 1.04,
+      "first_tier_minutes": 60,
       "subsequent_rate_per_30min": 0.53,
       "evening_per_entry": {
         "start_min": 1020,
@@ -17962,6 +18316,7 @@ window.CSV_CARPARKS = [
       "chargeable_start": 421,
       "chargeable_end": 1020,
       "first_hour_rate": 3.27,
+      "first_tier_minutes": 60,
       "subsequent_rate_per_30min": 1.75,
       "evening_per_entry": {
         "start_min": 1021,
@@ -17985,6 +18340,7 @@ window.CSV_CARPARKS = [
       "chargeable_start": 360,
       "chargeable_end": 1019,
       "first_hour_rate": 1.07,
+      "first_tier_minutes": 60,
       "subsequent_rate_per_30min": 0.535,
       "evening_per_entry": {
         "start_min": 720,
@@ -18024,6 +18380,7 @@ window.CSV_CARPARKS = [
       "chargeable_start": 420,
       "chargeable_end": 1140,
       "first_hour_rate": 2.5,
+      "first_tier_minutes": 60,
       "subsequent_rate_per_30min": 1.2,
       "evening_per_entry": {
         "start_min": 1140,
@@ -18142,6 +18499,7 @@ window.CSV_CARPARKS = [
       "chargeable_start": 480,
       "chargeable_end": 1020,
       "first_hour_rate": 2.14,
+      "first_tier_minutes": 60,
       "subsequent_rate_per_30min": 1.2,
       "evening_per_entry": {
         "start_min": 1020,
@@ -18165,6 +18523,7 @@ window.CSV_CARPARKS = [
       "chargeable_start": 420,
       "chargeable_end": 1080,
       "first_hour_rate": 3,
+      "first_tier_minutes": 60,
       "subsequent_rate_per_30min": 1.5,
       "evening_per_entry": {
         "start_min": 1080,
@@ -18204,6 +18563,7 @@ window.CSV_CARPARKS = [
       "chargeable_start": 360,
       "chargeable_end": 1080,
       "first_hour_rate": 2.2,
+      "first_tier_minutes": 60,
       "subsequent_rate_per_30min": 1.1,
       "evening_per_entry": {
         "start_min": 1080,
@@ -18269,6 +18629,7 @@ window.CSV_CARPARKS = [
       "chargeable_start": 420,
       "chargeable_end": 1140,
       "first_hour_rate": 1.8,
+      "first_tier_minutes": 60,
       "subsequent_rate_per_30min": 1.2,
       "evening_per_entry": {
         "start_min": 1140,
@@ -18426,6 +18787,7 @@ window.CSV_CARPARKS = [
       "chargeable_start": 420,
       "chargeable_end": 1079,
       "first_hour_rate": 2.5,
+      "first_tier_minutes": 60,
       "subsequent_rate_per_30min": 1.4,
       "evening_per_entry": {
         "start_min": 1080,
@@ -18448,6 +18810,8 @@ window.CSV_CARPARKS = [
       "per_entry_cap": null,
       "chargeable_start": 420,
       "chargeable_end": 1440,
+      "first_hour_rate": 0.7,
+      "first_tier_minutes": 15,
       "subsequent_rate_per_30min": 1.4
     },
     "notes": "Mon-Fri: First 15 mins $0.70; Subsequent 15 mins $0.70"
@@ -18532,6 +18896,7 @@ window.CSV_CARPARKS = [
       "chargeable_start": 420,
       "chargeable_end": 1020,
       "first_hour_rate": 2.2,
+      "first_tier_minutes": 60,
       "subsequent_rate_per_30min": 1.1,
       "evening_per_entry": {
         "start_min": 1020,
@@ -18571,6 +18936,7 @@ window.CSV_CARPARKS = [
       "chargeable_start": 0,
       "chargeable_end": 1440,
       "first_hour_rate": 14,
+      "first_tier_minutes": 60,
       "subsequent_rate_per_30min": 1.5
     },
     "notes": "Mon-Fri: First hour $14.00; Subsequent 30 mins $1.50; Capped at $32.00"
@@ -18587,7 +18953,8 @@ window.CSV_CARPARKS = [
       "first_free_minutes": 0,
       "per_entry_cap": 3.5,
       "chargeable_start": 420,
-      "chargeable_end": 1440
+      "chargeable_end": 1440,
+      "weekend_rate_per_30min": 4
     },
     "notes": "Mon-Fri: $3.50 per entry || Sat: $4.00 per 4 hours"
   },
@@ -18627,6 +18994,7 @@ window.CSV_CARPARKS = [
       "chargeable_start": 420,
       "chargeable_end": 1020,
       "first_hour_rate": 2.8,
+      "first_tier_minutes": 60,
       "subsequent_rate_per_30min": 1.7
     },
     "notes": "Mon-Fri: 5 mins grace period; First hour $2.80; Subsequent 30 mins $1.70; Capped at $12.00 | 5 mins grace period; First hour $2.80; Subsequent 30 mins $1.70; Capped at $12.00"
@@ -18644,6 +19012,8 @@ window.CSV_CARPARKS = [
       "per_entry_cap": null,
       "chargeable_start": 420,
       "chargeable_end": 1350,
+      "first_hour_rate": 2.4,
+      "first_tier_minutes": 120,
       "subsequent_rate_per_30min": 1.8,
       "evening_per_entry": {
         "start_min": 1350,
@@ -18667,6 +19037,7 @@ window.CSV_CARPARKS = [
       "chargeable_start": 0,
       "chargeable_end": 1020,
       "first_hour_rate": 2,
+      "first_tier_minutes": 60,
       "subsequent_rate_per_30min": 0.75,
       "evening_per_entry": {
         "start_min": 1021,
@@ -18690,6 +19061,7 @@ window.CSV_CARPARKS = [
       "chargeable_start": 0,
       "chargeable_end": 1440,
       "first_hour_rate": 2.5,
+      "first_tier_minutes": 60,
       "subsequent_rate_per_30min": 1.25
     },
     "notes": "Mon-Fri: First hour $2.50; Subsequent 30 mins $1.25"
@@ -18708,6 +19080,7 @@ window.CSV_CARPARKS = [
       "chargeable_start": 0,
       "chargeable_end": 1440,
       "first_hour_rate": 7,
+      "first_tier_minutes": 60,
       "subsequent_rate_per_30min": 3.5,
       "evening_per_entry": {
         "start_min": 1080,
@@ -18731,6 +19104,7 @@ window.CSV_CARPARKS = [
       "chargeable_start": 420,
       "chargeable_end": 1020,
       "first_hour_rate": 4,
+      "first_tier_minutes": 60,
       "subsequent_rate_per_30min": 1.5,
       "evening_per_entry": {
         "start_min": 1020,
@@ -18754,6 +19128,7 @@ window.CSV_CARPARKS = [
       "chargeable_start": 420,
       "chargeable_end": 1080,
       "first_hour_rate": 2.5,
+      "first_tier_minutes": 60,
       "subsequent_rate_per_30min": 1.2,
       "evening_per_entry": {
         "start_min": 1080,
@@ -18777,6 +19152,7 @@ window.CSV_CARPARKS = [
       "chargeable_start": 300,
       "chargeable_end": 1020,
       "first_hour_rate": 3,
+      "first_tier_minutes": 60,
       "subsequent_rate_per_30min": 0.5,
       "evening_per_entry": {
         "start_min": 1020,
@@ -18821,6 +19197,7 @@ window.CSV_CARPARKS = [
       "chargeable_start": 360,
       "chargeable_end": 1079,
       "first_hour_rate": 2.48,
+      "first_tier_minutes": 60,
       "subsequent_rate_per_30min": 1.08,
       "evening_per_entry": {
         "start_min": 1080,
@@ -18844,6 +19221,7 @@ window.CSV_CARPARKS = [
       "chargeable_start": 0,
       "chargeable_end": 1440,
       "first_hour_rate": 1.3,
+      "first_tier_minutes": 60,
       "subsequent_rate_per_30min": 0.65
     },
     "notes": "Mon-Fri: First hour $1.30; Subsequent 30 mins $0.65"
@@ -18926,6 +19304,7 @@ window.CSV_CARPARKS = [
       "chargeable_start": 420,
       "chargeable_end": 1079,
       "first_hour_rate": 3,
+      "first_tier_minutes": 60,
       "subsequent_rate_per_30min": 1.5,
       "evening_per_entry": {
         "start_min": 1080,
@@ -18965,6 +19344,7 @@ window.CSV_CARPARKS = [
       "chargeable_start": 480,
       "chargeable_end": 1049,
       "first_hour_rate": 3,
+      "first_tier_minutes": 60,
       "subsequent_rate_per_30min": 1.5,
       "evening_per_entry": {
         "start_min": 1050,
@@ -19009,6 +19389,7 @@ window.CSV_CARPARKS = [
       "chargeable_start": 1020,
       "chargeable_end": 1079,
       "first_hour_rate": 3.25,
+      "first_tier_minutes": 60,
       "subsequent_rate_per_30min": 1.8,
       "evening_per_entry": {
         "start_min": 1080,
@@ -19032,6 +19413,7 @@ window.CSV_CARPARKS = [
       "chargeable_start": 420,
       "chargeable_end": 1019,
       "first_hour_rate": 2.92,
+      "first_tier_minutes": 60,
       "subsequent_rate_per_30min": 1.52,
       "evening_per_entry": {
         "start_min": 1020,
@@ -19055,6 +19437,7 @@ window.CSV_CARPARKS = [
       "chargeable_start": 420,
       "chargeable_end": 1080,
       "first_hour_rate": 2.18,
+      "first_tier_minutes": 60,
       "subsequent_rate_per_30min": 1.09,
       "evening_per_entry": {
         "start_min": 1080,
@@ -19078,6 +19461,7 @@ window.CSV_CARPARKS = [
       "chargeable_start": 421,
       "chargeable_end": 1320,
       "first_hour_rate": 0,
+      "first_tier_minutes": 60,
       "subsequent_rate_per_30min": 0.71
     },
     "notes": "Mon-Fri: hour grace period; First hour free; Subsequent 30 mins $0.71"
@@ -19096,6 +19480,7 @@ window.CSV_CARPARKS = [
       "chargeable_start": 420,
       "chargeable_end": 1020,
       "first_hour_rate": 1.64,
+      "first_tier_minutes": 60,
       "subsequent_rate_per_30min": 0.87,
       "evening_per_entry": {
         "start_min": 1020,
@@ -19120,6 +19505,7 @@ window.CSV_CARPARKS = [
       "chargeable_start": 360,
       "chargeable_end": 1080,
       "first_hour_rate": 0,
+      "first_tier_minutes": 60,
       "subsequent_rate_per_30min": 0.5
     },
     "notes": "Mon-Fri: First hour free; Subsequent 30 mins $0.50 | $0.50 per 30 mins"
